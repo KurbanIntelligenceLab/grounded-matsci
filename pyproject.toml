@@ -1,0 +1,102 @@
+[project]
+name = "grounded-matsci"
+version = "0.1.0"
+description = "Grounded verification for chemical and materials reasoning"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = "==3.12.*"
+dependencies = [
+  "rdkit==2026.3.3",
+  "pyscf==2.13.1",
+  "ase==3.29.0",
+  "pymatgen==2026.5.4",
+  "mp-api==0.46.4",
+  "numpy==2.4.6",
+  "scipy==1.17.1",
+  "requests==2.34.2",
+  "pyyaml>=6.0",
+]
+
+[project.scripts]
+grounded-matsci = "grounded_matsci.cli:main"
+
+[project.optional-dependencies]
+figures = ["matplotlib>=3.9"]
+
+[dependency-groups]
+dev = [
+  "ruff>=0.8",
+  "mypy>=1.13",
+  "pytest>=8.0",
+  "pytest-cov",
+  "hypothesis",
+  "pre-commit>=3.0",
+  "types-requests",
+  "types-PyYAML",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/grounded_matsci"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "ANN", "RUF", "SIM", "PTH", "RET"]
+
+[tool.ruff.lint.per-file-ignores]
+# Relaxed typing tiers (mirrors the two-tier mypy policy) and tests.
+"src/grounded_matsci/verification/*" = ["ANN"]
+"src/grounded_matsci/workflows/*" = ["ANN"]
+"src/grounded_matsci/evaluation/*" = ["ANN"]
+"tests/*" = ["ANN"]
+
+[tool.ruff.format]
+docstring-code-format = true
+quote-style = "double"
+
+# Strict typing for boundary and contract code.
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unreachable = true
+warn_redundant_casts = true
+mypy_path = "src"
+
+# Relaxed typing for numerical and orchestration code built on libraries
+# with weak or missing stubs.
+[[tool.mypy.overrides]]
+module = [
+  "grounded_matsci.verification.*",
+  "grounded_matsci.workflows.*",
+  "grounded_matsci.evaluation.*",
+]
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+warn_return_any = false
+
+[[tool.mypy.overrides]]
+module = [
+  "rdkit.*",
+  "pyscf.*",
+  "pymatgen.*",
+  "mp_api.*",
+  "ase.*",
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers --cov=src/grounded_matsci"
+markers = [
+  "integration: integration tests",
+  "smoke: end-to-end smoke tests",
+  "gpu: requires GPU",
+  "slow: slow tests",
+  "network: needs OPENROUTER_API_KEY / MP_API_KEY and live network access",
+]
