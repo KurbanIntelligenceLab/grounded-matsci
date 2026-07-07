@@ -1,10 +1,40 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
-title: "grounded-matsci: grounded verification of chemical and materials reasoning"
+title: "grounded-matsci: Grounded verification of materials-chemistry reasoning"
+abstract: >-
+  Large language models confabulate chemical and materials objects --- molecular
+  formulas, space groups, formation energies --- inside fluent reasoning traces,
+  most often for the long-tail entities where verification matters most. We build
+  a tiered, deterministic verifier that grounds each extractable claim against
+  authoritative databases and physics, and study it across four current models on
+  528 condition-pinned prompts.
 authors:
   - family-names: Polat
     given-names: Can
+    orcid: "https://orcid.org/0000-0002-1458-302X"
+    affiliation: "Department of Electrical and Computer Engineering, Texas A&M University, College Station, Texas, USA"
+  - family-names: Serpedin
+    given-names: Erchin
+    orcid: "https://orcid.org/0000-0001-9069-770X"
+    affiliation: "Department of Electrical and Computer Engineering, Texas A&M University, College Station, Texas, USA"
+  - family-names: Kurban
+    given-names: Mustafa
+    orcid: "https://orcid.org/0000-0002-7263-0234"
+    email: kurbanm@ankara.edu.tr
+    affiliation: "Department of Prosthetics and Orthotics, Ankara University, Ankara, Turkey"
+  - family-names: Kurban
+    given-names: Hasan
+    orcid: "https://orcid.org/0000-0003-3142-2866"
+    email: hkurban@hbku.edu.qa
+    affiliation: "College of Science and Engineering, Hamad Bin Khalifa University, Doha, Qatar"
+keywords:
+  - large language models
+  - hallucination detection
+  - grounded verification
+  - materials chemistry
+  - retrieval-augmented generation
+  - calibration
 license: MIT
 repository-code: "https://github.com/KurbanIntelligenceLab/grounded-matsci"
 version: 0.1.0
