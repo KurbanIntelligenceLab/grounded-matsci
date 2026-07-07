@@ -1,0 +1,188 @@
+{
+ "constants": {
+  "speed of light in vacuum": {
+   "value": 299792458,
+   "unit": "m/s",
+   "stratum": "S1",
+   "exact": true
+  },
+  "elementary charge": {
+   "value": 1.602176634e-19,
+   "unit": "C",
+   "stratum": "S1",
+   "exact": true
+  },
+  "Planck constant": {
+   "value": 6.62607015e-34,
+   "unit": "J s",
+   "stratum": "S1",
+   "exact": true
+  },
+  "Avogadro constant": {
+   "value": 6.02214076e+23,
+   "unit": "1/mol",
+   "stratum": "S1",
+   "exact": true
+  },
+  "Boltzmann constant": {
+   "value": 1.380649e-23,
+   "unit": "J/K",
+   "stratum": "S1",
+   "exact": true
+  },
+  "electron mass": {
+   "value": 9.1093837015e-31,
+   "unit": "kg",
+   "stratum": "S1"
+  },
+  "gravitational constant": {
+   "value": 6.6743e-11,
+   "unit": "m^3/(kg s^2)",
+   "stratum": "S1"
+  },
+  "standard acceleration of gravity": {
+   "value": 9.80665,
+   "unit": "m/s^2",
+   "stratum": "S1",
+   "exact": true
+  },
+  "proton mass": {
+   "value": 1.67262192369e-27,
+   "unit": "kg",
+   "stratum": "S2"
+  },
+  "neutron mass": {
+   "value": 1.67492749804e-27,
+   "unit": "kg",
+   "stratum": "S2"
+  },
+  "vacuum electric permittivity": {
+   "value": 8.8541878128e-12,
+   "unit": "F/m",
+   "stratum": "S2"
+  },
+  "gas constant": {
+   "value": 8.314462618,
+   "unit": "J/(mol K)",
+   "stratum": "S2"
+  },
+  "Faraday constant": {
+   "value": 96485.33212,
+   "unit": "C/mol",
+   "stratum": "S2"
+  },
+  "fine-structure constant": {
+   "value": 0.0072973525693,
+   "unit": "dimensionless",
+   "stratum": "S2"
+  },
+  "Stefan-Boltzmann constant": {
+   "value": 5.670374419e-08,
+   "unit": "W/(m^2 K^4)",
+   "stratum": "S2"
+  },
+  "Bohr radius": {
+   "value": 5.29177210903e-11,
+   "unit": "m",
+   "stratum": "S2"
+  },
+  "Rydberg constant": {
+   "value": 10973731.56816,
+   "unit": "1/m",
+   "stratum": "S3"
+  },
+  "Bohr magneton": {
+   "value": 9.2740100783e-24,
+   "unit": "J/T",
+   "stratum": "S3"
+  },
+  "nuclear magneton": {
+   "value": 5.0507837461e-27,
+   "unit": "J/T",
+   "stratum": "S3"
+  },
+  "Wien wavelength displacement law constant": {
+   "value": 0.002897771955,
+   "unit": "m K",
+   "stratum": "S3"
+  },
+  "vacuum magnetic permeability": {
+   "value": 1.25663706212e-06,
+   "unit": "N/A^2",
+   "stratum": "S3"
+  },
+  "electron g factor": {
+   "value": -2.00231930436256,
+   "unit": "dimensionless",
+   "stratum": "S3"
+  },
+  "classical electron radius": {
+   "value": 2.8179403262e-15,
+   "unit": "m",
+   "stratum": "S3"
+  },
+  "Compton wavelength": {
+   "value": 2.42631023867e-12,
+   "unit": "m",
+   "stratum": "S3"
+  },
+  "Josephson constant": {
+   "value": 483597848400000.0,
+   "unit": "Hz/V",
+   "stratum": "S4"
+  },
+  "von Klitzing constant": {
+   "value": 25812.80745,
+   "unit": "ohm",
+   "stratum": "S4"
+  },
+  "conductance quantum": {
+   "value": 7.748091729e-05,
+   "unit": "S",
+   "stratum": "S4"
+  },
+  "magnetic flux quantum": {
+   "value": 2.067833848e-15,
+   "unit": "Wb",
+   "stratum": "S4"
+  },
+  "first radiation constant": {
+   "value": 3.741771852e-16,
+   "unit": "W m^2",
+   "stratum": "S4"
+  },
+  "second radiation constant": {
+   "value": 0.01438776877,
+   "unit": "m K",
+   "stratum": "S4"
+  },
+  "Hartree energy": {
+   "value": 4.3597447222071e-18,
+   "unit": "J",
+   "stratum": "S4"
+  },
+  "Thomson cross section": {
+   "value": 6.6524587321e-29,
+   "unit": "m^2",
+   "stratum": "S4"
+  },
+  "Sackur-Tetrode constant": {
+   "value": -1.16487052358,
+   "unit": "dimensionless",
+   "stratum": "S4"
+  },
+  "Fermi coupling constant": {
+   "value": 1.1663787e-05,
+   "unit": "1/GeV^2",
+   "stratum": "S4"
+  },
+  "Newtonian constant tabulated": {
+   "value": 6.6743e-11,
+   "unit": "m^3/(kg s^2)",
+   "stratum": "S4"
+  }
+ },
+ "sha256": "ee5bcbc52288ef08fa0ac3d6110d83c526fa531936fc95e58156e05187a51ceb",
+ "source": "CODATA 2018 recommended values",
+ "n": 35
+}

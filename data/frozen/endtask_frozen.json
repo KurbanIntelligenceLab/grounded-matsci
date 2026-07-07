@@ -1,0 +1,552 @@
+{
+ "tasks": [
+  {
+   "type": "molar_mass",
+   "subject": "toluene",
+   "stratum": "S1_well_known",
+   "prompt": "Compute the molar mass of toluene in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 92.14,
+   "depends_on": {
+    "formula": "C7H8"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "formic acid",
+   "stratum": "S1_well_known",
+   "prompt": "Compute the molar mass of formic acid in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 46.02,
+   "depends_on": {
+    "formula": "CH2O2"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "benzene",
+   "stratum": "S1_well_known",
+   "prompt": "Compute the molar mass of benzene in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 78.11,
+   "depends_on": {
+    "formula": "C6H6"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "ethylene glycol",
+   "stratum": "S1_well_known",
+   "prompt": "Compute the molar mass of ethylene glycol in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 62.07,
+   "depends_on": {
+    "formula": "C2H6O2"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "omeprazole",
+   "stratum": "S2_common_specialized",
+   "prompt": "Compute the molar mass of omeprazole in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 345.42,
+   "depends_on": {
+    "formula": "C17H19N3O3S"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "metformin",
+   "stratum": "S2_common_specialized",
+   "prompt": "Compute the molar mass of metformin in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 129.17,
+   "depends_on": {
+    "formula": "C4H11N5"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "ampicillin",
+   "stratum": "S2_common_specialized",
+   "prompt": "Compute the molar mass of ampicillin in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 349.4,
+   "depends_on": {
+    "formula": "C16H19N3O4S"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "loratadine",
+   "stratum": "S2_common_specialized",
+   "prompt": "Compute the molar mass of loratadine in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 382.89,
+   "depends_on": {
+    "formula": "C22H23ClN2O2"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "swainsonine",
+   "stratum": "S3_rare_ambiguous",
+   "prompt": "Compute the molar mass of swainsonine in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 173.21,
+   "depends_on": {
+    "formula": "C8H15NO3"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "taxol",
+   "stratum": "S3_rare_ambiguous",
+   "prompt": "Compute the molar mass of taxol in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 853.92,
+   "depends_on": {
+    "formula": "C47H51NO14"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "doxorubicin",
+   "stratum": "S3_rare_ambiguous",
+   "prompt": "Compute the molar mass of doxorubicin in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 543.52,
+   "depends_on": {
+    "formula": "C27H29NO11"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "artemisinin",
+   "stratum": "S3_rare_ambiguous",
+   "prompt": "Compute the molar mass of artemisinin in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 282.34,
+   "depends_on": {
+    "formula": "C15H22O5"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "forskolin",
+   "stratum": "S3_rare_ambiguous",
+   "prompt": "Compute the molar mass of forskolin in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 410.51,
+   "depends_on": {
+    "formula": "C22H34O7"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "yohimbine",
+   "stratum": "S3_rare_ambiguous",
+   "prompt": "Compute the molar mass of yohimbine in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 354.45,
+   "depends_on": {
+    "formula": "C21H26N2O3"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "camptothecin",
+   "stratum": "S3_rare_ambiguous",
+   "prompt": "Compute the molar mass of camptothecin in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 348.36,
+   "depends_on": {
+    "formula": "C20H16N2O4"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "bruceantin",
+   "stratum": "S3_rare_ambiguous",
+   "prompt": "Compute the molar mass of bruceantin in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 548.59,
+   "depends_on": {
+    "formula": "C28H36O11"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "bleomycin",
+   "stratum": "S3_rare_ambiguous",
+   "prompt": "Compute the molar mass of bleomycin in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 1415.56,
+   "depends_on": {
+    "formula": "C55H84N17O21S3+"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "tepotinib",
+   "stratum": "S4_recent_specialist",
+   "prompt": "Compute the molar mass of tepotinib in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 492.58,
+   "depends_on": {
+    "formula": "C29H28N6O2"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "selpercatinib",
+   "stratum": "S4_recent_specialist",
+   "prompt": "Compute the molar mass of selpercatinib in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 525.61,
+   "depends_on": {
+    "formula": "C29H31N7O3"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "vonoprazan",
+   "stratum": "S4_recent_specialist",
+   "prompt": "Compute the molar mass of vonoprazan in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 345.39,
+   "depends_on": {
+    "formula": "C17H16FN3O2S"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "sotorasib",
+   "stratum": "S4_recent_specialist",
+   "prompt": "Compute the molar mass of sotorasib in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 560.6,
+   "depends_on": {
+    "formula": "C30H30F2N6O3"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "molnupiravir",
+   "stratum": "S4_recent_specialist",
+   "prompt": "Compute the molar mass of molnupiravir in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 329.31,
+   "depends_on": {
+    "formula": "C13H19N3O7"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "tirzepatide",
+   "stratum": "S4_recent_specialist",
+   "prompt": "Compute the molar mass of tirzepatide in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 4813.53,
+   "depends_on": {
+    "formula": "C225H348N48O68"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "futibatinib",
+   "stratum": "S4_recent_specialist",
+   "prompt": "Compute the molar mass of futibatinib in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 418.46,
+   "depends_on": {
+    "formula": "C22H22N6O3"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "baricitinib",
+   "stratum": "S4_recent_specialist",
+   "prompt": "Compute the molar mass of baricitinib in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 371.42,
+   "depends_on": {
+    "formula": "C16H17N7O2S"
+   }
+  },
+  {
+   "type": "molar_mass",
+   "subject": "adagrasib",
+   "stratum": "S4_recent_specialist",
+   "prompt": "Compute the molar mass of adagrasib in g/mol. Reason step by step, then end with 'Answer: <number> g/mol'.",
+   "gt": 604.13,
+   "depends_on": {
+    "formula": "C32H35ClFN7O2"
+   }
+  },
+  {
+   "type": "compare_molar",
+   "subject": "trilaciclib|doxorubicin",
+   "stratum": "S3S4_mixed",
+   "prompt": "Which has the higher molar mass: (A) trilaciclib or (B) doxorubicin? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "B",
+   "depends_on": {
+    "trilaciclib": "C24H30N8O",
+    "doxorubicin": "C27H29NO11"
+   }
+  },
+  {
+   "type": "compare_molar",
+   "subject": "avapritinib|digoxin",
+   "stratum": "S3S4_mixed",
+   "prompt": "Which has the higher molar mass: (A) avapritinib or (B) digoxin? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "B",
+   "depends_on": {
+    "avapritinib": "C26H27FN10",
+    "digoxin": "C41H64O14"
+   }
+  },
+  {
+   "type": "compare_molar",
+   "subject": "repotrectinib|capivasertib",
+   "stratum": "S3S4_mixed",
+   "prompt": "Which has the higher molar mass: (A) repotrectinib or (B) capivasertib? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "B",
+   "depends_on": {
+    "repotrectinib": "C18H18FN5O2",
+    "capivasertib": "C21H25ClN6O2"
+   }
+  },
+  {
+   "type": "compare_molar",
+   "subject": "halichondrin B|taxol",
+   "stratum": "S3S4_mixed",
+   "prompt": "Which has the higher molar mass: (A) halichondrin B or (B) taxol? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "A",
+   "depends_on": {
+    "halichondrin B": "C60H86O19",
+    "taxol": "C47H51NO14"
+   }
+  },
+  {
+   "type": "compare_molar",
+   "subject": "physostigmine|strychnine",
+   "stratum": "S3S4_mixed",
+   "prompt": "Which has the higher molar mass: (A) physostigmine or (B) strychnine? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "B",
+   "depends_on": {
+    "physostigmine": "C15H21N3O2",
+    "strychnine": "C21H22N2O2"
+   }
+  },
+  {
+   "type": "compare_molar",
+   "subject": "docetaxel|epothilone B",
+   "stratum": "S3S4_mixed",
+   "prompt": "Which has the higher molar mass: (A) docetaxel or (B) epothilone B? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "A",
+   "depends_on": {
+    "docetaxel": "C43H53NO14",
+    "epothilone B": "C27H41NO6S"
+   }
+  },
+  {
+   "type": "compare_molar",
+   "subject": "fezolinetant|tirzepatide",
+   "stratum": "S3S4_mixed",
+   "prompt": "Which has the higher molar mass: (A) fezolinetant or (B) tirzepatide? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "B",
+   "depends_on": {
+    "fezolinetant": "C16H15FN6OS",
+    "tirzepatide": "C225H348N48O68"
+   }
+  },
+  {
+   "type": "compare_molar",
+   "subject": "pemigatinib|belzutifan",
+   "stratum": "S3S4_mixed",
+   "prompt": "Which has the higher molar mass: (A) pemigatinib or (B) belzutifan? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "A",
+   "depends_on": {
+    "pemigatinib": "C24H27F2N5O4",
+    "belzutifan": "C17H12F3NO4S"
+   }
+  },
+  {
+   "type": "compare_molar",
+   "subject": "podophyllotoxin|huperzine A",
+   "stratum": "S3S4_mixed",
+   "prompt": "Which has the higher molar mass: (A) podophyllotoxin or (B) huperzine A? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "A",
+   "depends_on": {
+    "podophyllotoxin": "C22H22O8",
+    "huperzine A": "C15H18N2O"
+   }
+  },
+  {
+   "type": "compare_molar",
+   "subject": "yohimbine|lenacapavir",
+   "stratum": "S3S4_mixed",
+   "prompt": "Which has the higher molar mass: (A) yohimbine or (B) lenacapavir? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "B",
+   "depends_on": {
+    "yohimbine": "C21H26N2O3",
+    "lenacapavir": "C39H32ClF10N7O5S2"
+   }
+  },
+  {
+   "type": "compare_molar",
+   "subject": "teniposide|ripretinib",
+   "stratum": "S3S4_mixed",
+   "prompt": "Which has the higher molar mass: (A) teniposide or (B) ripretinib? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "A",
+   "depends_on": {
+    "teniposide": "C32H32O13S",
+    "ripretinib": "C24H21BrFN5O2"
+   }
+  },
+  {
+   "type": "compare_molar",
+   "subject": "ouabain|actinomycin D",
+   "stratum": "S3S4_mixed",
+   "prompt": "Which has the higher molar mass: (A) ouabain or (B) actinomycin D? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "B",
+   "depends_on": {
+    "ouabain": "C29H44O12",
+    "actinomycin D": "C62H86N12O16"
+   }
+  },
+  {
+   "type": "compare_molar",
+   "subject": "sotorasib|bruceantin",
+   "stratum": "S3S4_mixed",
+   "prompt": "Which has the higher molar mass: (A) sotorasib or (B) bruceantin? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "A",
+   "depends_on": {
+    "sotorasib": "C30H30F2N6O3",
+    "bruceantin": "C28H36O11"
+   }
+  },
+  {
+   "type": "compare_molar",
+   "subject": "selpercatinib|nirmatrelvir",
+   "stratum": "S3S4_mixed",
+   "prompt": "Which has the higher molar mass: (A) selpercatinib or (B) nirmatrelvir? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "A",
+   "depends_on": {
+    "selpercatinib": "C29H31N7O3",
+    "nirmatrelvir": "C23H32F3N5O4"
+   }
+  },
+  {
+   "type": "compare_stability",
+   "subject": "rock salt MgO::ef|SnSe2::ef",
+   "stratum": "crystalline",
+   "prompt": "Which is more thermodynamically stable (more negative formation energy per atom): (A) rock salt MgO::ef or (B) SnSe2::ef? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "A",
+   "depends_on": {
+    "rock salt MgO::ef": -3.038,
+    "SnSe2::ef": -0.424
+   }
+  },
+  {
+   "type": "compare_stability",
+   "subject": "stibnite (Sb2S3)::ef|WS2 (2H)::ef",
+   "stratum": "crystalline",
+   "prompt": "Which is more thermodynamically stable (more negative formation energy per atom): (A) stibnite (Sb2S3)::ef or (B) WS2 (2H)::ef? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "B",
+   "depends_on": {
+    "stibnite (Sb2S3)::ef": -0.287,
+    "WS2 (2H)::ef": -0.884
+   }
+  },
+  {
+   "type": "compare_stability",
+   "subject": "magnetite (Fe3O4)::ef|gahnite (ZnAl2O4)::ef",
+   "stratum": "crystalline",
+   "prompt": "Which is more thermodynamically stable (more negative formation energy per atom): (A) magnetite (Fe3O4)::ef or (B) gahnite (ZnAl2O4)::ef? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "B",
+   "depends_on": {
+    "magnetite (Fe3O4)::ef": -1.63,
+    "gahnite (ZnAl2O4)::ef": -3.021
+   }
+  },
+  {
+   "type": "compare_stability",
+   "subject": "cadmium selenide (CdSe)::ef|cassiterite (SnO2)::ef",
+   "stratum": "crystalline",
+   "prompt": "Which is more thermodynamically stable (more negative formation energy per atom): (A) cadmium selenide (CdSe)::ef or (B) cassiterite (SnO2)::ef? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "B",
+   "depends_on": {
+    "cadmium selenide (CdSe)::ef": -0.838,
+    "cassiterite (SnO2)::ef": -2.107
+   }
+  },
+  {
+   "type": "compare_stability",
+   "subject": "GeTe::ef|Cs4PbBr6::ef",
+   "stratum": "crystalline",
+   "prompt": "Which is more thermodynamically stable (more negative formation energy per atom): (A) GeTe::ef or (B) Cs4PbBr6::ef? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "B",
+   "depends_on": {
+    "GeTe::ef": -0.035,
+    "Cs4PbBr6::ef": -1.874
+   }
+  },
+  {
+   "type": "compare_stability",
+   "subject": "Cu2ZnSnS4 kesterite::ef|perovskite (SrTiO3)::ef",
+   "stratum": "crystalline",
+   "prompt": "Which is more thermodynamically stable (more negative formation energy per atom): (A) Cu2ZnSnS4 kesterite::ef or (B) perovskite (SrTiO3)::ef? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "B",
+   "depends_on": {
+    "Cu2ZnSnS4 kesterite::ef": -0.705,
+    "perovskite (SrTiO3)::ef": -3.551
+   }
+  },
+  {
+   "type": "compare_stability",
+   "subject": "andalusite (Al2SiO5)::ef|anhydrite (CaSO4)::ef",
+   "stratum": "crystalline",
+   "prompt": "Which is more thermodynamically stable (more negative formation energy per atom): (A) andalusite (Al2SiO5)::ef or (B) anhydrite (CaSO4)::ef? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "A",
+   "depends_on": {
+    "andalusite (Al2SiO5)::ef": -3.375,
+    "anhydrite (CaSO4)::ef": -2.669
+   }
+  },
+  {
+   "type": "compare_stability",
+   "subject": "galena (PbS)::ef|geikielite (MgTiO3)::ef",
+   "stratum": "crystalline",
+   "prompt": "Which is more thermodynamically stable (more negative formation energy per atom): (A) galena (PbS)::ef or (B) geikielite (MgTiO3)::ef? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "B",
+   "depends_on": {
+    "galena (PbS)::ef": -0.784,
+    "geikielite (MgTiO3)::ef": -3.363
+   }
+  },
+  {
+   "type": "compare_stability",
+   "subject": "ilmenite (FeTiO3)::ef|CsSnI3::ef",
+   "stratum": "crystalline",
+   "prompt": "Which is more thermodynamically stable (more negative formation energy per atom): (A) ilmenite (FeTiO3)::ef or (B) CsSnI3::ef? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "A",
+   "depends_on": {
+    "ilmenite (FeTiO3)::ef": -2.718,
+    "CsSnI3::ef": -1.178
+   }
+  },
+  {
+   "type": "compare_stability",
+   "subject": "cesium chloride (CsCl)::ef|FeSe (tetragonal)::ef",
+   "stratum": "crystalline",
+   "prompt": "Which is more thermodynamically stable (more negative formation energy per atom): (A) cesium chloride (CsCl)::ef or (B) FeSe (tetragonal)::ef? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "A",
+   "depends_on": {
+    "cesium chloride (CsCl)::ef": -2.256,
+    "FeSe (tetragonal)::ef": -0.508
+   }
+  },
+  {
+   "type": "compare_stability",
+   "subject": "barium titanate (BaTiO3)::ef|CsPbBr3 (orthorhombic)::ef",
+   "stratum": "crystalline",
+   "prompt": "Which is more thermodynamically stable (more negative formation energy per atom): (A) barium titanate (BaTiO3)::ef or (B) CsPbBr3 (orthorhombic)::ef? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "A",
+   "depends_on": {
+    "barium titanate (BaTiO3)::ef": -3.49,
+    "CsPbBr3 (orthorhombic)::ef": -1.634
+   }
+  },
+  {
+   "type": "compare_stability",
+   "subject": "calcite (CaCO3)::ef|pyrolusite (MnO2)::ef",
+   "stratum": "crystalline",
+   "prompt": "Which is more thermodynamically stable (more negative formation energy per atom): (A) calcite (CaCO3)::ef or (B) pyrolusite (MnO2)::ef? Reason step by step, then end with 'Answer: A' or 'Answer: B'.",
+   "gt": "A",
+   "depends_on": {
+    "calcite (CaCO3)::ef": -2.688,
+    "pyrolusite (MnO2)::ef": -1.776
+   }
+  }
+ ],
+ "sha256": "28a4834d7b08096c9e5c85a78cac28698f8e44ae7907996c287a0ae8c85e0379",
+ "n": 52
+}

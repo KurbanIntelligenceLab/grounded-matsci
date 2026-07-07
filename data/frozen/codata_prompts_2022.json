@@ -1,0 +1,287 @@
+{
+ "prompts": [
+  {
+   "subject": "speed of light in vacuum",
+   "stratum": "S1_const",
+   "prompt": "State the value of the speed of light in vacuum in SI units (m/s). Give the numerical value. End with 'Value: <number> m/s'.",
+   "claim_type": "phys_const",
+   "gt_value": 299792458,
+   "unit": "m/s"
+  },
+  {
+   "subject": "elementary charge",
+   "stratum": "S1_const",
+   "prompt": "State the value of the elementary charge in SI units (C). Give the numerical value. End with 'Value: <number> C'.",
+   "claim_type": "phys_const",
+   "gt_value": 1.602176634e-19,
+   "unit": "C"
+  },
+  {
+   "subject": "Planck constant",
+   "stratum": "S1_const",
+   "prompt": "State the value of the Planck constant in SI units (J s). Give the numerical value. End with 'Value: <number> J s'.",
+   "claim_type": "phys_const",
+   "gt_value": 6.62607015e-34,
+   "unit": "J s"
+  },
+  {
+   "subject": "Avogadro constant",
+   "stratum": "S1_const",
+   "prompt": "State the value of the Avogadro constant in SI units (1/mol). Give the numerical value. End with 'Value: <number> 1/mol'.",
+   "claim_type": "phys_const",
+   "gt_value": 6.02214076e+23,
+   "unit": "1/mol"
+  },
+  {
+   "subject": "Boltzmann constant",
+   "stratum": "S1_const",
+   "prompt": "State the value of the Boltzmann constant in SI units (J/K). Give the numerical value. End with 'Value: <number> J/K'.",
+   "claim_type": "phys_const",
+   "gt_value": 1.380649e-23,
+   "unit": "J/K"
+  },
+  {
+   "subject": "electron mass",
+   "stratum": "S1_const",
+   "prompt": "State the value of the electron mass in SI units (kg). Give the numerical value. End with 'Value: <number> kg'.",
+   "claim_type": "phys_const",
+   "gt_value": 9.1093837139e-31,
+   "unit": "kg"
+  },
+  {
+   "subject": "gravitational constant",
+   "stratum": "S1_const",
+   "prompt": "State the value of the gravitational constant in SI units (m^3/(kg s^2)). Give the numerical value. End with 'Value: <number> m^3/(kg s^2)'.",
+   "claim_type": "phys_const",
+   "gt_value": 6.6743e-11,
+   "unit": "m^3/(kg s^2)"
+  },
+  {
+   "subject": "standard acceleration of gravity",
+   "stratum": "S1_const",
+   "prompt": "State the value of the standard acceleration of gravity in SI units (m/s^2). Give the numerical value. End with 'Value: <number> m/s^2'.",
+   "claim_type": "phys_const",
+   "gt_value": 9.80665,
+   "unit": "m/s^2"
+  },
+  {
+   "subject": "proton mass",
+   "stratum": "S2_const",
+   "prompt": "State the value of the proton mass in SI units (kg). Give the numerical value. End with 'Value: <number> kg'.",
+   "claim_type": "phys_const",
+   "gt_value": 1.67262192595e-27,
+   "unit": "kg"
+  },
+  {
+   "subject": "neutron mass",
+   "stratum": "S2_const",
+   "prompt": "State the value of the neutron mass in SI units (kg). Give the numerical value. End with 'Value: <number> kg'.",
+   "claim_type": "phys_const",
+   "gt_value": 1.67492750056e-27,
+   "unit": "kg"
+  },
+  {
+   "subject": "vacuum electric permittivity",
+   "stratum": "S2_const",
+   "prompt": "State the value of the vacuum electric permittivity in SI units (F/m). Give the numerical value. End with 'Value: <number> F/m'.",
+   "claim_type": "phys_const",
+   "gt_value": 8.8541878188e-12,
+   "unit": "F/m"
+  },
+  {
+   "subject": "gas constant",
+   "stratum": "S2_const",
+   "prompt": "State the value of the gas constant in SI units (J/(mol K)). Give the numerical value. End with 'Value: <number> J/(mol K)'.",
+   "claim_type": "phys_const",
+   "gt_value": 8.314462618,
+   "unit": "J/(mol K)"
+  },
+  {
+   "subject": "Faraday constant",
+   "stratum": "S2_const",
+   "prompt": "State the value of the Faraday constant in SI units (C/mol). Give the numerical value. End with 'Value: <number> C/mol'.",
+   "claim_type": "phys_const",
+   "gt_value": 96485.33212,
+   "unit": "C/mol"
+  },
+  {
+   "subject": "fine-structure constant",
+   "stratum": "S2_const",
+   "prompt": "State the value of the fine-structure constant in SI units (dimensionless). Give the numerical value. End with 'Value: <number> dimensionless'.",
+   "claim_type": "phys_const",
+   "gt_value": 0.0072973525643,
+   "unit": "dimensionless"
+  },
+  {
+   "subject": "Stefan-Boltzmann constant",
+   "stratum": "S2_const",
+   "prompt": "State the value of the Stefan-Boltzmann constant in SI units (W/(m^2 K^4)). Give the numerical value. End with 'Value: <number> W/(m^2 K^4)'.",
+   "claim_type": "phys_const",
+   "gt_value": 5.670374419e-08,
+   "unit": "W/(m^2 K^4)"
+  },
+  {
+   "subject": "Bohr radius",
+   "stratum": "S2_const",
+   "prompt": "State the value of the Bohr radius in SI units (m). Give the numerical value. End with 'Value: <number> m'.",
+   "claim_type": "phys_const",
+   "gt_value": 5.29177210544e-11,
+   "unit": "m"
+  },
+  {
+   "subject": "Rydberg constant",
+   "stratum": "S3_const",
+   "prompt": "State the value of the Rydberg constant in SI units (1/m). Give the numerical value. End with 'Value: <number> 1/m'.",
+   "claim_type": "phys_const",
+   "gt_value": 10973731.568157,
+   "unit": "1/m"
+  },
+  {
+   "subject": "Bohr magneton",
+   "stratum": "S3_const",
+   "prompt": "State the value of the Bohr magneton in SI units (J/T). Give the numerical value. End with 'Value: <number> J/T'.",
+   "claim_type": "phys_const",
+   "gt_value": 9.2740100657e-24,
+   "unit": "J/T"
+  },
+  {
+   "subject": "nuclear magneton",
+   "stratum": "S3_const",
+   "prompt": "State the value of the nuclear magneton in SI units (J/T). Give the numerical value. End with 'Value: <number> J/T'.",
+   "claim_type": "phys_const",
+   "gt_value": 5.0507837393e-27,
+   "unit": "J/T"
+  },
+  {
+   "subject": "Wien wavelength displacement law constant",
+   "stratum": "S3_const",
+   "prompt": "State the value of the Wien wavelength displacement law constant in SI units (m K). Give the numerical value. End with 'Value: <number> m K'.",
+   "claim_type": "phys_const",
+   "gt_value": 0.002897771955,
+   "unit": "m K"
+  },
+  {
+   "subject": "vacuum magnetic permeability",
+   "stratum": "S3_const",
+   "prompt": "State the value of the vacuum magnetic permeability in SI units (N/A^2). Give the numerical value. End with 'Value: <number> N/A^2'.",
+   "claim_type": "phys_const",
+   "gt_value": 1.25663706127e-06,
+   "unit": "N/A^2"
+  },
+  {
+   "subject": "electron g factor",
+   "stratum": "S3_const",
+   "prompt": "State the value of the electron g factor in SI units (dimensionless). Give the numerical value. End with 'Value: <number> dimensionless'.",
+   "claim_type": "phys_const",
+   "gt_value": -2.00231930436092,
+   "unit": "dimensionless"
+  },
+  {
+   "subject": "classical electron radius",
+   "stratum": "S3_const",
+   "prompt": "State the value of the classical electron radius in SI units (m). Give the numerical value. End with 'Value: <number> m'.",
+   "claim_type": "phys_const",
+   "gt_value": 2.8179403205e-15,
+   "unit": "m"
+  },
+  {
+   "subject": "Compton wavelength",
+   "stratum": "S3_const",
+   "prompt": "State the value of the Compton wavelength in SI units (m). Give the numerical value. End with 'Value: <number> m'.",
+   "claim_type": "phys_const",
+   "gt_value": 2.42631023538e-12,
+   "unit": "m"
+  },
+  {
+   "subject": "Josephson constant",
+   "stratum": "S4_const",
+   "prompt": "State the value of the Josephson constant in SI units (Hz/V). Give the numerical value. End with 'Value: <number> Hz/V'.",
+   "claim_type": "phys_const",
+   "gt_value": 483597848400000.0,
+   "unit": "Hz/V"
+  },
+  {
+   "subject": "von Klitzing constant",
+   "stratum": "S4_const",
+   "prompt": "State the value of the von Klitzing constant in SI units (ohm). Give the numerical value. End with 'Value: <number> ohm'.",
+   "claim_type": "phys_const",
+   "gt_value": 25812.80745,
+   "unit": "ohm"
+  },
+  {
+   "subject": "conductance quantum",
+   "stratum": "S4_const",
+   "prompt": "State the value of the conductance quantum in SI units (S). Give the numerical value. End with 'Value: <number> S'.",
+   "claim_type": "phys_const",
+   "gt_value": 7.748091729e-05,
+   "unit": "S"
+  },
+  {
+   "subject": "magnetic flux quantum",
+   "stratum": "S4_const",
+   "prompt": "State the value of the magnetic flux quantum in SI units (Wb). Give the numerical value. End with 'Value: <number> Wb'.",
+   "claim_type": "phys_const",
+   "gt_value": 2.067833848e-15,
+   "unit": "Wb"
+  },
+  {
+   "subject": "first radiation constant",
+   "stratum": "S4_const",
+   "prompt": "State the value of the first radiation constant in SI units (W m^2). Give the numerical value. End with 'Value: <number> W m^2'.",
+   "claim_type": "phys_const",
+   "gt_value": 3.741771852e-16,
+   "unit": "W m^2"
+  },
+  {
+   "subject": "second radiation constant",
+   "stratum": "S4_const",
+   "prompt": "State the value of the second radiation constant in SI units (m K). Give the numerical value. End with 'Value: <number> m K'.",
+   "claim_type": "phys_const",
+   "gt_value": 0.01438776877,
+   "unit": "m K"
+  },
+  {
+   "subject": "Hartree energy",
+   "stratum": "S4_const",
+   "prompt": "State the value of the Hartree energy in SI units (J). Give the numerical value. End with 'Value: <number> J'.",
+   "claim_type": "phys_const",
+   "gt_value": 4.359744722206e-18,
+   "unit": "J"
+  },
+  {
+   "subject": "Thomson cross section",
+   "stratum": "S4_const",
+   "prompt": "State the value of the Thomson cross section in SI units (m^2). Give the numerical value. End with 'Value: <number> m^2'.",
+   "claim_type": "phys_const",
+   "gt_value": 6.6524587051e-29,
+   "unit": "m^2"
+  },
+  {
+   "subject": "Sackur-Tetrode constant",
+   "stratum": "S4_const",
+   "prompt": "State the value of the Sackur-Tetrode constant in SI units (dimensionless). Give the numerical value. End with 'Value: <number> dimensionless'.",
+   "claim_type": "phys_const",
+   "gt_value": -1.15170753706,
+   "unit": "dimensionless"
+  },
+  {
+   "subject": "Fermi coupling constant",
+   "stratum": "S4_const",
+   "prompt": "State the value of the Fermi coupling constant in SI units (1/GeV^2). Give the numerical value. End with 'Value: <number> 1/GeV^2'.",
+   "claim_type": "phys_const",
+   "gt_value": 1.1663787e-05,
+   "unit": "1/GeV^2"
+  },
+  {
+   "subject": "Newtonian constant tabulated",
+   "stratum": "S4_const",
+   "prompt": "State the value of the Newtonian constant tabulated in SI units (m^3/(kg s^2)). Give the numerical value. End with 'Value: <number> m^3/(kg s^2)'.",
+   "claim_type": "phys_const",
+   "gt_value": 6.6743e-11,
+   "unit": "m^3/(kg s^2)"
+  }
+ ],
+ "sha256": "506bb89483e77bca92292ae63462c1a719519599fbf54f5a2cab5b45bb471890",
+ "n": 35,
+ "reference": "CODATA 2022 (codata_gt_2022 sha 95e59c7a); prompt refs updated for do-no-harm rerun"
+}

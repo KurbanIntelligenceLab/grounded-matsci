@@ -1,0 +1,3669 @@
+{
+ "_formula": {
+  "1T-TaS2": "TaS2",
+  "Bi2Se3": "Bi2Se3",
+  "Bi2Se3 topological": "Bi2Se3",
+  "Bi2Te3": "Bi2Te3",
+  "Cs2AgBiBr6 double perovskite": "Cs2AgBiBr6",
+  "Cs2PbI2Cl2": "Cs2PbI2Cl2",
+  "Cs2SnI6": "Cs2SnI6",
+  "Cs4PbBr6": "Cs4PbBr6",
+  "CsPbBr3 (orthorhombic)": "CsPbBr3",
+  "CsPbI3 (gamma)": "CsPbI3",
+  "CsSnBr3": "CsSnBr3",
+  "CsSnI3": "CsSnI3",
+  "Cu2ZnSnS4 kesterite": "Cu2ZnSnS4",
+  "FeSe (tetragonal)": "FeSe",
+  "GeTe": "GeTe",
+  "MoS2 (2H)": "MoS2",
+  "MoSe2 (2H)": "MoSe2",
+  "MoTe2 (1T')": "MoTe2",
+  "NbSe2 (2H)": "NbSe2",
+  "PdTe2": "PdTe2",
+  "Rb2SnI6": "Rb2SnI6",
+  "Sb2Te3": "Sb2Te3",
+  "SnS2 (1T)": "SnS2",
+  "SnSe": "SnSe",
+  "SnSe2": "SnSe2",
+  "SnTe": "SnTe",
+  "TaSe2 (2H)": "TaSe2",
+  "VSe2 (1T)": "VSe2",
+  "WS2 (2H)": "WS2",
+  "WSe2 (2H)": "WSe2",
+  "WTe2 (Td)": "WTe2",
+  "akermanite (Ca2MgSi2O7)": "Ca2MgSi2O7",
+  "aluminum nitride (AlN)": "AlN",
+  "anatase (TiO2)": "TiO2",
+  "anatase-vs-rutile TiO2": "TiO2",
+  "andalusite (Al2SiO5)": "Al2SiO5",
+  "anglesite (PbSO4)": "PbSO4",
+  "anhydrite (CaSO4)": "CaSO4",
+  "aragonite (CaCO3)": "CaCO3",
+  "arcanite (K2SO4)": "K2SO4",
+  "baddeleyite (ZrO2)": "ZrO2",
+  "barite (BaSO4)": "BaSO4",
+  "barium titanate (BaTiO3)": "BaTiO3",
+  "berlinite (AlPO4)": "AlPO4",
+  "boron nitride (h-BN)": "BN",
+  "brookite (TiO2)": "TiO2",
+  "cadmium selenide (CdSe)": "CdSe",
+  "calcite (CaCO3)": "CaCO3",
+  "cassiterite (SnO2)": "SnO2",
+  "celestine (SrSO4)": "SrSO4",
+  "ceria (CeO2)": "CeO2",
+  "cerussite (PbCO3)": "PbCO3",
+  "cesium chloride (CsCl)": "CsCl",
+  "chalcopyrite (CuFeS2)": "CuFeS2",
+  "chromite (FeCr2O4)": "FeCr2O4",
+  "cinnabar (HgS)": "HgS",
+  "coesite (SiO2)": "SiO2",
+  "copper (Cu)": "Cu",
+  "corundum (Al2O3)": "Al2O3",
+  "cotunnite (PbCl2)": "PbCl2",
+  "covellite (CuS)": "CuS",
+  "cristobalite (SiO2)": "SiO2",
+  "cuprite (Cu2O)": "Cu2O",
+  "diamond (C)": "C",
+  "dolomite (CaMgC2O6)": "CaMg(CO3)2",
+  "enstatite (MgSiO3)": "MgSiO3",
+  "fayalite (Fe2SiO4)": "Fe2SiO4",
+  "fluorite (CaF2)": "CaF2",
+  "forsterite (Mg2SiO4)": "Mg2SiO4",
+  "franklinite (ZnFe2O4)": "ZnFe2O4",
+  "gahnite (ZnAl2O4)": "ZnAl2O4",
+  "galena (PbS)": "PbS",
+  "gallium arsenide (GaAs)": "GaAs",
+  "gallium nitride (GaN)": "GaN",
+  "geikielite (MgTiO3)": "MgTiO3",
+  "goethite (FeOOH)": "FeOOH",
+  "gold (Au)": "Au",
+  "greenockite (CdS)": "CdS",
+  "halite (NaCl)": "NaCl",
+  "hawleyite (CdS)": "CdS",
+  "hematite (Fe2O3)": "Fe2O3",
+  "hercynite (FeAl2O4)": "FeAl2O4",
+  "ilmenite (FeTiO3)": "FeTiO3",
+  "indium phosphide (InP)": "InP",
+  "iron (alpha-Fe)": "Fe",
+  "kyanite (Al2SiO5)": "Al2SiO5",
+  "lepidocrocite (FeOOH)": "FeOOH",
+  "lithium cobalt oxide (LiCoO2)": "LiCoO2",
+  "magnesite (MgCO3)": "MgCO3",
+  "magnetite (Fe3O4)": "Fe3O4",
+  "marcasite (FeS2)": "FeS2",
+  "metacinnabar (HgS)": "HgS",
+  "moissanite (6H-SiC)": "SiC",
+  "molybdenite (2H-MoS2)": "MoS2",
+  "orpiment (As2S3)": "As2S3",
+  "periclase (MgO)": "MgO",
+  "perovskite (SrTiO3)": "SrTiO3",
+  "perovskite CaTiO3": "CaTiO3",
+  "pyrite (FeS2)": "FeS2",
+  "pyrolusite (MnO2)": "MnO2",
+  "quartz (SiO2)": "SiO2",
+  "realgar (As4S4)": "As4S4",
+  "rhodochrosite (MnCO3)": "MnCO3",
+  "rock salt MgO": "MgO",
+  "rutile (TiO2)": "TiO2",
+  "rutile-type SnO2": "SnO2",
+  "scheelite (CaWO4)": "CaWO4",
+  "siderite (FeCO3)": "FeCO3",
+  "silicon (Si)": "Si",
+  "silicon carbide (3C-SiC)": "SiC",
+  "sillimanite (Al2SiO5)": "Al2SiO5",
+  "silver (Ag)": "Ag",
+  "smithsonite (ZnCO3)": "ZnCO3",
+  "sphalerite (ZnS)": "ZnS",
+  "spinel (MgAl2O4)": "MgAl2O4",
+  "stibnite (Sb2S3)": "Sb2S3",
+  "stishovite (SiO2)": "SiO2",
+  "strontianite (SrCO3)": "SrCO3",
+  "strontium fluoride (SrF2)": "SrF2",
+  "tungsten (W)": "W",
+  "witherite (BaCO3)": "BaCO3",
+  "wolframite (FeWO4)": "FeWO4",
+  "wurtzite (ZnO)": "ZnO",
+  "wustite (FeO)": "FeO",
+  "yttria (Y2O3)": "Y2O3",
+  "zincblende (ZnS)": "ZnS",
+  "zirconia (cubic ZrO2)": "ZrO2"
+ },
+ "crystalline": {
+  "1T-TaS2": {
+   "accepted_sg": [
+    164
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "TaS2",
+   "named_phase_sg": 164,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "Bi2Se3": {
+   "accepted_sg": [
+    166
+   ],
+   "citation": "COD experimental room-T structures",
+   "confirmed_in_MP": true,
+   "formula": "Bi2Se3",
+   "named_phase_sg": 166,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "Bi2Se3 topological": {
+   "accepted_sg": [
+    166
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Bi2Se3",
+   "named_phase_sg": 166,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "Bi2Te3": {
+   "accepted_sg": [
+    166
+   ],
+   "citation": "COD experimental room-T structures",
+   "confirmed_in_MP": true,
+   "formula": "Bi2Te3",
+   "named_phase_sg": 166,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "Cs2AgBiBr6 double perovskite": {
+   "accepted_sg": [
+    140,
+    221,
+    225
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Cs2AgBiBr6",
+   "named_phase_sg": 225,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "Cs2PbI2Cl2": {
+   "accepted_sg": [
+    139
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Cs2PbI2Cl2",
+   "named_phase_sg": 139,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "Cs2SnI6": {
+   "accepted_sg": [
+    225
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Cs2SnI6",
+   "named_phase_sg": 225,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "Cs4PbBr6": {
+   "accepted_sg": [
+    167
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Cs4PbBr6",
+   "named_phase_sg": 167,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "CsPbBr3 (orthorhombic)": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CsPbBr3",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "CsPbI3 (gamma)": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CsPbI3",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "CsSnBr3": {
+   "accepted_sg": [
+    221
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CsSnBr3",
+   "named_phase_sg": 221,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "CsSnI3": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CsSnI3",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "Cu2ZnSnS4 kesterite": {
+   "accepted_sg": [
+    121
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Cu2ZnSnS4",
+   "named_phase_sg": 121,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "FeSe (tetragonal)": {
+   "accepted_sg": [
+    129
+   ],
+   "citation": "COD experimental room-T structures",
+   "confirmed_in_MP": true,
+   "formula": "FeSe",
+   "named_phase_sg": 129,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "GeTe": {
+   "accepted_sg": [
+    160
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "GeTe",
+   "named_phase_sg": 160,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "MoS2 (2H)": {
+   "accepted_sg": [
+    194
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "MoS2",
+   "named_phase_sg": 194,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "MoSe2 (2H)": {
+   "accepted_sg": [
+    194
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "MoSe2",
+   "named_phase_sg": 194,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "MoTe2 (1T')": {
+   "accepted_sg": [
+    11
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "MoTe2",
+   "named_phase_sg": 11,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "NbSe2 (2H)": {
+   "accepted_sg": [
+    194
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "NbSe2",
+   "named_phase_sg": 194,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "PdTe2": {
+   "accepted_sg": [
+    164
+   ],
+   "citation": "COD experimental room-T structures",
+   "confirmed_in_MP": true,
+   "formula": "PdTe2",
+   "named_phase_sg": 164,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "Rb2SnI6": {
+   "accepted_sg": [
+    225
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Rb2SnI6",
+   "named_phase_sg": 225,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "Sb2Te3": {
+   "accepted_sg": [
+    166
+   ],
+   "citation": "COD experimental room-T structures",
+   "confirmed_in_MP": true,
+   "formula": "Sb2Te3",
+   "named_phase_sg": 166,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "SnS2 (1T)": {
+   "accepted_sg": [
+    164
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "SnS2",
+   "named_phase_sg": 164,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "SnSe": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": "COD experimental room-T structures",
+   "confirmed_in_MP": true,
+   "formula": "SnSe",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "SnSe2": {
+   "accepted_sg": [
+    164
+   ],
+   "citation": "COD experimental room-T structures",
+   "confirmed_in_MP": true,
+   "formula": "SnSe2",
+   "named_phase_sg": 164,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "SnTe": {
+   "accepted_sg": [
+    225
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "SnTe",
+   "named_phase_sg": 225,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "TaSe2 (2H)": {
+   "accepted_sg": [
+    194
+   ],
+   "citation": "COD experimental room-T structures",
+   "confirmed_in_MP": true,
+   "formula": "TaSe2",
+   "named_phase_sg": 194,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "VSe2 (1T)": {
+   "accepted_sg": [
+    164
+   ],
+   "citation": "COD experimental room-T structures",
+   "confirmed_in_MP": true,
+   "formula": "VSe2",
+   "named_phase_sg": 164,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "WS2 (2H)": {
+   "accepted_sg": [
+    194
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "WS2",
+   "named_phase_sg": 194,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "WSe2 (2H)": {
+   "accepted_sg": [
+    194
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "WSe2",
+   "named_phase_sg": 194,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "WTe2 (Td)": {
+   "accepted_sg": [
+    31
+   ],
+   "citation": "COD experimental room-T structures",
+   "confirmed_in_MP": true,
+   "formula": "WTe2",
+   "named_phase_sg": 31,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "akermanite (Ca2MgSi2O7)": {
+   "accepted_sg": [
+    113
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Ca2MgSi2O7",
+   "named_phase_sg": 113,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "aluminum nitride (AlN)": {
+   "accepted_sg": [
+    186
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "AlN",
+   "named_phase_sg": 186,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "anatase (TiO2)": {
+   "accepted_sg": [
+    141
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "TiO2",
+   "named_phase_sg": 141,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "anatase-vs-rutile TiO2": {
+   "accepted_sg": [
+    141
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "TiO2",
+   "named_phase_sg": 141,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "andalusite (Al2SiO5)": {
+   "accepted_sg": [
+    58
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Al2SiO5",
+   "named_phase_sg": 58,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "anglesite (PbSO4)": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "PbSO4",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "anhydrite (CaSO4)": {
+   "accepted_sg": [
+    63
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CaSO4",
+   "named_phase_sg": 63,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "aragonite (CaCO3)": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CaCO3",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "arcanite (K2SO4)": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "K2SO4",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "baddeleyite (ZrO2)": {
+   "accepted_sg": [
+    14
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "ZrO2",
+   "named_phase_sg": 14,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "barite (BaSO4)": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "BaSO4",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "barium titanate (BaTiO3)": {
+   "accepted_sg": [
+    99
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "BaTiO3",
+   "named_phase_sg": 99,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "berlinite (AlPO4)": {
+   "accepted_sg": [
+    152
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "AlPO4",
+   "named_phase_sg": 152,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "boron nitride (h-BN)": {
+   "accepted_sg": [
+    194
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "BN",
+   "named_phase_sg": 194,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "brookite (TiO2)": {
+   "accepted_sg": [
+    61
+   ],
+   "citation": "Pbca #61 ONLY; rutile #136 / anatase #141 are distinct TiO2 phases, not brookite",
+   "confirmed_in_MP": true,
+   "formula": "TiO2",
+   "named_phase_sg": 61,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "cadmium selenide (CdSe)": {
+   "accepted_sg": [
+    186
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CdSe",
+   "named_phase_sg": 186,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "calcite (CaCO3)": {
+   "accepted_sg": [
+    167
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CaCO3",
+   "named_phase_sg": 167,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "cassiterite (SnO2)": {
+   "accepted_sg": [
+    136
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "SnO2",
+   "named_phase_sg": 136,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "celestine (SrSO4)": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "SrSO4",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "ceria (CeO2)": {
+   "accepted_sg": [
+    225
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CeO2",
+   "named_phase_sg": 225,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "cerussite (PbCO3)": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "PbCO3",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "cesium chloride (CsCl)": {
+   "accepted_sg": [
+    221
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CsCl",
+   "named_phase_sg": 221,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "chalcopyrite (CuFeS2)": {
+   "accepted_sg": [
+    122
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CuFeS2",
+   "named_phase_sg": 122,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "chromite (FeCr2O4)": {
+   "accepted_sg": [
+    227
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "FeCr2O4",
+   "named_phase_sg": 227,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "cinnabar (HgS)": {
+   "accepted_sg": [
+    152,
+    154
+   ],
+   "citation": "cinnabar",
+   "confirmed_in_MP": true,
+   "formula": "HgS",
+   "named_phase_sg": 152,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "coesite (SiO2)": {
+   "accepted_sg": [
+    15
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "SiO2",
+   "named_phase_sg": 15,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "copper (Cu)": {
+   "accepted_sg": [
+    225
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Cu",
+   "named_phase_sg": 225,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "corundum (Al2O3)": {
+   "accepted_sg": [
+    167
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Al2O3",
+   "named_phase_sg": 167,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "cotunnite (PbCl2)": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "PbCl2",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "covellite (CuS)": {
+   "accepted_sg": [
+    194
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CuS",
+   "named_phase_sg": 194,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "cristobalite (SiO2)": {
+   "accepted_sg": [
+    92
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "SiO2",
+   "named_phase_sg": 92,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "cuprite (Cu2O)": {
+   "accepted_sg": [
+    224
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Cu2O",
+   "named_phase_sg": 224,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "diamond (C)": {
+   "accepted_sg": [
+    227
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "C",
+   "named_phase_sg": 227,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "dolomite (CaMgC2O6)": {
+   "accepted_sg": [
+    148
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CaMg(CO3)2",
+   "named_phase_sg": 148,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "enstatite (MgSiO3)": {
+   "accepted_sg": [
+    61
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "MgSiO3",
+   "named_phase_sg": 61,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "fayalite (Fe2SiO4)": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Fe2SiO4",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "fluorite (CaF2)": {
+   "accepted_sg": [
+    225
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CaF2",
+   "named_phase_sg": 225,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "forsterite (Mg2SiO4)": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Mg2SiO4",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "franklinite (ZnFe2O4)": {
+   "accepted_sg": [
+    227
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "ZnFe2O4",
+   "named_phase_sg": 227,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "gahnite (ZnAl2O4)": {
+   "accepted_sg": [
+    227
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "ZnAl2O4",
+   "named_phase_sg": 227,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "galena (PbS)": {
+   "accepted_sg": [
+    225
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "PbS",
+   "named_phase_sg": 225,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "gallium arsenide (GaAs)": {
+   "accepted_sg": [
+    216
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "GaAs",
+   "named_phase_sg": 216,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "gallium nitride (GaN)": {
+   "accepted_sg": [
+    186
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "GaN",
+   "named_phase_sg": 186,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "geikielite (MgTiO3)": {
+   "accepted_sg": [
+    148
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "MgTiO3",
+   "named_phase_sg": 148,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "goethite (FeOOH)": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "FeOOH",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "gold (Au)": {
+   "accepted_sg": [
+    225
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Au",
+   "named_phase_sg": 225,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "greenockite (CdS)": {
+   "accepted_sg": [
+    186
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CdS",
+   "named_phase_sg": 186,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "halite (NaCl)": {
+   "accepted_sg": [
+    225
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "NaCl",
+   "named_phase_sg": 225,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "hawleyite (CdS)": {
+   "accepted_sg": [
+    216
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CdS",
+   "named_phase_sg": 216,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "hematite (Fe2O3)": {
+   "accepted_sg": [
+    167
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Fe2O3",
+   "named_phase_sg": 167,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "hercynite (FeAl2O4)": {
+   "accepted_sg": [
+    227
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "FeAl2O4",
+   "named_phase_sg": 227,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "ilmenite (FeTiO3)": {
+   "accepted_sg": [
+    148
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "FeTiO3",
+   "named_phase_sg": 148,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "indium phosphide (InP)": {
+   "accepted_sg": [
+    216
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "InP",
+   "named_phase_sg": 216,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "iron (alpha-Fe)": {
+   "accepted_sg": [
+    229
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Fe",
+   "named_phase_sg": 229,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "kyanite (Al2SiO5)": {
+   "accepted_sg": [
+    2
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Al2SiO5",
+   "named_phase_sg": 2,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "lepidocrocite (FeOOH)": {
+   "accepted_sg": [
+    63
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "FeOOH",
+   "named_phase_sg": 63,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "lithium cobalt oxide (LiCoO2)": {
+   "accepted_sg": [
+    166
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "LiCoO2",
+   "named_phase_sg": 166,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "magnesite (MgCO3)": {
+   "accepted_sg": [
+    167
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "MgCO3",
+   "named_phase_sg": 167,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "magnetite (Fe3O4)": {
+   "accepted_sg": [
+    227
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Fe3O4",
+   "named_phase_sg": 227,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "marcasite (FeS2)": {
+   "accepted_sg": [
+    58
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "FeS2",
+   "named_phase_sg": 58,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "metacinnabar (HgS)": {
+   "accepted_sg": [
+    216
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "HgS",
+   "named_phase_sg": 216,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "moissanite (6H-SiC)": {
+   "accepted_sg": [
+    186
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "SiC",
+   "named_phase_sg": 186,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "molybdenite (2H-MoS2)": {
+   "accepted_sg": [
+    194
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "MoS2",
+   "named_phase_sg": 194,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "orpiment (As2S3)": {
+   "accepted_sg": [
+    14
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "As2S3",
+   "named_phase_sg": 14,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "periclase (MgO)": {
+   "accepted_sg": [
+    225
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "MgO",
+   "named_phase_sg": 225,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "perovskite (SrTiO3)": {
+   "accepted_sg": [
+    140,
+    221
+   ],
+   "citation": "perovskite",
+   "confirmed_in_MP": true,
+   "formula": "SrTiO3",
+   "named_phase_sg": 221,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "perovskite CaTiO3": {
+   "accepted_sg": [
+    62,
+    140,
+    221
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CaTiO3",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "pyrite (FeS2)": {
+   "accepted_sg": [
+    205
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "FeS2",
+   "named_phase_sg": 205,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "pyrolusite (MnO2)": {
+   "accepted_sg": [
+    136
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "MnO2",
+   "named_phase_sg": 136,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "quartz (SiO2)": {
+   "accepted_sg": [
+    152,
+    154,
+    180,
+    181
+   ],
+   "citation": "alpha P3_121/P3_221 (#152/154); beta P6_222/P6_422 (#180/181), Kihara 1990 Eur.J.Mineral.",
+   "confirmed_in_MP": true,
+   "formula": "SiO2",
+   "named_phase_sg": 152,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "realgar (As4S4)": {
+   "accepted_sg": [
+    14
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "As4S4",
+   "named_phase_sg": 14,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "rhodochrosite (MnCO3)": {
+   "accepted_sg": [
+    167
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "MnCO3",
+   "named_phase_sg": 167,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "rock salt MgO": {
+   "accepted_sg": [
+    225
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "MgO",
+   "named_phase_sg": 225,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "rutile (TiO2)": {
+   "accepted_sg": [
+    136
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "TiO2",
+   "named_phase_sg": 136,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "rutile-type SnO2": {
+   "accepted_sg": [
+    136
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "SnO2",
+   "named_phase_sg": 136,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "scheelite (CaWO4)": {
+   "accepted_sg": [
+    88
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "CaWO4",
+   "named_phase_sg": 88,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "siderite (FeCO3)": {
+   "accepted_sg": [
+    167
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "FeCO3",
+   "named_phase_sg": 167,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "silicon (Si)": {
+   "accepted_sg": [
+    227
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Si",
+   "named_phase_sg": 227,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "silicon carbide (3C-SiC)": {
+   "accepted_sg": [
+    216
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "SiC",
+   "named_phase_sg": 216,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "sillimanite (Al2SiO5)": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Al2SiO5",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "silver (Ag)": {
+   "accepted_sg": [
+    225
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Ag",
+   "named_phase_sg": 225,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "smithsonite (ZnCO3)": {
+   "accepted_sg": [
+    167
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "ZnCO3",
+   "named_phase_sg": 167,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "sphalerite (ZnS)": {
+   "accepted_sg": [
+    216
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "ZnS",
+   "named_phase_sg": 216,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "spinel (MgAl2O4)": {
+   "accepted_sg": [
+    227
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "MgAl2O4",
+   "named_phase_sg": 227,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "stibnite (Sb2S3)": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Sb2S3",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "stishovite (SiO2)": {
+   "accepted_sg": [
+    136
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "SiO2",
+   "named_phase_sg": 136,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "strontianite (SrCO3)": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "SrCO3",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "strontium fluoride (SrF2)": {
+   "accepted_sg": [
+    225
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "SrF2",
+   "named_phase_sg": 225,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "tungsten (W)": {
+   "accepted_sg": [
+    229
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "W",
+   "named_phase_sg": 229,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "witherite (BaCO3)": {
+   "accepted_sg": [
+    62
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "BaCO3",
+   "named_phase_sg": 62,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "wolframite (FeWO4)": {
+   "accepted_sg": [
+    13
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "FeWO4",
+   "named_phase_sg": 13,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "wurtzite (ZnO)": {
+   "accepted_sg": [
+    186
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "ZnO",
+   "named_phase_sg": 186,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "wustite (FeO)": {
+   "accepted_sg": [
+    225
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "FeO",
+   "named_phase_sg": 225,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "yttria (Y2O3)": {
+   "accepted_sg": [
+    206
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "Y2O3",
+   "named_phase_sg": 206,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "zincblende (ZnS)": {
+   "accepted_sg": [
+    216
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "ZnS",
+   "named_phase_sg": 216,
+   "source": "MP + named-phase rule (COD for recent)"
+  },
+  "zirconia (cubic ZrO2)": {
+   "accepted_sg": [
+    225
+   ],
+   "citation": null,
+   "confirmed_in_MP": true,
+   "formula": "ZrO2",
+   "named_phase_sg": 225,
+   "source": "MP + named-phase rule (COD for recent)"
+  }
+ },
+ "experimental_gap": {
+  "Bi2Se3": 0.3,
+  "Bi2Se3 topological": 0.3,
+  "Bi2Te3": 0.15,
+  "Cs2AgBiBr6 double perovskite": 2.2,
+  "CsPbBr3 (orthorhombic)": 2.3,
+  "GeTe": 0.6,
+  "MoS2 (2H)": 1.29,
+  "MoSe2 (2H)": 1.1,
+  "Sb2Te3": 0.28,
+  "SnSe": 0.9,
+  "SnSe2": 1.0,
+  "WS2 (2H)": 1.35,
+  "WSe2 (2H)": 1.2,
+  "aluminum nitride (AlN)": 6.2,
+  "anatase (TiO2)": 3.0,
+  "anatase-vs-rutile TiO2": 3.0,
+  "barium titanate (BaTiO3)": 3.2,
+  "boron nitride (h-BN)": 6.4,
+  "brookite (TiO2)": 3.0,
+  "cadmium selenide (CdSe)": 1.74,
+  "cassiterite (SnO2)": 3.6,
+  "cesium chloride (CsCl)": 8.3,
+  "cinnabar (HgS)": 2.1,
+  "coesite (SiO2)": 9.0,
+  "corundum (Al2O3)": 8.8,
+  "cristobalite (SiO2)": 9.0,
+  "cuprite (Cu2O)": 2.17,
+  "diamond (C)": 5.5,
+  "fluorite (CaF2)": 12.0,
+  "galena (PbS)": 0.37,
+  "gallium arsenide (GaAs)": 1.42,
+  "gallium nitride (GaN)": 3.4,
+  "greenockite (CdS)": 2.42,
+  "halite (NaCl)": 8.5,
+  "hawleyite (CdS)": 2.42,
+  "indium phosphide (InP)": 1.35,
+  "moissanite (6H-SiC)": 3.0,
+  "molybdenite (2H-MoS2)": 1.29,
+  "periclase (MgO)": 7.8,
+  "perovskite (SrTiO3)": 3.2,
+  "quartz (SiO2)": 9.0,
+  "rock salt MgO": 7.8,
+  "rutile (TiO2)": 3.0,
+  "rutile-type SnO2": 3.6,
+  "silicon (Si)": 1.12,
+  "silicon carbide (3C-SiC)": 3.0,
+  "sphalerite (ZnS)": 3.6,
+  "spinel (MgAl2O4)": 7.8,
+  "stishovite (SiO2)": 9.0,
+  "wurtzite (ZnO)": 3.37,
+  "zincblende (ZnS)": 3.6
+ },
+ "grading_rules": {
+  "any_match": "Mode A/B post-correction only (correct if any stated value within tol)",
+  "final_commitment": "baseline + unguarded/self-critique/RAG (grade last stated value)"
+ },
+ "meta": {
+  "claim_types": [
+   "molecular formula/SMILES",
+   "crystalline space group",
+   "band gap (eV)",
+   "formation energy (eV/atom)",
+   "dipole (debye)",
+   "crystal system (reasoning)"
+  ],
+  "expansion": "option (b): property + deterministic-reasoning surfaces added within registered strata (round-7 decision)",
+  "extractor_sha": "42e03ae2c12912f0a65ff3e052e9392fed7de6f03178fd134ed9fad09bc89774",
+  "gt_sources": [
+   "PubChem PUG-REST",
+   "Materials Project",
+   "CCCBDB (dipole)",
+   "COD (recent SG)",
+   "named-phase rule"
+  ],
+  "n_prompts": 568
+ },
+ "molecular": {
+  "10-deacetylbaccatin III": {
+   "cid": 154272,
+   "formula": "C29H36O10",
+   "source": "PubChem PUG-REST"
+  },
+  "acetaldehyde": {
+   "cid": 177,
+   "formula": "C2H4O",
+   "source": "PubChem PUG-REST"
+  },
+  "acetaminophen": {
+   "cid": 1983,
+   "formula": "C8H9NO2",
+   "source": "PubChem PUG-REST"
+  },
+  "acetic acid": {
+   "cid": 176,
+   "formula": "C2H4O2",
+   "source": "PubChem PUG-REST"
+  },
+  "acetone": {
+   "cid": 180,
+   "formula": "C3H6O",
+   "source": "PubChem PUG-REST"
+  },
+  "aconitine": {
+   "cid": 245005,
+   "formula": "C34H47NO11",
+   "source": "PubChem PUG-REST"
+  },
+  "actinomycin D": {
+   "cid": 457193,
+   "formula": "C62H86N12O16",
+   "source": "PubChem PUG-REST"
+  },
+  "adagrasib": {
+   "cid": 138611145,
+   "formula": "C32H35ClFN7O2",
+   "source": "PubChem PUG-REST"
+  },
+  "ampicillin": {
+   "cid": 6249,
+   "formula": "C16H19N3O4S",
+   "source": "PubChem PUG-REST"
+  },
+  "aniline": {
+   "cid": 6115,
+   "formula": "C6H7N",
+   "source": "PubChem PUG-REST"
+  },
+  "artemisinin": {
+   "cid": 68827,
+   "formula": "C15H22O5",
+   "source": "PubChem PUG-REST"
+  },
+  "aspirin": {
+   "cid": 2244,
+   "formula": "C9H8O4",
+   "source": "PubChem PUG-REST"
+  },
+  "atorvastatin": {
+   "cid": 60823,
+   "formula": "C33H35FN2O5",
+   "source": "PubChem PUG-REST"
+  },
+  "avapritinib": {
+   "cid": 118023034,
+   "formula": "C26H27FN10",
+   "source": "PubChem PUG-REST"
+  },
+  "azadirachtin": {
+   "cid": 5281303,
+   "formula": "C35H44O16",
+   "source": "PubChem PUG-REST"
+  },
+  "baccatin III": {
+   "cid": 65366,
+   "formula": "C31H38O11",
+   "source": "PubChem PUG-REST"
+  },
+  "baricitinib": {
+   "cid": 44205240,
+   "formula": "C16H17N7O2S",
+   "source": "PubChem PUG-REST"
+  },
+  "batrachotoxin": {
+   "cid": 6324647,
+   "formula": "C31H42N2O6",
+   "source": "PubChem PUG-REST"
+  },
+  "belzutifan": {
+   "cid": 117947097,
+   "formula": "C17H12F3NO4S",
+   "source": "PubChem PUG-REST"
+  },
+  "benzene": {
+   "cid": 241,
+   "formula": "C6H6",
+   "source": "PubChem PUG-REST"
+  },
+  "bleomycin": {
+   "cid": 5360373,
+   "formula": "C55H84N17O21S3+",
+   "source": "PubChem PUG-REST"
+  },
+  "brevetoxin B": {
+   "cid": 10865865,
+   "formula": "C50H70O14",
+   "source": "PubChem PUG-REST"
+  },
+  "bruceantin": {
+   "cid": 5281304,
+   "formula": "C28H36O11",
+   "source": "PubChem PUG-REST"
+  },
+  "brucine": {
+   "cid": 442021,
+   "formula": "C23H26N2O4",
+   "source": "PubChem PUG-REST"
+  },
+  "bryostatin 1": {
+   "cid": 5280757,
+   "formula": "C47H68O17",
+   "source": "PubChem PUG-REST"
+  },
+  "butane": {
+   "cid": 7843,
+   "formula": "C4H10",
+   "source": "PubChem PUG-REST"
+  },
+  "caffeine": {
+   "cid": 2519,
+   "formula": "C8H10N4O2",
+   "source": "PubChem PUG-REST"
+  },
+  "calicheamicin": {
+   "cid": 10953353,
+   "formula": "C55H74IN3O21S4",
+   "source": "PubChem PUG-REST"
+  },
+  "camptothecin": {
+   "cid": 24360,
+   "formula": "C20H16N2O4",
+   "source": "PubChem PUG-REST"
+  },
+  "capivasertib": {
+   "cid": 25227436,
+   "formula": "C21H25ClN6O2",
+   "source": "PubChem PUG-REST"
+  },
+  "capmatinib": {
+   "cid": 25145656,
+   "formula": "C23H17FN6O",
+   "source": "PubChem PUG-REST"
+  },
+  "captopril": {
+   "cid": 44093,
+   "formula": "C9H15NO3S",
+   "source": "PubChem PUG-REST"
+  },
+  "cephalomannine": {
+   "cid": 6436208,
+   "formula": "C45H53NO14",
+   "source": "PubChem PUG-REST"
+  },
+  "ciguatoxin": {
+   "cid": 5311333,
+   "formula": "C60H86O19",
+   "source": "PubChem PUG-REST"
+  },
+  "ciprofloxacin": {
+   "cid": 2764,
+   "formula": "C17H18FN3O3",
+   "source": "PubChem PUG-REST"
+  },
+  "citric acid": {
+   "cid": 311,
+   "formula": "C6H8O7",
+   "source": "PubChem PUG-REST"
+  },
+  "colchicine": {
+   "cid": 6167,
+   "formula": "C22H25NO6",
+   "source": "PubChem PUG-REST"
+  },
+  "daprodustat": {
+   "cid": 91617630,
+   "formula": "C19H27N3O6",
+   "source": "PubChem PUG-REST"
+  },
+  "daunorubicin": {
+   "cid": 30323,
+   "formula": "C27H29NO10",
+   "source": "PubChem PUG-REST"
+  },
+  "diazepam": {
+   "cid": 3016,
+   "formula": "C16H13ClN2O",
+   "source": "PubChem PUG-REST"
+  },
+  "diclofenac": {
+   "cid": 3033,
+   "formula": "C14H11Cl2NO2",
+   "source": "PubChem PUG-REST"
+  },
+  "digoxin": {
+   "cid": 2724385,
+   "formula": "C41H64O14",
+   "source": "PubChem PUG-REST"
+  },
+  "discodermolide": {
+   "cid": 643668,
+   "formula": "C33H55NO8",
+   "source": "PubChem PUG-REST"
+  },
+  "docetaxel": {
+   "cid": 148124,
+   "formula": "C43H53NO14",
+   "source": "PubChem PUG-REST"
+  },
+  "doxorubicin": {
+   "cid": 31703,
+   "formula": "C27H29NO11",
+   "source": "PubChem PUG-REST"
+  },
+  "elacestrant": {
+   "cid": 23642301,
+   "formula": "C30H38N2O2",
+   "source": "PubChem PUG-REST"
+  },
+  "emetine": {
+   "cid": 10219,
+   "formula": "C29H40N2O4",
+   "source": "PubChem PUG-REST"
+  },
+  "ensitrelvir": {
+   "cid": 162533924,
+   "formula": "C22H17ClF3N9O2",
+   "source": "PubChem PUG-REST"
+  },
+  "epothilone B": {
+   "cid": 448013,
+   "formula": "C27H41NO6S",
+   "source": "PubChem PUG-REST"
+  },
+  "erdafitinib": {
+   "cid": 67462786,
+   "formula": "C25H30N6O2",
+   "source": "PubChem PUG-REST"
+  },
+  "ergotamine": {
+   "cid": 8223,
+   "formula": "C33H35N5O5",
+   "source": "PubChem PUG-REST"
+  },
+  "ethanol": {
+   "cid": 702,
+   "formula": "C2H6O",
+   "source": "PubChem PUG-REST"
+  },
+  "ethylene glycol": {
+   "cid": 174,
+   "formula": "C2H6O2",
+   "source": "PubChem PUG-REST"
+  },
+  "etoposide": {
+   "cid": 36462,
+   "formula": "C29H32O13",
+   "source": "PubChem PUG-REST"
+  },
+  "etrasimod": {
+   "cid": 44623998,
+   "formula": "C26H26F3NO3",
+   "source": "PubChem PUG-REST"
+  },
+  "fezolinetant": {
+   "cid": 117604931,
+   "formula": "C16H15FN6OS",
+   "source": "PubChem PUG-REST"
+  },
+  "fluoxetine": {
+   "cid": 3386,
+   "formula": "C17H18F3NO",
+   "source": "PubChem PUG-REST"
+  },
+  "formaldehyde": {
+   "cid": 712,
+   "formula": "CH2O",
+   "source": "PubChem PUG-REST"
+  },
+  "formic acid": {
+   "cid": 284,
+   "formula": "CH2O2",
+   "source": "PubChem PUG-REST"
+  },
+  "forskolin": {
+   "cid": 47936,
+   "formula": "C22H34O7",
+   "source": "PubChem PUG-REST"
+  },
+  "fruquintinib": {
+   "cid": 44480399,
+   "formula": "C21H19N3O5",
+   "source": "PubChem PUG-REST"
+  },
+  "furosemide": {
+   "cid": 3440,
+   "formula": "C12H11ClN2O5S",
+   "source": "PubChem PUG-REST"
+  },
+  "futibatinib": {
+   "cid": 71621331,
+   "formula": "C22H22N6O3",
+   "source": "PubChem PUG-REST"
+  },
+  "galantamine": {
+   "cid": 9651,
+   "formula": "C17H21NO3",
+   "source": "PubChem PUG-REST"
+  },
+  "gambierol": {
+   "cid": 6442244,
+   "formula": "C43H64O11",
+   "source": "PubChem PUG-REST"
+  },
+  "gibberellic acid": {
+   "cid": 6466,
+   "formula": "C19H22O6",
+   "source": "PubChem PUG-REST"
+  },
+  "glucose": {
+   "cid": 5793,
+   "formula": "C6H12O6",
+   "source": "PubChem PUG-REST"
+  },
+  "glycerol": {
+   "cid": 753,
+   "formula": "C3H8O3",
+   "source": "PubChem PUG-REST"
+  },
+  "halichondrin B": {
+   "cid": 5488895,
+   "formula": "C60H86O19",
+   "source": "PubChem PUG-REST"
+  },
+  "huperzine A": {
+   "cid": 854026,
+   "formula": "C15H18N2O",
+   "source": "PubChem PUG-REST"
+  },
+  "ibuprofen": {
+   "cid": 3672,
+   "formula": "C13H18O2",
+   "source": "PubChem PUG-REST"
+  },
+  "infigratinib": {
+   "cid": 53235510,
+   "formula": "C26H31Cl2N7O3",
+   "source": "PubChem PUG-REST"
+  },
+  "irinotecan": {
+   "cid": 60838,
+   "formula": "C33H38N4O6",
+   "source": "PubChem PUG-REST"
+  },
+  "lenacapavir": {
+   "cid": 133082658,
+   "formula": "C39H32ClF10N7O5S2",
+   "source": "PubChem PUG-REST"
+  },
+  "lidocaine": {
+   "cid": 3676,
+   "formula": "C14H22N2O",
+   "source": "PubChem PUG-REST"
+  },
+  "loratadine": {
+   "cid": 3957,
+   "formula": "C22H23ClN2O2",
+   "source": "PubChem PUG-REST"
+  },
+  "maitotoxin": {
+   "cid": 71460273,
+   "formula": "C164H256Na2O68S2",
+   "source": "PubChem PUG-REST"
+  },
+  "mavacamten": {
+   "cid": 117761397,
+   "formula": "C15H19N3O2",
+   "source": "PubChem PUG-REST"
+  },
+  "maytansine": {
+   "cid": 5281828,
+   "formula": "C34H46ClN3O10",
+   "source": "PubChem PUG-REST"
+  },
+  "metformin": {
+   "cid": 4091,
+   "formula": "C4H11N5",
+   "source": "PubChem PUG-REST"
+  },
+  "methanol": {
+   "cid": 887,
+   "formula": "CH4O",
+   "source": "PubChem PUG-REST"
+  },
+  "mitomycin C": {
+   "cid": 5746,
+   "formula": "C15H18N4O5",
+   "source": "PubChem PUG-REST"
+  },
+  "mobocertinib": {
+   "cid": 118607832,
+   "formula": "C32H39N7O4",
+   "source": "PubChem PUG-REST"
+  },
+  "molnupiravir": {
+   "cid": 145996610,
+   "formula": "C13H19N3O7",
+   "source": "PubChem PUG-REST"
+  },
+  "momelotinib": {
+   "cid": 25062766,
+   "formula": "C23H22N6O2",
+   "source": "PubChem PUG-REST"
+  },
+  "naproxen": {
+   "cid": 156391,
+   "formula": "C14H14O3",
+   "source": "PubChem PUG-REST"
+  },
+  "nirmatrelvir": {
+   "cid": 155903259,
+   "formula": "C23H32F3N5O4",
+   "source": "PubChem PUG-REST"
+  },
+  "nirogacestat": {
+   "cid": 46224413,
+   "formula": "C27H41F2N5O",
+   "source": "PubChem PUG-REST"
+  },
+  "okadaic acid": {
+   "cid": 446512,
+   "formula": "C44H68O13",
+   "source": "PubChem PUG-REST"
+  },
+  "omeprazole": {
+   "cid": 4594,
+   "formula": "C17H19N3O3S",
+   "source": "PubChem PUG-REST"
+  },
+  "ouabain": {
+   "cid": 439501,
+   "formula": "C29H44O12",
+   "source": "PubChem PUG-REST"
+  },
+  "paclitaxel": {
+   "cid": 36314,
+   "formula": "C47H51NO14",
+   "source": "PubChem PUG-REST"
+  },
+  "palytoxin": {
+   "cid": 11105289,
+   "formula": "C129H223N3O54",
+   "source": "PubChem PUG-REST"
+  },
+  "paxlovid": {
+   "cid": 155903259,
+   "formula": "C23H32F3N5O4",
+   "source": "PubChem PUG-REST"
+  },
+  "pemigatinib": {
+   "cid": 86705695,
+   "formula": "C24H27F2N5O4",
+   "source": "PubChem PUG-REST"
+  },
+  "phenol": {
+   "cid": 996,
+   "formula": "C6H6O",
+   "source": "PubChem PUG-REST"
+  },
+  "physostigmine": {
+   "cid": 5983,
+   "formula": "C15H21N3O2",
+   "source": "PubChem PUG-REST"
+  },
+  "pirtobrutinib": {
+   "cid": 129269915,
+   "formula": "C22H21F4N5O3",
+   "source": "PubChem PUG-REST"
+  },
+  "podophyllotoxin": {
+   "cid": 10607,
+   "formula": "C22H22O8",
+   "source": "PubChem PUG-REST"
+  },
+  "pralsetinib": {
+   "cid": 129073603,
+   "formula": "C27H32FN9O2",
+   "source": "PubChem PUG-REST"
+  },
+  "propanol": {
+   "cid": 1031,
+   "formula": "C3H8O",
+   "source": "PubChem PUG-REST"
+  },
+  "propranolol": {
+   "cid": 4946,
+   "formula": "C16H21NO2",
+   "source": "PubChem PUG-REST"
+  },
+  "pyrimethamine": {
+   "cid": 4993,
+   "formula": "C12H13ClN4",
+   "source": "PubChem PUG-REST"
+  },
+  "quinine": {
+   "cid": 3034034,
+   "formula": "C20H24N2O2",
+   "source": "PubChem PUG-REST"
+  },
+  "quizartinib": {
+   "cid": 24889392,
+   "formula": "C29H32N6O4S",
+   "source": "PubChem PUG-REST"
+  },
+  "ranitidine": {
+   "cid": 3001055,
+   "formula": "C13H22N4O3S",
+   "source": "PubChem PUG-REST"
+  },
+  "rapamycin": {
+   "cid": 5284616,
+   "formula": "C51H79NO13",
+   "source": "PubChem PUG-REST"
+  },
+  "remdesivir": {
+   "cid": 121304016,
+   "formula": "C27H35N6O8P",
+   "source": "PubChem PUG-REST"
+  },
+  "repotrectinib": {
+   "cid": 135565923,
+   "formula": "C18H18FN5O2",
+   "source": "PubChem PUG-REST"
+  },
+  "reserpine": {
+   "cid": 5770,
+   "formula": "C33H40N2O9",
+   "source": "PubChem PUG-REST"
+  },
+  "ripretinib": {
+   "cid": 71584930,
+   "formula": "C24H21BrFN5O2",
+   "source": "PubChem PUG-REST"
+  },
+  "rivaroxaban": {
+   "cid": 9875401,
+   "formula": "C19H18ClN3O5S",
+   "source": "PubChem PUG-REST"
+  },
+  "salbutamol": {
+   "cid": 2083,
+   "formula": "C13H21NO3",
+   "source": "PubChem PUG-REST"
+  },
+  "saxitoxin": {
+   "cid": 56947150,
+   "formula": "C10H17N7O4",
+   "source": "PubChem PUG-REST"
+  },
+  "selpercatinib": {
+   "cid": 134436906,
+   "formula": "C29H31N7O3",
+   "source": "PubChem PUG-REST"
+  },
+  "selumetinib": {
+   "cid": 10127622,
+   "formula": "C17H15BrClFN4O3",
+   "source": "PubChem PUG-REST"
+  },
+  "sildenafil": {
+   "cid": 135398744,
+   "formula": "C22H30N6O4S",
+   "source": "PubChem PUG-REST"
+  },
+  "sotorasib": {
+   "cid": 137278711,
+   "formula": "C30H30F2N6O3",
+   "source": "PubChem PUG-REST"
+  },
+  "strychnine": {
+   "cid": 441071,
+   "formula": "C21H22N2O2",
+   "source": "PubChem PUG-REST"
+  },
+  "swainsonine": {
+   "cid": 51683,
+   "formula": "C8H15NO3",
+   "source": "PubChem PUG-REST"
+  },
+  "tacrolimus": {
+   "cid": 445643,
+   "formula": "C44H69NO12",
+   "source": "PubChem PUG-REST"
+  },
+  "taxol": {
+   "cid": 36314,
+   "formula": "C47H51NO14",
+   "source": "PubChem PUG-REST"
+  },
+  "tazemetostat": {
+   "cid": 66558664,
+   "formula": "C34H44N4O4",
+   "source": "PubChem PUG-REST"
+  },
+  "teniposide": {
+   "cid": 452548,
+   "formula": "C32H32O13S",
+   "source": "PubChem PUG-REST"
+  },
+  "tepotinib": {
+   "cid": 25171648,
+   "formula": "C29H28N6O2",
+   "source": "PubChem PUG-REST"
+  },
+  "tetrodotoxin": {
+   "cid": 11174599,
+   "formula": "C11H17N3O8",
+   "source": "PubChem PUG-REST"
+  },
+  "tirzepatide": {
+   "cid": 166567236,
+   "formula": "C225H348N48O68",
+   "source": "PubChem PUG-REST"
+  },
+  "toluene": {
+   "cid": 1140,
+   "formula": "C7H8",
+   "source": "PubChem PUG-REST"
+  },
+  "topotecan": {
+   "cid": 60700,
+   "formula": "C23H23N3O5",
+   "source": "PubChem PUG-REST"
+  },
+  "trilaciclib": {
+   "cid": 68029831,
+   "formula": "C24H30N8O",
+   "source": "PubChem PUG-REST"
+  },
+  "tubocurarine": {
+   "cid": 6000,
+   "formula": "C37H41N2O6+",
+   "source": "PubChem PUG-REST"
+  },
+  "tucatinib": {
+   "cid": 51039094,
+   "formula": "C26H24N8O2",
+   "source": "PubChem PUG-REST"
+  },
+  "umbralisib": {
+   "cid": 72950888,
+   "formula": "C31H24F3N5O3",
+   "source": "PubChem PUG-REST"
+  },
+  "urea": {
+   "cid": 1176,
+   "formula": "CH4N2O",
+   "source": "PubChem PUG-REST"
+  },
+  "vinblastine": {
+   "cid": 13342,
+   "formula": "C46H58N4O9",
+   "source": "PubChem PUG-REST"
+  },
+  "vincristine": {
+   "cid": 5978,
+   "formula": "C46H56N4O10",
+   "source": "PubChem PUG-REST"
+  },
+  "vindesine": {
+   "cid": 40839,
+   "formula": "C43H55N5O7",
+   "source": "PubChem PUG-REST"
+  },
+  "vonoprazan": {
+   "cid": 15981397,
+   "formula": "C17H16FN3O2S",
+   "source": "PubChem PUG-REST"
+  },
+  "warfarin": {
+   "cid": 54678486,
+   "formula": "C19H16O4",
+   "source": "PubChem PUG-REST"
+  },
+  "yohimbine": {
+   "cid": 8969,
+   "formula": "C21H26N2O3",
+   "source": "PubChem PUG-REST"
+  },
+  "zavegepant": {
+   "cid": 53472683,
+   "formula": "C36H46N8O3",
+   "source": "PubChem PUG-REST"
+  }
+ },
+ "property": {
+  "1T-TaS2::ef": {
+   "mp_id": "mp-1690",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.365
+  },
+  "Bi2Se3 topological::ef": {
+   "mp_id": "mp-541837",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.434
+  },
+  "Bi2Se3 topological::gap": {
+   "mp_id": "mp-541837",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 0.553
+  },
+  "Bi2Se3::ef": {
+   "mp_id": "mp-541837",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.434
+  },
+  "Bi2Se3::gap": {
+   "mp_id": "mp-541837",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 0.553
+  },
+  "Bi2Te3::ef": {
+   "mp_id": "mp-34202",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.274
+  },
+  "Bi2Te3::gap": {
+   "mp_id": "mp-34202",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 0.339
+  },
+  "Cs2AgBiBr6 double perovskite::ef": {
+   "mp_id": "mp-1078250",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.456
+  },
+  "Cs2AgBiBr6 double perovskite::gap": {
+   "mp_id": "mp-1078250",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 1.355
+  },
+  "Cs2PbI2Cl2::ef": {
+   "mp_id": "mp-2647097",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.601
+  },
+  "Cs2SnI6::ef": {
+   "mp_id": "mp-27636",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.163
+  },
+  "Cs4PbBr6::ef": {
+   "mp_id": "mp-23436",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.874
+  },
+  "CsPbBr3 (orthorhombic)::ef": {
+   "mp_id": "mp-567681",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.634
+  },
+  "CsPbBr3 (orthorhombic)::gap": {
+   "mp_id": "mp-567681",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 2.882
+  },
+  "CsPbI3 (gamma)::ef": {
+   "mp_id": "mp-540839",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.263
+  },
+  "CsSnBr3::ef": {
+   "mp_id": "mp-27214",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.561
+  },
+  "CsSnI3::ef": {
+   "mp_id": "mp-27381",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.178
+  },
+  "Cu2ZnSnS4 kesterite::ef": {
+   "mp_id": "mp-1025500",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.705
+  },
+  "FeSe (tetragonal)::ef": {
+   "mp_id": "mp-20311",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.508
+  },
+  "GeTe::ef": {
+   "mp_id": "mp-938",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.035
+  },
+  "GeTe::gap": {
+   "mp_id": "mp-938",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 0.565
+  },
+  "MoS2 (2H)::ef": {
+   "mp_id": "mp-2815",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.964
+  },
+  "MoS2 (2H)::gap": {
+   "mp_id": "mp-2815",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 1.465
+  },
+  "MoSe2 (2H)::ef": {
+   "mp_id": "mp-1634",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.75
+  },
+  "MoSe2 (2H)::gap": {
+   "mp_id": "mp-1634",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 1.418
+  },
+  "MoTe2 (1T')::ef": {
+   "mp_id": "mp-7459",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.293
+  },
+  "NbSe2 (2H)::ef": {
+   "mp_id": "mp-2207",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.983
+  },
+  "PdTe2::ef": {
+   "mp_id": "mp-782",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.344
+  },
+  "Rb2SnI6::ef": {
+   "mp_id": "mp-27635",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.115
+  },
+  "Sb2Te3::ef": {
+   "mp_id": "mp-1201",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.383
+  },
+  "Sb2Te3::gap": {
+   "mp_id": "mp-1201",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 0.161
+  },
+  "SnS2 (1T)::ef": {
+   "mp_id": "mp-1170",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.474
+  },
+  "SnSe2::ef": {
+   "mp_id": "mp-665",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.424
+  },
+  "SnSe2::gap": {
+   "mp_id": "mp-665",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 0.688
+  },
+  "SnSe::ef": {
+   "mp_id": "mp-691",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.454
+  },
+  "SnSe::gap": {
+   "mp_id": "mp-691",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 0.607
+  },
+  "SnTe::ef": {
+   "mp_id": "mp-1883",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.265
+  },
+  "TaSe2 (2H)::ef": {
+   "mp_id": "mp-1019276",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.932
+  },
+  "VSe2 (1T)::ef": {
+   "mp_id": "mp-694",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.833
+  },
+  "WS2 (2H)::ef": {
+   "mp_id": "mp-224",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.884
+  },
+  "WS2 (2H)::gap": {
+   "mp_id": "mp-224",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 1.566
+  },
+  "WSe2 (2H)::ef": {
+   "mp_id": "mp-1821",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.604
+  },
+  "WSe2 (2H)::gap": {
+   "mp_id": "mp-1821",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 1.447
+  },
+  "WTe2 (Td)::ef": {
+   "mp_id": "mp-22693",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.117
+  },
+  "acetone::dipole": {
+   "source": "NIST CCCBDB",
+   "unit": "debye",
+   "value": 2.88
+  },
+  "acetonitrile::dipole": {
+   "source": "NIST CCCBDB",
+   "unit": "debye",
+   "value": 3.92
+  },
+  "akermanite (Ca2MgSi2O7)::ef": {
+   "mp_id": "mp-6094",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.375
+  },
+  "aluminum nitride (AlN)::ef": {
+   "mp_id": "mp-661",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.68
+  },
+  "aluminum nitride (AlN)::gap": {
+   "mp_id": "mp-661",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 4.054
+  },
+  "ammonia::dipole": {
+   "source": "NIST CCCBDB",
+   "unit": "debye",
+   "value": 1.47
+  },
+  "anatase (TiO2)::ef": {
+   "mp_id": "mp-390",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.508
+  },
+  "anatase (TiO2)::gap": {
+   "mp_id": "mp-390",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 2.063
+  },
+  "anatase-vs-rutile TiO2::gap": {
+   "mp_id": "mp-390",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 2.063
+  },
+  "andalusite (Al2SiO5)::ef": {
+   "mp_id": "mp-4753",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.375
+  },
+  "anglesite (PbSO4)::ef": {
+   "mp_id": "mp-3472",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.911
+  },
+  "anhydrite (CaSO4)::ef": {
+   "mp_id": "mp-4406",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -2.669
+  },
+  "aniline::dipole": {
+   "source": "NIST CCCBDB",
+   "unit": "debye",
+   "value": 1.53
+  },
+  "aragonite (CaCO3)::ef": {
+   "mp_id": "mp-4626",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -2.687
+  },
+  "barite (BaSO4)::ef": {
+   "mp_id": "mp-3164",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -2.707
+  },
+  "barium titanate (BaTiO3)::ef": {
+   "mp_id": "mp-5986",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.49
+  },
+  "barium titanate (BaTiO3)::gap": {
+   "mp_id": "mp-5986",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 1.724
+  },
+  "benzene::dipole": {
+   "source": "symmetry (D6h); NIST CCCBDB",
+   "unit": "debye",
+   "value": 0.0
+  },
+  "berlinite (AlPO4)::ef": {
+   "mp_id": "mp-5331",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.127
+  },
+  "boron nitride (h-BN)::ef": {
+   "mp_id": "mp-629015",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.411
+  },
+  "boron nitride (h-BN)::gap": {
+   "mp_id": "mp-629015",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 3.971
+  },
+  "cadmium selenide (CdSe)::ef": {
+   "mp_id": "mp-1070",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.838
+  },
+  "cadmium selenide (CdSe)::gap": {
+   "mp_id": "mp-1070",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 0.559
+  },
+  "calcite (CaCO3)::ef": {
+   "mp_id": "mp-3953",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -2.688
+  },
+  "cassiterite (SnO2)::ef": {
+   "mp_id": "mp-856",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -2.107
+  },
+  "cassiterite (SnO2)::gap": {
+   "mp_id": "mp-856",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 0.661
+  },
+  "ceria (CeO2)::ef": {
+   "mp_id": "mp-20194",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.927
+  },
+  "cesium chloride (CsCl)::ef": {
+   "mp_id": "mp-22865",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -2.256
+  },
+  "cesium chloride (CsCl)::gap": {
+   "mp_id": "mp-22865",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 4.988
+  },
+  "chalcopyrite (CuFeS2)::ef": {
+   "mp_id": "mp-3497",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.514
+  },
+  "chloroform::dipole": {
+   "source": "NIST CCCBDB",
+   "unit": "debye",
+   "value": 1.04
+  },
+  "chromite (FeCr2O4)::ef": {
+   "mp_id": "mp-20168",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -2.178
+  },
+  "coesite (SiO2)::ef": {
+   "mp_id": "mp-12787",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.27
+  },
+  "coesite (SiO2)::gap": {
+   "mp_id": "mp-12787",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 5.627
+  },
+  "copper (Cu)::ef": {
+   "mp_id": "mp-30",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": 0.0
+  },
+  "corundum (Al2O3)::ef": {
+   "mp_id": "mp-1143",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.427
+  },
+  "corundum (Al2O3)::gap": {
+   "mp_id": "mp-1143",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 5.874
+  },
+  "covellite (CuS)::ef": {
+   "mp_id": "mp-504",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.278
+  },
+  "cristobalite (SiO2)::ef": {
+   "mp_id": "mp-6945",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.267
+  },
+  "cuprite (Cu2O)::ef": {
+   "mp_id": "mp-361",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.645
+  },
+  "cuprite (Cu2O)::gap": {
+   "mp_id": "mp-361",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 0.513
+  },
+  "diamond (C)::ef": {
+   "mp_id": "mp-66",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": 0.112
+  },
+  "diamond (C)::gap": {
+   "mp_id": "mp-66",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 4.114
+  },
+  "enstatite (MgSiO3)::ef": {
+   "mp_id": "mp-5834",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.223
+  },
+  "ethanol::dipole": {
+   "source": "NIST CCCBDB",
+   "unit": "debye",
+   "value": 1.69
+  },
+  "fluorite (CaF2)::ef": {
+   "mp_id": "mp-2741",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -4.222
+  },
+  "fluorite (CaF2)::gap": {
+   "mp_id": "mp-2741",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 7.116
+  },
+  "formaldehyde::dipole": {
+   "source": "NIST CCCBDB",
+   "unit": "debye",
+   "value": 2.33
+  },
+  "gahnite (ZnAl2O4)::ef": {
+   "mp_id": "mp-2908",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.021
+  },
+  "galena (PbS)::ef": {
+   "mp_id": "mp-21276",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.784
+  },
+  "galena (PbS)::gap": {
+   "mp_id": "mp-21276",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 0.467
+  },
+  "gallium arsenide (GaAs)::ef": {
+   "mp_id": "mp-2534",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.446
+  },
+  "gallium arsenide (GaAs)::gap": {
+   "mp_id": "mp-2534",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 0.184
+  },
+  "gallium nitride (GaN)::ef": {
+   "mp_id": "mp-804",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.67
+  },
+  "gallium nitride (GaN)::gap": {
+   "mp_id": "mp-804",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 1.738
+  },
+  "geikielite (MgTiO3)::ef": {
+   "mp_id": "mp-3771",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.363
+  },
+  "goethite (FeOOH)::ef": {
+   "mp_id": "mp-605437",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.549
+  },
+  "gold (Au)::ef": {
+   "mp_id": "mp-81",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": 0.0
+  },
+  "halite (NaCl)::ef": {
+   "mp_id": "mp-22862",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -2.1
+  },
+  "halite (NaCl)::gap": {
+   "mp_id": "mp-22862",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 5.004
+  },
+  "hawleyite (CdS)::gap": {
+   "mp_id": "mp-2469",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 1.045
+  },
+  "hematite (Fe2O3)::ef": {
+   "mp_id": "mp-19770",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.707
+  },
+  "ilmenite (FeTiO3)::ef": {
+   "mp_id": "mp-19417",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -2.718
+  },
+  "indium phosphide (InP)::ef": {
+   "mp_id": "mp-20351",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.358
+  },
+  "indium phosphide (InP)::gap": {
+   "mp_id": "mp-20351",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 0.466
+  },
+  "iron (alpha-Fe)::ef": {
+   "mp_id": "mp-13",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": 0.0
+  },
+  "lithium cobalt oxide (LiCoO2)::ef": {
+   "mp_id": "mp-22526",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.746
+  },
+  "magnetite (Fe3O4)::ef": {
+   "mp_id": "mp-19306",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.63
+  },
+  "methanol::dipole": {
+   "source": "NIST CCCBDB",
+   "unit": "debye",
+   "value": 1.7
+  },
+  "molybdenite (2H-MoS2)::ef": {
+   "mp_id": "mp-2815",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.964
+  },
+  "molybdenite (2H-MoS2)::gap": {
+   "mp_id": "mp-2815",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 1.465
+  },
+  "nitrobenzene::dipole": {
+   "source": "NIST CCCBDB; CRC Handbook",
+   "unit": "debye",
+   "value": 4.22
+  },
+  "orpiment (As2S3)::ef": {
+   "mp_id": "mp-641",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.156
+  },
+  "periclase (MgO)::ef": {
+   "mp_id": "mp-1265",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.038
+  },
+  "periclase (MgO)::gap": {
+   "mp_id": "mp-1265",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 4.429
+  },
+  "perovskite (SrTiO3)::ef": {
+   "mp_id": "mp-5229",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.551
+  },
+  "perovskite (SrTiO3)::gap": {
+   "mp_id": "mp-5229",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 1.766
+  },
+  "phenol::dipole": {
+   "source": "NIST CCCBDB",
+   "unit": "debye",
+   "value": 1.22
+  },
+  "pyridine::dipole": {
+   "source": "NIST CCCBDB",
+   "unit": "debye",
+   "value": 2.22
+  },
+  "pyrite (FeS2)::ef": {
+   "mp_id": "mp-226",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.837
+  },
+  "pyrolusite (MnO2)::ef": {
+   "mp_id": "mp-510408",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.776
+  },
+  "quartz (SiO2)::ef": {
+   "mp_id": "mp-7000",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.273
+  },
+  "quartz (SiO2)::gap": {
+   "mp_id": "mp-7000",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 5.678
+  },
+  "realgar (As4S4)::ef": {
+   "mp_id": "mp-542810",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.16
+  },
+  "rhodochrosite (MnCO3)::ef": {
+   "mp_id": "mp-18814",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -2.013
+  },
+  "rock salt MgO::ef": {
+   "mp_id": "mp-1265",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.038
+  },
+  "rock salt MgO::gap": {
+   "mp_id": "mp-1265",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 4.429
+  },
+  "rutile (TiO2)::ef": {
+   "mp_id": "mp-2657",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.464
+  },
+  "rutile (TiO2)::gap": {
+   "mp_id": "mp-2657",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 1.772
+  },
+  "scheelite (CaWO4)::ef": {
+   "mp_id": "mp-19426",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -2.726
+  },
+  "silicon (Si)::ef": {
+   "mp_id": "mp-149",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": 0.0
+  },
+  "silicon (Si)::gap": {
+   "mp_id": "mp-149",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 0.61
+  },
+  "silicon carbide (3C-SiC)::ef": {
+   "mp_id": "mp-8062",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.306
+  },
+  "silicon carbide (3C-SiC)::gap": {
+   "mp_id": "mp-8062",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 1.371
+  },
+  "sillimanite (Al2SiO5)::ef": {
+   "mp_id": "mp-4934",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.372
+  },
+  "silver (Ag)::ef": {
+   "mp_id": "mp-124",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": 0.002
+  },
+  "smithsonite (ZnCO3)::ef": {
+   "mp_id": "mp-9812",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.822
+  },
+  "sphalerite (ZnS)::ef": {
+   "mp_id": "mp-10695",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.963
+  },
+  "sphalerite (ZnS)::gap": {
+   "mp_id": "mp-10695",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 2.019
+  },
+  "spinel (MgAl2O4)::ef": {
+   "mp_id": "mp-3536",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.37
+  },
+  "spinel (MgAl2O4)::gap": {
+   "mp_id": "mp-3536",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 5.109
+  },
+  "stibnite (Sb2S3)::ef": {
+   "mp_id": "mp-2809",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.287
+  },
+  "strontium fluoride (SrF2)::ef": {
+   "mp_id": "mp-981",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -4.23
+  },
+  "toluene::dipole": {
+   "source": "NIST CCCBDB",
+   "unit": "debye",
+   "value": 0.36
+  },
+  "tungsten (W)::ef": {
+   "mp_id": "mp-91",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": 0.0
+  },
+  "water::dipole": {
+   "source": "NIST CCCBDB; CRC Handbook",
+   "unit": "debye",
+   "value": 1.85
+  },
+  "witherite (BaCO3)::ef": {
+   "mp_id": "mp-5504",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -2.683
+  },
+  "wolframite (FeWO4)::ef": {
+   "mp_id": "mp-19421",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -2.023
+  },
+  "wurtzite (ZnO)::ef": {
+   "mp_id": "mp-2133",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.791
+  },
+  "wurtzite (ZnO)::gap": {
+   "mp_id": "mp-2133",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 0.732
+  },
+  "wustite (FeO)::ef": {
+   "mp_id": "mp-18905",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -1.071
+  },
+  "yttria (Y2O3)::ef": {
+   "mp_id": "mp-2652",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.954
+  },
+  "zincblende (ZnS)::ef": {
+   "mp_id": "mp-10695",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -0.963
+  },
+  "zincblende (ZnS)::gap": {
+   "mp_id": "mp-10695",
+   "source": "Materials Project",
+   "unit": "eV",
+   "value": 2.019
+  },
+  "zirconia (cubic ZrO2)::ef": {
+   "mp_id": "mp-1565",
+   "source": "Materials Project",
+   "unit": "eV/atom",
+   "value": -3.758
+  }
+ },
+ "reasoning_system": {
+  "1T-TaS2": {
+   "crystal_system": "trigonal",
+   "from_sg": 164,
+   "source": "deterministic from named-phase SG"
+  },
+  "Bi2Se3": {
+   "crystal_system": "trigonal",
+   "from_sg": 166,
+   "source": "deterministic from named-phase SG"
+  },
+  "Bi2Se3 topological": {
+   "crystal_system": "trigonal",
+   "from_sg": 166,
+   "source": "deterministic from named-phase SG"
+  },
+  "Bi2Te3": {
+   "crystal_system": "trigonal",
+   "from_sg": 166,
+   "source": "deterministic from named-phase SG"
+  },
+  "Cs2AgBiBr6 double perovskite": {
+   "crystal_system": "cubic",
+   "from_sg": 225,
+   "source": "deterministic from named-phase SG"
+  },
+  "Cs2PbI2Cl2": {
+   "crystal_system": "tetragonal",
+   "from_sg": 139,
+   "source": "deterministic from named-phase SG"
+  },
+  "Cs2SnI6": {
+   "crystal_system": "cubic",
+   "from_sg": 225,
+   "source": "deterministic from named-phase SG"
+  },
+  "Cs4PbBr6": {
+   "crystal_system": "trigonal",
+   "from_sg": 167,
+   "source": "deterministic from named-phase SG"
+  },
+  "CsPbBr3 (orthorhombic)": {
+   "crystal_system": "orthorhombic",
+   "from_sg": 62,
+   "source": "deterministic from named-phase SG"
+  },
+  "CsPbI3 (gamma)": {
+   "crystal_system": "orthorhombic",
+   "from_sg": 62,
+   "source": "deterministic from named-phase SG"
+  },
+  "CsSnBr3": {
+   "crystal_system": "cubic",
+   "from_sg": 221,
+   "source": "deterministic from named-phase SG"
+  },
+  "CsSnI3": {
+   "crystal_system": "orthorhombic",
+   "from_sg": 62,
+   "source": "deterministic from named-phase SG"
+  },
+  "Cu2ZnSnS4 kesterite": {
+   "crystal_system": "tetragonal",
+   "from_sg": 121,
+   "source": "deterministic from named-phase SG"
+  },
+  "FeSe (tetragonal)": {
+   "crystal_system": "tetragonal",
+   "from_sg": 129,
+   "source": "deterministic from named-phase SG"
+  },
+  "GeTe": {
+   "crystal_system": "trigonal",
+   "from_sg": 160,
+   "source": "deterministic from named-phase SG"
+  },
+  "MoS2 (2H)": {
+   "crystal_system": "hexagonal",
+   "from_sg": 194,
+   "source": "deterministic from named-phase SG"
+  },
+  "MoSe2 (2H)": {
+   "crystal_system": "hexagonal",
+   "from_sg": 194,
+   "source": "deterministic from named-phase SG"
+  },
+  "MoTe2 (1T')": {
+   "crystal_system": "monoclinic",
+   "from_sg": 11,
+   "source": "deterministic from named-phase SG"
+  },
+  "NbSe2 (2H)": {
+   "crystal_system": "hexagonal",
+   "from_sg": 194,
+   "source": "deterministic from named-phase SG"
+  },
+  "PdTe2": {
+   "crystal_system": "trigonal",
+   "from_sg": 164,
+   "source": "deterministic from named-phase SG"
+  },
+  "Rb2SnI6": {
+   "crystal_system": "cubic",
+   "from_sg": 225,
+   "source": "deterministic from named-phase SG"
+  },
+  "Sb2Te3": {
+   "crystal_system": "trigonal",
+   "from_sg": 166,
+   "source": "deterministic from named-phase SG"
+  },
+  "SnS2 (1T)": {
+   "crystal_system": "trigonal",
+   "from_sg": 164,
+   "source": "deterministic from named-phase SG"
+  },
+  "SnSe": {
+   "crystal_system": "orthorhombic",
+   "from_sg": 62,
+   "source": "deterministic from named-phase SG"
+  },
+  "SnSe2": {
+   "crystal_system": "trigonal",
+   "from_sg": 164,
+   "source": "deterministic from named-phase SG"
+  },
+  "SnTe": {
+   "crystal_system": "cubic",
+   "from_sg": 225,
+   "source": "deterministic from named-phase SG"
+  },
+  "TaSe2 (2H)": {
+   "crystal_system": "hexagonal",
+   "from_sg": 194,
+   "source": "deterministic from named-phase SG"
+  },
+  "VSe2 (1T)": {
+   "crystal_system": "trigonal",
+   "from_sg": 164,
+   "source": "deterministic from named-phase SG"
+  },
+  "WS2 (2H)": {
+   "crystal_system": "hexagonal",
+   "from_sg": 194,
+   "source": "deterministic from named-phase SG"
+  },
+  "WSe2 (2H)": {
+   "crystal_system": "hexagonal",
+   "from_sg": 194,
+   "source": "deterministic from named-phase SG"
+  },
+  "WTe2 (Td)": {
+   "crystal_system": "orthorhombic",
+   "from_sg": 31,
+   "source": "deterministic from named-phase SG"
+  },
+  "aluminum nitride (AlN)": {
+   "crystal_system": "hexagonal",
+   "from_sg": 186,
+   "source": "deterministic from named-phase SG"
+  },
+  "anatase (TiO2)": {
+   "crystal_system": "tetragonal",
+   "from_sg": 141,
+   "source": "deterministic from named-phase SG"
+  },
+  "anatase-vs-rutile TiO2": {
+   "crystal_system": "tetragonal",
+   "from_sg": 141,
+   "source": "deterministic from named-phase SG"
+  },
+  "andalusite (Al2SiO5)": {
+   "crystal_system": "orthorhombic",
+   "from_sg": 58,
+   "source": "deterministic from named-phase SG"
+  },
+  "aragonite (CaCO3)": {
+   "crystal_system": "orthorhombic",
+   "from_sg": 62,
+   "source": "deterministic from named-phase SG"
+  },
+  "barite (BaSO4)": {
+   "crystal_system": "orthorhombic",
+   "from_sg": 62,
+   "source": "deterministic from named-phase SG"
+  },
+  "barium titanate (BaTiO3)": {
+   "crystal_system": "tetragonal",
+   "from_sg": 99,
+   "source": "deterministic from named-phase SG"
+  },
+  "berlinite (AlPO4)": {
+   "crystal_system": "trigonal",
+   "from_sg": 152,
+   "source": "deterministic from named-phase SG"
+  },
+  "boron nitride (h-BN)": {
+   "crystal_system": "hexagonal",
+   "from_sg": 194,
+   "source": "deterministic from named-phase SG"
+  },
+  "cadmium selenide (CdSe)": {
+   "crystal_system": "hexagonal",
+   "from_sg": 186,
+   "source": "deterministic from named-phase SG"
+  },
+  "calcite (CaCO3)": {
+   "crystal_system": "trigonal",
+   "from_sg": 167,
+   "source": "deterministic from named-phase SG"
+  },
+  "cassiterite (SnO2)": {
+   "crystal_system": "tetragonal",
+   "from_sg": 136,
+   "source": "deterministic from named-phase SG"
+  },
+  "ceria (CeO2)": {
+   "crystal_system": "cubic",
+   "from_sg": 225,
+   "source": "deterministic from named-phase SG"
+  },
+  "cerussite (PbCO3)": {
+   "crystal_system": "orthorhombic",
+   "from_sg": 62,
+   "source": "deterministic from named-phase SG"
+  },
+  "cesium chloride (CsCl)": {
+   "crystal_system": "cubic",
+   "from_sg": 221,
+   "source": "deterministic from named-phase SG"
+  },
+  "chalcopyrite (CuFeS2)": {
+   "crystal_system": "tetragonal",
+   "from_sg": 122,
+   "source": "deterministic from named-phase SG"
+  },
+  "chromite (FeCr2O4)": {
+   "crystal_system": "cubic",
+   "from_sg": 227,
+   "source": "deterministic from named-phase SG"
+  },
+  "cinnabar (HgS)": {
+   "crystal_system": "trigonal",
+   "from_sg": 152,
+   "source": "deterministic from named-phase SG"
+  },
+  "copper (Cu)": {
+   "crystal_system": "cubic",
+   "from_sg": 225,
+   "source": "deterministic from named-phase SG"
+  },
+  "corundum (Al2O3)": {
+   "crystal_system": "trigonal",
+   "from_sg": 167,
+   "source": "deterministic from named-phase SG"
+  },
+  "covellite (CuS)": {
+   "crystal_system": "hexagonal",
+   "from_sg": 194,
+   "source": "deterministic from named-phase SG"
+  },
+  "cristobalite (SiO2)": {
+   "crystal_system": "tetragonal",
+   "from_sg": 92,
+   "source": "deterministic from named-phase SG"
+  },
+  "cuprite (Cu2O)": {
+   "crystal_system": "cubic",
+   "from_sg": 224,
+   "source": "deterministic from named-phase SG"
+  },
+  "diamond (C)": {
+   "crystal_system": "cubic",
+   "from_sg": 227,
+   "source": "deterministic from named-phase SG"
+  },
+  "enstatite (MgSiO3)": {
+   "crystal_system": "orthorhombic",
+   "from_sg": 61,
+   "source": "deterministic from named-phase SG"
+  },
+  "fluorite (CaF2)": {
+   "crystal_system": "cubic",
+   "from_sg": 225,
+   "source": "deterministic from named-phase SG"
+  },
+  "franklinite (ZnFe2O4)": {
+   "crystal_system": "cubic",
+   "from_sg": 227,
+   "source": "deterministic from named-phase SG"
+  },
+  "galena (PbS)": {
+   "crystal_system": "cubic",
+   "from_sg": 225,
+   "source": "deterministic from named-phase SG"
+  },
+  "gallium arsenide (GaAs)": {
+   "crystal_system": "cubic",
+   "from_sg": 216,
+   "source": "deterministic from named-phase SG"
+  },
+  "gallium nitride (GaN)": {
+   "crystal_system": "hexagonal",
+   "from_sg": 186,
+   "source": "deterministic from named-phase SG"
+  },
+  "geikielite (MgTiO3)": {
+   "crystal_system": "trigonal",
+   "from_sg": 148,
+   "source": "deterministic from named-phase SG"
+  },
+  "goethite (FeOOH)": {
+   "crystal_system": "orthorhombic",
+   "from_sg": 62,
+   "source": "deterministic from named-phase SG"
+  },
+  "gold (Au)": {
+   "crystal_system": "cubic",
+   "from_sg": 225,
+   "source": "deterministic from named-phase SG"
+  },
+  "greenockite (CdS)": {
+   "crystal_system": "hexagonal",
+   "from_sg": 186,
+   "source": "deterministic from named-phase SG"
+  },
+  "halite (NaCl)": {
+   "crystal_system": "cubic",
+   "from_sg": 225,
+   "source": "deterministic from named-phase SG"
+  },
+  "hematite (Fe2O3)": {
+   "crystal_system": "trigonal",
+   "from_sg": 167,
+   "source": "deterministic from named-phase SG"
+  },
+  "indium phosphide (InP)": {
+   "crystal_system": "cubic",
+   "from_sg": 216,
+   "source": "deterministic from named-phase SG"
+  },
+  "iron (alpha-Fe)": {
+   "crystal_system": "cubic",
+   "from_sg": 229,
+   "source": "deterministic from named-phase SG"
+  },
+  "lepidocrocite (FeOOH)": {
+   "crystal_system": "orthorhombic",
+   "from_sg": 63,
+   "source": "deterministic from named-phase SG"
+  },
+  "lithium cobalt oxide (LiCoO2)": {
+   "crystal_system": "trigonal",
+   "from_sg": 166,
+   "source": "deterministic from named-phase SG"
+  },
+  "magnetite (Fe3O4)": {
+   "crystal_system": "cubic",
+   "from_sg": 227,
+   "source": "deterministic from named-phase SG"
+  },
+  "marcasite (FeS2)": {
+   "crystal_system": "orthorhombic",
+   "from_sg": 58,
+   "source": "deterministic from named-phase SG"
+  },
+  "metacinnabar (HgS)": {
+   "crystal_system": "cubic",
+   "from_sg": 216,
+   "source": "deterministic from named-phase SG"
+  },
+  "moissanite (6H-SiC)": {
+   "crystal_system": "hexagonal",
+   "from_sg": 186,
+   "source": "deterministic from named-phase SG"
+  },
+  "molybdenite (2H-MoS2)": {
+   "crystal_system": "hexagonal",
+   "from_sg": 194,
+   "source": "deterministic from named-phase SG"
+  },
+  "orpiment (As2S3)": {
+   "crystal_system": "monoclinic",
+   "from_sg": 14,
+   "source": "deterministic from named-phase SG"
+  },
+  "periclase (MgO)": {
+   "crystal_system": "cubic",
+   "from_sg": 225,
+   "source": "deterministic from named-phase SG"
+  },
+  "perovskite (SrTiO3)": {
+   "crystal_system": "cubic",
+   "from_sg": 221,
+   "source": "deterministic from named-phase SG"
+  },
+  "perovskite CaTiO3": {
+   "crystal_system": "orthorhombic",
+   "from_sg": 62,
+   "source": "deterministic from named-phase SG"
+  },
+  "pyrite (FeS2)": {
+   "crystal_system": "cubic",
+   "from_sg": 205,
+   "source": "deterministic from named-phase SG"
+  },
+  "quartz (SiO2)": {
+   "crystal_system": "trigonal",
+   "from_sg": 152,
+   "source": "deterministic from named-phase SG"
+  },
+  "rhodochrosite (MnCO3)": {
+   "crystal_system": "trigonal",
+   "from_sg": 167,
+   "source": "deterministic from named-phase SG"
+  },
+  "rock salt MgO": {
+   "crystal_system": "cubic",
+   "from_sg": 225,
+   "source": "deterministic from named-phase SG"
+  },
+  "rutile (TiO2)": {
+   "crystal_system": "tetragonal",
+   "from_sg": 136,
+   "source": "deterministic from named-phase SG"
+  },
+  "rutile-type SnO2": {
+   "crystal_system": "tetragonal",
+   "from_sg": 136,
+   "source": "deterministic from named-phase SG"
+  },
+  "scheelite (CaWO4)": {
+   "crystal_system": "tetragonal",
+   "from_sg": 88,
+   "source": "deterministic from named-phase SG"
+  },
+  "silicon (Si)": {
+   "crystal_system": "cubic",
+   "from_sg": 227,
+   "source": "deterministic from named-phase SG"
+  },
+  "silicon carbide (3C-SiC)": {
+   "crystal_system": "cubic",
+   "from_sg": 216,
+   "source": "deterministic from named-phase SG"
+  },
+  "silver (Ag)": {
+   "crystal_system": "cubic",
+   "from_sg": 225,
+   "source": "deterministic from named-phase SG"
+  },
+  "sphalerite (ZnS)": {
+   "crystal_system": "cubic",
+   "from_sg": 216,
+   "source": "deterministic from named-phase SG"
+  },
+  "spinel (MgAl2O4)": {
+   "crystal_system": "cubic",
+   "from_sg": 227,
+   "source": "deterministic from named-phase SG"
+  },
+  "strontianite (SrCO3)": {
+   "crystal_system": "orthorhombic",
+   "from_sg": 62,
+   "source": "deterministic from named-phase SG"
+  },
+  "strontium fluoride (SrF2)": {
+   "crystal_system": "cubic",
+   "from_sg": 225,
+   "source": "deterministic from named-phase SG"
+  },
+  "tungsten (W)": {
+   "crystal_system": "cubic",
+   "from_sg": 229,
+   "source": "deterministic from named-phase SG"
+  },
+  "witherite (BaCO3)": {
+   "crystal_system": "orthorhombic",
+   "from_sg": 62,
+   "source": "deterministic from named-phase SG"
+  },
+  "wurtzite (ZnO)": {
+   "crystal_system": "hexagonal",
+   "from_sg": 186,
+   "source": "deterministic from named-phase SG"
+  },
+  "wustite (FeO)": {
+   "crystal_system": "cubic",
+   "from_sg": 225,
+   "source": "deterministic from named-phase SG"
+  },
+  "yttria (Y2O3)": {
+   "crystal_system": "cubic",
+   "from_sg": 206,
+   "source": "deterministic from named-phase SG"
+  },
+  "zincblende (ZnS)": {
+   "crystal_system": "cubic",
+   "from_sg": 216,
+   "source": "deterministic from named-phase SG"
+  },
+  "zirconia (cubic ZrO2)": {
+   "crystal_system": "cubic",
+   "from_sg": 225,
+   "source": "deterministic from named-phase SG"
+  }
+ },
+ "reference_frame_policy": {
+  "band_gap": "correct if final value within tol of PBE (MP) OR experimental reference; subjects with no experimental gap are DROPPED (PBE-only never graded alone)",
+  "dipole": "experimental (CCCBDB), exp tolerance",
+  "formation_energy": "GT per-atom; per-formula-unit values normalized by atoms/fu; sign convention negative=stable"
+ },
+ "tolerances": {
+  "band_gap": {
+   "abs": 1.0,
+   "exp_abs": 0.5,
+   "exp_rel": 0.3,
+   "rel": 0.5
+  },
+  "dipole": {
+   "abs": 0.3,
+   "exp_abs": 0.2,
+   "exp_rel": 0.15,
+   "rel": 0.3
+  },
+  "formation_energy": {
+   "abs": 0.15,
+   "rel": 0.25
+  },
+  "note": "Literature-derived method-vs-experiment error bands (Hickey&Rowley 2014; Garza&Scuseria 2016; Kirklin 2015). NOT tuned to model outputs."
+ }
+}

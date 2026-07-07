@@ -1,0 +1,177 @@
+{
+  "aniline": {
+    "formula": "C6H7N",
+    "smiles": "C1=CC=C(C=C1)N",
+    "cid": 6115,
+    "inchikey": "PAYRUJLWNCNPSJ-UHFFFAOYSA-N",
+    "error": null
+  },
+  "ibuprofen": {
+    "formula": "C13H18O2",
+    "smiles": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
+    "cid": 3672,
+    "inchikey": "HEFNNWSXXWATRW-UHFFFAOYSA-N",
+    "error": null
+  },
+  "in fact aniline": {
+    "formula": null,
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": "no CID match"
+  },
+  "nitrobenzene": {
+    "formula": "C6H5NO2",
+    "smiles": "C1=CC=C(C=C1)[N+](=O)[O-]",
+    "cid": 7416,
+    "inchikey": "LQNUZADURLCDLV-UHFFFAOYSA-N",
+    "error": null
+  },
+  "oxygen heterocycle": {
+    "formula": null,
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": "no CID match"
+  },
+  "pyridine": {
+    "formula": "C5H5N",
+    "smiles": "C1=CC=NC=C1",
+    "cid": 1049,
+    "inchikey": "JUJWROOIHBZHMG-UHFFFAOYSA-N",
+    "error": null
+  },
+  "furan": {
+    "formula": "C4H4O",
+    "smiles": "C1=COC=C1",
+    "cid": 8029,
+    "inchikey": "YLQBMQCUIZJEEH-UHFFFAOYSA-N",
+    "error": null
+  },
+  "aspirin": {
+    "formula": "C9H8O4",
+    "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+    "cid": 2244,
+    "inchikey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+    "error": null
+  },
+  "caffeine": {
+    "formula": "C8H10N4O2",
+    "smiles": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+    "cid": 2519,
+    "inchikey": "RYYVLZVUVIJVGH-UHFFFAOYSA-N",
+    "error": null
+  },
+  "acetone": {
+    "formula": "C3H6O",
+    "smiles": "CC(=O)C",
+    "cid": 180,
+    "inchikey": "CSCPPACGZOOCGX-UHFFFAOYSA-N",
+    "error": null
+  },
+  "acetonitrile": {
+    "formula": "C2H3N",
+    "smiles": "CC#N",
+    "cid": 6342,
+    "inchikey": "WEVYAHXRMPXWCK-UHFFFAOYSA-N",
+    "error": null
+  },
+  "dimethyl sulfoxide": {
+    "formula": "C2H6OS",
+    "smiles": "CS(=O)C",
+    "cid": 679,
+    "inchikey": "IAZDPXIOMUYVGZ-UHFFFAOYSA-N",
+    "error": null
+  },
+  "dimethylformamide": {
+    "formula": "C3H7NO",
+    "smiles": "CN(C)C=O",
+    "cid": 6228,
+    "inchikey": "ZMXDDKWLCZADIW-UHFFFAOYSA-N",
+    "error": null
+  },
+  "benzene": {
+    "formula": "C6H6",
+    "smiles": "C1=CC=CC=C1",
+    "cid": 241,
+    "inchikey": "UHOVQNZJYSORNB-UHFFFAOYSA-N",
+    "error": null
+  },
+  "toluene": {
+    "formula": "C7H8",
+    "smiles": "CC1=CC=CC=C1",
+    "cid": 1140,
+    "inchikey": "YXFVVABEGXRONW-UHFFFAOYSA-N",
+    "error": null
+  },
+  "phenol": {
+    "formula": "C6H6O",
+    "smiles": "C1=CC=C(C=C1)O",
+    "cid": 996,
+    "inchikey": "ISWSIDIOOBJBQZ-UHFFFAOYSA-N",
+    "error": null
+  },
+  "ethanol": {
+    "formula": "C2H6O",
+    "smiles": "CCO",
+    "cid": 702,
+    "inchikey": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+    "error": null
+  },
+  "methanol": {
+    "formula": "CH4O",
+    "smiles": "CO",
+    "cid": 887,
+    "inchikey": "OKKJLVBELUTLKV-UHFFFAOYSA-N",
+    "error": null
+  },
+  "acetic acid": {
+    "formula": "C2H4O2",
+    "smiles": "CC(=O)O",
+    "cid": 176,
+    "inchikey": "QTBSBXVTEAMEQO-UHFFFAOYSA-N",
+    "error": null
+  },
+  "formic acid": {
+    "formula": "CH2O2",
+    "smiles": "C(=O)O",
+    "cid": 284,
+    "inchikey": "BDAGIHXWWSANSR-UHFFFAOYSA-N",
+    "error": null
+  },
+  "propionic acid": {
+    "formula": "C3H6O2",
+    "smiles": "CCC(=O)O",
+    "cid": 1032,
+    "inchikey": "XBDQKXXYIPTUBI-UHFFFAOYSA-N",
+    "error": null
+  },
+  "glucose": {
+    "formula": "C6H12O6",
+    "smiles": "C(C1C(C(C(C(O1)O)O)O)O)O",
+    "cid": 5793,
+    "inchikey": "WQZGKKKJIJFFOK-GASJEMHNSA-N",
+    "error": null
+  },
+  "water": {
+    "formula": "H2O",
+    "smiles": "O",
+    "cid": 962,
+    "inchikey": "XLYOFNOQVPJJNP-UHFFFAOYSA-N",
+    "error": null
+  },
+  "ammonia": {
+    "formula": "H3N",
+    "smiles": "N",
+    "cid": 222,
+    "inchikey": "QGZKDVFQNNGYKY-UHFFFAOYSA-N",
+    "error": null
+  },
+  "dimethyl ether": {
+    "formula": "C2H6O",
+    "smiles": "COC",
+    "cid": 8254,
+    "inchikey": "LCGLNKUTAGEVQW-UHFFFAOYSA-N",
+    "error": null
+  }
+}

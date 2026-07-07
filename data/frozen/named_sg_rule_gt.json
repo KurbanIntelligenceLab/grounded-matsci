@@ -1,0 +1,1557 @@
+{
+ "rule": "For condition-pinned prompts: accepted_sg = {named-phase SG (confirmed present in MP)} \u222a {citation-backed documented alternates that persist under pinned room-T/ambient-P}. MP confirms the named-phase SG is a real tabulated structure; it does NOT widen acceptance to all MP polymorphs. Single-token phase aliases registered so multi-phase comparison prompts bind each phase.",
+ "subjects": {
+  "halite (NaCl)": {
+   "formula": "NaCl",
+   "accepted_sg": [
+    225
+   ],
+   "named_phase_sg": 225,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "corundum (Al2O3)": {
+   "formula": "Al2O3",
+   "accepted_sg": [
+    167
+   ],
+   "named_phase_sg": 167,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "rutile (TiO2)": {
+   "formula": "TiO2",
+   "accepted_sg": [
+    136
+   ],
+   "named_phase_sg": 136,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "fluorite (CaF2)": {
+   "formula": "CaF2",
+   "accepted_sg": [
+    225
+   ],
+   "named_phase_sg": 225,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "periclase (MgO)": {
+   "formula": "MgO",
+   "accepted_sg": [
+    225
+   ],
+   "named_phase_sg": 225,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "diamond (C)": {
+   "formula": "C",
+   "accepted_sg": [
+    227
+   ],
+   "named_phase_sg": 227,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "silicon (Si)": {
+   "formula": "Si",
+   "accepted_sg": [
+    227
+   ],
+   "named_phase_sg": 227,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "copper (Cu)": {
+   "formula": "Cu",
+   "accepted_sg": [
+    225
+   ],
+   "named_phase_sg": 225,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "iron (alpha-Fe)": {
+   "formula": "Fe",
+   "accepted_sg": [
+    229
+   ],
+   "named_phase_sg": 229,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "zincblende (ZnS)": {
+   "formula": "ZnS",
+   "accepted_sg": [
+    216
+   ],
+   "named_phase_sg": 216,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "wurtzite (ZnO)": {
+   "formula": "ZnO",
+   "accepted_sg": [
+    186
+   ],
+   "named_phase_sg": 186,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "spinel (MgAl2O4)": {
+   "formula": "MgAl2O4",
+   "accepted_sg": [
+    227
+   ],
+   "named_phase_sg": 227,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "magnetite (Fe3O4)": {
+   "formula": "Fe3O4",
+   "accepted_sg": [
+    227
+   ],
+   "named_phase_sg": 227,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "galena (PbS)": {
+   "formula": "PbS",
+   "accepted_sg": [
+    225
+   ],
+   "named_phase_sg": 225,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "sphalerite (ZnS)": {
+   "formula": "ZnS",
+   "accepted_sg": [
+    216
+   ],
+   "named_phase_sg": 216,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "calcite (CaCO3)": {
+   "formula": "CaCO3",
+   "accepted_sg": [
+    167
+   ],
+   "named_phase_sg": 167,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "gold (Au)": {
+   "formula": "Au",
+   "accepted_sg": [
+    225
+   ],
+   "named_phase_sg": 225,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "silver (Ag)": {
+   "formula": "Ag",
+   "accepted_sg": [
+    225
+   ],
+   "named_phase_sg": 225,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "tungsten (W)": {
+   "formula": "W",
+   "accepted_sg": [
+    229
+   ],
+   "named_phase_sg": 229,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "cesium chloride (CsCl)": {
+   "formula": "CsCl",
+   "accepted_sg": [
+    221
+   ],
+   "named_phase_sg": 221,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "anatase (TiO2)": {
+   "formula": "TiO2",
+   "accepted_sg": [
+    141
+   ],
+   "named_phase_sg": 141,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "perovskite (SrTiO3)": {
+   "formula": "SrTiO3",
+   "accepted_sg": [
+    140,
+    221
+   ],
+   "named_phase_sg": 221,
+   "confirmed_in_MP": true,
+   "citation": "perovskite"
+  },
+  "quartz (SiO2)": {
+   "formula": "SiO2",
+   "accepted_sg": [
+    152,
+    154,
+    180,
+    181
+   ],
+   "named_phase_sg": 152,
+   "confirmed_in_MP": true,
+   "citation": "alpha P3_121/P3_221 (#152/154); beta P6_222/P6_422 (#180/181), Kihara 1990 Eur.J.Mineral."
+  },
+  "hematite (Fe2O3)": {
+   "formula": "Fe2O3",
+   "accepted_sg": [
+    167
+   ],
+   "named_phase_sg": 167,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "cuprite (Cu2O)": {
+   "formula": "Cu2O",
+   "accepted_sg": [
+    224
+   ],
+   "named_phase_sg": 224,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "gallium arsenide (GaAs)": {
+   "formula": "GaAs",
+   "accepted_sg": [
+    216
+   ],
+   "named_phase_sg": 216,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "gallium nitride (GaN)": {
+   "formula": "GaN",
+   "accepted_sg": [
+    186
+   ],
+   "named_phase_sg": 186,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "silicon carbide (3C-SiC)": {
+   "formula": "SiC",
+   "accepted_sg": [
+    216
+   ],
+   "named_phase_sg": 216,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "barium titanate (BaTiO3)": {
+   "formula": "BaTiO3",
+   "accepted_sg": [
+    99
+   ],
+   "named_phase_sg": 99,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "lithium cobalt oxide (LiCoO2)": {
+   "formula": "LiCoO2",
+   "accepted_sg": [
+    166
+   ],
+   "named_phase_sg": 166,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "yttria (Y2O3)": {
+   "formula": "Y2O3",
+   "accepted_sg": [
+    206
+   ],
+   "named_phase_sg": 206,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "zirconia (cubic ZrO2)": {
+   "formula": "ZrO2",
+   "accepted_sg": [
+    225
+   ],
+   "named_phase_sg": 225,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "ceria (CeO2)": {
+   "formula": "CeO2",
+   "accepted_sg": [
+    225
+   ],
+   "named_phase_sg": 225,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "strontium fluoride (SrF2)": {
+   "formula": "SrF2",
+   "accepted_sg": [
+    225
+   ],
+   "named_phase_sg": 225,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "cadmium selenide (CdSe)": {
+   "formula": "CdSe",
+   "accepted_sg": [
+    186
+   ],
+   "named_phase_sg": 186,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "indium phosphide (InP)": {
+   "formula": "InP",
+   "accepted_sg": [
+    216
+   ],
+   "named_phase_sg": 216,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "aluminum nitride (AlN)": {
+   "formula": "AlN",
+   "accepted_sg": [
+    186
+   ],
+   "named_phase_sg": 186,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "boron nitride (h-BN)": {
+   "formula": "BN",
+   "accepted_sg": [
+    194
+   ],
+   "named_phase_sg": 194,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "molybdenite (2H-MoS2)": {
+   "formula": "MoS2",
+   "accepted_sg": [
+    194
+   ],
+   "named_phase_sg": 194,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "rock salt MgO": {
+   "formula": "MgO",
+   "accepted_sg": [
+    225
+   ],
+   "named_phase_sg": 225,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "pyrite (FeS2)": {
+   "formula": "FeS2",
+   "accepted_sg": [
+    205
+   ],
+   "named_phase_sg": 205,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "marcasite (FeS2)": {
+   "formula": "FeS2",
+   "accepted_sg": [
+    58
+   ],
+   "named_phase_sg": 58,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "brookite (TiO2)": {
+   "formula": "TiO2",
+   "accepted_sg": [
+    61
+   ],
+   "named_phase_sg": 61,
+   "confirmed_in_MP": true,
+   "citation": "Pbca #61 ONLY; rutile #136 / anatase #141 are distinct TiO2 phases, not brookite"
+  },
+  "aragonite (CaCO3)": {
+   "formula": "CaCO3",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "cristobalite (SiO2)": {
+   "formula": "SiO2",
+   "accepted_sg": [
+    92
+   ],
+   "named_phase_sg": 92,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "cinnabar (HgS)": {
+   "formula": "HgS",
+   "accepted_sg": [
+    152,
+    154
+   ],
+   "named_phase_sg": 152,
+   "confirmed_in_MP": true,
+   "citation": "cinnabar"
+  },
+  "metacinnabar (HgS)": {
+   "formula": "HgS",
+   "accepted_sg": [
+    216
+   ],
+   "named_phase_sg": 216,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "greenockite (CdS)": {
+   "formula": "CdS",
+   "accepted_sg": [
+    186
+   ],
+   "named_phase_sg": 186,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "hawleyite (CdS)": {
+   "formula": "CdS",
+   "accepted_sg": [
+    216
+   ],
+   "named_phase_sg": 216,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "akermanite (Ca2MgSi2O7)": {
+   "formula": "Ca2MgSi2O7",
+   "accepted_sg": [
+    113
+   ],
+   "named_phase_sg": 113,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "wustite (FeO)": {
+   "formula": "FeO",
+   "accepted_sg": [
+    225
+   ],
+   "named_phase_sg": 225,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "goethite (FeOOH)": {
+   "formula": "FeOOH",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "lepidocrocite (FeOOH)": {
+   "formula": "FeOOH",
+   "accepted_sg": [
+    63
+   ],
+   "named_phase_sg": 63,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "baddeleyite (ZrO2)": {
+   "formula": "ZrO2",
+   "accepted_sg": [
+    14
+   ],
+   "named_phase_sg": 14,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "cotunnite (PbCl2)": {
+   "formula": "PbCl2",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "stishovite (SiO2)": {
+   "formula": "SiO2",
+   "accepted_sg": [
+    136
+   ],
+   "named_phase_sg": 136,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "coesite (SiO2)": {
+   "formula": "SiO2",
+   "accepted_sg": [
+    15
+   ],
+   "named_phase_sg": 15,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "moissanite (6H-SiC)": {
+   "formula": "SiC",
+   "accepted_sg": [
+    186
+   ],
+   "named_phase_sg": 186,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "berlinite (AlPO4)": {
+   "formula": "AlPO4",
+   "accepted_sg": [
+    152
+   ],
+   "named_phase_sg": 152,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "scheelite (CaWO4)": {
+   "formula": "CaWO4",
+   "accepted_sg": [
+    88
+   ],
+   "named_phase_sg": 88,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "wolframite (FeWO4)": {
+   "formula": "FeWO4",
+   "accepted_sg": [
+    13
+   ],
+   "named_phase_sg": 13,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "chalcopyrite (CuFeS2)": {
+   "formula": "CuFeS2",
+   "accepted_sg": [
+    122
+   ],
+   "named_phase_sg": 122,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "covellite (CuS)": {
+   "formula": "CuS",
+   "accepted_sg": [
+    194
+   ],
+   "named_phase_sg": 194,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "realgar (As4S4)": {
+   "formula": "As4S4",
+   "accepted_sg": [
+    14
+   ],
+   "named_phase_sg": 14,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "orpiment (As2S3)": {
+   "formula": "As2S3",
+   "accepted_sg": [
+    14
+   ],
+   "named_phase_sg": 14,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "stibnite (Sb2S3)": {
+   "formula": "Sb2S3",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "anatase-vs-rutile TiO2": {
+   "formula": "TiO2",
+   "accepted_sg": [
+    141
+   ],
+   "named_phase_sg": 141,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "kyanite (Al2SiO5)": {
+   "formula": "Al2SiO5",
+   "accepted_sg": [
+    2
+   ],
+   "named_phase_sg": 2,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "andalusite (Al2SiO5)": {
+   "formula": "Al2SiO5",
+   "accepted_sg": [
+    58
+   ],
+   "named_phase_sg": 58,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "sillimanite (Al2SiO5)": {
+   "formula": "Al2SiO5",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "enstatite (MgSiO3)": {
+   "formula": "MgSiO3",
+   "accepted_sg": [
+    61
+   ],
+   "named_phase_sg": 61,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "forsterite (Mg2SiO4)": {
+   "formula": "Mg2SiO4",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "fayalite (Fe2SiO4)": {
+   "formula": "Fe2SiO4",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "rhodochrosite (MnCO3)": {
+   "formula": "MnCO3",
+   "accepted_sg": [
+    167
+   ],
+   "named_phase_sg": 167,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "siderite (FeCO3)": {
+   "formula": "FeCO3",
+   "accepted_sg": [
+    167
+   ],
+   "named_phase_sg": 167,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "smithsonite (ZnCO3)": {
+   "formula": "ZnCO3",
+   "accepted_sg": [
+    167
+   ],
+   "named_phase_sg": 167,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "magnesite (MgCO3)": {
+   "formula": "MgCO3",
+   "accepted_sg": [
+    167
+   ],
+   "named_phase_sg": 167,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "dolomite (CaMgC2O6)": {
+   "formula": "CaMg(CO3)2",
+   "accepted_sg": [
+    148
+   ],
+   "named_phase_sg": 148,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "witherite (BaCO3)": {
+   "formula": "BaCO3",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "strontianite (SrCO3)": {
+   "formula": "SrCO3",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "cerussite (PbCO3)": {
+   "formula": "PbCO3",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "anhydrite (CaSO4)": {
+   "formula": "CaSO4",
+   "accepted_sg": [
+    63
+   ],
+   "named_phase_sg": 63,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "barite (BaSO4)": {
+   "formula": "BaSO4",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "celestine (SrSO4)": {
+   "formula": "SrSO4",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "anglesite (PbSO4)": {
+   "formula": "PbSO4",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "arcanite (K2SO4)": {
+   "formula": "K2SO4",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "chromite (FeCr2O4)": {
+   "formula": "FeCr2O4",
+   "accepted_sg": [
+    227
+   ],
+   "named_phase_sg": 227,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "franklinite (ZnFe2O4)": {
+   "formula": "ZnFe2O4",
+   "accepted_sg": [
+    227
+   ],
+   "named_phase_sg": 227,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "gahnite (ZnAl2O4)": {
+   "formula": "ZnAl2O4",
+   "accepted_sg": [
+    227
+   ],
+   "named_phase_sg": 227,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "hercynite (FeAl2O4)": {
+   "formula": "FeAl2O4",
+   "accepted_sg": [
+    227
+   ],
+   "named_phase_sg": 227,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "ilmenite (FeTiO3)": {
+   "formula": "FeTiO3",
+   "accepted_sg": [
+    148
+   ],
+   "named_phase_sg": 148,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "geikielite (MgTiO3)": {
+   "formula": "MgTiO3",
+   "accepted_sg": [
+    148
+   ],
+   "named_phase_sg": 148,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "perovskite CaTiO3": {
+   "formula": "CaTiO3",
+   "accepted_sg": [
+    62,
+    140,
+    221
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "rutile-type SnO2": {
+   "formula": "SnO2",
+   "accepted_sg": [
+    136
+   ],
+   "named_phase_sg": 136,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "cassiterite (SnO2)": {
+   "formula": "SnO2",
+   "accepted_sg": [
+    136
+   ],
+   "named_phase_sg": 136,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "pyrolusite (MnO2)": {
+   "formula": "MnO2",
+   "accepted_sg": [
+    136
+   ],
+   "named_phase_sg": 136,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "Cs2AgBiBr6 double perovskite": {
+   "formula": "Cs2AgBiBr6",
+   "accepted_sg": [
+    140,
+    221,
+    225
+   ],
+   "named_phase_sg": 225,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "CsPbBr3 (orthorhombic)": {
+   "formula": "CsPbBr3",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "CsSnI3": {
+   "formula": "CsSnI3",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "Cs2SnI6": {
+   "formula": "Cs2SnI6",
+   "accepted_sg": [
+    225
+   ],
+   "named_phase_sg": 225,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "MoTe2 (1T')": {
+   "formula": "MoTe2",
+   "accepted_sg": [
+    11
+   ],
+   "named_phase_sg": 11,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "WTe2 (Td)": {
+   "formula": "WTe2",
+   "accepted_sg": [
+    31
+   ],
+   "named_phase_sg": 31,
+   "confirmed_in_MP": true,
+   "citation": "COD experimental room-T structures"
+  },
+  "1T-TaS2": {
+   "formula": "TaS2",
+   "accepted_sg": [
+    164
+   ],
+   "named_phase_sg": 164,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "NbSe2 (2H)": {
+   "formula": "NbSe2",
+   "accepted_sg": [
+    194
+   ],
+   "named_phase_sg": 194,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "FeSe (tetragonal)": {
+   "formula": "FeSe",
+   "accepted_sg": [
+    129
+   ],
+   "named_phase_sg": 129,
+   "confirmed_in_MP": true,
+   "citation": "COD experimental room-T structures"
+  },
+  "Bi2Se3": {
+   "formula": "Bi2Se3",
+   "accepted_sg": [
+    166
+   ],
+   "named_phase_sg": 166,
+   "confirmed_in_MP": true,
+   "citation": "COD experimental room-T structures"
+  },
+  "Bi2Te3": {
+   "formula": "Bi2Te3",
+   "accepted_sg": [
+    166
+   ],
+   "named_phase_sg": 166,
+   "confirmed_in_MP": true,
+   "citation": "COD experimental room-T structures"
+  },
+  "SnSe": {
+   "formula": "SnSe",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": "COD experimental room-T structures"
+  },
+  "Cu2ZnSnS4 kesterite": {
+   "formula": "Cu2ZnSnS4",
+   "accepted_sg": [
+    121
+   ],
+   "named_phase_sg": 121,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "CsPbI3 (gamma)": {
+   "formula": "CsPbI3",
+   "accepted_sg": [
+    62
+   ],
+   "named_phase_sg": 62,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "CsSnBr3": {
+   "formula": "CsSnBr3",
+   "accepted_sg": [
+    221
+   ],
+   "named_phase_sg": 221,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "Cs2PbI2Cl2": {
+   "formula": "Cs2PbI2Cl2",
+   "accepted_sg": [
+    139
+   ],
+   "named_phase_sg": 139,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "Cs4PbBr6": {
+   "formula": "Cs4PbBr6",
+   "accepted_sg": [
+    167
+   ],
+   "named_phase_sg": 167,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "Rb2SnI6": {
+   "formula": "Rb2SnI6",
+   "accepted_sg": [
+    225
+   ],
+   "named_phase_sg": 225,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "MoS2 (2H)": {
+   "formula": "MoS2",
+   "accepted_sg": [
+    194
+   ],
+   "named_phase_sg": 194,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "WS2 (2H)": {
+   "formula": "WS2",
+   "accepted_sg": [
+    194
+   ],
+   "named_phase_sg": 194,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "MoSe2 (2H)": {
+   "formula": "MoSe2",
+   "accepted_sg": [
+    194
+   ],
+   "named_phase_sg": 194,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "WSe2 (2H)": {
+   "formula": "WSe2",
+   "accepted_sg": [
+    194
+   ],
+   "named_phase_sg": 194,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "SnS2 (1T)": {
+   "formula": "SnS2",
+   "accepted_sg": [
+    164
+   ],
+   "named_phase_sg": 164,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "Bi2Se3 topological": {
+   "formula": "Bi2Se3",
+   "accepted_sg": [
+    166
+   ],
+   "named_phase_sg": 166,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "Sb2Te3": {
+   "formula": "Sb2Te3",
+   "accepted_sg": [
+    166
+   ],
+   "named_phase_sg": 166,
+   "confirmed_in_MP": true,
+   "citation": "COD experimental room-T structures"
+  },
+  "GeTe": {
+   "formula": "GeTe",
+   "accepted_sg": [
+    160
+   ],
+   "named_phase_sg": 160,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "SnTe": {
+   "formula": "SnTe",
+   "accepted_sg": [
+    225
+   ],
+   "named_phase_sg": 225,
+   "confirmed_in_MP": true,
+   "citation": null
+  },
+  "SnSe2": {
+   "formula": "SnSe2",
+   "accepted_sg": [
+    164
+   ],
+   "named_phase_sg": 164,
+   "confirmed_in_MP": true,
+   "citation": "COD experimental room-T structures"
+  },
+  "PdTe2": {
+   "formula": "PdTe2",
+   "accepted_sg": [
+    164
+   ],
+   "named_phase_sg": 164,
+   "confirmed_in_MP": true,
+   "citation": "COD experimental room-T structures"
+  },
+  "VSe2 (1T)": {
+   "formula": "VSe2",
+   "accepted_sg": [
+    164
+   ],
+   "named_phase_sg": 164,
+   "confirmed_in_MP": true,
+   "citation": "COD experimental room-T structures"
+  },
+  "TaSe2 (2H)": {
+   "formula": "TaSe2",
+   "accepted_sg": [
+    194
+   ],
+   "named_phase_sg": 194,
+   "confirmed_in_MP": true,
+   "citation": "COD experimental room-T structures"
+  }
+ },
+ "token_accepted_sg": {
+  "halite": [
+   225
+  ],
+  "corundum": [
+   167
+  ],
+  "rutile": [
+   136
+  ],
+  "fluorite": [
+   225
+  ],
+  "periclase": [
+   225
+  ],
+  "diamond": [
+   227
+  ],
+  "silicon": [
+   227
+  ],
+  "copper": [
+   225
+  ],
+  "iron": [
+   229
+  ],
+  "zincblende": [
+   216
+  ],
+  "wurtzite": [
+   186
+  ],
+  "spinel": [
+   227
+  ],
+  "magnetite": [
+   227
+  ],
+  "galena": [
+   225
+  ],
+  "sphalerite": [
+   216
+  ],
+  "calcite": [
+   167
+  ],
+  "gold": [
+   225
+  ],
+  "silver": [
+   225
+  ],
+  "tungsten": [
+   229
+  ],
+  "cesium chloride": [
+   221
+  ],
+  "anatase": [
+   141
+  ],
+  "perovskite": [
+   140,
+   221
+  ],
+  "quartz": [
+   152,
+   154,
+   180,
+   181
+  ],
+  "hematite": [
+   167
+  ],
+  "cuprite": [
+   224
+  ],
+  "gallium arsenide": [
+   216
+  ],
+  "gallium nitride": [
+   186
+  ],
+  "silicon carbide": [
+   216
+  ],
+  "barium titanate": [
+   99
+  ],
+  "lithium cobalt oxide": [
+   166
+  ],
+  "yttria": [
+   206
+  ],
+  "zirconia": [
+   225
+  ],
+  "ceria": [
+   225
+  ],
+  "strontium fluoride": [
+   225
+  ],
+  "cadmium selenide": [
+   186
+  ],
+  "indium phosphide": [
+   216
+  ],
+  "aluminum nitride": [
+   186
+  ],
+  "boron nitride": [
+   194
+  ],
+  "molybdenite": [
+   194
+  ],
+  "rock salt mgo": [
+   225
+  ],
+  "pyrite": [
+   205
+  ],
+  "marcasite": [
+   58
+  ],
+  "brookite": [
+   61
+  ],
+  "aragonite": [
+   62
+  ],
+  "cristobalite": [
+   92
+  ],
+  "cinnabar": [
+   152,
+   154
+  ],
+  "metacinnabar": [
+   216
+  ],
+  "greenockite": [
+   186
+  ],
+  "hawleyite": [
+   216
+  ],
+  "akermanite": [
+   113
+  ],
+  "wustite": [
+   225
+  ],
+  "goethite": [
+   62
+  ],
+  "lepidocrocite": [
+   63
+  ],
+  "baddeleyite": [
+   14
+  ],
+  "cotunnite": [
+   62
+  ],
+  "stishovite": [
+   136
+  ],
+  "coesite": [
+   15
+  ],
+  "moissanite": [
+   186
+  ],
+  "berlinite": [
+   152
+  ],
+  "scheelite": [
+   88
+  ],
+  "wolframite": [
+   13
+  ],
+  "chalcopyrite": [
+   122
+  ],
+  "covellite": [
+   194
+  ],
+  "realgar": [
+   14
+  ],
+  "orpiment": [
+   14
+  ],
+  "stibnite": [
+   62
+  ],
+  "anatase-vs-rutile tio2": [
+   141
+  ],
+  "kyanite": [
+   2
+  ],
+  "andalusite": [
+   58
+  ],
+  "sillimanite": [
+   62
+  ],
+  "enstatite": [
+   61
+  ],
+  "forsterite": [
+   62
+  ],
+  "fayalite": [
+   62
+  ],
+  "rhodochrosite": [
+   167
+  ],
+  "siderite": [
+   167
+  ],
+  "smithsonite": [
+   167
+  ],
+  "magnesite": [
+   167
+  ],
+  "dolomite": [
+   148
+  ],
+  "witherite": [
+   62
+  ],
+  "strontianite": [
+   62
+  ],
+  "cerussite": [
+   62
+  ],
+  "anhydrite": [
+   63
+  ],
+  "barite": [
+   62
+  ],
+  "celestine": [
+   62
+  ],
+  "anglesite": [
+   62
+  ],
+  "arcanite": [
+   62
+  ],
+  "chromite": [
+   227
+  ],
+  "franklinite": [
+   227
+  ],
+  "gahnite": [
+   227
+  ],
+  "hercynite": [
+   227
+  ],
+  "ilmenite": [
+   148
+  ],
+  "geikielite": [
+   148
+  ],
+  "perovskite catio3": [
+   62,
+   140,
+   221
+  ],
+  "rutile-type sno2": [
+   136
+  ],
+  "cassiterite": [
+   136
+  ],
+  "pyrolusite": [
+   136
+  ],
+  "cs2agbibr6 double perovskite": [
+   140,
+   221,
+   225
+  ],
+  "cspbbr3": [
+   62
+  ],
+  "cssni3": [
+   62
+  ],
+  "cs2sni6": [
+   225
+  ],
+  "mote2": [
+   11
+  ],
+  "wte2": [
+   31
+  ],
+  "1t-tas2": [
+   164
+  ],
+  "nbse2": [
+   194
+  ],
+  "fese": [
+   129
+  ],
+  "bi2se3": [
+   166
+  ],
+  "bi2te3": [
+   166
+  ],
+  "snse": [
+   62
+  ],
+  "cu2znsns4 kesterite": [
+   121
+  ],
+  "cspbi3": [
+   62
+  ],
+  "cssnbr3": [
+   221
+  ],
+  "cs2pbi2cl2": [
+   139
+  ],
+  "cs4pbbr6": [
+   167
+  ],
+  "rb2sni6": [
+   225
+  ],
+  "mos2": [
+   194
+  ],
+  "ws2": [
+   194
+  ],
+  "mose2": [
+   194
+  ],
+  "wse2": [
+   194
+  ],
+  "sns2": [
+   164
+  ],
+  "bi2se3 topological": [
+   166
+  ],
+  "sb2te3": [
+   166
+  ],
+  "gete": [
+   160
+  ],
+  "snte": [
+   225
+  ],
+  "tridymite": [
+   170
+  ],
+  "snse2": [
+   164
+  ],
+  "pdte2": [
+   164
+  ],
+  "vse2": [
+   164
+  ],
+  "tase2": [
+   194
+  ]
+ },
+ "citations": {
+  "quartz": "alpha P3_121/P3_221 (#152/154); beta P6_222/P6_422 (#180/181), Kihara 1990 Eur.J.Mineral.",
+  "perovskite": "Unoki & Sakudo 1967",
+  "cinnabar": "Auvray & Genet 1973"
+ }
+}

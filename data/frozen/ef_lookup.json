@@ -1,0 +1,1162 @@
+{
+ "halite (nacl)": {
+  "mp": -2.1,
+  "exp": -2.1309,
+  "n_atoms": 2
+ },
+ "halite": {
+  "mp": -2.1,
+  "exp": -2.1309,
+  "n_atoms": 2
+ },
+ "corundum (al2o3)": {
+  "mp": -3.427,
+  "exp": -3.4735,
+  "n_atoms": 5
+ },
+ "corundum": {
+  "mp": -3.427,
+  "exp": -3.4735,
+  "n_atoms": 5
+ },
+ "rutile (tio2)": {
+  "mp": -3.464,
+  "exp": -3.2613,
+  "n_atoms": 3
+ },
+ "rutile": {
+  "mp": -3.464,
+  "exp": -3.2613,
+  "n_atoms": 3
+ },
+ "fluorite (caf2)": {
+  "mp": -4.222,
+  "exp": -4.2425,
+  "n_atoms": 3
+ },
+ "fluorite": {
+  "mp": -4.222,
+  "exp": -4.2425,
+  "n_atoms": 3
+ },
+ "periclase (mgo)": {
+  "mp": -3.038,
+  "exp": -3.1176,
+  "n_atoms": 2
+ },
+ "periclase": {
+  "mp": -3.038,
+  "exp": -3.1176,
+  "n_atoms": 2
+ },
+ "diamond (c)": {
+  "mp": 0.112,
+  "exp": null,
+  "n_atoms": 1
+ },
+ "diamond": {
+  "mp": 0.112,
+  "exp": null,
+  "n_atoms": 1
+ },
+ "silicon (si)": {
+  "mp": 0.0,
+  "exp": null,
+  "n_atoms": 1
+ },
+ "silicon": {
+  "mp": 0.0,
+  "exp": null,
+  "n_atoms": 1
+ },
+ "copper (cu)": {
+  "mp": 0.0,
+  "exp": null,
+  "n_atoms": 1
+ },
+ "copper": {
+  "mp": 0.0,
+  "exp": null,
+  "n_atoms": 1
+ },
+ "iron (alpha-fe)": {
+  "mp": 0.0,
+  "exp": null,
+  "n_atoms": 1
+ },
+ "iron": {
+  "mp": 0.0,
+  "exp": null,
+  "n_atoms": 1
+ },
+ "zincblende (zns)": {
+  "mp": -0.963,
+  "exp": -1.0675,
+  "n_atoms": 2
+ },
+ "zincblende": {
+  "mp": -0.963,
+  "exp": -1.0675,
+  "n_atoms": 2
+ },
+ "wurtzite (zno)": {
+  "mp": -1.791,
+  "exp": -1.8163,
+  "n_atoms": 2
+ },
+ "wurtzite": {
+  "mp": -1.791,
+  "exp": -1.8163,
+  "n_atoms": 2
+ },
+ "spinel (mgal2o4)": {
+  "mp": -3.37,
+  "exp": -3.4039,
+  "n_atoms": 7
+ },
+ "spinel": {
+  "mp": -3.37,
+  "exp": -3.4039,
+  "n_atoms": 7
+ },
+ "magnetite (fe3o4)": {
+  "mp": -1.63,
+  "exp": -1.6559,
+  "n_atoms": 7
+ },
+ "magnetite": {
+  "mp": -1.63,
+  "exp": -1.6559,
+  "n_atoms": 7
+ },
+ "galena (pbs)": {
+  "mp": -0.784,
+  "exp": -0.5203,
+  "n_atoms": 2
+ },
+ "galena": {
+  "mp": -0.784,
+  "exp": -0.5203,
+  "n_atoms": 2
+ },
+ "sphalerite (zns)": {
+  "mp": -0.963,
+  "exp": -1.0675,
+  "n_atoms": 2
+ },
+ "sphalerite": {
+  "mp": -0.963,
+  "exp": -1.0675,
+  "n_atoms": 2
+ },
+ "calcite (caco3)": {
+  "mp": -2.688,
+  "exp": -2.5032,
+  "n_atoms": 5
+ },
+ "calcite": {
+  "mp": -2.688,
+  "exp": -2.5032,
+  "n_atoms": 5
+ },
+ "gold (au)": {
+  "mp": 0.0,
+  "exp": null,
+  "n_atoms": 1
+ },
+ "gold": {
+  "mp": 0.0,
+  "exp": null,
+  "n_atoms": 1
+ },
+ "silver (ag)": {
+  "mp": 0.002,
+  "exp": null,
+  "n_atoms": 1
+ },
+ "silver": {
+  "mp": 0.002,
+  "exp": null,
+  "n_atoms": 1
+ },
+ "tungsten (w)": {
+  "mp": 0.0,
+  "exp": null,
+  "n_atoms": 1
+ },
+ "tungsten": {
+  "mp": 0.0,
+  "exp": null,
+  "n_atoms": 1
+ },
+ "cesium chloride (cscl)": {
+  "mp": -2.256,
+  "exp": -2.2957,
+  "n_atoms": 2
+ },
+ "cesium chloride": {
+  "mp": -2.256,
+  "exp": -2.2957,
+  "n_atoms": 2
+ },
+ "anatase (tio2)": {
+  "mp": -3.508,
+  "exp": -3.2613,
+  "n_atoms": 3
+ },
+ "anatase": {
+  "mp": -3.508,
+  "exp": -3.2613,
+  "n_atoms": 3
+ },
+ "perovskite (srtio3)": {
+  "mp": -3.551,
+  "exp": -3.4658,
+  "n_atoms": 5
+ },
+ "perovskite": {
+  "mp": -3.551,
+  "exp": -3.4658,
+  "n_atoms": 5
+ },
+ "quartz (sio2)": {
+  "mp": -3.273,
+  "exp": -3.1463,
+  "n_atoms": 3
+ },
+ "quartz": {
+  "mp": -3.273,
+  "exp": -3.1463,
+  "n_atoms": 3
+ },
+ "hematite (fe2o3)": {
+  "mp": -1.707,
+  "exp": -1.7085,
+  "n_atoms": 5
+ },
+ "hematite": {
+  "mp": -1.707,
+  "exp": -1.7085,
+  "n_atoms": 5
+ },
+ "cuprite (cu2o)": {
+  "mp": -0.645,
+  "exp": -0.5825,
+  "n_atoms": 3
+ },
+ "cuprite": {
+  "mp": -0.645,
+  "exp": -0.5825,
+  "n_atoms": 3
+ },
+ "gallium arsenide (gaas)": {
+  "mp": -0.446,
+  "exp": -0.3679,
+  "n_atoms": 2
+ },
+ "gallium arsenide": {
+  "mp": -0.446,
+  "exp": -0.3679,
+  "n_atoms": 2
+ },
+ "gallium nitride (gan)": {
+  "mp": -0.67,
+  "exp": -0.8126,
+  "n_atoms": 2
+ },
+ "gallium nitride": {
+  "mp": -0.67,
+  "exp": -0.8126,
+  "n_atoms": 2
+ },
+ "silicon carbide (3c-sic)": {
+  "mp": -0.306,
+  "exp": -0.3793,
+  "n_atoms": 2
+ },
+ "silicon carbide": {
+  "mp": -0.306,
+  "exp": -0.3793,
+  "n_atoms": 2
+ },
+ "barium titanate (batio3)": {
+  "mp": -3.49,
+  "exp": -3.4405,
+  "n_atoms": 5
+ },
+ "barium titanate": {
+  "mp": -3.49,
+  "exp": -3.4405,
+  "n_atoms": 5
+ },
+ "lithium cobalt oxide (licoo2)": {
+  "mp": -1.746,
+  "exp": null,
+  "n_atoms": 4
+ },
+ "lithium cobalt oxide": {
+  "mp": -1.746,
+  "exp": null,
+  "n_atoms": 4
+ },
+ "yttria (y2o3)": {
+  "mp": -3.954,
+  "exp": -3.9494,
+  "n_atoms": 5
+ },
+ "yttria": {
+  "mp": -3.954,
+  "exp": -3.9494,
+  "n_atoms": 5
+ },
+ "zirconia (cubic zro2)": {
+  "mp": -3.758,
+  "exp": -3.8023,
+  "n_atoms": 3
+ },
+ "zirconia": {
+  "mp": -3.758,
+  "exp": -3.8023,
+  "n_atoms": 3
+ },
+ "ceria (ceo2)": {
+  "mp": -3.927,
+  "exp": -3.7612,
+  "n_atoms": 3
+ },
+ "ceria": {
+  "mp": -3.927,
+  "exp": -3.7612,
+  "n_atoms": 3
+ },
+ "strontium fluoride (srf2)": {
+  "mp": -4.23,
+  "exp": -4.202,
+  "n_atoms": 3
+ },
+ "strontium fluoride": {
+  "mp": -4.23,
+  "exp": -4.202,
+  "n_atoms": 3
+ },
+ "cadmium selenide (cdse)": {
+  "mp": -0.838,
+  "exp": -0.7048,
+  "n_atoms": 2
+ },
+ "cadmium selenide": {
+  "mp": -0.838,
+  "exp": -0.7048,
+  "n_atoms": 2
+ },
+ "indium phosphide (inp)": {
+  "mp": -0.358,
+  "exp": -0.4597,
+  "n_atoms": 2
+ },
+ "indium phosphide": {
+  "mp": -0.358,
+  "exp": -0.4597,
+  "n_atoms": 2
+ },
+ "aluminum nitride (aln)": {
+  "mp": -1.68,
+  "exp": -1.6479,
+  "n_atoms": 2
+ },
+ "aluminum nitride": {
+  "mp": -1.68,
+  "exp": -1.6479,
+  "n_atoms": 2
+ },
+ "boron nitride (h-bn)": {
+  "mp": -1.411,
+  "exp": -1.3183,
+  "n_atoms": 2
+ },
+ "boron nitride": {
+  "mp": -1.411,
+  "exp": -1.3183,
+  "n_atoms": 2
+ },
+ "molybdenite (2h-mos2)": {
+  "mp": -0.964,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "molybdenite": {
+  "mp": -0.964,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "rock salt mgo": {
+  "mp": -3.038,
+  "exp": -3.1176,
+  "n_atoms": 2
+ },
+ "pyrite (fes2)": {
+  "mp": -0.837,
+  "exp": -0.6156,
+  "n_atoms": 3
+ },
+ "pyrite": {
+  "mp": -0.837,
+  "exp": -0.6156,
+  "n_atoms": 3
+ },
+ "marcasite (fes2)": {
+  "mp": -0.847,
+  "exp": -0.6156,
+  "n_atoms": 3
+ },
+ "marcasite": {
+  "mp": -0.847,
+  "exp": -0.6156,
+  "n_atoms": 3
+ },
+ "brookite (tio2)": {
+  "mp": -3.505,
+  "exp": -3.2613,
+  "n_atoms": 3
+ },
+ "brookite": {
+  "mp": -3.505,
+  "exp": -3.2613,
+  "n_atoms": 3
+ },
+ "aragonite (caco3)": {
+  "mp": -2.687,
+  "exp": -2.5032,
+  "n_atoms": 5
+ },
+ "aragonite": {
+  "mp": -2.687,
+  "exp": -2.5032,
+  "n_atoms": 5
+ },
+ "cristobalite (sio2)": {
+  "mp": -3.267,
+  "exp": -3.1463,
+  "n_atoms": 3
+ },
+ "cristobalite": {
+  "mp": -3.267,
+  "exp": -3.1463,
+  "n_atoms": 3
+ },
+ "cinnabar (hgs)": {
+  "mp": -0.236,
+  "exp": null,
+  "n_atoms": 2
+ },
+ "cinnabar": {
+  "mp": -0.236,
+  "exp": null,
+  "n_atoms": 2
+ },
+ "metacinnabar (hgs)": {
+  "mp": -0.376,
+  "exp": null,
+  "n_atoms": 2
+ },
+ "metacinnabar": {
+  "mp": -0.376,
+  "exp": null,
+  "n_atoms": 2
+ },
+ "greenockite (cds)": {
+  "mp": -0.777,
+  "exp": -0.839,
+  "n_atoms": 2
+ },
+ "greenockite": {
+  "mp": -0.777,
+  "exp": -0.839,
+  "n_atoms": 2
+ },
+ "hawleyite (cds)": {
+  "mp": -0.774,
+  "exp": -0.839,
+  "n_atoms": 2
+ },
+ "hawleyite": {
+  "mp": -0.774,
+  "exp": -0.839,
+  "n_atoms": 2
+ },
+ "akermanite (ca2mgsi2o7)": {
+  "mp": -3.375,
+  "exp": null,
+  "n_atoms": 12
+ },
+ "akermanite": {
+  "mp": -3.375,
+  "exp": null,
+  "n_atoms": 12
+ },
+ "wustite (feo)": {
+  "mp": -1.071,
+  "exp": -1.4095,
+  "n_atoms": 2
+ },
+ "wustite": {
+  "mp": -1.071,
+  "exp": -1.4095,
+  "n_atoms": 2
+ },
+ "goethite (feooh)": {
+  "mp": -1.549,
+  "exp": null,
+  "n_atoms": 4
+ },
+ "goethite": {
+  "mp": -1.549,
+  "exp": null,
+  "n_atoms": 4
+ },
+ "lepidocrocite (feooh)": {
+  "mp": -1.512,
+  "exp": null,
+  "n_atoms": 4
+ },
+ "lepidocrocite": {
+  "mp": -1.512,
+  "exp": null,
+  "n_atoms": 4
+ },
+ "baddeleyite (zro2)": {
+  "mp": -3.814,
+  "exp": -3.8023,
+  "n_atoms": 3
+ },
+ "baddeleyite": {
+  "mp": -3.814,
+  "exp": -3.8023,
+  "n_atoms": 3
+ },
+ "cotunnite (pbcl2)": {
+  "mp": -1.604,
+  "exp": -1.2416,
+  "n_atoms": 3
+ },
+ "cotunnite": {
+  "mp": -1.604,
+  "exp": -1.2416,
+  "n_atoms": 3
+ },
+ "stishovite (sio2)": {
+  "mp": -3.071,
+  "exp": -3.1463,
+  "n_atoms": 3
+ },
+ "stishovite": {
+  "mp": -3.071,
+  "exp": -3.1463,
+  "n_atoms": 3
+ },
+ "coesite (sio2)": {
+  "mp": -3.27,
+  "exp": -3.1463,
+  "n_atoms": 3
+ },
+ "coesite": {
+  "mp": -3.27,
+  "exp": -3.1463,
+  "n_atoms": 3
+ },
+ "moissanite (6h-sic)": {
+  "mp": -0.306,
+  "exp": -0.3793,
+  "n_atoms": 2
+ },
+ "moissanite": {
+  "mp": -0.306,
+  "exp": -0.3793,
+  "n_atoms": 2
+ },
+ "berlinite (alpo4)": {
+  "mp": -3.127,
+  "exp": null,
+  "n_atoms": 6
+ },
+ "berlinite": {
+  "mp": -3.127,
+  "exp": null,
+  "n_atoms": 6
+ },
+ "scheelite (cawo4)": {
+  "mp": -2.726,
+  "exp": null,
+  "n_atoms": 6
+ },
+ "scheelite": {
+  "mp": -2.726,
+  "exp": null,
+  "n_atoms": 6
+ },
+ "wolframite (fewo4)": {
+  "mp": -2.023,
+  "exp": null,
+  "n_atoms": 6
+ },
+ "wolframite": {
+  "mp": -2.023,
+  "exp": null,
+  "n_atoms": 6
+ },
+ "chalcopyrite (cufes2)": {
+  "mp": -0.514,
+  "exp": null,
+  "n_atoms": 4
+ },
+ "chalcopyrite": {
+  "mp": -0.514,
+  "exp": null,
+  "n_atoms": 4
+ },
+ "covellite (cus)": {
+  "mp": -0.278,
+  "exp": null,
+  "n_atoms": 2
+ },
+ "covellite": {
+  "mp": -0.278,
+  "exp": null,
+  "n_atoms": 2
+ },
+ "realgar (as4s4)": {
+  "mp": -0.16,
+  "exp": null,
+  "n_atoms": 8
+ },
+ "realgar": {
+  "mp": -0.16,
+  "exp": null,
+  "n_atoms": 8
+ },
+ "orpiment (as2s3)": {
+  "mp": -0.156,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "orpiment": {
+  "mp": -0.156,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "stibnite (sb2s3)": {
+  "mp": -0.287,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "stibnite": {
+  "mp": -0.287,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "anatase-vs-rutile tio2": {
+  "mp": -3.508,
+  "exp": -3.2613,
+  "n_atoms": 3
+ },
+ "kyanite (al2sio5)": {
+  "mp": -3.377,
+  "exp": null,
+  "n_atoms": 8
+ },
+ "kyanite": {
+  "mp": -3.377,
+  "exp": null,
+  "n_atoms": 8
+ },
+ "andalusite (al2sio5)": {
+  "mp": -3.375,
+  "exp": null,
+  "n_atoms": 8
+ },
+ "andalusite": {
+  "mp": -3.375,
+  "exp": null,
+  "n_atoms": 8
+ },
+ "sillimanite (al2sio5)": {
+  "mp": -3.372,
+  "exp": null,
+  "n_atoms": 8
+ },
+ "sillimanite": {
+  "mp": -3.372,
+  "exp": null,
+  "n_atoms": 8
+ },
+ "enstatite (mgsio3)": {
+  "mp": -3.223,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "enstatite": {
+  "mp": -3.223,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "forsterite (mg2sio4)": {
+  "mp": -3.213,
+  "exp": null,
+  "n_atoms": 7
+ },
+ "forsterite": {
+  "mp": -3.213,
+  "exp": null,
+  "n_atoms": 7
+ },
+ "fayalite (fe2sio4)": {
+  "mp": -2.301,
+  "exp": null,
+  "n_atoms": 7
+ },
+ "fayalite": {
+  "mp": -2.301,
+  "exp": null,
+  "n_atoms": 7
+ },
+ "rhodochrosite (mnco3)": {
+  "mp": -2.013,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "rhodochrosite": {
+  "mp": -2.013,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "siderite (feco3)": {
+  "mp": -1.789,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "siderite": {
+  "mp": -1.789,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "smithsonite (znco3)": {
+  "mp": -1.822,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "smithsonite": {
+  "mp": -1.822,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "magnesite (mgco3)": {
+  "mp": -2.442,
+  "exp": -2.2714,
+  "n_atoms": 5
+ },
+ "magnesite": {
+  "mp": -2.442,
+  "exp": -2.2714,
+  "n_atoms": 5
+ },
+ "dolomite (camgc2o6)": {
+  "mp": -2.569,
+  "exp": null,
+  "n_atoms": 6
+ },
+ "dolomite": {
+  "mp": -2.569,
+  "exp": null,
+  "n_atoms": 6
+ },
+ "witherite (baco3)": {
+  "mp": -2.683,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "witherite": {
+  "mp": -2.683,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "strontianite (srco3)": {
+  "mp": -2.699,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "strontianite": {
+  "mp": -2.699,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "cerussite (pbco3)": {
+  "mp": -1.809,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "cerussite": {
+  "mp": -1.809,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "anhydrite (caso4)": {
+  "mp": -2.669,
+  "exp": null,
+  "n_atoms": 6
+ },
+ "anhydrite": {
+  "mp": -2.669,
+  "exp": null,
+  "n_atoms": 6
+ },
+ "barite (baso4)": {
+  "mp": -2.707,
+  "exp": null,
+  "n_atoms": 6
+ },
+ "barite": {
+  "mp": -2.707,
+  "exp": null,
+  "n_atoms": 6
+ },
+ "celestine (srso4)": {
+  "mp": -2.683,
+  "exp": null,
+  "n_atoms": 6
+ },
+ "celestine": {
+  "mp": -2.683,
+  "exp": null,
+  "n_atoms": 6
+ },
+ "anglesite (pbso4)": {
+  "mp": -1.911,
+  "exp": null,
+  "n_atoms": 6
+ },
+ "anglesite": {
+  "mp": -1.911,
+  "exp": null,
+  "n_atoms": 6
+ },
+ "arcanite (k2so4)": {
+  "mp": -2.272,
+  "exp": null,
+  "n_atoms": 7
+ },
+ "arcanite": {
+  "mp": -2.272,
+  "exp": null,
+  "n_atoms": 7
+ },
+ "chromite (fecr2o4)": {
+  "mp": -2.178,
+  "exp": null,
+  "n_atoms": 7
+ },
+ "chromite": {
+  "mp": -2.178,
+  "exp": null,
+  "n_atoms": 7
+ },
+ "franklinite (znfe2o4)": {
+  "mp": -1.745,
+  "exp": null,
+  "n_atoms": 7
+ },
+ "franklinite": {
+  "mp": -1.745,
+  "exp": null,
+  "n_atoms": 7
+ },
+ "gahnite (znal2o4)": {
+  "mp": -3.021,
+  "exp": null,
+  "n_atoms": 7
+ },
+ "gahnite": {
+  "mp": -3.021,
+  "exp": null,
+  "n_atoms": 7
+ },
+ "hercynite (feal2o4)": {
+  "mp": -2.904,
+  "exp": -2.9124,
+  "n_atoms": 7
+ },
+ "hercynite": {
+  "mp": -2.904,
+  "exp": -2.9124,
+  "n_atoms": 7
+ },
+ "ilmenite (fetio3)": {
+  "mp": -2.718,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "ilmenite": {
+  "mp": -2.718,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "geikielite (mgtio3)": {
+  "mp": -3.363,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "geikielite": {
+  "mp": -3.363,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "perovskite catio3": {
+  "mp": -3.556,
+  "exp": -3.4422,
+  "n_atoms": 5
+ },
+ "rutile-type sno2": {
+  "mp": -2.107,
+  "exp": -1.9955,
+  "n_atoms": 3
+ },
+ "cassiterite (sno2)": {
+  "mp": -2.107,
+  "exp": -1.9955,
+  "n_atoms": 3
+ },
+ "cassiterite": {
+  "mp": -2.107,
+  "exp": -1.9955,
+  "n_atoms": 3
+ },
+ "pyrolusite (mno2)": {
+  "mp": -1.776,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "pyrolusite": {
+  "mp": -1.776,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "cs2agbibr6 double perovskite": {
+  "mp": -1.456,
+  "exp": null,
+  "n_atoms": 10
+ },
+ "cspbbr3 (orthorhombic)": {
+  "mp": -1.634,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "cspbbr3": {
+  "mp": -1.634,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "cssni3": {
+  "mp": -1.178,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "cs2sni6": {
+  "mp": -1.163,
+  "exp": null,
+  "n_atoms": 9
+ },
+ "mote2 (1t')": {
+  "mp": -0.293,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "mote2": {
+  "mp": -0.293,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "wte2 (td)": {
+  "mp": -0.117,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "wte2": {
+  "mp": -0.117,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "1t-tas2": {
+  "mp": -1.365,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "nbse2 (2h)": {
+  "mp": -0.983,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "nbse2": {
+  "mp": -0.983,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "fese (tetragonal)": {
+  "mp": -0.508,
+  "exp": null,
+  "n_atoms": 2
+ },
+ "fese": {
+  "mp": -0.508,
+  "exp": null,
+  "n_atoms": 2
+ },
+ "bi2se3": {
+  "mp": -0.434,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "bi2te3": {
+  "mp": -0.274,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "snse": {
+  "mp": -0.454,
+  "exp": null,
+  "n_atoms": 2
+ },
+ "cu2znsns4 kesterite": {
+  "mp": -0.705,
+  "exp": null,
+  "n_atoms": 8
+ },
+ "cspbi3 (gamma)": {
+  "mp": -1.263,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "cspbi3": {
+  "mp": -1.263,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "cssnbr3": {
+  "mp": -1.561,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "cs2pbi2cl2": {
+  "mp": -1.601,
+  "exp": null,
+  "n_atoms": 7
+ },
+ "cs4pbbr6": {
+  "mp": -1.874,
+  "exp": null,
+  "n_atoms": 11
+ },
+ "rb2sni6": {
+  "mp": -1.115,
+  "exp": null,
+  "n_atoms": 9
+ },
+ "mos2 (2h)": {
+  "mp": -0.964,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "mos2": {
+  "mp": -0.964,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "ws2 (2h)": {
+  "mp": -0.884,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "ws2": {
+  "mp": -0.884,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "mose2 (2h)": {
+  "mp": -0.75,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "mose2": {
+  "mp": -0.75,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "wse2 (2h)": {
+  "mp": -0.604,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "wse2": {
+  "mp": -0.604,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "sns2 (1t)": {
+  "mp": -0.474,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "sns2": {
+  "mp": -0.474,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "bi2se3 topological": {
+  "mp": -0.434,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "sb2te3": {
+  "mp": -0.383,
+  "exp": null,
+  "n_atoms": 5
+ },
+ "gete": {
+  "mp": -0.035,
+  "exp": null,
+  "n_atoms": 2
+ },
+ "snte": {
+  "mp": -0.265,
+  "exp": null,
+  "n_atoms": 2
+ },
+ "snse2": {
+  "mp": -0.424,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "pdte2": {
+  "mp": -0.344,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "vse2 (1t)": {
+  "mp": -0.833,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "vse2": {
+  "mp": -0.833,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "tase2 (2h)": {
+  "mp": -0.932,
+  "exp": null,
+  "n_atoms": 3
+ },
+ "tase2": {
+  "mp": -0.932,
+  "exp": null,
+  "n_atoms": 3
+ }
+}

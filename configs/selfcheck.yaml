@@ -2,8 +2,8 @@
 seed: 42
 models: ["anthropic/claude-sonnet-5", "openai/gpt-5.5", "deepseek/deepseek-v4-pro", "qwen/qwen3-235b-a22b-2507"]
 system: "You are a materials-chemistry assistant. When you mention a molecule, give its SMILES and molecular formula; when you mention a crystal, give its space group symbol and number. Answer directly and concisely."
-prompts_path: handoff/corpus_final_v2.json
-ckpt_path: handoff/selfcheck_ckpt.jsonl
+prompts_path: data/frozen/corpus_final_v2.json
+ckpt_path: outputs/selfcheck_ckpt.jsonl
 n: 8
 rep: 0
 workers: 12

@@ -1,0 +1,443 @@
+[
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "isotope_half_life",
+  "subject": "C-14",
+  "nucid": "14c",
+  "prompt": "What is the half-life of the ground state of C-14 (the isotope with 8 neutrons and atomic number 6)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "isotope_half_life",
+  "subject": "U-235",
+  "nucid": "235u",
+  "prompt": "What is the half-life of the ground state of U-235 (the isotope with 143 neutrons and atomic number 92)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "isotope_half_life",
+  "subject": "U-238",
+  "nucid": "238u",
+  "prompt": "What is the half-life of the ground state of U-238 (the isotope with 146 neutrons and atomic number 92)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "isotope_half_life",
+  "subject": "Co-60",
+  "nucid": "60co",
+  "prompt": "What is the half-life of the ground state of Co-60 (the isotope with 33 neutrons and atomic number 27)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "isotope_half_life",
+  "subject": "H-3",
+  "nucid": "3h",
+  "prompt": "What is the half-life of the ground state of H-3 (the isotope with 2 neutrons and atomic number 1)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "isotope_half_life",
+  "subject": "I-131",
+  "nucid": "131i",
+  "prompt": "What is the half-life of the ground state of I-131 (the isotope with 78 neutrons and atomic number 53)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "isotope_half_life",
+  "subject": "Cs-137",
+  "nucid": "137cs",
+  "prompt": "What is the half-life of the ground state of Cs-137 (the isotope with 82 neutrons and atomic number 55)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "isotope_half_life",
+  "subject": "Sr-90",
+  "nucid": "90sr",
+  "prompt": "What is the half-life of the ground state of Sr-90 (the isotope with 52 neutrons and atomic number 38)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "isotope_half_life",
+  "subject": "K-40",
+  "nucid": "40k",
+  "prompt": "What is the half-life of the ground state of K-40 (the isotope with 21 neutrons and atomic number 19)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "isotope_half_life",
+  "subject": "Ra-226",
+  "nucid": "226ra",
+  "prompt": "What is the half-life of the ground state of Ra-226 (the isotope with 138 neutrons and atomic number 88)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "isotope_half_life",
+  "subject": "Pu-239",
+  "nucid": "239pu",
+  "prompt": "What is the half-life of the ground state of Pu-239 (the isotope with 145 neutrons and atomic number 94)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "isotope_half_life",
+  "subject": "Po-210",
+  "nucid": "210po",
+  "prompt": "What is the half-life of the ground state of Po-210 (the isotope with 126 neutrons and atomic number 84)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "isotope_half_life",
+  "subject": "Am-241",
+  "nucid": "241am",
+  "prompt": "What is the half-life of the ground state of Am-241 (the isotope with 146 neutrons and atomic number 95)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "isotope_half_life",
+  "subject": "Tc-99",
+  "nucid": "99tc",
+  "prompt": "What is the half-life of the ground state of Tc-99 (the isotope with 56 neutrons and atomic number 43)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "isotope_half_life",
+  "subject": "Ir-192",
+  "nucid": "192ir",
+  "prompt": "What is the half-life of the ground state of Ir-192 (the isotope with 115 neutrons and atomic number 77)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "isotope_half_life",
+  "subject": "Sm-153",
+  "nucid": "153sm",
+  "prompt": "What is the half-life of the ground state of Sm-153 (the isotope with 91 neutrons and atomic number 62)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "isotope_half_life",
+  "subject": "F-18",
+  "nucid": "18f",
+  "prompt": "What is the half-life of the ground state of F-18 (the isotope with 9 neutrons and atomic number 9)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "isotope_half_life",
+  "subject": "Tl-201",
+  "nucid": "201tl",
+  "prompt": "What is the half-life of the ground state of Tl-201 (the isotope with 120 neutrons and atomic number 81)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "isotope_half_life",
+  "subject": "Co-57",
+  "nucid": "57co",
+  "prompt": "What is the half-life of the ground state of Co-57 (the isotope with 30 neutrons and atomic number 27)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "isotope_half_life",
+  "subject": "Fe-55",
+  "nucid": "55fe",
+  "prompt": "What is the half-life of the ground state of Fe-55 (the isotope with 29 neutrons and atomic number 26)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "isotope_half_life",
+  "subject": "Ni-63",
+  "nucid": "63ni",
+  "prompt": "What is the half-life of the ground state of Ni-63 (the isotope with 35 neutrons and atomic number 28)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "isotope_half_life",
+  "subject": "Pm-147",
+  "nucid": "147pm",
+  "prompt": "What is the half-life of the ground state of Pm-147 (the isotope with 86 neutrons and atomic number 61)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "isotope_half_life",
+  "subject": "Kr-85",
+  "nucid": "85kr",
+  "prompt": "What is the half-life of the ground state of Kr-85 (the isotope with 49 neutrons and atomic number 36)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "isotope_half_life",
+  "subject": "Pu-244",
+  "nucid": "244pu",
+  "prompt": "What is the half-life of the ground state of Pu-244 (the isotope with 150 neutrons and atomic number 94)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "isotope_half_life",
+  "subject": "Cm-247",
+  "nucid": "247cm",
+  "prompt": "What is the half-life of the ground state of Cm-247 (the isotope with 151 neutrons and atomic number 96)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "isotope_half_life",
+  "subject": "I-129",
+  "nucid": "129i",
+  "prompt": "What is the half-life of the ground state of I-129 (the isotope with 76 neutrons and atomic number 53)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "isotope_half_life",
+  "subject": "Cl-36",
+  "nucid": "36cl",
+  "prompt": "What is the half-life of the ground state of Cl-36 (the isotope with 19 neutrons and atomic number 17)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "isotope_half_life",
+  "subject": "Be-10",
+  "nucid": "10be",
+  "prompt": "What is the half-life of the ground state of Be-10 (the isotope with 6 neutrons and atomic number 4)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "isotope_half_life",
+  "subject": "Al-26",
+  "nucid": "26al",
+  "prompt": "What is the half-life of the ground state of Al-26 (the isotope with 13 neutrons and atomic number 13)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "isotope_half_life",
+  "subject": "Mn-53",
+  "nucid": "53mn",
+  "prompt": "What is the half-life of the ground state of Mn-53 (the isotope with 28 neutrons and atomic number 25)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "isotope_half_life",
+  "subject": "Ni-59",
+  "nucid": "59ni",
+  "prompt": "What is the half-life of the ground state of Ni-59 (the isotope with 31 neutrons and atomic number 28)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "isotope_half_life",
+  "subject": "Ca-41",
+  "nucid": "41ca",
+  "prompt": "What is the half-life of the ground state of Ca-41 (the isotope with 21 neutrons and atomic number 20)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "isotope_half_life",
+  "subject": "Kr-81",
+  "nucid": "81kr",
+  "prompt": "What is the half-life of the ground state of Kr-81 (the isotope with 45 neutrons and atomic number 36)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "isotope_half_life",
+  "subject": "Zr-93",
+  "nucid": "93zr",
+  "prompt": "What is the half-life of the ground state of Zr-93 (the isotope with 53 neutrons and atomic number 40)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "isotope_half_life",
+  "subject": "Pd-107",
+  "nucid": "107pd",
+  "prompt": "What is the half-life of the ground state of Pd-107 (the isotope with 61 neutrons and atomic number 46)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "isotope_half_life",
+  "subject": "Og-294",
+  "nucid": "294og",
+  "prompt": "What is the half-life of the ground state of Og-294 (the isotope with 176 neutrons and atomic number 118)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "isotope_half_life",
+  "subject": "Fl-289",
+  "nucid": "289fl",
+  "prompt": "What is the half-life of the ground state of Fl-289 (the isotope with 175 neutrons and atomic number 114)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "isotope_half_life",
+  "subject": "Ts-294",
+  "nucid": "294ts",
+  "prompt": "What is the half-life of the ground state of Ts-294 (the isotope with 177 neutrons and atomic number 117)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "isotope_half_life",
+  "subject": "Lv-293",
+  "nucid": "293lv",
+  "prompt": "What is the half-life of the ground state of Lv-293 (the isotope with 177 neutrons and atomic number 116)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "isotope_half_life",
+  "subject": "Mc-288",
+  "nucid": "288mc",
+  "prompt": "What is the half-life of the ground state of Mc-288 (the isotope with 173 neutrons and atomic number 115)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "isotope_half_life",
+  "subject": "Cn-286",
+  "nucid": "286cn",
+  "prompt": "What is the half-life of the ground state of Cn-286 (the isotope with 174 neutrons and atomic number 112)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "isotope_half_life",
+  "subject": "Ds-270",
+  "nucid": "270ds",
+  "prompt": "What is the half-life of the ground state of Ds-270 (the isotope with 160 neutrons and atomic number 110)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "isotope_half_life",
+  "subject": "Fm-257",
+  "nucid": "257fm",
+  "prompt": "What is the half-life of the ground state of Fm-257 (the isotope with 157 neutrons and atomic number 100)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "isotope_half_life",
+  "subject": "Es-254",
+  "nucid": "254es",
+  "prompt": "What is the half-life of the ground state of Es-254 (the isotope with 155 neutrons and atomic number 99)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "isotope_half_life",
+  "subject": "Cf-252",
+  "nucid": "252cf",
+  "prompt": "What is the half-life of the ground state of Cf-252 (the isotope with 154 neutrons and atomic number 98)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "isotope_half_life",
+  "subject": "Bh-262",
+  "nucid": "262bh",
+  "prompt": "What is the half-life of the ground state of Bh-262 (the isotope with 155 neutrons and atomic number 107)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "isotope_half_life",
+  "subject": "Rf-267",
+  "nucid": "267rf",
+  "prompt": "What is the half-life of the ground state of Rf-267 (the isotope with 163 neutrons and atomic number 104)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "isotope_half_life",
+  "subject": "P-32",
+  "nucid": "32p",
+  "prompt": "What is the half-life of the ground state of P-32 (the isotope with 17 neutrons and atomic number 15)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "isotope_half_life",
+  "subject": "I-125",
+  "nucid": "125i",
+  "prompt": "What is the half-life of the ground state of I-125 (the isotope with 72 neutrons and atomic number 53)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "isotope_half_life",
+  "subject": "Fe-59",
+  "nucid": "59fe",
+  "prompt": "What is the half-life of the ground state of Fe-59 (the isotope with 33 neutrons and atomic number 26)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "isotope_half_life",
+  "subject": "Na-24",
+  "nucid": "24na",
+  "prompt": "What is the half-life of the ground state of Na-24 (the isotope with 13 neutrons and atomic number 11)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "isotope_half_life",
+  "subject": "Ga-67",
+  "nucid": "67ga",
+  "prompt": "What is the half-life of the ground state of Ga-67 (the isotope with 36 neutrons and atomic number 31)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "isotope_half_life",
+  "subject": "In-111",
+  "nucid": "111in",
+  "prompt": "What is the half-life of the ground state of In-111 (the isotope with 62 neutrons and atomic number 49)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "isotope_half_life",
+  "subject": "Pd-103",
+  "nucid": "103pd",
+  "prompt": "What is the half-life of the ground state of Pd-103 (the isotope with 57 neutrons and atomic number 46)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "isotope_half_life",
+  "subject": "Yb-169",
+  "nucid": "169yb",
+  "prompt": "What is the half-life of the ground state of Yb-169 (the isotope with 99 neutrons and atomic number 70)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "isotope_half_life",
+  "subject": "Be-7",
+  "nucid": "7be",
+  "prompt": "What is the half-life of the ground state of Be-7 (the isotope with 3 neutrons and atomic number 4)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "isotope_half_life",
+  "subject": "Na-22",
+  "nucid": "22na",
+  "prompt": "What is the half-life of the ground state of Na-22 (the isotope with 11 neutrons and atomic number 11)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "isotope_half_life",
+  "subject": "Ti-44",
+  "nucid": "44ti",
+  "prompt": "What is the half-life of the ground state of Ti-44 (the isotope with 22 neutrons and atomic number 22)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "isotope_half_life",
+  "subject": "Fe-60",
+  "nucid": "60fe",
+  "prompt": "What is the half-life of the ground state of Fe-60 (the isotope with 34 neutrons and atomic number 26)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "isotope_half_life",
+  "subject": "No-259",
+  "nucid": "259no",
+  "prompt": "What is the half-life of the ground state of No-259 (the isotope with 157 neutrons and atomic number 102)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "isotope_half_life",
+  "subject": "Db-260",
+  "nucid": "260db",
+  "prompt": "What is the half-life of the ground state of Db-260 (the isotope with 155 neutrons and atomic number 105)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "isotope_half_life",
+  "subject": "Sg-265",
+  "nucid": "265sg",
+  "prompt": "What is the half-life of the ground state of Sg-265 (the isotope with 159 neutrons and atomic number 106)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "isotope_half_life",
+  "subject": "Rg-272",
+  "nucid": "272rg",
+  "prompt": "What is the half-life of the ground state of Rg-272 (the isotope with 161 neutrons and atomic number 111)? State the half-life with its unit, and its dominant decay mode. Give a single numeric value."
+ }
+]

@@ -1,0 +1,3557 @@
+[
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "aspirin",
+  "prompt": "What is the molecular formula and SMILES of aspirin? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "caffeine",
+  "prompt": "What is the molecular formula and SMILES of caffeine? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "glucose",
+  "prompt": "What is the molecular formula and SMILES of glucose? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "acetic acid",
+  "prompt": "What is the molecular formula and SMILES of acetic acid? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "benzene",
+  "prompt": "What is the molecular formula and SMILES of benzene? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "ethanol",
+  "prompt": "What is the molecular formula and SMILES of ethanol? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "acetone",
+  "prompt": "What is the molecular formula and SMILES of acetone? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "toluene",
+  "prompt": "What is the molecular formula and SMILES of toluene? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "methanol",
+  "prompt": "What is the molecular formula and SMILES of methanol? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "formaldehyde",
+  "prompt": "What is the molecular formula and SMILES of formaldehyde? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "phenol",
+  "prompt": "What is the molecular formula and SMILES of phenol? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "aniline",
+  "prompt": "What is the molecular formula and SMILES of aniline? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "urea",
+  "prompt": "What is the molecular formula and SMILES of urea? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "glycerol",
+  "prompt": "What is the molecular formula and SMILES of glycerol? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "citric acid",
+  "prompt": "What is the molecular formula and SMILES of citric acid? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "formic acid",
+  "prompt": "What is the molecular formula and SMILES of formic acid? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "acetaldehyde",
+  "prompt": "What is the molecular formula and SMILES of acetaldehyde? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "ethylene glycol",
+  "prompt": "What is the molecular formula and SMILES of ethylene glycol? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "propanol",
+  "prompt": "What is the molecular formula and SMILES of propanol? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "molecular",
+  "subject": "butane",
+  "prompt": "What is the molecular formula and SMILES of butane? State them explicitly."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "halite (NaCl)",
+  "formula": "NaCl",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of halite (NaCl)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "corundum (Al2O3)",
+  "formula": "Al2O3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of corundum (Al2O3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "rutile (TiO2)",
+  "formula": "TiO2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of rutile (TiO2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "fluorite (CaF2)",
+  "formula": "CaF2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of fluorite (CaF2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "periclase (MgO)",
+  "formula": "MgO",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of periclase (MgO)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "diamond (C)",
+  "formula": "C",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of diamond (C)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "silicon (Si)",
+  "formula": "Si",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of silicon (Si)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "copper (Cu)",
+  "formula": "Cu",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of copper (Cu)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "iron (alpha-Fe)",
+  "formula": "Fe",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of iron (alpha-Fe)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "zincblende (ZnS)",
+  "formula": "ZnS",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of zincblende (ZnS)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "wurtzite (ZnO)",
+  "formula": "ZnO",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of wurtzite (ZnO)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "spinel (MgAl2O4)",
+  "formula": "MgAl2O4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of spinel (MgAl2O4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "magnetite (Fe3O4)",
+  "formula": "Fe3O4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of magnetite (Fe3O4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "galena (PbS)",
+  "formula": "PbS",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of galena (PbS)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "sphalerite (ZnS)",
+  "formula": "ZnS",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of sphalerite (ZnS)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "calcite (CaCO3)",
+  "formula": "CaCO3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of calcite (CaCO3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "gold (Au)",
+  "formula": "Au",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of gold (Au)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "silver (Ag)",
+  "formula": "Ag",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of silver (Ag)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "tungsten (W)",
+  "formula": "W",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of tungsten (W)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "crystalline",
+  "subject": "cesium chloride (CsCl)",
+  "formula": "CsCl",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of cesium chloride (CsCl)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "ibuprofen",
+  "prompt": "What is the molecular formula and SMILES of ibuprofen? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "warfarin",
+  "prompt": "What is the molecular formula and SMILES of warfarin? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "naproxen",
+  "prompt": "What is the molecular formula and SMILES of naproxen? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "metformin",
+  "prompt": "What is the molecular formula and SMILES of metformin? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "lidocaine",
+  "prompt": "What is the molecular formula and SMILES of lidocaine? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "diazepam",
+  "prompt": "What is the molecular formula and SMILES of diazepam? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "acetaminophen",
+  "prompt": "What is the molecular formula and SMILES of acetaminophen? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "ampicillin",
+  "prompt": "What is the molecular formula and SMILES of ampicillin? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "atorvastatin",
+  "prompt": "What is the molecular formula and SMILES of atorvastatin? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "omeprazole",
+  "prompt": "What is the molecular formula and SMILES of omeprazole? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "fluoxetine",
+  "prompt": "What is the molecular formula and SMILES of fluoxetine? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "ciprofloxacin",
+  "prompt": "What is the molecular formula and SMILES of ciprofloxacin? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "loratadine",
+  "prompt": "What is the molecular formula and SMILES of loratadine? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "sildenafil",
+  "prompt": "What is the molecular formula and SMILES of sildenafil? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "salbutamol",
+  "prompt": "What is the molecular formula and SMILES of salbutamol? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "diclofenac",
+  "prompt": "What is the molecular formula and SMILES of diclofenac? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "ranitidine",
+  "prompt": "What is the molecular formula and SMILES of ranitidine? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "propranolol",
+  "prompt": "What is the molecular formula and SMILES of propranolol? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "furosemide",
+  "prompt": "What is the molecular formula and SMILES of furosemide? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "molecular",
+  "subject": "captopril",
+  "prompt": "What is the molecular formula and SMILES of captopril? State them explicitly."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "anatase (TiO2)",
+  "formula": "TiO2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of anatase (TiO2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "perovskite (SrTiO3)",
+  "formula": "SrTiO3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of perovskite (SrTiO3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "quartz (SiO2)",
+  "formula": "SiO2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of quartz (SiO2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "hematite (Fe2O3)",
+  "formula": "Fe2O3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of hematite (Fe2O3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "cuprite (Cu2O)",
+  "formula": "Cu2O",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of cuprite (Cu2O)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "gallium arsenide (GaAs)",
+  "formula": "GaAs",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of gallium arsenide (GaAs)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "gallium nitride (GaN)",
+  "formula": "GaN",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of gallium nitride (GaN)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "silicon carbide (3C-SiC)",
+  "formula": "SiC",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of silicon carbide (3C-SiC)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "barium titanate (BaTiO3)",
+  "formula": "BaTiO3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of barium titanate (BaTiO3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "lithium cobalt oxide (LiCoO2)",
+  "formula": "LiCoO2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of lithium cobalt oxide (LiCoO2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "yttria (Y2O3)",
+  "formula": "Y2O3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of yttria (Y2O3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "zirconia (cubic ZrO2)",
+  "formula": "ZrO2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of zirconia (cubic ZrO2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "ceria (CeO2)",
+  "formula": "CeO2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of ceria (CeO2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "strontium fluoride (SrF2)",
+  "formula": "SrF2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of strontium fluoride (SrF2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "cadmium selenide (CdSe)",
+  "formula": "CdSe",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of cadmium selenide (CdSe)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "indium phosphide (InP)",
+  "formula": "InP",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of indium phosphide (InP)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "aluminum nitride (AlN)",
+  "formula": "AlN",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of aluminum nitride (AlN)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "boron nitride (h-BN)",
+  "formula": "BN",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of boron nitride (h-BN)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "molybdenite (2H-MoS2)",
+  "formula": "MoS2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of molybdenite (2H-MoS2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "crystalline",
+  "subject": "rock salt MgO",
+  "formula": "MgO",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of rock salt MgO? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "artemisinin",
+  "prompt": "What is the molecular formula and SMILES of artemisinin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "rivaroxaban",
+  "prompt": "What is the molecular formula and SMILES of rivaroxaban? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "pyrimethamine",
+  "prompt": "What is the molecular formula and SMILES of pyrimethamine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "tetrodotoxin",
+  "prompt": "What is the molecular formula and SMILES of tetrodotoxin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "quinine",
+  "prompt": "What is the molecular formula and SMILES of quinine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "colchicine",
+  "prompt": "What is the molecular formula and SMILES of colchicine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "vincristine",
+  "prompt": "What is the molecular formula and SMILES of vincristine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "paclitaxel",
+  "prompt": "What is the molecular formula and SMILES of paclitaxel? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "reserpine",
+  "prompt": "What is the molecular formula and SMILES of reserpine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "strychnine",
+  "prompt": "What is the molecular formula and SMILES of strychnine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "emetine",
+  "prompt": "What is the molecular formula and SMILES of emetine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "physostigmine",
+  "prompt": "What is the molecular formula and SMILES of physostigmine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "digoxin",
+  "prompt": "What is the molecular formula and SMILES of digoxin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "ergotamine",
+  "prompt": "What is the molecular formula and SMILES of ergotamine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "camptothecin",
+  "prompt": "What is the molecular formula and SMILES of camptothecin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "podophyllotoxin",
+  "prompt": "What is the molecular formula and SMILES of podophyllotoxin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "tubocurarine",
+  "prompt": "What is the molecular formula and SMILES of tubocurarine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "yohimbine",
+  "prompt": "What is the molecular formula and SMILES of yohimbine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "galantamine",
+  "prompt": "What is the molecular formula and SMILES of galantamine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "huperzine A",
+  "prompt": "What is the molecular formula and SMILES of huperzine A? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "ouabain",
+  "prompt": "What is the molecular formula and SMILES of ouabain? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "aconitine",
+  "prompt": "What is the molecular formula and SMILES of aconitine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "brucine",
+  "prompt": "What is the molecular formula and SMILES of brucine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "swainsonine",
+  "prompt": "What is the molecular formula and SMILES of swainsonine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "gibberellic acid",
+  "prompt": "What is the molecular formula and SMILES of gibberellic acid? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "forskolin",
+  "prompt": "What is the molecular formula and SMILES of forskolin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "bruceantin",
+  "prompt": "What is the molecular formula and SMILES of bruceantin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "maytansine",
+  "prompt": "What is the molecular formula and SMILES of maytansine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "calicheamicin",
+  "prompt": "What is the molecular formula and SMILES of calicheamicin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "discodermolide",
+  "prompt": "What is the molecular formula and SMILES of discodermolide? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "epothilone B",
+  "prompt": "What is the molecular formula and SMILES of epothilone B? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "halichondrin B",
+  "prompt": "What is the molecular formula and SMILES of halichondrin B? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "bryostatin 1",
+  "prompt": "What is the molecular formula and SMILES of bryostatin 1? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "okadaic acid",
+  "prompt": "What is the molecular formula and SMILES of okadaic acid? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "palytoxin",
+  "prompt": "What is the molecular formula and SMILES of palytoxin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "batrachotoxin",
+  "prompt": "What is the molecular formula and SMILES of batrachotoxin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "saxitoxin",
+  "prompt": "What is the molecular formula and SMILES of saxitoxin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "ciguatoxin",
+  "prompt": "What is the molecular formula and SMILES of ciguatoxin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "maitotoxin",
+  "prompt": "What is the molecular formula and SMILES of maitotoxin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "gambierol",
+  "prompt": "What is the molecular formula and SMILES of gambierol? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "brevetoxin B",
+  "prompt": "What is the molecular formula and SMILES of brevetoxin B? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "azadirachtin",
+  "prompt": "What is the molecular formula and SMILES of azadirachtin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "taxol",
+  "prompt": "What is the molecular formula and SMILES of taxol? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "cephalomannine",
+  "prompt": "What is the molecular formula and SMILES of cephalomannine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "baccatin III",
+  "prompt": "What is the molecular formula and SMILES of baccatin III? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "10-deacetylbaccatin III",
+  "prompt": "What is the molecular formula and SMILES of 10-deacetylbaccatin III? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "docetaxel",
+  "prompt": "What is the molecular formula and SMILES of docetaxel? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "vinblastine",
+  "prompt": "What is the molecular formula and SMILES of vinblastine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "vindesine",
+  "prompt": "What is the molecular formula and SMILES of vindesine? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "topotecan",
+  "prompt": "What is the molecular formula and SMILES of topotecan? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "irinotecan",
+  "prompt": "What is the molecular formula and SMILES of irinotecan? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "etoposide",
+  "prompt": "What is the molecular formula and SMILES of etoposide? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "teniposide",
+  "prompt": "What is the molecular formula and SMILES of teniposide? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "mitomycin C",
+  "prompt": "What is the molecular formula and SMILES of mitomycin C? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "doxorubicin",
+  "prompt": "What is the molecular formula and SMILES of doxorubicin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "daunorubicin",
+  "prompt": "What is the molecular formula and SMILES of daunorubicin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "bleomycin",
+  "prompt": "What is the molecular formula and SMILES of bleomycin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "actinomycin D",
+  "prompt": "What is the molecular formula and SMILES of actinomycin D? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "rapamycin",
+  "prompt": "What is the molecular formula and SMILES of rapamycin? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "molecular",
+  "subject": "tacrolimus",
+  "prompt": "What is the molecular formula and SMILES of tacrolimus? State them explicitly."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "pyrite (FeS2)",
+  "formula": "FeS2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of pyrite (FeS2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "marcasite (FeS2)",
+  "formula": "FeS2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of marcasite (FeS2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "brookite (TiO2)",
+  "formula": "TiO2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of brookite (TiO2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "aragonite (CaCO3)",
+  "formula": "CaCO3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of aragonite (CaCO3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "cristobalite (SiO2)",
+  "formula": "SiO2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of cristobalite (SiO2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "cinnabar (HgS)",
+  "formula": "HgS",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of cinnabar (HgS)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "metacinnabar (HgS)",
+  "formula": "HgS",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of metacinnabar (HgS)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "greenockite (CdS)",
+  "formula": "CdS",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of greenockite (CdS)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "hawleyite (CdS)",
+  "formula": "CdS",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of hawleyite (CdS)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "akermanite (Ca2MgSi2O7)",
+  "formula": "Ca2MgSi2O7",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of akermanite (Ca2MgSi2O7)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "wustite (FeO)",
+  "formula": "FeO",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of wustite (FeO)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "goethite (FeOOH)",
+  "formula": "FeOOH",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of goethite (FeOOH)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "lepidocrocite (FeOOH)",
+  "formula": "FeOOH",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of lepidocrocite (FeOOH)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "baddeleyite (ZrO2)",
+  "formula": "ZrO2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of baddeleyite (ZrO2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "cotunnite (PbCl2)",
+  "formula": "PbCl2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of cotunnite (PbCl2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "stishovite (SiO2)",
+  "formula": "SiO2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of stishovite (SiO2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "coesite (SiO2)",
+  "formula": "SiO2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of coesite (SiO2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "moissanite (6H-SiC)",
+  "formula": "SiC",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of moissanite (6H-SiC)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "berlinite (AlPO4)",
+  "formula": "AlPO4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of berlinite (AlPO4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "scheelite (CaWO4)",
+  "formula": "CaWO4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of scheelite (CaWO4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "wolframite (FeWO4)",
+  "formula": "FeWO4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of wolframite (FeWO4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "chalcopyrite (CuFeS2)",
+  "formula": "CuFeS2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of chalcopyrite (CuFeS2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "covellite (CuS)",
+  "formula": "CuS",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of covellite (CuS)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "realgar (As4S4)",
+  "formula": "As4S4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of realgar (As4S4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "orpiment (As2S3)",
+  "formula": "As2S3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of orpiment (As2S3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "stibnite (Sb2S3)",
+  "formula": "Sb2S3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of stibnite (Sb2S3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "anatase-vs-rutile TiO2",
+  "formula": "TiO2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of anatase-vs-rutile TiO2? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "kyanite (Al2SiO5)",
+  "formula": "Al2SiO5",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of kyanite (Al2SiO5)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "andalusite (Al2SiO5)",
+  "formula": "Al2SiO5",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of andalusite (Al2SiO5)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "sillimanite (Al2SiO5)",
+  "formula": "Al2SiO5",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of sillimanite (Al2SiO5)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "enstatite (MgSiO3)",
+  "formula": "MgSiO3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of enstatite (MgSiO3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "forsterite (Mg2SiO4)",
+  "formula": "Mg2SiO4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of forsterite (Mg2SiO4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "fayalite (Fe2SiO4)",
+  "formula": "Fe2SiO4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of fayalite (Fe2SiO4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "rhodochrosite (MnCO3)",
+  "formula": "MnCO3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of rhodochrosite (MnCO3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "siderite (FeCO3)",
+  "formula": "FeCO3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of siderite (FeCO3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "smithsonite (ZnCO3)",
+  "formula": "ZnCO3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of smithsonite (ZnCO3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "magnesite (MgCO3)",
+  "formula": "MgCO3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of magnesite (MgCO3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "dolomite (CaMgC2O6)",
+  "formula": "CaMg(CO3)2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of dolomite (CaMgC2O6)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "witherite (BaCO3)",
+  "formula": "BaCO3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of witherite (BaCO3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "strontianite (SrCO3)",
+  "formula": "SrCO3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of strontianite (SrCO3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "cerussite (PbCO3)",
+  "formula": "PbCO3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of cerussite (PbCO3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "anhydrite (CaSO4)",
+  "formula": "CaSO4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of anhydrite (CaSO4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "barite (BaSO4)",
+  "formula": "BaSO4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of barite (BaSO4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "celestine (SrSO4)",
+  "formula": "SrSO4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of celestine (SrSO4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "anglesite (PbSO4)",
+  "formula": "PbSO4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of anglesite (PbSO4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "arcanite (K2SO4)",
+  "formula": "K2SO4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of arcanite (K2SO4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "chromite (FeCr2O4)",
+  "formula": "FeCr2O4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of chromite (FeCr2O4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "franklinite (ZnFe2O4)",
+  "formula": "ZnFe2O4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of franklinite (ZnFe2O4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "gahnite (ZnAl2O4)",
+  "formula": "ZnAl2O4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of gahnite (ZnAl2O4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "hercynite (FeAl2O4)",
+  "formula": "FeAl2O4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of hercynite (FeAl2O4)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "ilmenite (FeTiO3)",
+  "formula": "FeTiO3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of ilmenite (FeTiO3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "geikielite (MgTiO3)",
+  "formula": "MgTiO3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of geikielite (MgTiO3)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "perovskite CaTiO3",
+  "formula": "CaTiO3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of perovskite CaTiO3? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "rutile-type SnO2",
+  "formula": "SnO2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of rutile-type SnO2? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "cassiterite (SnO2)",
+  "formula": "SnO2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of cassiterite (SnO2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "crystalline",
+  "subject": "pyrolusite (MnO2)",
+  "formula": "MnO2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of pyrolusite (MnO2)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "lenacapavir",
+  "prompt": "What is the molecular formula and SMILES of lenacapavir? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "sotorasib",
+  "prompt": "What is the molecular formula and SMILES of sotorasib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "molnupiravir",
+  "prompt": "What is the molecular formula and SMILES of molnupiravir? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "nirmatrelvir",
+  "prompt": "What is the molecular formula and SMILES of nirmatrelvir? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "ensitrelvir",
+  "prompt": "What is the molecular formula and SMILES of ensitrelvir? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "adagrasib",
+  "prompt": "What is the molecular formula and SMILES of adagrasib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "tirzepatide",
+  "prompt": "What is the molecular formula and SMILES of tirzepatide? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "mavacamten",
+  "prompt": "What is the molecular formula and SMILES of mavacamten? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "pirtobrutinib",
+  "prompt": "What is the molecular formula and SMILES of pirtobrutinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "elacestrant",
+  "prompt": "What is the molecular formula and SMILES of elacestrant? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "zavegepant",
+  "prompt": "What is the molecular formula and SMILES of zavegepant? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "daprodustat",
+  "prompt": "What is the molecular formula and SMILES of daprodustat? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "vonoprazan",
+  "prompt": "What is the molecular formula and SMILES of vonoprazan? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "fruquintinib",
+  "prompt": "What is the molecular formula and SMILES of fruquintinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "momelotinib",
+  "prompt": "What is the molecular formula and SMILES of momelotinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "capivasertib",
+  "prompt": "What is the molecular formula and SMILES of capivasertib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "repotrectinib",
+  "prompt": "What is the molecular formula and SMILES of repotrectinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "fezolinetant",
+  "prompt": "What is the molecular formula and SMILES of fezolinetant? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "etrasimod",
+  "prompt": "What is the molecular formula and SMILES of etrasimod? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "nirogacestat",
+  "prompt": "What is the molecular formula and SMILES of nirogacestat? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "quizartinib",
+  "prompt": "What is the molecular formula and SMILES of quizartinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "tucatinib",
+  "prompt": "What is the molecular formula and SMILES of tucatinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "selpercatinib",
+  "prompt": "What is the molecular formula and SMILES of selpercatinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "pralsetinib",
+  "prompt": "What is the molecular formula and SMILES of pralsetinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "ripretinib",
+  "prompt": "What is the molecular formula and SMILES of ripretinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "avapritinib",
+  "prompt": "What is the molecular formula and SMILES of avapritinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "belzutifan",
+  "prompt": "What is the molecular formula and SMILES of belzutifan? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "infigratinib",
+  "prompt": "What is the molecular formula and SMILES of infigratinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "futibatinib",
+  "prompt": "What is the molecular formula and SMILES of futibatinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "pemigatinib",
+  "prompt": "What is the molecular formula and SMILES of pemigatinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "erdafitinib",
+  "prompt": "What is the molecular formula and SMILES of erdafitinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "tazemetostat",
+  "prompt": "What is the molecular formula and SMILES of tazemetostat? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "selumetinib",
+  "prompt": "What is the molecular formula and SMILES of selumetinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "trilaciclib",
+  "prompt": "What is the molecular formula and SMILES of trilaciclib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "umbralisib",
+  "prompt": "What is the molecular formula and SMILES of umbralisib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "tepotinib",
+  "prompt": "What is the molecular formula and SMILES of tepotinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "capmatinib",
+  "prompt": "What is the molecular formula and SMILES of capmatinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "mobocertinib",
+  "prompt": "What is the molecular formula and SMILES of mobocertinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "remdesivir",
+  "prompt": "What is the molecular formula and SMILES of remdesivir? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "baricitinib",
+  "prompt": "What is the molecular formula and SMILES of baricitinib? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "molecular",
+  "subject": "paxlovid",
+  "prompt": "What is the molecular formula and SMILES of paxlovid? State them explicitly."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "Cs2AgBiBr6 double perovskite",
+  "formula": "Cs2AgBiBr6",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of Cs2AgBiBr6 double perovskite? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "CsPbBr3 (orthorhombic)",
+  "formula": "CsPbBr3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of CsPbBr3 (orthorhombic)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "CsSnI3",
+  "formula": "CsSnI3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of CsSnI3? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "Cs2SnI6",
+  "formula": "Cs2SnI6",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of Cs2SnI6? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "MoTe2 (1T')",
+  "formula": "MoTe2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of MoTe2 (1T')? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "WTe2 (Td)",
+  "formula": "WTe2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of WTe2 (Td)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "1T-TaS2",
+  "formula": "TaS2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of 1T-TaS2? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "NbSe2 (2H)",
+  "formula": "NbSe2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of NbSe2 (2H)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "FeSe (tetragonal)",
+  "formula": "FeSe",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of FeSe (tetragonal)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "Bi2Se3",
+  "formula": "Bi2Se3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of Bi2Se3? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "Bi2Te3",
+  "formula": "Bi2Te3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of Bi2Te3? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "SnSe",
+  "formula": "SnSe",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of SnSe? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "Cu2ZnSnS4 kesterite",
+  "formula": "Cu2ZnSnS4",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of Cu2ZnSnS4 kesterite? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "CsPbI3 (gamma)",
+  "formula": "CsPbI3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of CsPbI3 (gamma)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "CsSnBr3",
+  "formula": "CsSnBr3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of CsSnBr3? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "Cs2PbI2Cl2",
+  "formula": "Cs2PbI2Cl2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of Cs2PbI2Cl2? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "Cs4PbBr6",
+  "formula": "Cs4PbBr6",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of Cs4PbBr6? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "Rb2SnI6",
+  "formula": "Rb2SnI6",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of Rb2SnI6? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "MoS2 (2H)",
+  "formula": "MoS2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of MoS2 (2H)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "WS2 (2H)",
+  "formula": "WS2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of WS2 (2H)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "MoSe2 (2H)",
+  "formula": "MoSe2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of MoSe2 (2H)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "WSe2 (2H)",
+  "formula": "WSe2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of WSe2 (2H)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "SnS2 (1T)",
+  "formula": "SnS2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of SnS2 (1T)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "Bi2Se3 topological",
+  "formula": "Bi2Se3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of Bi2Se3 topological? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "Sb2Te3",
+  "formula": "Sb2Te3",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of Sb2Te3? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "GeTe",
+  "formula": "GeTe",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of GeTe? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "SnTe",
+  "formula": "SnTe",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of SnTe? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "SnSe2",
+  "formula": "SnSe2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of SnSe2? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "PdTe2",
+  "formula": "PdTe2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of PdTe2? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "VSe2 (1T)",
+  "formula": "VSe2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of VSe2 (1T)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "crystalline",
+  "subject": "TaSe2 (2H)",
+  "formula": "TaSe2",
+  "prompt": "At room temperature and ambient pressure, what is the crystal structure of TaSe2 (2H)? Give the Hermann\u2013Mauguin space group symbol and its international number for this specific named phase."
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "halite (NaCl)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of halite (NaCl) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "corundum (Al2O3)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of corundum (Al2O3) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "rutile (TiO2)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of rutile (TiO2) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "fluorite (CaF2)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of fluorite (CaF2) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "periclase (MgO)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of periclase (MgO) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "diamond (C)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of diamond (C) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "silicon (Si)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of silicon (Si) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "copper (Cu)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of copper (Cu) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "iron (alpha-Fe)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of iron (alpha-Fe) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "zincblende (ZnS)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of zincblende (ZnS) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "wurtzite (ZnO)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of wurtzite (ZnO) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "spinel (MgAl2O4)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of spinel (MgAl2O4) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "magnetite (Fe3O4)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of magnetite (Fe3O4) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "galena (PbS)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of galena (PbS) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "sphalerite (ZnS)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of sphalerite (ZnS) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "calcite (CaCO3)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of calcite (CaCO3) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "gold (Au)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of gold (Au) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "silver (Ag)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of silver (Ag) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "tungsten (W)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of tungsten (W) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_ef",
+  "subject": "cesium chloride (CsCl)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of cesium chloride (CsCl) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "anatase (TiO2)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of anatase (TiO2) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "perovskite (SrTiO3)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of perovskite (SrTiO3) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "quartz (SiO2)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of quartz (SiO2) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "hematite (Fe2O3)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of hematite (Fe2O3) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "cuprite (Cu2O)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of cuprite (Cu2O) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "gallium arsenide (GaAs)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of gallium arsenide (GaAs) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "gallium nitride (GaN)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of gallium nitride (GaN) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "silicon carbide (3C-SiC)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of silicon carbide (3C-SiC) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "barium titanate (BaTiO3)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of barium titanate (BaTiO3) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "lithium cobalt oxide (LiCoO2)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of lithium cobalt oxide (LiCoO2) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "yttria (Y2O3)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of yttria (Y2O3) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "zirconia (cubic ZrO2)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of zirconia (cubic ZrO2) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "ceria (CeO2)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of ceria (CeO2) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "strontium fluoride (SrF2)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of strontium fluoride (SrF2) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "cadmium selenide (CdSe)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of cadmium selenide (CdSe) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "indium phosphide (InP)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of indium phosphide (InP) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "aluminum nitride (AlN)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of aluminum nitride (AlN) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "boron nitride (h-BN)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of boron nitride (h-BN) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "molybdenite (2H-MoS2)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of molybdenite (2H-MoS2) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_ef",
+  "subject": "rock salt MgO",
+  "prompt": "What is the formation energy per atom (in eV/atom) of rock salt MgO in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "Cs2AgBiBr6 double perovskite",
+  "prompt": "What is the formation energy per atom (in eV/atom) of Cs2AgBiBr6 double perovskite in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "CsPbBr3 (orthorhombic)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of CsPbBr3 (orthorhombic) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "CsSnI3",
+  "prompt": "What is the formation energy per atom (in eV/atom) of CsSnI3 in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "Cs2SnI6",
+  "prompt": "What is the formation energy per atom (in eV/atom) of Cs2SnI6 in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "MoTe2 (1T')",
+  "prompt": "What is the formation energy per atom (in eV/atom) of MoTe2 (1T') in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "WTe2 (Td)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of WTe2 (Td) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "1T-TaS2",
+  "prompt": "What is the formation energy per atom (in eV/atom) of 1T-TaS2 in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "NbSe2 (2H)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of NbSe2 (2H) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "FeSe (tetragonal)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of FeSe (tetragonal) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "Bi2Se3",
+  "prompt": "What is the formation energy per atom (in eV/atom) of Bi2Se3 in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "Bi2Te3",
+  "prompt": "What is the formation energy per atom (in eV/atom) of Bi2Te3 in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "SnSe",
+  "prompt": "What is the formation energy per atom (in eV/atom) of SnSe in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "Cu2ZnSnS4 kesterite",
+  "prompt": "What is the formation energy per atom (in eV/atom) of Cu2ZnSnS4 kesterite in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "CsPbI3 (gamma)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of CsPbI3 (gamma) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "CsSnBr3",
+  "prompt": "What is the formation energy per atom (in eV/atom) of CsSnBr3 in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "Cs2PbI2Cl2",
+  "prompt": "What is the formation energy per atom (in eV/atom) of Cs2PbI2Cl2 in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "Cs4PbBr6",
+  "prompt": "What is the formation energy per atom (in eV/atom) of Cs4PbBr6 in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "Rb2SnI6",
+  "prompt": "What is the formation energy per atom (in eV/atom) of Rb2SnI6 in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "MoS2 (2H)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of MoS2 (2H) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "WS2 (2H)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of WS2 (2H) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "MoSe2 (2H)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of MoSe2 (2H) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "WSe2 (2H)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of WSe2 (2H) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "SnS2 (1T)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of SnS2 (1T) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "Bi2Se3 topological",
+  "prompt": "What is the formation energy per atom (in eV/atom) of Bi2Se3 topological in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "Sb2Te3",
+  "prompt": "What is the formation energy per atom (in eV/atom) of Sb2Te3 in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "GeTe",
+  "prompt": "What is the formation energy per atom (in eV/atom) of GeTe in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "SnTe",
+  "prompt": "What is the formation energy per atom (in eV/atom) of SnTe in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "SnSe2",
+  "prompt": "What is the formation energy per atom (in eV/atom) of SnSe2 in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "PdTe2",
+  "prompt": "What is the formation energy per atom (in eV/atom) of PdTe2 in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "VSe2 (1T)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of VSe2 (1T) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_ef",
+  "subject": "TaSe2 (2H)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of TaSe2 (2H) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "enstatite (MgSiO3)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of enstatite (MgSiO3) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "realgar (As4S4)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of realgar (As4S4) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "ilmenite (FeTiO3)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of ilmenite (FeTiO3) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "goethite (FeOOH)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of goethite (FeOOH) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "coesite (SiO2)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of coesite (SiO2) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "wolframite (FeWO4)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of wolframite (FeWO4) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "geikielite (MgTiO3)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of geikielite (MgTiO3) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "cassiterite (SnO2)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of cassiterite (SnO2) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "smithsonite (ZnCO3)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of smithsonite (ZnCO3) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "scheelite (CaWO4)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of scheelite (CaWO4) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "akermanite (Ca2MgSi2O7)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of akermanite (Ca2MgSi2O7) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "rhodochrosite (MnCO3)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of rhodochrosite (MnCO3) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "anhydrite (CaSO4)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of anhydrite (CaSO4) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "anglesite (PbSO4)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of anglesite (PbSO4) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "sillimanite (Al2SiO5)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of sillimanite (Al2SiO5) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "pyrolusite (MnO2)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of pyrolusite (MnO2) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "aragonite (CaCO3)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of aragonite (CaCO3) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "chalcopyrite (CuFeS2)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of chalcopyrite (CuFeS2) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "chromite (FeCr2O4)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of chromite (FeCr2O4) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "cristobalite (SiO2)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of cristobalite (SiO2) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "andalusite (Al2SiO5)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of andalusite (Al2SiO5) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "wustite (FeO)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of wustite (FeO) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "barite (BaSO4)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of barite (BaSO4) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "covellite (CuS)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of covellite (CuS) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "witherite (BaCO3)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of witherite (BaCO3) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "orpiment (As2S3)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of orpiment (As2S3) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "pyrite (FeS2)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of pyrite (FeS2) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "stibnite (Sb2S3)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of stibnite (Sb2S3) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "gahnite (ZnAl2O4)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of gahnite (ZnAl2O4) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_ef",
+  "subject": "berlinite (AlPO4)",
+  "prompt": "What is the formation energy per atom (in eV/atom) of berlinite (AlPO4) in its stable phase at ambient conditions? Give a single signed numeric value in eV/atom.",
+  "conditions_pinned": "ambient, stable phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_gap",
+  "subject": "halite (NaCl)",
+  "prompt": "At room temperature and ambient pressure, is halite (NaCl) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_gap",
+  "subject": "corundum (Al2O3)",
+  "prompt": "At room temperature and ambient pressure, is corundum (Al2O3) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_gap",
+  "subject": "rutile (TiO2)",
+  "prompt": "At room temperature and ambient pressure, is rutile (TiO2) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_gap",
+  "subject": "fluorite (CaF2)",
+  "prompt": "At room temperature and ambient pressure, is fluorite (CaF2) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_gap",
+  "subject": "periclase (MgO)",
+  "prompt": "At room temperature and ambient pressure, is periclase (MgO) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_gap",
+  "subject": "diamond (C)",
+  "prompt": "At room temperature and ambient pressure, is diamond (C) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_gap",
+  "subject": "silicon (Si)",
+  "prompt": "At room temperature and ambient pressure, is silicon (Si) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_gap",
+  "subject": "zincblende (ZnS)",
+  "prompt": "At room temperature and ambient pressure, is zincblende (ZnS) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_gap",
+  "subject": "wurtzite (ZnO)",
+  "prompt": "At room temperature and ambient pressure, is wurtzite (ZnO) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_gap",
+  "subject": "spinel (MgAl2O4)",
+  "prompt": "At room temperature and ambient pressure, is spinel (MgAl2O4) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_gap",
+  "subject": "galena (PbS)",
+  "prompt": "At room temperature and ambient pressure, is galena (PbS) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_gap",
+  "subject": "sphalerite (ZnS)",
+  "prompt": "At room temperature and ambient pressure, is sphalerite (ZnS) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_gap",
+  "subject": "cesium chloride (CsCl)",
+  "prompt": "At room temperature and ambient pressure, is cesium chloride (CsCl) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_gap",
+  "subject": "anatase (TiO2)",
+  "prompt": "At room temperature and ambient pressure, is anatase (TiO2) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_gap",
+  "subject": "perovskite (SrTiO3)",
+  "prompt": "At room temperature and ambient pressure, is perovskite (SrTiO3) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_gap",
+  "subject": "quartz (SiO2)",
+  "prompt": "At room temperature and ambient pressure, is quartz (SiO2) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_gap",
+  "subject": "cuprite (Cu2O)",
+  "prompt": "At room temperature and ambient pressure, is cuprite (Cu2O) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_gap",
+  "subject": "gallium arsenide (GaAs)",
+  "prompt": "At room temperature and ambient pressure, is gallium arsenide (GaAs) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_gap",
+  "subject": "gallium nitride (GaN)",
+  "prompt": "At room temperature and ambient pressure, is gallium nitride (GaN) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_gap",
+  "subject": "silicon carbide (3C-SiC)",
+  "prompt": "At room temperature and ambient pressure, is silicon carbide (3C-SiC) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_gap",
+  "subject": "barium titanate (BaTiO3)",
+  "prompt": "At room temperature and ambient pressure, is barium titanate (BaTiO3) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_gap",
+  "subject": "cadmium selenide (CdSe)",
+  "prompt": "At room temperature and ambient pressure, is cadmium selenide (CdSe) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_gap",
+  "subject": "indium phosphide (InP)",
+  "prompt": "At room temperature and ambient pressure, is indium phosphide (InP) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_gap",
+  "subject": "aluminum nitride (AlN)",
+  "prompt": "At room temperature and ambient pressure, is aluminum nitride (AlN) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_gap",
+  "subject": "boron nitride (h-BN)",
+  "prompt": "At room temperature and ambient pressure, is boron nitride (h-BN) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_gap",
+  "subject": "molybdenite (2H-MoS2)",
+  "prompt": "At room temperature and ambient pressure, is molybdenite (2H-MoS2) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "property_gap",
+  "subject": "rock salt MgO",
+  "prompt": "At room temperature and ambient pressure, is rock salt MgO a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_gap",
+  "subject": "Cs2AgBiBr6 double perovskite",
+  "prompt": "At room temperature and ambient pressure, is Cs2AgBiBr6 double perovskite a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_gap",
+  "subject": "CsPbBr3 (orthorhombic)",
+  "prompt": "At room temperature and ambient pressure, is CsPbBr3 (orthorhombic) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_gap",
+  "subject": "Bi2Se3",
+  "prompt": "At room temperature and ambient pressure, is Bi2Se3 a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_gap",
+  "subject": "Bi2Te3",
+  "prompt": "At room temperature and ambient pressure, is Bi2Te3 a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_gap",
+  "subject": "SnSe",
+  "prompt": "At room temperature and ambient pressure, is SnSe a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_gap",
+  "subject": "MoS2 (2H)",
+  "prompt": "At room temperature and ambient pressure, is MoS2 (2H) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_gap",
+  "subject": "WS2 (2H)",
+  "prompt": "At room temperature and ambient pressure, is WS2 (2H) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_gap",
+  "subject": "MoSe2 (2H)",
+  "prompt": "At room temperature and ambient pressure, is MoSe2 (2H) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_gap",
+  "subject": "WSe2 (2H)",
+  "prompt": "At room temperature and ambient pressure, is WSe2 (2H) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_gap",
+  "subject": "Bi2Se3 topological",
+  "prompt": "At room temperature and ambient pressure, is Bi2Se3 topological a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_gap",
+  "subject": "Sb2Te3",
+  "prompt": "At room temperature and ambient pressure, is Sb2Te3 a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_gap",
+  "subject": "GeTe",
+  "prompt": "At room temperature and ambient pressure, is GeTe a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "property_gap",
+  "subject": "SnSe2",
+  "prompt": "At room temperature and ambient pressure, is SnSe2 a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_gap",
+  "subject": "coesite (SiO2)",
+  "prompt": "At room temperature and ambient pressure, is coesite (SiO2) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_gap",
+  "subject": "hawleyite (CdS)",
+  "prompt": "At room temperature and ambient pressure, is hawleyite (CdS) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_gap",
+  "subject": "cassiterite (SnO2)",
+  "prompt": "At room temperature and ambient pressure, is cassiterite (SnO2) a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "property_gap",
+  "subject": "anatase-vs-rutile TiO2",
+  "prompt": "At room temperature and ambient pressure, is anatase-vs-rutile TiO2 a metal, semiconductor, or insulator, and what is its electronic band gap in eV? Give a single numeric value in eV (0 if metallic).",
+  "conditions_pinned": "room T, ambient P"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "halite (NaCl)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does halite (NaCl) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "corundum (Al2O3)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does corundum (Al2O3) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "rutile (TiO2)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does rutile (TiO2) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "fluorite (CaF2)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does fluorite (CaF2) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "periclase (MgO)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does periclase (MgO) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "diamond (C)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does diamond (C) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "silicon (Si)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does silicon (Si) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "copper (Cu)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does copper (Cu) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "iron (alpha-Fe)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does iron (alpha-Fe) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "zincblende (ZnS)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does zincblende (ZnS) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "wurtzite (ZnO)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does wurtzite (ZnO) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "spinel (MgAl2O4)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does spinel (MgAl2O4) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "magnetite (Fe3O4)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does magnetite (Fe3O4) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "galena (PbS)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does galena (PbS) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "sphalerite (ZnS)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does sphalerite (ZnS) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "calcite (CaCO3)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does calcite (CaCO3) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "gold (Au)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does gold (Au) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "silver (Ag)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does silver (Ag) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "tungsten (W)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does tungsten (W) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "reasoning_system",
+  "subject": "cesium chloride (CsCl)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does cesium chloride (CsCl) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "anatase (TiO2)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does anatase (TiO2) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "perovskite (SrTiO3)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does perovskite (SrTiO3) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "quartz (SiO2)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does quartz (SiO2) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "hematite (Fe2O3)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does hematite (Fe2O3) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "cuprite (Cu2O)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does cuprite (Cu2O) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "gallium arsenide (GaAs)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does gallium arsenide (GaAs) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "gallium nitride (GaN)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does gallium nitride (GaN) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "silicon carbide (3C-SiC)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does silicon carbide (3C-SiC) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "barium titanate (BaTiO3)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does barium titanate (BaTiO3) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "lithium cobalt oxide (LiCoO2)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does lithium cobalt oxide (LiCoO2) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "yttria (Y2O3)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does yttria (Y2O3) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "zirconia (cubic ZrO2)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does zirconia (cubic ZrO2) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "ceria (CeO2)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does ceria (CeO2) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "strontium fluoride (SrF2)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does strontium fluoride (SrF2) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "cadmium selenide (CdSe)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does cadmium selenide (CdSe) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "indium phosphide (InP)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does indium phosphide (InP) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "aluminum nitride (AlN)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does aluminum nitride (AlN) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "boron nitride (h-BN)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does boron nitride (h-BN) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "molybdenite (2H-MoS2)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does molybdenite (2H-MoS2) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S2_common_specialized",
+  "claim_type": "reasoning_system",
+  "subject": "rock salt MgO",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does rock salt MgO belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "Cs2AgBiBr6 double perovskite",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does Cs2AgBiBr6 double perovskite belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "CsPbBr3 (orthorhombic)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does CsPbBr3 (orthorhombic) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "CsSnI3",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does CsSnI3 belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "Cs2SnI6",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does Cs2SnI6 belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "MoTe2 (1T')",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does MoTe2 (1T') belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "WTe2 (Td)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does WTe2 (Td) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "1T-TaS2",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does 1T-TaS2 belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "NbSe2 (2H)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does NbSe2 (2H) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "FeSe (tetragonal)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does FeSe (tetragonal) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "Bi2Se3",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does Bi2Se3 belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "Bi2Te3",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does Bi2Te3 belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "SnSe",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does SnSe belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "Cu2ZnSnS4 kesterite",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does Cu2ZnSnS4 kesterite belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "CsPbI3 (gamma)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does CsPbI3 (gamma) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "CsSnBr3",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does CsSnBr3 belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "Cs2PbI2Cl2",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does Cs2PbI2Cl2 belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "Cs4PbBr6",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does Cs4PbBr6 belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "Rb2SnI6",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does Rb2SnI6 belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "MoS2 (2H)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does MoS2 (2H) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "WS2 (2H)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does WS2 (2H) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "MoSe2 (2H)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does MoSe2 (2H) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "WSe2 (2H)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does WSe2 (2H) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "SnS2 (1T)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does SnS2 (1T) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "Bi2Se3 topological",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does Bi2Se3 topological belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "Sb2Te3",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does Sb2Te3 belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "GeTe",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does GeTe belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "SnTe",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does SnTe belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "SnSe2",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does SnSe2 belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "PdTe2",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does PdTe2 belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "VSe2 (1T)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does VSe2 (1T) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S4_recent_specialist",
+  "claim_type": "reasoning_system",
+  "subject": "TaSe2 (2H)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does TaSe2 (2H) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "greenockite (CdS)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does greenockite (CdS) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "metacinnabar (HgS)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does metacinnabar (HgS) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "rutile-type SnO2",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does rutile-type SnO2 belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "goethite (FeOOH)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does goethite (FeOOH) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "anatase-vs-rutile TiO2",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does anatase-vs-rutile TiO2 belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "chromite (FeCr2O4)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does chromite (FeCr2O4) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "moissanite (6H-SiC)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does moissanite (6H-SiC) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "franklinite (ZnFe2O4)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does franklinite (ZnFe2O4) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "cassiterite (SnO2)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does cassiterite (SnO2) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "strontianite (SrCO3)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does strontianite (SrCO3) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "andalusite (Al2SiO5)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does andalusite (Al2SiO5) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "wustite (FeO)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does wustite (FeO) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "pyrite (FeS2)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does pyrite (FeS2) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "covellite (CuS)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does covellite (CuS) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "barite (BaSO4)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does barite (BaSO4) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "rhodochrosite (MnCO3)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does rhodochrosite (MnCO3) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "cerussite (PbCO3)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does cerussite (PbCO3) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "berlinite (AlPO4)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does berlinite (AlPO4) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "lepidocrocite (FeOOH)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does lepidocrocite (FeOOH) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "enstatite (MgSiO3)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does enstatite (MgSiO3) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "scheelite (CaWO4)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does scheelite (CaWO4) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "geikielite (MgTiO3)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does geikielite (MgTiO3) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "chalcopyrite (CuFeS2)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does chalcopyrite (CuFeS2) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "cinnabar (HgS)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does cinnabar (HgS) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "perovskite CaTiO3",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does perovskite CaTiO3 belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "cristobalite (SiO2)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does cristobalite (SiO2) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "aragonite (CaCO3)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does aragonite (CaCO3) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "witherite (BaCO3)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does witherite (BaCO3) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "marcasite (FeS2)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does marcasite (FeS2) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S3_rare_ambiguous",
+  "claim_type": "reasoning_system",
+  "subject": "orpiment (As2S3)",
+  "prompt": "At room temperature and ambient pressure, to which of the seven crystal systems (triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, cubic) does orpiment (As2S3) belong? Name exactly one crystal system for this specific named phase.",
+  "conditions_pinned": "room T, ambient P, named phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_dipole",
+  "subject": "water",
+  "prompt": "What is the gas-phase electric dipole moment of water in debye? Give a single numeric value in D.",
+  "conditions_pinned": "gas phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_dipole",
+  "subject": "ammonia",
+  "prompt": "What is the gas-phase electric dipole moment of ammonia in debye? Give a single numeric value in D.",
+  "conditions_pinned": "gas phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_dipole",
+  "subject": "methanol",
+  "prompt": "What is the gas-phase electric dipole moment of methanol in debye? Give a single numeric value in D.",
+  "conditions_pinned": "gas phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_dipole",
+  "subject": "acetone",
+  "prompt": "What is the gas-phase electric dipole moment of acetone in debye? Give a single numeric value in D.",
+  "conditions_pinned": "gas phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_dipole",
+  "subject": "acetonitrile",
+  "prompt": "What is the gas-phase electric dipole moment of acetonitrile in debye? Give a single numeric value in D.",
+  "conditions_pinned": "gas phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_dipole",
+  "subject": "chloroform",
+  "prompt": "What is the gas-phase electric dipole moment of chloroform in debye? Give a single numeric value in D.",
+  "conditions_pinned": "gas phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_dipole",
+  "subject": "formaldehyde",
+  "prompt": "What is the gas-phase electric dipole moment of formaldehyde in debye? Give a single numeric value in D.",
+  "conditions_pinned": "gas phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_dipole",
+  "subject": "nitrobenzene",
+  "prompt": "What is the gas-phase electric dipole moment of nitrobenzene in debye? Give a single numeric value in D.",
+  "conditions_pinned": "gas phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_dipole",
+  "subject": "pyridine",
+  "prompt": "What is the gas-phase electric dipole moment of pyridine in debye? Give a single numeric value in D.",
+  "conditions_pinned": "gas phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_dipole",
+  "subject": "aniline",
+  "prompt": "What is the gas-phase electric dipole moment of aniline in debye? Give a single numeric value in D.",
+  "conditions_pinned": "gas phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_dipole",
+  "subject": "ethanol",
+  "prompt": "What is the gas-phase electric dipole moment of ethanol in debye? Give a single numeric value in D.",
+  "conditions_pinned": "gas phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_dipole",
+  "subject": "toluene",
+  "prompt": "What is the gas-phase electric dipole moment of toluene in debye? Give a single numeric value in D.",
+  "conditions_pinned": "gas phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_dipole",
+  "subject": "benzene",
+  "prompt": "What is the gas-phase electric dipole moment of benzene in debye? Give a single numeric value in D.",
+  "conditions_pinned": "gas phase"
+ },
+ {
+  "stratum": "S1_well_known",
+  "claim_type": "property_dipole",
+  "subject": "phenol",
+  "prompt": "What is the gas-phase electric dipole moment of phenol in debye? Give a single numeric value in D.",
+  "conditions_pinned": "gas phase"
+ }
+]

@@ -29,6 +29,22 @@ def test_results_manifest():
     _check_manifest(ROOT / "data" / "manifests" / "results_manifest.yaml")
 
 
+def test_frozen_inputs_manifest():
+    _check_manifest(ROOT / "data" / "manifests" / "frozen_inputs.yaml")
+
+
+def test_frozen_dirs_fully_manifested():
+    manifest = yaml.safe_load((ROOT / "data" / "manifests" / "frozen_inputs.yaml").read_text())
+    listed = {e["path"] for e in manifest["files"]}
+    on_disk = {
+        str(p.relative_to(ROOT))
+        for d in ("frozen", "pilot")
+        for p in (ROOT / "data" / d).iterdir()
+        if p.is_file()
+    }
+    assert listed == on_disk
+
+
 def test_handoff_manifest_lists_missing_files_only():
     manifest = yaml.safe_load((ROOT / "data" / "manifests" / "handoff_missing.yaml").read_text())
     assert manifest["status"] == "not_included"

@@ -1,0 +1,62 @@
+# Frozen experiment inputs and labeling-pilot artifacts, imported from the project
+# workspace archive and verified against the ex-ante registrations where recorded.
+name: frozen_inputs
+source: project workspace archive (registration record in the private decisions log)
+files:
+  - path: data/frozen/corpus_final_v2.json
+    sha256: 663659808ce804571a9e9bf5205999825a52790c96be96e00a12e3fdf297ad02
+    role: frozen v2 prompt corpus (registered short sha 66365980)
+  - path: data/frozen/holdout_ground_truth.json
+    sha256: 5e80c7881181d97d445a88ebe9a62418aa45424d3a452f4b970be098824bba7d
+    role: frozen holdout ground truth (registered short sha 5e80c788)
+  - path: data/frozen/named_sg_rule_gt.json
+    sha256: c8284184e8d46325e4d15e09d510332a0c9305ca3d921719aec841df6948c7d4
+    role: named-phase accepted space groups (in-loop verify)
+  - path: data/frozen/ef_lookup.json
+    sha256: 32f64d9168385f9b8b15b7017fae593fbaf62aef08224f4a148a4f93cf7b1e44
+    role: MP/experimental formation-energy lookup (in-loop verify)
+  - path: data/frozen/selfcheck_detection.json
+    sha256: 01e7d2f64d5c8256c47caf79e7b23b4320a3863ae2e9f7b80871daddddb020ad
+    role: frozen sampling-consistency signal (exp1 two-stage gate)
+  - path: data/frozen/rag_facts.json
+    sha256: 8decf2d6cbd6c9f5db77e051cb49b977bc347ffd62c0124ad2b3134ec7e582e0
+    role: retrieved-facts block per prompt (RAG-in-prompt arm)
+  - path: data/frozen/endtask_frozen.json
+    sha256: ca83e13be0677bdf2362f5295767721f56bf6fd66584455c6cf4234524aa0333
+    role: end-task definitions with depends_on objects
+  - path: data/frozen/endtask_molar_gt.json
+    sha256: e5d25064ee1bd4867642f4a20f271b86e47f70e08102ddde96034a09fa9479f1
+    role: end-task molar-mass ground truth
+  - path: data/frozen/inline_conf_prompts.json
+    sha256: 56cb9df268158b03f0d8605df07dfeec12ed8f6e47246af43ff83c1cb144b118
+    role: inline-confidence prompts
+  - path: data/frozen/codata_prompts.json
+    sha256: 52acb3c5e1b9e95963922226b966cc1dbe4d55d0a1a21ea2b486818ace16cc53
+    role: constants prompts (codata runner)
+  - path: data/frozen/codata_prompts_2022.json
+    sha256: 81a248539c5f581c48cde226626885ffbd337d85071204bb9d8bbfa23b5c7c42
+    role: constants prompts (exp2)
+  - path: data/frozen/codata_gt_2022.json
+    sha256: 88cc162970ed6cf5e65630f2f14a77f7dbb3669ab168c3ec15792d3f53947e7d
+    role: CODATA 2022 / NIST SP 961 constants GT; the registered sha 95e59c7a is over the sorted constants payload and is embedded in the file
+  - path: data/frozen/codata_gt.json
+    sha256: 5ad3d446dad7835c393b1e64919ffc91e2618ec716a197c47799dc5cf5f2746e
+    role: superseded CODATA 2018 GT (kept for the audit trail)
+  - path: data/frozen/isotope_prompts.json
+    sha256: 53caf5f993577edde99b1d591f5f66c30f044ee716889d4ac7b9edcf997842f7
+    role: isotope prompts (exp4)
+  - path: data/frozen/pubchem_cache.json
+    sha256: a784c033748a7f1597535a3ae9b9ffb1ec25c67767d18cb7fa5d6e3baae5b04c
+    role: frozen PubChem name-resolution cache
+  - path: data/pilot/corpus_traces_pilot.jsonl
+    sha256: 0e47f237848bc5b19597bb34f2e989d718108ec540c0d8f0a135c827620464a7
+    role: labeling-pilot CoT traces (spec Section 2)
+  - path: data/pilot/corpus_labeling_sheet_pilot.jsonl
+    sha256: af1ac1a7138d020a19ddb45cc37cfeabb3a48c6ad59fcb1fe6cb8e96d464a9e6
+    role: labeling-pilot sheet (JSONL)
+  - path: data/pilot/corpus_labeling_sheet_pilot.csv
+    sha256: 39310159fea0094e04e271b70f91ccac6bde6de0cf93f9b720219247de89e1c5
+    role: labeling-pilot sheet (CSV)
+  - path: data/pilot/corpus_labeling_sheet_preannotated.csv
+    sha256: 0cf7df792f849842be8c8ae2eb8a975eed96f3d7a00d90216cace7a104172192
+    role: pre-annotated pilot sheet (DB evidence only)

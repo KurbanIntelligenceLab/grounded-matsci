@@ -1,2 +1,2 @@
-# On-disk PubChem name-resolution cache (gitignored).
-cache_path: data/cache/pubchem_cache.json
+# Frozen PubChem name-resolution cache.
+cache_path: data/frozen/pubchem_cache.json

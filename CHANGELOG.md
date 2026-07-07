@@ -25,10 +25,16 @@ Initial migration of the paper bundle into this repository.
   and data-manifest hash tests.
 - Added LICENSE (MIT), CITATION.cff, data manifests, and this changelog.
 
+Post-migration: imported the frozen experiment inputs (corpus, holdout GT, CODATA and
+isotope prompt sets and ground truth, lookups, RAG facts, PubChem cache) into
+`data/frozen/` and the §2 labeling-pilot artifacts into `data/pilot/`, verified against
+the ex-ante registered hashes (corpus `66365980`, holdout GT `5e80c788`, CODATA-2022
+constants payload `95e59c7a`); configs now point at the committed inputs and write to
+`outputs/`.
+
 Known deferred items:
 
-- The frozen corpus, ground-truth files, raw trace JSONLs, and PubChem cache
-  (`handoff/`) are not in this repository; see
+- The raw model-generation trace JSONLs (~50 MB) are not in this repository; see
   `data/manifests/handoff_missing.yaml`.
 - Hypothesis property tests and per-public-function coverage for
   `workflows/` and `evaluation/` are a target, not yet met.

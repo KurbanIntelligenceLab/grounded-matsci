@@ -49,14 +49,16 @@ Every run snapshots its config and writes a provenance `manifest.json` under
 
 - Frozen paper results are committed under `results/`, with SHA-256 hashes and
   provenance in `data/manifests/results_manifest.yaml`.
-- The frozen isotope ground truth (IAEA) is committed at
-  `data/reference/isotope_gt.json` (manifest: `data/manifests/isotope_gt.yaml`).
-- **The frozen prompt corpus, ground-truth files, lookup tables, and raw generation
-  traces (`handoff/`) are NOT in this repository.** They are registered ex ante (short
-  hashes in `data/manifests/handoff_missing.yaml`) and are released separately via a
-  data repository on acceptance. Until then, the experiment subcommands fail with
-  `FileNotFoundError` on their inputs; only the regression tests are runnable
-  end-to-end today.
+- The frozen experiment inputs — prompt corpus (registered short sha `66365980`),
+  holdout ground truth (`5e80c788`), CODATA/isotope prompt sets and ground truth,
+  lookup tables, RAG facts, and the PubChem cache — are committed under `data/frozen/`
+  with per-file hashes in `data/manifests/frozen_inputs.yaml`. The isotope ground
+  truth (IAEA) is at `data/reference/isotope_gt.json`.
+- The §2 labeling-pilot traces and annotation sheets are under `data/pilot/`.
+- **Only the raw model-generation traces (~50 MB of JSONL) are not yet committed**;
+  they are enumerated in `data/manifests/handoff_missing.yaml` and will be deposited
+  upon acceptance. Every experiment subcommand is runnable with the committed inputs
+  (API keys required for generation).
 
 ## Frozen scientific cores
 
@@ -107,7 +109,7 @@ MIT — see `LICENSE`.
 
 ## Known limitations
 
-- No experiment is runnable end-to-end until the `handoff/` data release (above).
+- The raw model-generation traces are not yet committed (see Data availability).
 - The DFT tier's timing constant is a single-molecule measurement, not a size-binned
   benchmark (`evaluation/costing.py`).
 - Hypothesis property tests and per-function coverage for `workflows/`/`evaluation/`

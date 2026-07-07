@@ -2,9 +2,9 @@
 seed: 42
 models: ["anthropic/claude-sonnet-5", "openai/gpt-5.5", "deepseek/deepseek-v4-pro", "qwen/qwen3-235b-a22b-2507"]
 system: "You are a materials science assistant. Answer precisely and state formation energies in eV/atom where relevant."
-corpus_path: handoff/corpus_final_v2.json
-ef_lookup_path: handoff/ef_lookup.json
-selfcheck_detection_path: handoff/selfcheck_detection.json
-out_path: handoff/exp1_twostage_v2.jsonl
+corpus_path: data/frozen/corpus_final_v2.json
+ef_lookup_path: data/frozen/ef_lookup.json
+selfcheck_detection_path: data/frozen/selfcheck_detection.json
+out_path: outputs/exp1_twostage_v2.jsonl
 reps: [1, 2, 3]
 workers: 12

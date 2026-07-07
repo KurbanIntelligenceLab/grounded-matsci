@@ -1,0 +1,12 @@
+claim_id,trace_id,domain,type,referent,span_text,value,unit,provisional_label,provisional_authority,provisional_confidence,verifier_detail,human_label,annotator_id
+7011de7fa5fd-000,7011de7fa5fd,molecular,smiles,,CC(=O)Oc1cc(=O)c(cc1C(=O)O)C,,,incorrect,database,0.97,illegal chemistry: Can't kekulize mol.  Unkekulized atoms: 4 5 8 9 10,,
+7011de7fa5fd-001,7011de7fa5fd,molecular,formula,its molecular,its molecular formula is C9H8O4,,,unverifiable,none,0.0,'its molecular' not in reference set; cannot confirm formula,,
+7011de7fa5fd-002,7011de7fa5fd,molecular,smiles,,CN1C=NC2=C1C(=O)N(C(=O)N2C)C,,,correct,database,0.97,valid; canonical=Cn1c(=O)c2c(ncn2C)n(C)c1=O; formula=C8H10N4O2; MW=194.19,,
+7011de7fa5fd-003,7011de7fa5fd,molecular,formula,its molecular,its molecular formula is C8H10N4O2,,,unverifiable,none,0.0,'its molecular' not in reference set; cannot confirm formula,,
+9a28dc3ab1b7-000,9a28dc3ab1b7,molecular,smiles,,CS(=O)(C)C,,,correct,database,0.97,valid; canonical=C[SH](C)(C)=O; formula=C3H10OS; MW=94.18,,
+9a28dc3ab1b7-001,9a28dc3ab1b7,molecular,property,dimethyl sulfoxide,Approximate Gas-Phase Dipole Moment: 3.96 D,3.96,D,unverifiable,none,0.0,physics tier disabled; no tabulated reference,,
+9a28dc3ab1b7-002,9a28dc3ab1b7,molecular,smiles,,CC#N,,,correct,database,0.97,valid; canonical=CC#N; formula=C2H3N; MW=41.05,,
+9a28dc3ab1b7-003,9a28dc3ab1b7,molecular,property,acetonitrile,Approximate Gas-Phase Dipole Moment: 3.92 D,3.92,D,correct,database,0.97,claimed 3.92 D; experimental 3.92 debye (NIST CCCBDB); rel.err=0% [experimental tol: rel<=15% or abs<=0.2],,
+0602debe7baa-000,0602debe7baa,molecular,smiles,,CC(=O)O,,,correct,database,0.97,valid; canonical=CC(=O)O; formula=C2H4O2; MW=60.05,,
+0602debe7baa-001,0602debe7baa,molecular,smiles,,C1=CC=C(C=C1)C(=O)O,,,correct,database,0.97,valid; canonical=O=C(O)c1ccccc1; formula=C7H6O2; MW=122.12,,
+0602debe7baa-002,0602debe7baa,molecular,smiles,,OC(=O)C(C(=O)O)C(=O)O,,,correct,database,0.97,valid; canonical=O=C(O)C(C(=O)O)C(=O)O; formula=C4H4O6; MW=148.07,,
