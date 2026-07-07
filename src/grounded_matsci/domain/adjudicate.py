@@ -31,8 +31,16 @@ _EF = re.compile(_NUM + r"\s*(?:eV\s*/\s*atom|eV\s*per\s*atom)", re.I)
 _EFU = re.compile(_NUM + r"\s*(?:eV\s*/\s*(?:f\.?u\.?|formula)|eV\s*per\s*formula)", re.I)
 _GAP = re.compile(_NUM + r"\s*eV", re.I)
 _D = re.compile(_NUM + r"\s*(?:D\b|debye)", re.I)
-_SYS = ["triclinic", "monoclinic", "orthorhombic", "tetragonal", "trigonal",
-        "hexagonal", "cubic", "rhombohedral"]
+_SYS = [
+    "triclinic",
+    "monoclinic",
+    "orthorhombic",
+    "tetragonal",
+    "trigonal",
+    "hexagonal",
+    "cubic",
+    "rhombohedral",
+]
 
 
 def _pick(vals: list[float], rule: str) -> list[float]:
@@ -59,29 +67,52 @@ def grade_formation_energy(
     cases where DFT deviates from experiment (mean |exp-MP| ~ 0.11 eV/atom)."""
     g = gt.get("value")
     if g is None:  # no clean MP value in the claimed frame -> drop (per frame policy)
-        return {"extracted": None, "gt": None, "correct": None, "dropped": True,
-                "reason": "no clean value in claimed (MP) frame"}
+        return {
+            "extracted": None,
+            "gt": None,
+            "correct": None,
+            "dropped": True,
+            "reason": "no clean value in claimed (MP) frame",
+        }
     band = max(tol["abs"], tol["rel"] * abs(g))
     vals = [float(m.group(1)) for m in _EF.finditer(text)]
     if not vals:
         return {"extracted": None, "gt": g, "correct": None, "reason": "no eV/atom value"}
     cand = _pick(vals, rule)
     if any(abs(v - g) <= band for v in cand):
-        return {"extracted": g, "gt": g, "correct": True,
-                "reason": "per-atom value within MP tol", "frame": "MP"}
+        return {
+            "extracted": g,
+            "gt": g,
+            "correct": True,
+            "reason": "per-atom value within MP tol",
+            "frame": "MP",
+        }
     # experimental frame (if a clean exp ΔHf exists for this subject)
     if exp_ef is not None:
         eb = max(tol["abs"], tol["rel"] * abs(exp_ef))
         if any(abs(v - exp_ef) <= eb for v in cand):
-            return {"extracted": cand[-1], "gt": exp_ef, "correct": True,
-                    "reason": "per-atom value within experimental tol", "frame": "experimental"}
+            return {
+                "extracted": cand[-1],
+                "gt": exp_ef,
+                "correct": True,
+                "reason": "per-atom value within experimental tol",
+                "frame": "experimental",
+            }
     # per-formula-unit fallback: normalize by n_atoms
     if n_atoms > 1 and any(abs(v / n_atoms - g) <= band for v in cand):
-        return {"extracted": round(cand[-1] / n_atoms, 3), "gt": g, "correct": True,
-                "reason": f"per-formula-unit value /{n_atoms} within tol",
-                "frame": "per_fu_normalized"}
-    return {"extracted": cand[-1], "gt": g, "correct": False,
-            "reason": f"{cand[-1]} vs {g} eV/atom, no frame matches"}
+        return {
+            "extracted": round(cand[-1] / n_atoms, 3),
+            "gt": g,
+            "correct": True,
+            "reason": f"per-formula-unit value /{n_atoms} within tol",
+            "frame": "per_fu_normalized",
+        }
+    return {
+        "extracted": cand[-1],
+        "gt": g,
+        "correct": False,
+        "reason": f"{cand[-1]} vs {g} eV/atom, no frame matches",
+    }
 
 
 def grade_band_gap(
@@ -94,23 +125,45 @@ def grade_band_gap(
     g = gt["value"]
     t = text.lower()
     if g < 0.1 and re.search(r"\bmetal(lic)?\b", t) and not re.search(r"non-?metal", t):
-        return {"extracted": "metal", "gt": g, "correct": True,
-                "reason": "metallic, GT<0.1", "frame": "qualitative"}
+        return {
+            "extracted": "metal",
+            "gt": g,
+            "correct": True,
+            "reason": "metallic, GT<0.1",
+            "frame": "qualitative",
+        }
     vals = [float(m.group(1)) for m in _GAP.finditer(text)]
     if not vals:
         return {"extracted": None, "gt": g, "correct": None, "reason": "no eV value"}
     cand = _pick(vals, rule)
     band_pbe = max(tol["abs"], tol["rel"] * abs(g))
     if any(abs(v - g) <= band_pbe for v in cand):
-        return {"extracted": cand[-1], "gt": g, "correct": True,
-                "reason": "within PBE tol", "frame": "PBE"}
+        return {
+            "extracted": cand[-1],
+            "gt": g,
+            "correct": True,
+            "reason": "within PBE tol",
+            "frame": "PBE",
+        }
     if exp_gap is not None:
-        band_exp = max(tol.get("exp_abs", tol["abs"]), tol.get("exp_rel", tol["rel"]) * abs(exp_gap))
+        band_exp = max(
+            tol.get("exp_abs", tol["abs"]), tol.get("exp_rel", tol["rel"]) * abs(exp_gap)
+        )
         if any(abs(v - exp_gap) <= band_exp for v in cand):
-            return {"extracted": cand[-1], "gt": exp_gap, "correct": True,
-                    "reason": "within experimental tol", "frame": "experimental"}
-    return {"extracted": cand[-1], "gt": g, "correct": False,
-            "reason": f"{cand[-1]} matches neither PBE {g} nor exp {exp_gap}", "frame": "none"}
+            return {
+                "extracted": cand[-1],
+                "gt": exp_gap,
+                "correct": True,
+                "reason": "within experimental tol",
+                "frame": "experimental",
+            }
+    return {
+        "extracted": cand[-1],
+        "gt": g,
+        "correct": False,
+        "reason": f"{cand[-1]} matches neither PBE {g} nor exp {exp_gap}",
+        "frame": "none",
+    }
 
 
 def grade_dipole(
@@ -140,11 +193,23 @@ def grade_crystal_system(text: str, gt: dict[str, Any], rule: str = "final") -> 
     found_norm = [norm.get(s, s) for _, s in hits]
     gtsys = gt["crystal_system"]
     if not found_norm:
-        return {"extracted": None, "gt": gtsys, "correct": None,
-                "reason": "no crystal system named"}
+        return {
+            "extracted": None,
+            "gt": gtsys,
+            "correct": None,
+            "reason": "no crystal system named",
+        }
     if rule == "any":
-        return {"extracted": found_norm, "gt": gtsys, "correct": (gtsys in found_norm),
-                "reason": "any-match"}
+        return {
+            "extracted": found_norm,
+            "gt": gtsys,
+            "correct": (gtsys in found_norm),
+            "reason": "any-match",
+        }
     committed = found_norm[-1]  # last-mentioned in text = the committed answer
-    return {"extracted": committed, "gt": gtsys, "correct": committed == gtsys,
-            "reason": f"final {committed} vs {gtsys}"}
+    return {
+        "extracted": committed,
+        "gt": gtsys,
+        "correct": committed == gtsys,
+        "reason": f"final {committed} vs {gtsys}",
+    }

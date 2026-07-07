@@ -49,15 +49,21 @@ def make_mp_lookup(prefer: str = "stable") -> Callable[[str], dict[str, Any] | N
             with MPRester(key) as mpr:
                 docs = mpr.materials.summary.search(
                     formula=formula,
-                    fields=["material_id", "formula_pretty", "symmetry",
-                            "structure", "band_gap",
-                            "formation_energy_per_atom", "energy_above_hull",
-                            "is_stable"],
+                    fields=[
+                        "material_id",
+                        "formula_pretty",
+                        "symmetry",
+                        "structure",
+                        "band_gap",
+                        "formation_energy_per_atom",
+                        "energy_above_hull",
+                        "is_stable",
+                    ],
                 )
             if not docs:
                 return None
             # choose the most stable polymorph
-            docs = sorted(docs, key=lambda d: (getattr(d, "energy_above_hull", 0) or 0))
+            docs = sorted(docs, key=lambda d: getattr(d, "energy_above_hull", 0) or 0)
             d = docs[0]
             sym = d.symmetry
             st = d.structure
@@ -68,8 +74,12 @@ def make_mp_lookup(prefer: str = "stable") -> Callable[[str], dict[str, Any] | N
                 "spacegroup_symbol": sym.symbol if sym else None,
                 "spacegroup_number": sym.number if sym else None,
                 "crystal_system": str(sym.crystal_system) if sym else None,
-                "a": latt.a, "b": latt.b, "c": latt.c,
-                "alpha": latt.alpha, "beta": latt.beta, "gamma": latt.gamma,
+                "a": latt.a,
+                "b": latt.b,
+                "c": latt.c,
+                "alpha": latt.alpha,
+                "beta": latt.beta,
+                "gamma": latt.gamma,
                 "band_gap": d.band_gap,
                 "formation_energy_per_atom": d.formation_energy_per_atom,
                 "is_stable": d.is_stable,
@@ -100,14 +110,17 @@ def verify_against_mp(
     if claimed_sg_number is not None and ref["spacegroup_number"] is not None:
         if int(claimed_sg_number) != int(ref["spacegroup_number"]):
             verdict = "fail"
-            msgs.append(f"space group #{claimed_sg_number} != MP #{ref['spacegroup_number']} "
-                        f"({ref['spacegroup_symbol']}, {ref['material_id']})")
+            msgs.append(
+                f"space group #{claimed_sg_number} != MP #{ref['spacegroup_number']} "
+                f"({ref['spacegroup_symbol']}, {ref['material_id']})"
+            )
         else:
             msgs.append(f"space group #{claimed_sg_number} matches MP ({ref['material_id']})")
     if claimed_band_gap is not None and ref["band_gap"] is not None:
         rel = abs(claimed_band_gap - ref["band_gap"]) / max(ref["band_gap"], 1e-6)
         if rel > gap_tol:
             verdict = "fail"
-        msgs.append(f"band gap {claimed_band_gap} eV vs MP {ref['band_gap']:.2f} eV "
-                    f"(rel.err {rel:.0%})")
+        msgs.append(
+            f"band gap {claimed_band_gap} eV vs MP {ref['band_gap']:.2f} eV (rel.err {rel:.0%})"
+        )
     return verdict, "; ".join(msgs) if msgs else "no comparable fields"

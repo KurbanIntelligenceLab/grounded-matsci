@@ -18,7 +18,7 @@ from __future__ import annotations
 from rdkit import Chem, RDLogger
 from rdkit.Chem import Descriptors, rdMolDescriptors
 
-RDLogger.DisableLog("rdApp.*")   # silence RDKit's parse chatter
+RDLogger.DisableLog("rdApp.*")  # silence RDKit's parse chatter
 
 
 # --------------------------------------------------------------------------
@@ -76,6 +76,7 @@ def _hill_from_smiles(smiles):
 def _normalize_formula(f):
     """Canonicalize a formula string to a comparable element->count dict."""
     import re
+
     counts = {}
     for el, n in re.findall(r"([A-Z][a-z]?)(\d*)", f):
         if not el:
@@ -87,14 +88,13 @@ def _normalize_formula(f):
 def verify_formula(name: str, formula: str, external_lookup=None):
     ref = REFERENCE.get(name)
     if ref is None and external_lookup is not None:
-        ref = external_lookup(name)          # e.g. a PubChem MCP call
+        ref = external_lookup(name)  # e.g. a PubChem MCP call
     if ref is None:
         return "unchecked", f"'{name}' not in reference set; cannot confirm formula"
-    ref_smiles, ref_formula = ref
+    _ref_smiles, ref_formula = ref
     if _normalize_formula(formula) == _normalize_formula(ref_formula):
         return "ok", f"formula matches reference ({ref_formula})"
-    return ("fail",
-            f"formula MISMATCH: trace says {formula}, reference {name} is {ref_formula}")
+    return ("fail", f"formula MISMATCH: trace says {formula}, reference {name} is {ref_formula}")
 
 
 def name_to_smiles(name, external_lookup=None):
@@ -108,8 +108,7 @@ def name_to_smiles(name, external_lookup=None):
 # Tier 3 : physics. Compute a reference value with PySCF and compare to the
 # claimed value. Guarded so the module imports even if PySCF is absent.
 # --------------------------------------------------------------------------
-def compute_property_pyscf(smiles: str, prop: str, xc="b3lyp", basis="def2-TZVP",
-                           density_fit=True):
+def compute_property_pyscf(smiles: str, prop: str, xc="b3lyp", basis="def2-TZVP", density_fit=True):
     """Return (value, unit, info) computed from first principles, or raise.
 
     Default basis is def2-TZVP (spec Section 1.2 requires >= def2-TZVP; STO-3G
@@ -121,6 +120,7 @@ def compute_property_pyscf(smiles: str, prop: str, xc="b3lyp", basis="def2-TZVP"
     import numpy as np
     from pyscf import dft, gto
     from rdkit.Chem import AllChem
+
     _t0 = time.time()
 
     mol_rd = Chem.AddHs(Chem.MolFromSmiles(smiles))
@@ -154,7 +154,7 @@ def compute_property_pyscf(smiles: str, prop: str, xc="b3lyp", basis="def2-TZVP"
     info = f"{xc}/{basis}{'+df' if density_fit else ''} ({dt:.1f}s)"
 
     if prop == "dipole_moment":
-        d = mf.dip_moment(unit="Debye")       # returns vector in Debye
+        d = mf.dip_moment(unit="Debye")  # returns vector in Debye
         return float(np.linalg.norm(d)), "debye", info
     if prop == "homo_lumo_gap":
         mo_e = mf.mo_energy
@@ -165,8 +165,9 @@ def compute_property_pyscf(smiles: str, prop: str, xc="b3lyp", basis="def2-TZVP"
     raise ValueError(f"unknown property {prop}")
 
 
-def verify_property(name, prop, value, unit, external_lookup=None,
-                    enable_physics=True, return_meta=False):
+def verify_property(
+    name, prop, value, unit, external_lookup=None, enable_physics=True, return_meta=False
+):
     """Verify a quantitative property claim with tier escalation.
 
     Order (spec Section 1.3): Tier 1.5 experimental/tabulated reference FIRST
@@ -175,20 +176,26 @@ def verify_property(name, prop, value, unit, external_lookup=None,
     policy (domain/tolerances.py), never tuned on eval data.
     """
     from grounded_matsci.domain import refdata, tolerances
-    meta = {"tier": None, "reference": None, "ref_source": None,
-            "wall_clock_s": 0.0, "rel_err": None}
+
+    meta = {
+        "tier": None,
+        "reference": None,
+        "ref_source": None,
+        "wall_clock_s": 0.0,
+        "rel_err": None,
+    }
 
     # ---- Tier 1.5: experimental / tabulated reference ----
     ref = refdata.reference_property(name, prop)
     if ref is not None:
         ref_val, ref_unit, prov = ref
-        ok, rel, rule = tolerances.within_tolerance(prop, value, ref_val,
-                                                    experimental=True)
-        meta.update(tier="1.5", reference=ref_val, ref_source=f"exp: {prov}",
-                    rel_err=rel)
+        ok, rel, rule = tolerances.within_tolerance(prop, value, ref_val, experimental=True)
+        meta.update(tier="1.5", reference=ref_val, ref_source=f"exp: {prov}", rel_err=rel)
         verdict = "ok" if ok else "fail"
-        detail = (f"claimed {value} {unit}; experimental {ref_val} {ref_unit} "
-                  f"({prov}); rel.err={rel:.0%} [{rule}]")
+        detail = (
+            f"claimed {value} {unit}; experimental {ref_val} {ref_unit} "
+            f"({prov}); rel.err={rel:.0%} [{rule}]"
+        )
         return (verdict, detail, meta) if return_meta else (verdict, detail)
 
     # ---- Tier 3: DFT ----
@@ -196,25 +203,26 @@ def verify_property(name, prop, value, unit, external_lookup=None,
     if smiles is None:
         meta.update(tier="none")
         r = ("unchecked", f"no structure or reference for '{name}'; cannot check {prop}")
-        return r + (meta,) if return_meta else r
+        return (*r, meta) if return_meta else r
     if not enable_physics:
         meta.update(tier="3(skipped)")
         r = ("unchecked", "physics tier disabled; no tabulated reference")
-        return r + (meta,) if return_meta else r
+        return (*r, meta) if return_meta else r
     try:
         import time
+
         t0 = time.time()
         ref_val, ref_unit, info = compute_property_pyscf(smiles, prop)
         wall = time.time() - t0
     except Exception as e:
         meta.update(tier="3")
         r = ("unchecked", f"DFT computation failed: {e}")
-        return r + (meta,) if return_meta else r
-    ok, rel, rule = tolerances.within_tolerance(prop, value, ref_val,
-                                                experimental=False)
-    meta.update(tier="3", reference=ref_val, ref_source=info,
-                wall_clock_s=wall, rel_err=rel)
+        return (*r, meta) if return_meta else r
+    ok, rel, rule = tolerances.within_tolerance(prop, value, ref_val, experimental=False)
+    meta.update(tier="3", reference=ref_val, ref_source=info, wall_clock_s=wall, rel_err=rel)
     verdict = "ok" if ok else "fail"
-    detail = (f"claimed {value} {unit}; DFT({info}) gives {ref_val:.2f} {ref_unit}; "
-              f"rel.err={rel:.0%} [{rule}]")
+    detail = (
+        f"claimed {value} {unit}; DFT({info}) gives {ref_val:.2f} {ref_unit}; "
+        f"rel.err={rel:.0%} [{rule}]"
+    )
     return (verdict, detail, meta) if return_meta else (verdict, detail)

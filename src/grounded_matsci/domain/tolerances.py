@@ -25,9 +25,9 @@ from __future__ import annotations
 # meant to catch order-of-magnitude confabulations (e.g. "12.5 D" for acetone),
 # not to referee the second decimal.
 DIPOLE: dict[str, float] = dict(
-    rel=0.30,          # 30% relative window for DFT-referenced checks
-    abs=0.30,          # OR within 0.30 D absolute (whichever is looser)
-    exp_rel=0.15,      # tighter when an EXPERIMENTAL value is the reference
+    rel=0.30,  # 30% relative window for DFT-referenced checks
+    abs=0.30,  # OR within 0.30 D absolute (whichever is looser)
+    exp_rel=0.15,  # tighter when an EXPERIMENTAL value is the reference
     exp_abs=0.20,
 )
 
@@ -38,7 +38,7 @@ DIPOLE: dict[str, float] = dict(
 # use a wide band and treat this tier as a coarse plausibility gate.
 GAP: dict[str, float] = dict(
     rel=0.50,
-    abs=1.0,           # within 1.0 eV absolute
+    abs=1.0,  # within 1.0 eV absolute
     exp_rel=0.30,
     exp_abs=0.5,
 )

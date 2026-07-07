@@ -9,16 +9,57 @@ import re
 from typing import Any
 
 _UNIT_SEC: dict[str, float] = {
-    "s": 1, "sec": 1, "second": 1, "seconds": 1, "ms": 1e-3, "us": 1e-6, "µs": 1e-6,
-    "ns": 1e-9, "ps": 1e-12,
-    "min": 60, "minute": 60, "minutes": 60, "h": 3600, "hr": 3600, "hour": 3600, "hours": 3600,
-    "d": 86400, "day": 86400, "days": 86400, "wk": 604800, "week": 604800, "weeks": 604800,
-    "y": 31557600, "yr": 31557600, "year": 31557600, "years": 31557600, "a": 31557600,
-    "ka": 31557600e3, "kyr": 31557600e3, "my": 31557600e6, "myr": 31557600e6, "ma": 31557600e6,
-    "gy": 31557600e9, "gyr": 31557600e9, "ga": 31557600e9, "by": 31557600e9,
+    "s": 1,
+    "sec": 1,
+    "second": 1,
+    "seconds": 1,
+    "ms": 1e-3,
+    "us": 1e-6,
+    "µs": 1e-6,
+    "ns": 1e-9,
+    "ps": 1e-12,
+    "min": 60,
+    "minute": 60,
+    "minutes": 60,
+    "h": 3600,
+    "hr": 3600,
+    "hour": 3600,
+    "hours": 3600,
+    "d": 86400,
+    "day": 86400,
+    "days": 86400,
+    "wk": 604800,
+    "week": 604800,
+    "weeks": 604800,
+    "y": 31557600,
+    "yr": 31557600,
+    "year": 31557600,
+    "years": 31557600,
+    "a": 31557600,
+    "ka": 31557600e3,
+    "kyr": 31557600e3,
+    "my": 31557600e6,
+    "myr": 31557600e6,
+    "ma": 31557600e6,
+    "gy": 31557600e9,
+    "gyr": 31557600e9,
+    "ga": 31557600e9,
+    "by": 31557600e9,
 }
-_SUP = {"⁰": "0", "¹": "1", "²": "2", "³": "3", "⁴": "4", "⁵": "5", "⁶": "6",
-        "⁷": "7", "⁸": "8", "⁹": "9", "⁻": "-", "⁺": "+"}
+_SUP = {
+    "⁰": "0",
+    "¹": "1",
+    "²": "2",
+    "³": "3",
+    "⁴": "4",
+    "⁵": "5",
+    "⁶": "6",
+    "⁷": "7",
+    "⁸": "8",
+    "⁹": "9",
+    "⁻": "-",
+    "⁺": "+",
+}
 
 
 def _norm(t: str) -> str:
@@ -30,8 +71,7 @@ def _norm(t: str) -> str:
     t = t.replace("×", "x").replace("·", "x")
     t = re.sub(r"(\d(?:\.\d+)?)\s*x\s*10\s*\^?\s*([+-]?\d+)", r"\1e\2", t)
     # collapse a stray "e ^ M" spacing from unicode-power normalization
-    t = re.sub(r"(\d)\s*e\s*\^?\s*([+-]?\d+)", r"\1e\2", t)
-    return t
+    return re.sub(r"(\d)\s*e\s*\^?\s*([+-]?\d+)", r"\1e\2", t)
 
 
 _HL = re.compile(
@@ -65,5 +105,10 @@ def grade_halflife(text: str, gt_sec: float, rel: float = REL_TOL) -> dict[str, 
     ok = abs(final - gt_sec) <= rel * gt_sec
     # also accept if ANY stated value matches (models sometimes list then restate)
     any_ok = any(abs(v - gt_sec) <= rel * gt_sec for v, _ in vals)
-    return {"correct": bool(ok), "any_correct": bool(any_ok), "extracted_sec": final,
-            "gt_sec": gt_sec, "n_values": len(vals)}
+    return {
+        "correct": bool(ok),
+        "any_correct": bool(any_ok),
+        "extracted_sec": final,
+        "gt_sec": gt_sec,
+        "n_values": len(vals),
+    }

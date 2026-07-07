@@ -78,22 +78,27 @@ def make_generate(
                         txt = ""
                     if log is not None:
                         u = j.get("usage", {}) or {}
-                        log.append({"model": model, "sample": sample,
-                                    "prompt_tokens": u.get("prompt_tokens", 0),
-                                    "completion_tokens": u.get("completion_tokens", 0),
-                                    "total_tokens": u.get("total_tokens", 0),
-                                    "cost_usd": u.get("cost", 0.0),
-                                    "wall_s": time.time() - t0,
-                                    "finish_reason": finish,
-                                    "refused": refused,
-                                    "ts": time.time()})
+                        log.append(
+                            {
+                                "model": model,
+                                "sample": sample,
+                                "prompt_tokens": u.get("prompt_tokens", 0),
+                                "completion_tokens": u.get("completion_tokens", 0),
+                                "total_tokens": u.get("total_tokens", 0),
+                                "cost_usd": u.get("cost", 0.0),
+                                "wall_s": time.time() - t0,
+                                "finish_reason": finish,
+                                "refused": refused,
+                                "ts": time.time(),
+                            }
+                        )
                     return str(txt)
                 if r.status_code in (429, 502, 503):
-                    time.sleep(2 ** attempt)
+                    time.sleep(2**attempt)
                     continue
                 raise RuntimeError(f"OpenRouter {r.status_code}: {r.text[:200]}")
             except requests.RequestException:
-                time.sleep(2 ** attempt)
+                time.sleep(2**attempt)
         raise RuntimeError("OpenRouter: exhausted retries")
 
     return generate
@@ -111,21 +116,28 @@ def generate_text(
     that hardcoded temperature 0.0 pass sample=False (identical payload)."""
     for a in range(5):
         try:
-            r = requests.post(_URL,
+            r = requests.post(
+                _URL,
                 headers={"Authorization": f"Bearer {_key()}"},
-                json={"model": model, "messages": messages, "max_tokens": max_tokens,
-                      "temperature": 0.7 if sample else 0.0}, timeout=timeout)
+                json={
+                    "model": model,
+                    "messages": messages,
+                    "max_tokens": max_tokens,
+                    "temperature": 0.7 if sample else 0.0,
+                },
+                timeout=timeout,
+            )
             if r.status_code == 200:
                 m = r.json()["choices"][0]["message"]
                 c = m.get("content") or ""
                 rz = m.get("reasoning") or ""
                 return str((rz + "\n\n" + c).strip() if rz else c)
             if r.status_code in (400, 429, 500, 502, 503):
-                time.sleep(2 ** a)
+                time.sleep(2**a)
                 continue
             return ""
         except Exception:
-            time.sleep(2 ** a)
+            time.sleep(2**a)
     return ""
 
 
@@ -149,11 +161,17 @@ def generate_result(
     marker, because the harness records usage and error fields per checkpoint row."""
     for a in range(5):
         try:
-            r = requests.post(_URL,
+            r = requests.post(
+                _URL,
                 headers={"Authorization": f"Bearer {_key()}"},
-                json={"model": model, "messages": messages,
-                      "max_tokens": max_tokens,
-                      "temperature": 0.7 if sample else 0.0}, timeout=180)
+                json={
+                    "model": model,
+                    "messages": messages,
+                    "max_tokens": max_tokens,
+                    "temperature": 0.7 if sample else 0.0,
+                },
+                timeout=180,
+            )
             if r.status_code == 200:
                 j = r.json()
                 msg = j["choices"][0]["message"]
@@ -162,12 +180,16 @@ def generate_result(
                 # the verified trace = reasoning trace + committed answer (confabulations
                 # occur in the reasoning; the paper's whole premise). Grade over both.
                 text = (reasoning + "\n\n" + content).strip() if reasoning else content
-                return {"text": text, "content": content, "reasoning": reasoning,
-                        "usage": j.get("usage", {})}
+                return {
+                    "text": text,
+                    "content": content,
+                    "reasoning": reasoning,
+                    "usage": j.get("usage", {}),
+                }
             if r.status_code in (400, 429, 500, 502, 503):
-                time.sleep(2 ** a)
+                time.sleep(2**a)
                 continue
             return {"text": "", "error": f"http{r.status_code}"}
         except Exception:
-            time.sleep(2 ** a)
+            time.sleep(2**a)
     return {"text": "", "error": "retries_exhausted"}

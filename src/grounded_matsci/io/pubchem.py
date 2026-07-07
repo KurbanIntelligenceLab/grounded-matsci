@@ -30,7 +30,9 @@ from typing import Any
 
 # ---- runs in the repl tool (has host.mcp) --------------------------------
 def resolve_names(
-    host: Any, names: Iterable[str], cache_path: str | Path
+    host: Any,  # noqa: ANN401 - MCP host object, no stable type
+    names: Iterable[str],
+    cache_path: str | Path,
 ) -> dict[str, dict[str, Any]]:
     """Resolve names via the chemistry MCP and persist to a JSON cache.
 
@@ -45,13 +47,23 @@ def resolve_names(
         key = nm.strip().lower()
         if key in cache:
             continue
-        rec: dict[str, Any] = {"formula": None, "smiles": None, "cid": None,
-                               "inchikey": None, "error": None}
+        rec: dict[str, Any] = {
+            "formula": None,
+            "smiles": None,
+            "cid": None,
+            "inchikey": None,
+            "error": None,
+        }
         try:
-            r = host.mcp("chemistry", "pubchem_search_compounds",
-                         query=nm, namespace="name", max_cids=1,
-                         with_properties=True)
-            if isinstance(r, str):                 # MCP surfaced an error string
+            r = host.mcp(
+                "chemistry",
+                "pubchem_search_compounds",
+                query=nm,
+                namespace="name",
+                max_cids=1,
+                with_properties=True,
+            )
+            if isinstance(r, str):  # MCP surfaced an error string
                 rec["error"] = r[:200]
             else:
                 props = r.get("properties") or []
@@ -90,6 +102,7 @@ def make_lookup(
     if canonicalize:
         try:
             from rdkit import Chem, RDLogger
+
             RDLogger.DisableLog("rdApp.*")
 
             def _canon_impl(smi: str) -> str:

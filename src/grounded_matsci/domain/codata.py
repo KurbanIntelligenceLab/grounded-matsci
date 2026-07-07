@@ -16,8 +16,20 @@ import re
 from collections.abc import Callable
 from typing import Any
 
-_SUP = {"⁰": "0", "¹": "1", "²": "2", "³": "3", "⁴": "4", "⁵": "5", "⁶": "6",
-        "⁷": "7", "⁸": "8", "⁹": "9", "⁻": "-", "⁺": "+"}
+_SUP = {
+    "⁰": "0",
+    "¹": "1",
+    "²": "2",
+    "³": "3",
+    "⁴": "4",
+    "⁵": "5",
+    "⁶": "6",
+    "⁷": "7",
+    "⁸": "8",
+    "⁹": "9",
+    "⁻": "-",
+    "⁺": "+",
+}
 
 
 def _clean(s: str) -> str:
@@ -25,7 +37,7 @@ def _clean(s: str) -> str:
     (10⁻¹⁹), LaTeX braces (10^{-19}), unicode minus. Fixes the orchestration-layer extraction
     artifact where a mantissa was captured but its ×10^n exponent lost (2026-07-06 CODATA audit)."""
     s = "".join(_SUP.get(c, c) for c in s).replace("−", "-").replace("·", "*")
-    s = re.sub(r"10\s*\^\s*\{\s*([-+]?\d+)\s*\}", r"10^\1", s)   # 10^{-19} -> 10^-19
+    s = re.sub(r"10\s*\^\s*\{\s*([-+]?\d+)\s*\}", r"10^\1", s)  # 10^{-19} -> 10^-19
     return s.replace("{", "").replace("}", "")
 
 
@@ -34,10 +46,18 @@ def _parse_number(expr: str) -> float | None:
     Collapses CODATA digit-group spaces inside the mantissa only; stops at the trailing unit.
     Handles the common closed-form '4π × 10^-7' the exact vacuum-permeability answer takes."""
     import math
+
     expr = _clean(expr).strip().replace("π", "*pi").replace("\\pi", "*pi")
-    pim = re.match(r"\s*([-+]?\d*\.?\d*)\s*\*?\s*pi\s*(?:[×x*·]\s*10\s*\^?\s*([-+]?\d+)|[eE]\s*([-+]?\d+))?", expr)
-    if pim and "pi" in expr[:pim.end()]:
-        coef = float(pim.group(1)) if pim.group(1) not in (None, "", "+", "-") else (1.0 if pim.group(1) != "-" else -1.0)
+    pim = re.match(
+        r"\s*([-+]?\d*\.?\d*)\s*\*?\s*pi\s*(?:[×x*·]\s*10\s*\^?\s*([-+]?\d+)|[eE]\s*([-+]?\d+))?",
+        expr,
+    )
+    if pim and "pi" in expr[: pim.end()]:
+        coef = (
+            float(pim.group(1))
+            if pim.group(1) not in (None, "", "+", "-")
+            else (1.0 if pim.group(1) != "-" else -1.0)
+        )
         val = coef * math.pi
         e = pim.group(2) or pim.group(3)
         if e:
@@ -50,8 +70,10 @@ def _parse_number(expr: str) -> float | None:
         val = float(mm.group(1).replace(" ", ""))
     except ValueError:
         return None
-    rest = expr[mm.end():]
-    em = re.match(r"\s*(?:[eE]\s*([-+]?\d+)|[×x*·]\s*10\s*\^?\s*([-+]?\d+)|10\s*\^\s*([-+]?\d+))", rest)
+    rest = expr[mm.end() :]
+    em = re.match(
+        r"\s*(?:[eE]\s*([-+]?\d+)|[×x*·]\s*10\s*\^?\s*([-+]?\d+)|10\s*\^\s*([-+]?\d+))", rest
+    )
     if em:
         val *= 10 ** int(next(g for g in em.groups() if g is not None))
     return val
@@ -87,6 +109,7 @@ def grade_const(
 def _round_sig(x: float, k: int) -> float:
     """Round x to k significant figures."""
     import math
+
     if x == 0:
         return 0.0
     d = k - 1 - math.floor(math.log10(abs(x)))
@@ -96,10 +119,11 @@ def _round_sig(x: float, k: int) -> float:
 def _trunc_sig(x: float, k: int) -> float:
     """Truncate x toward zero to k significant figures."""
     import math
+
     if x == 0:
         return 0.0
     d = k - 1 - math.floor(math.log10(abs(x)))
-    f = 10 ** d
+    f: float = 10**d
     return math.trunc(x * f) / f
 
 
@@ -115,11 +139,13 @@ def _quoted_sigfigs(m: float) -> int:
 
 def _sigfig_ok(v: float, gt: float) -> bool:
     """Significant-figures policy for EXACT constants: the stated value is correct iff its quoted
-    mantissa is a correct rounding OR truncation of the reference to the number of significant digits
-    the model provided, at the same order of magnitude. A truncated-but-digit-correct value (e.g.
-    c = 3×10^8 or 2.998×10^8, Planck = 6.62×10⁻³⁴) passes; any altered digit at the quoted precision
-    fails. The quoted precision is recovered from the value itself, not from a noisy float repr."""
+    mantissa is a correct rounding OR truncation of the reference to the number of
+    significant digits the model provided, at the same order of magnitude. A
+    truncated-but-digit-correct value (e.g. c = 3×10^8 or 2.998×10^8, Planck = 6.62×10⁻³⁴)
+    passes; any altered digit at the quoted precision fails. The quoted precision is
+    recovered from the value itself, not from a noisy float repr."""
     import math
+
     if v == 0 or gt == 0:
         return abs(v - gt) < 1e-30
     if (v < 0) != (gt < 0):
@@ -129,23 +155,26 @@ def _sigfig_ok(v: float, gt: float) -> bool:
     eg = math.floor(math.log10(gt))
     if ev != eg:
         return False
-    mv = v / 10 ** ev             # model mantissa in [1,10)
-    mg = gt / 10 ** eg            # reference mantissa in [1,10)
+    mv = v / 10**ev  # model mantissa in [1,10)
+    mg = gt / 10**eg  # reference mantissa in [1,10)
     n = _quoted_sigfigs(mv)
-    # tolerance = 10% of one unit in the last quoted place: rejects a last-digit alteration (which is
-    # a full ULP away) while absorbing binary-float representation noise (which is ~1e-16 relative).
-    eps = 0.1 * 10 ** (1 - n)
-    return (abs(_round_sig(mv, n) - _round_sig(mg, n)) <= eps
-            or abs(_round_sig(mv, n) - _trunc_sig(mg, n)) <= eps)
+    # tolerance = 10% of one unit in the last quoted place: rejects a last-digit alteration
+    # (a full ULP away) while absorbing binary-float representation noise (~1e-16 relative).
+    eps: float = 0.1 * 10 ** (1 - n)
+    return (
+        abs(_round_sig(mv, n) - _round_sig(mg, n)) <= eps
+        or abs(_round_sig(mv, n) - _trunc_sig(mg, n)) <= eps
+    )
 
 
 def grade_const_policy(
     text: str, rec: dict[str, Any], round_floor: float = 1e-4
 ) -> tuple[bool | None, float | None, float | str | None]:
     """CODATA-2022 tolerance policy (registered 2026-07-06):
-      - EXACT SI-defining/derived constants: significant-figures policy — the quoted mantissa must be
-        a correct rounding or truncation of the reference at the model's own precision (truncation OK,
-        digit alteration = error). Implemented by _sigfig_ok (not a flat relative tolerance).
+      - EXACT SI-defining/derived constants: significant-figures policy — the quoted mantissa
+        must be a correct rounding or truncation of the reference at the model's own precision
+        (truncation OK, digit alteration = error). Implemented by _sigfig_ok (not a flat
+        relative tolerance).
       - MEASURED constants: correct within max(CODATA-2022 rel std uncertainty, 2018->2022 drift,
         round_floor), so neither the adjustment version nor quoted-digit truncation can be an error.
     Returns (correct|None, extracted, tol_used). tol_used='sigfig' for exact constants."""

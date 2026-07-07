@@ -24,7 +24,7 @@ from . import verify
 
 try:
     from . import crystal
-except Exception:            # pymatgen optional
+except Exception:  # pymatgen optional
     crystal = None
 
 
@@ -32,8 +32,7 @@ SYMBOL = {"ok": "OK  ", "fail": "FAIL", "warn": "WARN", "unchecked": "?   "}
 
 
 # cost class per tier, for the cost-accounting figure (spec Section 3.3)
-TIER_COST = {"0": "free", "1": "api", "1.5": "table", "2": "cheap", "3": "dft",
-             None: "none"}
+TIER_COST = {"0": "free", "1": "api", "1.5": "table", "2": "cheap", "3": "dft", None: "none"}
 
 
 # Orchestration-layer formation-energy detection tier (spec Tier 1.5).
@@ -54,6 +53,7 @@ def detect_formation_energy(text, ef_lookup, tol):
     bound to the nearest known material name and checked either-frame (MP DFT OR experimental
     ΔHf within tolerance). Frozen extractor is untouched."""
     from grounded_matsci.domain import extract as _ex
+
     out = []
     names = list(ef_lookup)
     # collect (offset, value) for every explicit eV/atom value, bound to nearest material
@@ -78,21 +78,37 @@ def detect_formation_energy(text, ef_lookup, tol):
             ok = abs(val - exp) <= max(tol["abs"], tol["rel"] * abs(exp))
         if not ok and na > 1:
             ok = abs(val / na - g) <= band  # per-formula-unit normalization
-        c = extract.Claim("property_ef", f"{val} eV/atom", (off, off + 1),
-                          payload={"name": mat, "value": val, "unit": "ev/atom",
-                                   "log": {"tier": "1.5", "cost": "table", "wall_clock_s": 0.0}})
+        c = extract.Claim(
+            "property_ef",
+            f"{val} eV/atom",
+            (off, off + 1),
+            payload={
+                "name": mat,
+                "value": val,
+                "unit": "ev/atom",
+                "log": {"tier": "1.5", "cost": "table", "wall_clock_s": 0.0},
+            },
+        )
         c.status = "ok" if ok else "fail"
-        c.detail = (f"formation energy {val} eV/atom for {mat}; MP {g} eV/atom"
-                    + (f" / exp {exp}" if exp is not None else "")
-                    + f"; {'within' if ok else 'outside'} tol")
+        c.detail = (
+            f"formation energy {val} eV/atom for {mat}; MP {g} eV/atom"
+            + (f" / exp {exp}" if exp is not None else "")
+            + f"; {'within' if ok else 'outside'} tol"
+        )
         c.payload["bound_name"] = mat
         out.append(c)
     return out
 
 
-def ground_trace(text: str, enable_physics=True, external_lookup=None,
-                 extra_known_names=None, mp_lookup=None, named_sg_lookup=None,
-                 ef_lookup=None):
+def ground_trace(
+    text: str,
+    enable_physics=True,
+    external_lookup=None,
+    extra_known_names=None,
+    mp_lookup=None,
+    named_sg_lookup=None,
+    ef_lookup=None,
+):
     """Extract and verify every chemical claim in a trace.
 
     Escalation order (spec Section 1.3): each claim stops at the first tier that
@@ -110,6 +126,7 @@ def ground_trace(text: str, enable_physics=True, external_lookup=None,
     extractor is not modified.
     """
     import time
+
     known = set(verify.REFERENCE.keys())
     if extra_known_names:
         known |= {n.strip().lower() for n in extra_known_names}
@@ -122,7 +139,8 @@ def ground_trace(text: str, enable_physics=True, external_lookup=None,
     # Orchestration-layer formation-energy detection tier (frozen extractor untouched).
     if ef_lookup:
         from grounded_matsci.domain import tolerances as _t
-        claims = list(claims) + detect_formation_energy(text, ef_lookup, _t.FORMATION_ENERGY)
+
+        claims = [*claims, *detect_formation_energy(text, ef_lookup, _t.FORMATION_ENERGY)]
     for c in claims:
         c.payload.setdefault("log", {"tier": None, "cost": None, "wall_clock_s": 0.0})
         t0 = time.time()
@@ -134,20 +152,26 @@ def ground_trace(text: str, enable_physics=True, external_lookup=None,
             c.payload["log"]["tier"] = "0"
         elif c.kind == "formula":
             c.status, c.detail = verify.verify_formula(
-                c.payload["name"], c.payload["formula"], external_lookup)
+                c.payload["name"], c.payload["formula"], external_lookup
+            )
             c.payload["log"]["tier"] = "1"
         elif c.kind == "property":
             c.status, c.detail, meta = verify.verify_property(
-                c.payload["name"], c.payload["prop"],
-                c.payload["value"], c.payload["unit"],
+                c.payload["name"],
+                c.payload["prop"],
+                c.payload["value"],
+                c.payload["unit"],
                 external_lookup=external_lookup,
-                enable_physics=enable_physics, return_meta=True)
+                enable_physics=enable_physics,
+                return_meta=True,
+            )
             c.payload["log"]["tier"] = meta["tier"]
             c.payload["log"]["wall_clock_s"] = meta["wall_clock_s"]
             c.payload["meta"] = meta
         elif c.kind == "sg_number" and crystal:
             c.status, c.detail = crystal.verify_spacegroup_symbol_number(
-                c.payload["symbol"], c.payload["number"])
+                c.payload["symbol"], c.payload["number"]
+            )
             c.payload["log"]["tier"] = "0"
             # Reference-identity tier: is this space group correct for the NAMED
             # material? Bind the nearest preceding known material name to the claim
@@ -160,8 +184,16 @@ def ground_trace(text: str, enable_physics=True, external_lookup=None,
                 cand = list(named_sg_lookup)
                 # include common comparison names so an intervening "Rutile"/"Anatase"
                 # blocks a false bind even if not itself in the reference set
-                block_names = cand + ["rutile", "anatase", "marcasite", "metacinnabar",
-                                      "calcite", "aragonite", "cristobalite"]
+                block_names = [
+                    *cand,
+                    "rutile",
+                    "anatase",
+                    "marcasite",
+                    "metacinnabar",
+                    "calcite",
+                    "aragonite",
+                    "cristobalite",
+                ]
                 mat = extract._nearest_known_name(text, c.span[0], cand)
                 nearest_any = extract._nearest_known_name(text, c.span[0], block_names)
                 if mat is not None and nearest_any is not None and nearest_any != mat:
@@ -173,24 +205,26 @@ def ground_trace(text: str, enable_physics=True, external_lookup=None,
                         num = c.payload.get("number")
                         if num not in accepted:
                             c.status = "fail"
-                            c.detail = (f"space group #{num} ({c.payload.get('symbol')}) is wrong "
-                                        f"for {mat}; reference phase is #{sorted(accepted)}")
+                            c.detail = (
+                                f"space group #{num} ({c.payload.get('symbol')}) is wrong "
+                                f"for {mat}; reference phase is #{sorted(accepted)}"
+                            )
                             c.payload["bound_name"] = mat
                             c.payload["log"]["tier"] = "1"
         elif c.kind == "sg_system" and crystal:
             c.status, c.detail = crystal.verify_spacegroup_system(
-                c.payload["sg"], c.payload["system"])
+                c.payload["sg"], c.payload["system"]
+            )
             c.payload["log"]["tier"] = "0"
         elif c.kind == "lattice" and crystal:
             p = c.payload
             c.status, c.detail = crystal.verify_lattice_system(
-                p["a"], p["b"], p["c"], p["alpha"], p["beta"], p["gamma"],
-                p["system"])
+                p["a"], p["b"], p["c"], p["alpha"], p["beta"], p["gamma"], p["system"]
+            )
             c.payload["log"]["tier"] = "0"
         elif crystal is None and c.kind in ("sg_number", "sg_system", "lattice"):
             c.status, c.detail = "unchecked", "pymatgen not available"
-        c.payload["log"]["wall_clock_s"] = max(
-            c.payload["log"]["wall_clock_s"], time.time() - t0)
+        c.payload["log"]["wall_clock_s"] = max(c.payload["log"]["wall_clock_s"], time.time() - t0)
         c.payload["log"]["cost"] = TIER_COST.get(c.payload["log"]["tier"], "none")
     return claims
 
@@ -201,8 +235,8 @@ def verify_formula_mp(formula, mp_lookup, claimed_sg_number=None):
     if mp_lookup is None:
         return "unchecked", "no Materials Project lookup configured"
     from grounded_matsci.io import matproj
-    return matproj.verify_against_mp(mp_lookup, formula,
-                                     claimed_sg_number=claimed_sg_number)
+
+    return matproj.verify_against_mp(mp_lookup, formula, claimed_sg_number=claimed_sg_number)
 
 
 def annotate(text: str, claims):
@@ -210,7 +244,7 @@ def annotate(text: str, claims):
     out = []
     last = 0
     for c in sorted(claims, key=lambda x: x.span[0]):
-        s, e = c.span
+        _s, e = c.span
         out.append(text[last:e])
         tag = SYMBOL.get(c.status, "?").strip()
         out.append(f"  «{tag}: {c.detail}»")
@@ -222,12 +256,14 @@ def annotate(text: str, claims):
 def audit_rows(claims):
     rows = []
     for c in claims:
-        rows.append({
-            "kind": c.kind,
-            "claim": c.raw.strip()[:60],
-            "status": c.status,
-            "detail": c.detail,
-        })
+        rows.append(
+            {
+                "kind": c.kind,
+                "claim": c.raw.strip()[:60],
+                "status": c.status,
+                "detail": c.detail,
+            }
+        )
     return rows
 
 

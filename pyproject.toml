@@ -45,9 +45,13 @@ packages = ["src/grounded_matsci"]
 [tool.ruff]
 target-version = "py312"
 line-length = 100
+# paper/figures/make_figs.py is manuscript tooling, not package code (deferred; CHANGELOG)
+extend-exclude = ["paper"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "N", "UP", "B", "ANN", "RUF", "SIM", "PTH", "RET"]
+# ×, −, – appear intentionally: the extractors/normalizers parse model text containing them
+allowed-confusables = ["×", "−", "–"]
 
 [tool.ruff.lint.per-file-ignores]
 # Relaxed typing tiers (mirrors the two-tier mypy policy) and tests.
@@ -55,6 +59,8 @@ select = ["E", "F", "I", "N", "UP", "B", "ANN", "RUF", "SIM", "PTH", "RET"]
 "src/grounded_matsci/workflows/*" = ["ANN"]
 "src/grounded_matsci/evaluation/*" = ["ANN"]
 "tests/*" = ["ANN"]
+# stubs mirror rdkit's own (upper-case) API and are Any by design
+"stubs/*" = ["ANN", "N802"]
 
 [tool.ruff.format]
 docstring-code-format = true
@@ -66,7 +72,8 @@ python_version = "3.12"
 strict = true
 warn_unreachable = true
 warn_redundant_casts = true
-mypy_path = "src"
+# stubs/ shadows the rdkit wheel's broken bundled stubs (syntax error in rdchem.pyi)
+mypy_path = ["src", "stubs"]
 
 # Relaxed typing for numerical and orchestration code built on libraries
 # with weak or missing stubs.

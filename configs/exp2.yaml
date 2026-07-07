@@ -1,0 +1,9 @@
+# EXP2: gated CODATA rerun (Platt gate constants live in domain/calibration.py).
+seed: 42
+models: ["anthropic/claude-sonnet-5", "openai/gpt-5.5", "deepseek/deepseek-v4-pro", "qwen/qwen3-235b-a22b-2507"]
+system: "You are a physics assistant. State physical-constant values precisely with units."
+prompts_path: handoff/codata_prompts_2022.json
+gt_path: handoff/codata_gt_2022.json
+out_path: handoff/exp2_gated_constants.jsonl
+reps: [1, 2, 3]
+workers: 12

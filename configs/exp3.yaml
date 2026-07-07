@@ -1,0 +1,11 @@
+# EXP3: small-model capability probe (two small frontier-family closed models,
+# verified live 2026-07-06).
+seed: 42
+models: ["anthropic/claude-haiku-4.5", "openai/gpt-5.4-mini"]
+system: "You are a materials-chemistry assistant. When you mention a molecule, give its SMILES and molecular formula; when you mention a crystal, give its space group symbol and number. Answer the question directly and concisely."
+corpus_path: handoff/corpus_final_v2.json
+named_sg_path: handoff/named_sg_rule_gt.json
+ef_lookup_path: handoff/ef_lookup.json
+out_path: handoff/exp3_smallmodels.jsonl
+reps: [1, 2, 3]
+workers: 12

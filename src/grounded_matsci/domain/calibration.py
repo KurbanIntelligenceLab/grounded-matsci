@@ -8,8 +8,8 @@ from __future__ import annotations
 
 import math
 
-PLATT_A, PLATT_B = 3.728, -0.970           # dev-frozen (§2.8)
-TRUST_THRESHOLD = 0.5                        # dev-frozen Platt-prob gate
+PLATT_A, PLATT_B = 3.728, -0.970  # dev-frozen (§2.8)
+TRUST_THRESHOLD = 0.5  # dev-frozen Platt-prob gate
 
 
 def platt(t: float) -> float:

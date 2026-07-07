@@ -7,6 +7,7 @@ has its own row schema and lock)."""
 
 from __future__ import annotations
 
+import contextlib
 import json
 from pathlib import Path
 from typing import Any
@@ -19,10 +20,8 @@ def load_done_cells(ckpt_path: str | Path) -> set[str]:
     if p.exists():
         with p.open() as f:
             for ln in f:
-                try:
+                with contextlib.suppress(Exception):
                     done.add(json.loads(ln)["cell"])
-                except Exception:
-                    pass
     return done
 
 

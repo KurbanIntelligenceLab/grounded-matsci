@@ -27,10 +27,30 @@ from typing import Any
 # in the fresh-batch audit. We fold subscripts/superscripts to ASCII digits and
 # strip markdown emphasis BEFORE extraction, preserving character count so span
 # offsets stay meaningful (each Unicode digit maps to exactly one ASCII digit).
-_SUB = {"₀": "0", "₁": "1", "₂": "2", "₃": "3", "₄": "4",
-        "₅": "5", "₆": "6", "₇": "7", "₈": "8", "₉": "9"}
-_SUP = {"⁰": "0", "¹": "1", "²": "2", "³": "3", "⁴": "4",
-        "⁵": "5", "⁶": "6", "⁷": "7", "⁸": "8", "⁹": "9"}
+_SUB = {
+    "₀": "0",
+    "₁": "1",
+    "₂": "2",
+    "₃": "3",
+    "₄": "4",
+    "₅": "5",
+    "₆": "6",
+    "₇": "7",
+    "₈": "8",
+    "₉": "9",
+}
+_SUP = {
+    "⁰": "0",
+    "¹": "1",
+    "²": "2",
+    "³": "3",
+    "⁴": "4",
+    "⁵": "5",
+    "⁶": "6",
+    "⁷": "7",
+    "⁸": "8",
+    "⁹": "9",
+}
 _UNICODE_DIGITS = {**_SUB, **_SUP}
 
 
@@ -51,9 +71,9 @@ def normalize_text(text: str) -> str:
     for ch in text:
         if ch in _UNICODE_DIGITS:
             out.append(_UNICODE_DIGITS[ch])
-        elif ch == "−":          # unicode minus -> ASCII hyphen
+        elif ch == "−":  # unicode minus -> ASCII hyphen
             out.append("-")
-        elif ch in "*`":              # markdown emphasis/code -> space (len-preserving)
+        elif ch in "*`":  # markdown emphasis/code -> space (len-preserving)
             out.append(" ")
         else:
             out.append(ch)
@@ -75,28 +95,45 @@ def normalize_text(text: str) -> str:
     def _despace_sg(mm: re.Match[str]) -> str:
         head, sym = mm.group(1), mm.group(2)
         sym = re.sub(r"\s+", "", sym)
-        sym = sym.rstrip("-")   # don't keep a trailing list-separator hyphen
+        sym = sym.rstrip("-")  # don't keep a trailing list-separator hyphen
         return head + sym
 
     # symbol glyphs are letters/digits/_/ and an internal hyphen; a hyphen must be
     # followed by a digit to stay (inversion axis), else it's a separator -> stop.
-    s = re.sub(r"(space group\s+(?:symbol\s*[:=]?\s*)?)"
-               r"([PABCIFR](?:\s*(?:[a-zA-Z0-9_/̄]|-(?=\s*[0-9̄]))){1,10})",
-               _despace_sg, s, flags=re.IGNORECASE)
+    s = re.sub(
+        r"(space group\s+(?:symbol\s*[:=]?\s*)?)"
+        r"([PABCIFR](?:\s*(?:[a-zA-Z0-9_/̄]|-(?=\s*[0-9̄]))){1,10})",
+        _despace_sg,
+        s,
+        flags=re.IGNORECASE,
+    )
     # re-apply overline fix in case the collapse brought "3 ̄" together
-    s = re.sub(r"([0-9])̄", r"-\1", s)
-    return s
+    return re.sub(r"([0-9])̄", r"-\1", s)
 
 
-_NOT_FORMULA_WORDS = {"SMILES", "INCHI", "INCHIKEY", "IUPAC", "CAS", "NIST",
-                      "CID", "PDB", "DFT", "HOMO", "LUMO", "NMR", "IR", "UV"}
+_NOT_FORMULA_WORDS = {
+    "SMILES",
+    "INCHI",
+    "INCHIKEY",
+    "IUPAC",
+    "CAS",
+    "NIST",
+    "CID",
+    "PDB",
+    "DFT",
+    "HOMO",
+    "LUMO",
+    "NMR",
+    "IR",
+    "UV",
+}
 
 
 def _preceded_by_smiles(text: str, start: int, window: int = 28) -> bool:
     """True if the ~14 chars before `start` mention SMILES/InChI — the token is a
     structure string being parsed as a formula (e.g. 'SMILES of naproxen is CC...').
     A leading 'COC1' of a SMILES otherwise passes the formula regex."""
-    pre = text[max(0, start - window):start].lower()
+    pre = text[max(0, start - window) : start].lower()
     return "smiles" in pre or "inchi" in pre
 
 
@@ -137,12 +174,12 @@ class Claim:
     construction; freezing this class would change the frozen verifier's behavior.
     """
 
-    kind: str                       # "smiles" | "formula" | "property"
-    raw: str                        # the exact substring found
-    span: tuple[int, int]           # (start, end) char offsets in the trace
+    kind: str  # "smiles" | "formula" | "property"
+    raw: str  # the exact substring found
+    span: tuple[int, int]  # (start, end) char offsets in the trace
     payload: dict[str, Any] = field(default_factory=dict)
     # verification results filled in later
-    status: str | None = None       # "ok" | "fail" | "warn" | "unchecked"
+    status: str | None = None  # "ok" | "fail" | "warn" | "unchecked"
     detail: str = ""
 
 
@@ -167,10 +204,8 @@ def _looks_like_spacegroup(s: str) -> bool:
 # explicit tagged form:  SMILES: <str>  or  SMILES=<str>
 _TAGGED = re.compile(r"SMILES\s*[:=]\s*([^\s,;]+)", re.IGNORECASE)
 # bare candidates: a run of SMILES chars with structure-y tokens
-_BARE = re.compile(
-    rf"(?<![A-Za-z0-9])((?:{_SMILES_CHARS}){{3,}})(?![A-Za-z0-9])"
-)
-_STRUCTUREY = re.compile(r"[=#\[\]()@/\\]")   # tokens a formula never has
+_BARE = re.compile(rf"(?<![A-Za-z0-9])((?:{_SMILES_CHARS}){{3,}})(?![A-Za-z0-9])")
+_STRUCTUREY = re.compile(r"[=#\[\]()@/\\]")  # tokens a formula never has
 # A Hill-style molecular formula: capital-led element blocks each optionally
 # followed by a count, e.g. H2O, C8H10N4O2, NH3. We do NOT want to treat these
 # as SMILES candidates -- they belong to the formula channel.
@@ -188,7 +223,7 @@ def _looks_like_formula(s: str) -> bool:
 
 # Organic-subset atoms that can begin a SMILES (plus '[' for bracket atoms).
 _SMILES_START = re.compile(r"^[\[BCNOPSFIbcnops]")
-_STRUCTUREY_STRICT = re.compile(r"[=#\[\]()@]")   # a REAL bond/branch/bracket
+_STRUCTUREY_STRICT = re.compile(r"[=#\[\]()@]")  # a REAL bond/branch/bracket
 
 
 def _strip_markdown(tok: str) -> str:
@@ -196,8 +231,7 @@ def _strip_markdown(tok: str) -> str:
     backticks, `$...$` math, and stray surrounding `*` or spaces. This recovers
     valid SMILES that were flagged only because the wrapper broke RDKit parsing.
     """
-    tok = tok.strip().strip("`").strip("$").strip("*").strip()
-    return tok
+    return tok.strip().strip("`").strip("$").strip("*").strip()
 
 
 def _plausible_bare_smiles(s: str) -> bool:
@@ -248,6 +282,7 @@ def _plausible_bare_smiles(s: str) -> bool:
     # dropping short abbreviations like [BMIM] or O(BDC) that merely look bracket-y.
     try:
         from rdkit import Chem, RDLogger
+
         RDLogger.DisableLog("rdApp.*")
         if Chem.MolFromSmiles(s) is not None:
             return True
@@ -270,8 +305,7 @@ def extract_smiles(text: str) -> list[Claim]:
         s = s.strip(".,;")
         if not s:
             continue
-        out.append(Claim("smiles", s, (m.start(1), m.start(1) + len(s)),
-                         {"tagged": True}))
+        out.append(Claim("smiles", s, (m.start(1), m.start(1) + len(s)), {"tagged": True}))
         seen_spans.append(m.span(1))
     for m in _BARE.finditer(text):
         s = m.group(1)
@@ -292,7 +326,9 @@ def extract_smiles(text: str) -> list[Claim]:
             s = s[:-1]
         s = _strip_markdown(s.strip(".,;"))
         # strip FULLY-ENCLOSING balanced parens: "(DMSO)"->"DMSO", "(SiO2)"->"SiO2"
-        while len(s) >= 2 and s[0] == "(" and s[-1] == ")" and s.count("(") == 1 and s.count(")") == 1:
+        while (
+            len(s) >= 2 and s[0] == "(" and s[-1] == ")" and s.count("(") == 1 and s.count(")") == 1
+        ):
             s = s[1:-1]
         # recompute start robustly: locate the normalized token near the match
         idx = m.group(1).find(s)
@@ -341,10 +377,34 @@ _NAME_FORMULA = re.compile(
     rf"(?:has (?:the )?formula|formula|is|=)\s+"
     rf"\(?({_FORMULA})\)?",
 )
-_STOPWORDS = {"is", "the", "a", "an", "which", "and", "of", "with", "it",
-              "consider", "adding", "so", "another", "candidate", "gives",
-              "starting", "scaffold", "good", "has", "formula", "finally",
-              "first", "second", "third", "next", "then"}
+_STOPWORDS = {
+    "is",
+    "the",
+    "a",
+    "an",
+    "which",
+    "and",
+    "of",
+    "with",
+    "it",
+    "consider",
+    "adding",
+    "so",
+    "another",
+    "candidate",
+    "gives",
+    "starting",
+    "scaffold",
+    "good",
+    "has",
+    "formula",
+    "finally",
+    "first",
+    "second",
+    "third",
+    "next",
+    "then",
+}
 
 
 # Labeled-field form: "Molecular formula: C8H9NO2" / "Formula: Al2O3". Common in
@@ -381,8 +441,7 @@ def extract_formulas(text: str, known_names: list[str] | None = None) -> list[Cl
             continue
         if _preceded_by_smiles(text, m.start(2)):
             continue
-        out.append(Claim("formula", m.group(0), m.span(),
-                         {"name": name, "formula": formula}))
+        out.append(Claim("formula", m.group(0), m.span(), {"name": name, "formula": formula}))
         seen.append(m.span())
     # labeled-field form: bind formula to nearest known compound name before it
     for m in _LABELED_FORMULA.finditer(text):
@@ -395,15 +454,14 @@ def extract_formulas(text: str, known_names: list[str] | None = None) -> list[Cl
             continue
         # nearest known name whose whole-word occurrence ends at/before the label
         bound, best = None, -1
-        window = text[:m.start()].lower()
+        window = text[: m.start()].lower()
         for kn in known_names:
             for mm in re.finditer(r"(?<![A-Za-z0-9])" + re.escape(kn) + r"(?![A-Za-z0-9])", window):
                 if mm.end() > best:
                     best, bound = mm.end(), kn
         if bound is None:
             continue
-        out.append(Claim("formula", m.group(0), m.span(),
-                         {"name": bound, "formula": formula}))
+        out.append(Claim("formula", m.group(0), m.span(), {"name": bound, "formula": formula}))
     # header form: "Dopamine:  C8H11NO2" / "Warfarin - C19H16O4" -- a known name
     # immediately followed by a formula, no "formula" keyword. Only fires for
     # KNOWN names (so arbitrary "Word: C6..." prose isn't grabbed) and only if the
@@ -416,9 +474,15 @@ def extract_formulas(text: str, known_names: list[str] | None = None) -> list[Cl
         # "No -- corrected: ..." retraction). Skip it.
         if kn in names_with_formula:
             continue
-        for hm in re.finditer(r"(?<![A-Za-z0-9])" + re.escape(kn) +
-                              r"(?![A-Za-z0-9])\s*[:\-–]\s*\(?(" + _FORMULA + r")\)?",
-                              text, re.IGNORECASE):
+        for hm in re.finditer(
+            r"(?<![A-Za-z0-9])"
+            + re.escape(kn)
+            + r"(?![A-Za-z0-9])\s*[:\-–]\s*\(?("
+            + _FORMULA
+            + r")\)?",
+            text,
+            re.IGNORECASE,
+        ):
             if any(a <= hm.start() < b for a, b in covered):
                 continue
             formula = hm.group(1)
@@ -426,8 +490,7 @@ def extract_formulas(text: str, known_names: list[str] | None = None) -> list[Cl
                 continue
             if _preceded_by_smiles(text, hm.start(1)):
                 continue
-            out.append(Claim("formula", hm.group(0), hm.span(),
-                             {"name": kn, "formula": formula}))
+            out.append(Claim("formula", hm.group(0), hm.span(), {"name": kn, "formula": formula}))
             covered.append(hm.span())
     return out
 
@@ -477,12 +540,16 @@ def extract_properties(text: str, known_names: list[str] | None = None) -> list[
         # nearest to (at/before) this property phrase (see _nearest_known_name).
         bound = _nearest_known_name(text, m.start(2), known_names)
         name = bound if bound is not None else raw_name
-        prop_key, unit = _PROP_WORDS.get(m.group(2).lower().strip(),
-                                         (m.group(2).lower(), None))
+        prop_key, unit = _PROP_WORDS.get(m.group(2).lower().strip(), (m.group(2).lower(), None))
         val = float(m.group(3))
-        out.append(Claim("property", m.group(0), m.span(),
-                         {"name": name, "prop": prop_key,
-                          "value": val, "unit": (m.group(4) or unit)}))
+        out.append(
+            Claim(
+                "property",
+                m.group(0),
+                m.span(),
+                {"name": name, "prop": prop_key, "value": val, "unit": (m.group(4) or unit)},
+            )
+        )
         seen.append(m.span())
     # labeled-field form: "Dipole moment: 1.04 D" / "Dipole moment = 3.92 D" with
     # the compound name on a preceding header line. Bind to nearest known name.
@@ -494,9 +561,19 @@ def extract_properties(text: str, known_names: list[str] | None = None) -> list[
         bound = _nearest_known_name(text, m.start(), known_names)
         if bound is None:
             continue
-        out.append(Claim("property", m.group(0), m.span(),
-                         {"name": bound, "prop": prop_key,
-                          "value": float(m.group(2)), "unit": (m.group(3) or unit)}))
+        out.append(
+            Claim(
+                "property",
+                m.group(0),
+                m.span(),
+                {
+                    "name": bound,
+                    "prop": prop_key,
+                    "value": float(m.group(2)),
+                    "unit": (m.group(3) or unit),
+                },
+            )
+        )
     return out
 
 
@@ -520,13 +597,15 @@ _HM = r"[PABCIFR][a-zA-Z0-9_/\-]{1,9}"
 #   "(225)"  "( 225 )"  "#225"  "(No. 167)"  ", No 225"  ", number 225"
 # A lone "(" counts as a cue (the parenthesized-number convention); "No"/"number"
 # require following whitespace so the "NO" in a formula cannot match.
-_NUMCUE = (r"(?:"
-           r"\(\s*#?\s*(?:No\.?\s*|number\s+)?"      # "(225", "(No. 167", "(#225"
-           r"|"
-           r"#\s*"                                    # "#225"
-           r"|"
-           r",?\s*(?:No\.?|number)\s+"                # ", No 225", "number 225"
-           r")")
+_NUMCUE = (
+    r"(?:"
+    r"\(\s*#?\s*(?:No\.?\s*|number\s+)?"  # "(225", "(No. 167", "(#225"
+    r"|"
+    r"#\s*"  # "#225"
+    r"|"
+    r",?\s*(?:No\.?|number)\s+"  # ", No 225", "number 225"
+    r")"
+)
 _SG_NUM = re.compile(
     r"(?:[Ss]pace group\s+)?(" + _HM + r")\s*" + _NUMCUE + r"(\d{1,3})\s*\)?",
 )
@@ -548,7 +627,9 @@ _SYS_WORDS = r"(triclinic|monoclinic|orthorhombic|tetragonal|trigonal|rhombohedr
 # space-group NUMBER -- never a plain word or formula.
 _SGREF = r"(?:[PABCIFR][a-zA-Z]*[0-9_/\-][a-zA-Z0-9_/\-]*|\d{1,3})"
 _SG_SYS_A = re.compile(_SYS_WORDS + r"\s+(?:space group\s+)?(" + _SGREF + r")")
-_SG_SYS_B = re.compile(r"(?:space group\s+)(" + _SGREF + r")\s+(?:is|,)\s+" + _SYS_WORDS, re.IGNORECASE)
+_SG_SYS_B = re.compile(
+    r"(?:space group\s+)(" + _SGREF + r")\s+(?:is|,)\s+" + _SYS_WORDS, re.IGNORECASE
+)
 # lattice parameters + system:  "cubic ... a = 5.64 Å" (angles optional -> assume 90)
 _LATT = re.compile(
     r"(triclinic|monoclinic|orthorhombic|tetragonal|trigonal|rhombohedral|hexagonal|cubic)"
@@ -573,8 +654,7 @@ def extract_crystal(text: str) -> list[Claim]:
         sym, num = m.group(1), int(m.group(2))
         if not (1 <= num <= 230) or not _valid_sg_symbol(sym):
             continue
-        out.append(Claim("sg_number", m.group(0), m.span(),
-                         {"symbol": sym, "number": num}))
+        out.append(Claim("sg_number", m.group(0), m.span(), {"symbol": sym, "number": num}))
         claimed_spans.append(m.span())
     for m in _SG_NUM.finditer(text):
         # group 1 = HM symbol, group 2 = cued space-group number
@@ -590,16 +670,16 @@ def extract_crystal(text: str) -> list[Claim]:
         # skip if already covered by a labeled-field match
         if any(a <= m.start() < b for a, b in claimed_spans):
             continue
-        out.append(Claim("sg_number", m.group(0), m.span(),
-                         {"symbol": sym, "number": num}))
+        out.append(Claim("sg_number", m.group(0), m.span(), {"symbol": sym, "number": num}))
     for rgx, order in ((_SG_SYS_A, "sys_first"), (_SG_SYS_B, "sg_first")):
         for m in rgx.finditer(text):
             if order == "sys_first":
                 system, sg = m.group(1), m.group(2)
             else:
                 sg, system = m.group(1), m.group(2)
-            out.append(Claim("sg_system", m.group(0), m.span(),
-                             {"sg": sg, "system": system.lower()}))
+            out.append(
+                Claim("sg_system", m.group(0), m.span(), {"sg": sg, "system": system.lower()})
+            )
 
     def _f(g: str | None, default: float | None = None) -> float | None:
         if not g:
@@ -615,9 +695,22 @@ def extract_crystal(text: str) -> list[Claim]:
         beta = _f(m.group(6), 90.0)
         # gamma defaults to 120 for hex/trig, else 90
         gamma = _f(m.group(7), 120.0 if system in ("hexagonal", "trigonal") else 90.0)
-        out.append(Claim("lattice", m.group(0)[:60], m.span(),
-                         {"system": system, "a": a, "b": b, "c": c,
-                          "alpha": alpha, "beta": beta, "gamma": gamma}))
+        out.append(
+            Claim(
+                "lattice",
+                m.group(0)[:60],
+                m.span(),
+                {
+                    "system": system,
+                    "a": a,
+                    "b": b,
+                    "c": c,
+                    "alpha": alpha,
+                    "beta": beta,
+                    "gamma": gamma,
+                },
+            )
+        )
     return out
 
 
@@ -627,10 +720,12 @@ def extract_all(text: str, known_names: list[str] | None = None) -> list[Claim]:
     # "**R-3c, No. 167**" are visible to the ASCII regexes. Length-preserving,
     # so spans still index into a same-length string.
     text = normalize_text(text)
-    claims = (extract_smiles(text)
-              + extract_formulas(text, known_names=known_names)
-              + extract_properties(text, known_names=known_names)
-              + extract_crystal(text))
+    claims = (
+        extract_smiles(text)
+        + extract_formulas(text, known_names=known_names)
+        + extract_properties(text, known_names=known_names)
+        + extract_crystal(text)
+    )
     claims.sort(key=lambda c: c.span[0])
     return claims
 
