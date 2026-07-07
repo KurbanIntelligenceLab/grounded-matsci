@@ -1,0 +1,22 @@
+{
+ "models": {
+  "claude-haiku-4.5": "anthropic small-tier",
+  "gpt-5.4-mini": "openai small-tier"
+ },
+ "molecular_err_commit": {
+  "claude-haiku-4.5": {
+   "baseline": "50.0% (210/420)",
+   "mode_a": "50.0% (210/420)",
+   "mcnemar": "net 0 (harm 0, lift 0), p=1.0",
+   "reason": "formats formulas in Unicode subscripts; frozen deterministic extractor does not parse them, so in-loop detection recall ~0 -> no correction fires. Detection-limited, exactly the paper's two-stage thesis: repair cannot help where detection does not reach."
+  },
+  "gpt-5.4-mini": {
+   "baseline": "33.2% (139/419)",
+   "mode_a": "28.6% (120/420)",
+   "mcnemar": "net +3 (harm 1, lift 4), p=0.38 (n.s.)",
+   "reason": "ASCII formatting -> detectable -> small, non-significant lift consistent with its moderate baseline error."
+  }
+ },
+ "interpretation": "Small closed models do NOT cleanly show the open-weights lift pattern. The axis is NOT simply capability tier: haiku (small closed) has high error but is undetectable due to formatting; gpt-5.4-mini (small closed) shows only marginal n.s. lift. The lift remains governed by DETECTION RECALL (formatting/extractability) x baseline error, not by open/closed or capability tier per se. This REFINES rather than overturns the openness observation: the operative variable is whether the verifier can extract the committed object, which interacts with model output formatting.",
+ "caveat": "haiku subscript non-extraction is a real detection-recall limitation, disclosed; it is not a grading artifact (grade_record derives the formula and scores correctly)."
+}

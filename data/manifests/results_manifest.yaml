@@ -1,0 +1,28 @@
+# Frozen paper results (released result set; outputs/ is the gitignored live-run area).
+name: frozen_paper_results
+source: produced by the registered experiment runners (see configs/ and CHANGELOG.md)
+files:
+  - path: results/exp1_final_result.json
+    sha256: cb5ab7cfac50841cb73db9fa26568ecfcb7b76eb4bce347fc17f9a6311c7ebbc
+    produced_by: EXP1 two-stage triage (workflows/exp1_two_stage.py, configs/exp1.yaml)
+  - path: results/exp2_gated_result.json
+    sha256: a8624b4a99d579865af77d887ff42a241f9f7fef6f5a873c9fe75be96806086f
+    produced_by: EXP2 gated CODATA rerun (workflows/exp2_gated_codata.py, configs/exp2.yaml)
+  - path: results/exp3_capability.json
+    sha256: 72dfcdfb7a150036e0c660dfca1565846eba168377ce0ee33fd2a5fe0285d347
+    produced_by: EXP3 small-model probe (workflows/exp3_small_models.py, configs/exp3.yaml)
+  - path: results/exp4_isotope_result.json
+    sha256: 0aa0427bc41a7b9f50272e5f3a3061d587d55f74ec4526b863ab615f84717334
+    produced_by: EXP4 isotope domain (workflows/exp4_isotopes.py, configs/exp4.yaml)
+  - path: results/exp4_per_model.json
+    sha256: 8b325642a2bf7537d0d74d2a209b6303ffdd86974f615038a06e5c7e4801bab3
+    produced_by: EXP4 per-model breakdown (workflows/exp4_isotopes.py, configs/exp4.yaml)
+  - path: results/figures/fig_calibration.png
+    sha256: a48ed9ad8ecb6e53b131bd102e3e026d43bd8fdb90769c1994c1e4ca2f779ebc
+    produced_by: calibration figure (raster copy of paper fig2)
+  - path: results/figures/fig_cost.png
+    sha256: 46f63186fb98017f20c5bafd0e35d97e691f1ee7ab93f41021a19c0db559827c
+    produced_by: cost figure (raster copy of paper fig3)
+  - path: results/figures/fig_triplicate.png
+    sha256: 56b2edf319696facca3aed2a533e7a810c64fa33c9fef3c3b45c5e20908802ad
+    produced_by: triplicate headline figure

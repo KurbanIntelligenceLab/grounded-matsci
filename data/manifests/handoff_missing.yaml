@@ -1,0 +1,37 @@
+# Frozen experiment inputs referenced by the runners/configs but NOT in this repository.
+# They are registered ex ante (short sha256 where recorded in the archived
+# DECISIONS_LOG.md) and are released separately via a data repository on acceptance
+# (see Data & code availability in the manuscript). Do not claim they are available here.
+name: handoff_inputs
+status: not_included
+release: separate data repository on acceptance
+files:
+  - path: handoff/corpus_final_v2.json
+    role: frozen v2 prompt corpus (all runners)
+    registered_sha256_short: "66365980"
+  - path: handoff/holdout_ground_truth.json
+    role: frozen holdout ground truth (grading)
+    registered_sha256_short: "5e80c788"
+  - path: handoff/codata_gt_2022.json
+    role: CODATA 2022 constants ground truth (exp2)
+    registered_sha256_short: "95e59c7a"
+  - path: handoff/codata_prompts_2022.json
+    role: constants prompts (exp2)
+  - path: handoff/codata_prompts.json
+    role: constants prompts (codata runner)
+  - path: handoff/named_sg_rule_gt.json
+    role: named-phase accepted space groups (in-loop verify)
+  - path: handoff/ef_lookup.json
+    role: MP/experimental formation-energy lookup (in-loop verify)
+  - path: handoff/selfcheck_detection.json
+    role: frozen sampling-consistency signal (exp1 two-stage gate)
+  - path: handoff/prompt_facts.json
+    role: retrieved-facts block per prompt (RAG-in-prompt arm)
+  - path: handoff/endtask_tasks.json
+    role: end-task definitions with depends_on objects
+  - path: handoff/isotope_prompts.json
+    role: isotope prompts (exp4)
+  - path: handoff/pubchem_cache.json
+    role: PubChem name-resolution cache (see configs/pubchem.yaml for the new location)
+  - path: handoff/holdout_arms_rep*.jsonl
+    role: raw model-generation traces (~67 MB)

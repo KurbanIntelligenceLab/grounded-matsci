@@ -1,0 +1,49 @@
+{
+ "test": "do-no-harm prediction: with per-cell Platt-trust gate (dev-frozen a=3.728 b=-0.97, threshold 0.5) and corrected 2022 references, is frontier harm eliminated and open-model lift preserved?",
+ "result_gated": {
+  "claude": {
+   "harm": 0,
+   "lift": 2
+  },
+  "gpt-5.5": {
+   "harm": 0,
+   "lift": 0
+  },
+  "deepseek": {
+   "harm": 2,
+   "lift": 7
+  },
+  "qwen": {
+   "harm": 0,
+   "lift": 4
+  },
+  "total": {
+   "harm": 2,
+   "lift": 13,
+   "net": 11
+  }
+ },
+ "result_ungated_prior": {
+  "claude": {
+   "harm": 2
+  },
+  "gpt-5.5": {
+   "harm": 3
+  },
+  "deepseek": {
+   "lift": 7
+  },
+  "qwen": {
+   "harm": 2,
+   "lift": 6
+  },
+  "total": {
+   "harm": 7,
+   "lift": 13
+  }
+ },
+ "prediction": "CONFIRMED: frontier harm 5->0; open-weights lift largely retained (13->11, minor qwen reduction); overall harm 7->2, net +11. Driver = reference fix, not the trust gate (0 suppressed).",
+ "mechanism_caveat": "IMPORTANT: the harm reduction came from CORRECTING THE STALE REFERENCE (the generation-time codata_prompts injected the 2018/atm Sackur-Tetrode value -1.16487 against the correct 2022 100-kPa GT -1.15170, causing a false-positive flag on the correct baseline that then injected the wrong value \u2014 5 of 7 ungated harm cells). The per-cell Platt-trust gate itself suppressed 0 regenerations: on a single-constant cell trust is binary and perfectly correlated with the flag (platt(0)=0.27<0.5 always opens; platt(1)=0.94 only applies to unflagged cells), so the confidence gate is structurally a no-op on single-claim surfaces. The 2 residual deepseek harm cells are genuine reference-less-repair regressions the flag-keyed gate cannot reach.",
+ "manuscript_wording": "Replace 'demonstrated structurally' with the MEASURED result: gated rerun with corrected references eliminates frontier harm (5->0) and preserves open-model lift (net +10). But state honestly that the operative instrument was reference correctness, not the confidence gate \u2014 the Platt-trust gate needs a multi-claim surface (0<trust<1) to demonstrate suppression, which is future work. This is 'measured, with the confidence-gate component's validation deferred to a multi-claim surface.'",
+ "VERIFIED_2026-07-06": "Recomputed from raw: claude h0/l2, gpt-5.5 h0/l0, deepseek h2/l7, qwen h0/l4; total harm 2 lift 13 net +11. OPEN-WEIGHTS-ONLY lift (deepseek+qwen, per the paper's taxonomy; claude/gpt-5.5 are frontier-closed): 13 (7+6) ungated -> 11 (7+4) gated \u2014 a minor drop, NOT preserved. The all-model total (13) only holds by folding in claude's new +2, which is frontier-closed, so do NOT call open-weights lift 'preserved'. The 2 deepseek harm cells (von Klitzing rep1/rep3) are GRADING ARTIFACTS: text repeats correct 25812.80745 but truncates before a parseable 'Value:' line."
+}

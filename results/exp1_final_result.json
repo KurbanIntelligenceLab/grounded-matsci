@@ -1,0 +1,47 @@
+{
+ "test": "hybrid two-stage triage: does adding a consistency-triggered detection stage to Mode A raise in-loop recall, and does lift follow?",
+ "grading": "registered subject-bound EF grader (bind final eV/atom value to cell's known subject, grade vs ef_lookup MP/exp within FORMATION_ENERGY tol), applied IDENTICALLY to deterministic-only Mode A (frozen holdout arms) and two-stage Mode A. Coverage: claude 300/gpt 13/deepseek 5/qwen 290 gradable (gpt-5.5, deepseek emit bare unit-less values -> ungradeable, same limitation both arms).",
+ "recall_gain": {
+  "single_deterministic": "19% pooled",
+  "two_stage": {
+   "claude": "94%",
+   "qwen": "95%"
+  }
+ },
+ "ef_err_commit": {
+  "claude": {
+   "det_only": "28% (86/302)",
+   "two_stage": "53% (158/300)"
+  },
+  "qwen": {
+   "det_only": "80% (232/289)",
+   "two_stage": "80% (231/290)"
+  }
+ },
+ "repair_after_flag": "of claude cells flagged by the consistency stage and regenerated, only 46% became correct \u2014 because the consistency-triggered soft-fail signals unreliability but does NOT inject a reference value (unlike the deterministic tier, which carries the MP/PubChem fact). The model regenerates without ground truth and lands on another wrong formation energy.",
+ "conclusion": "Detection recall rose 19%->94%, but LIFT DID NOT FOLLOW on formation energy: err|commit is flat-to-worse (claude 28%->53%, qwen 80%->80%). The two-stage triage moves the DETECTION half of the causal chain but not the outcome, because the consistency path lacks a reference value to repair with \u2014 consistent with the \u00a72.4 finding that formation energy is a knowledge gap correction cannot fill without an external value. PER THE SPEC RULE: lift does not track recall, so manuscript keeps recall-only wording ('raises in-loop recall from 19% to 94% where values are extractable'); NO 'confirms causally'. This is a sharper mechanistic result: detection and repair are BOTH required, and a detector that flags without a fact raises recall without raising accuracy.",
+ "harm_precision": {
+  "note": "the two-stage arm's higher err|commit vs det-only reflects that it regenerates many more cells (94% recall) through a reference-less repair; on the deterministic tier only ~19% were touched. This is net harm on already-uncertain EF answers, not lift."
+ },
+ "precision_side": {
+  "flag_rate": {
+   "claude": "94%",
+   "qwen": "95%",
+   "gpt-5.5": "2%",
+   "deepseek": "2%"
+  },
+  "false_positive_flag_rate_on_correct": {
+   "claude": "94%",
+   "qwen": "94%"
+  },
+  "precision": {
+   "claude": "28%",
+   "qwen": "60%",
+   "gpt-5.5": "20%",
+   "deepseek": "0%"
+  },
+  "reading": "On formation energy the consistency signal fires on nearly everything (claude flag rate 94%, of which 94% of the CORRECT answers are also flagged) \u2014 precision 28%. EF values scatter across samples regardless of correctness, so cross-sample disagreement is not specific to error on this surface. High recall is bought with near-total loss of precision."
+ },
+ "net_harm": "the hybrid regenerates the 94% flagged EF cells through a reference-less repair, raising err|commit (claude 28%->53%) rather than lowering it \u2014 net harm on this surface. The two-stage triage is beneficial only where (a) the consistency signal is specific AND (b) the triggered path carries a reference value; neither holds for formation energy.",
+ "manuscript_wording": "Per spec: 'raises in-loop recall from 19% to 94% where values are extractable' \u2014 NO 'confirms causally'. Lift does not track recall; report recall gain + precision collapse + reference-less-repair mechanism as the honest, sharper result."
+}

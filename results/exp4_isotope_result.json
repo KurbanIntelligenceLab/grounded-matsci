@@ -1,0 +1,46 @@
+{
+ "domain": "isotope half-lives vs IAEA NDS (relnsd v1)",
+ "n_isotopes": 63,
+ "n_cells": 1512,
+ "governance": "GT frozen+hashed before grading (sha 4083716c); value parser hardened for units/commas/sci-notation BEFORE paper-facing grading (constants lesson); Mode A regenerated with hardened parser",
+ "baseline": {
+  "itt": 0.81,
+  "err_commit": 0.113,
+  "abstain": 0.087
+ },
+ "mode_a": {
+  "itt": 0.91,
+  "err_commit": 0.0,
+  "abstain": 0.09
+ },
+ "mcnemar": {
+  "n": 252,
+  "harm": 3,
+  "lift": 33,
+  "net": 30,
+  "p": 2.27e-07
+ },
+ "per_stratum_itt": {
+  "S1_well_known": [
+   0.98,
+   0.99
+  ],
+  "S2_common_specialized": [
+   0.95,
+   1.0
+  ],
+  "S3_rare_ambiguous": [
+   0.88,
+   0.9
+  ],
+  "S4_recent_specialist": [
+   0.44,
+   0.76
+  ]
+ },
+ "two_channel_check": {
+  "abstain_symmetry": "baseline 8.7% vs Mode A 9.0% \u2014 symmetric, no manufactured lift",
+  "parser_artifact_caught": "first-pass parser mis-read comma-grouped ('76,000 y'->0) and 'N x 10^M' forms, inflating baseline err|commit to 40% and net to +50; hardened parser + regeneration gives the true baseline err|commit 11.3% and net +30. The mandatory gate caught a genuine \u00a72.10-class artifact before it became paper-facing."
+ },
+ "interpretation": "Independent-domain accuracy lift (not merely mechanics port): baseline error is real (11% err|commit, 41% on exotic S4), and gated correction removes it (0% err|commit) with a clean rarity gradient \u2014 near-ceiling on famous isotopes (no headroom), large lift on superheavy/exotic. Upgrades the transfer claim from 'mechanics port' (constants, near-ceiling) to a genuine accuracy-lift second domain."
+}

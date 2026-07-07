@@ -1,0 +1,49 @@
+{
+ "per_model": {
+  "claude-sonnet-5": {
+   "class": "frontier closed",
+   "base_itt": 0.88,
+   "modea_itt": 0.99,
+   "ec": "11%\u21920%",
+   "net": 7,
+   "harm": 0,
+   "lift": 7,
+   "p": 0.016,
+   "sig": true
+  },
+  "gpt-5.5": {
+   "class": "frontier closed",
+   "base_itt": 0.82,
+   "modea_itt": 0.93,
+   "ec": "8%\u21920%",
+   "net": 8,
+   "harm": 1,
+   "lift": 9,
+   "p": 0.021,
+   "sig": true
+  },
+  "deepseek-v4-pro": {
+   "class": "open-weights",
+   "base_itt": 0.83,
+   "modea_itt": 0.87,
+   "ec": "9%\u21920%",
+   "net": 4,
+   "harm": 2,
+   "lift": 6,
+   "p": 0.29,
+   "sig": false
+  },
+  "qwen3-235b-a22b-2507": {
+   "class": "open-weights",
+   "base_itt": 0.7,
+   "modea_itt": 0.85,
+   "ec": "17%\u21920%",
+   "net": 11,
+   "harm": 0,
+   "lift": 11,
+   "p": 0.00098,
+   "sig": true
+  }
+ },
+ "finding": "FIRST FRONTIER-MODEL LIFT: both frontier-closed models are individually significant on isotope half-lives (claude net +7 p=0.016, gpt-5.5 net +8 p=0.021) \u2014 unlike constants (near-ceiling, n.s.) and materials formula (frontier n.s., no headroom). Isotope half-lives carry genuine long-tail error mass even for frontier models, so the lift reaches them. This confirms the axis is headroom x detection recall, NOT model tier: give a frontier model a domain where it errs on the long tail and is extractable, and gated correction lifts it significantly."
+}

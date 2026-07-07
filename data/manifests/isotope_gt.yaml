@@ -1,0 +1,14 @@
+# Frozen isotope half-life ground truth for EXP4.
+name: isotope_gt
+source: IAEA Nuclear Data Section (Live Chart of Nuclides), curated half-life values
+license: IAEA data are publicly available; see source terms of use
+version: frozen for the EXP4 registration (see docs/internal/DECISIONS_LOG.md)
+schema: >
+  JSON object with key "isotopes": nucid -> {name, nucid, half_life_sec, unit,
+  decay_mode, stratum}. half_life_sec is seconds. The grading tolerance policy
+  (10% relative, final-commitment with any-match reported) lives in
+  src/grounded_matsci/domain/isotope.py.
+known_limitations: values frozen at registration time; not auto-updated from IAEA.
+files:
+  - path: data/reference/isotope_gt.json
+    sha256: 0e93c73c31a0c834fcb4451eb9433b2d68db7eb16a080bf0bc7b97e16462ecdb
