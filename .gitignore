@@ -37,7 +37,6 @@ dist/
 *.synctex.gz
 *.toc
 missfont.log
-paper/*.log
 
 # macOS
 .DS_Store

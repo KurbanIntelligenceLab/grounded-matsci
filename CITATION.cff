@@ -1,14 +1,26 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
-title: "grounded-matsci: Grounded verification of materials-chemistry reasoning"
+title: "Grounded verification of materials-chemistry reasoning: detection is the bottleneck, repair is easy"
 abstract: >-
-  Large language models confabulate chemical and materials objects --- molecular
-  formulas, space groups, formation energies --- inside fluent reasoning traces,
+  Large language models confabulate chemical and materials objects — molecular
+  formulas, space groups, formation energies — inside fluent reasoning traces,
   most often for the long-tail entities where verification matters most. We build
   a tiered, deterministic verifier that grounds each extractable claim against
   authoritative databases and physics, and study it across four current models on
-  528 condition-pinned prompts.
+  528 condition-pinned prompts. Gated correction removes confabulated formulas
+  (error-given-commitment 22% to 4%, p=7×10^-22) at 3.2× fewer retrievals than
+  blanket augmentation and beats a conversational oracle retriever end-to-end; an
+  extraction-enforcing oracle variant that forces value restatement is
+  complementary, solving copyable quantitative claims (formation-energy error to
+  1%) where gated correction is detection-limited. Repair is easy everywhere
+  (80–97%); in-loop detection recall is the bottleneck — a consistency stage
+  raises it from 19% to 94%, though without an injected reference no accuracy lift
+  follows. Grounding lifts downstream accuracy only when the verifier's scope
+  reaches the deliverable (83% to 90%). The lift tracks baseline error, governed
+  by detection recall not model openness, and transfers with orchestration-layer
+  changes only: absent on near-ceiling constants, large on isotope half-lives
+  (11% to 0%), where two frontier-closed models show a first significant lift.
 authors:
   - family-names: Polat
     given-names: Can

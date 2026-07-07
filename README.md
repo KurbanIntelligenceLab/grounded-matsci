@@ -68,8 +68,13 @@ in the project's private records — e.g. extractor `42e03ae2`, verifier config
 `6e45797a`, corpus `66365980`. Those
 hashes refer to the pre-refactor bundle files; this repository restructured packaging,
 imports, typing, and configuration **without changing behavior**, which is enforced by
-the migrated regression suite (`tests/`). The frozen modules are listed in
-`.claude/CLAUDE.md`; their behavior may not change without explicit approval.
+the migrated regression suite (`tests/`). Their behavior may not change without explicit
+approval. The frozen modules are:
+
+- `domain/{extract,adjudicate,tolerances,refdata,codata,isotope,composition,calibration}.py`
+- `verification/{verify,crystal,ground,two_stage}.py`
+- `evaluation/{grade_all,grade_expansion}.py`
+- `workflows/loop.py`
 
 ## Repository layout
 
@@ -88,7 +93,6 @@ tests/            mirrors src/; offline regression + property tests
 data/manifests/   dataset + results hashes; the missing-handoff manifest
 results/          frozen paper outputs (committed)
 outputs/          live-run area (gitignored)
-paper/            LaTeX manuscript (Springer Nature template)
 ```
 
 ## Models
@@ -100,8 +104,8 @@ Four current models, verified at run time (two frontier closed, two open-weights
 
 ## Citation
 
-See `CITATION.cff`. A manuscript is in preparation; the citation will be updated on
-publication.
+See `CITATION.cff` for software citation metadata (authors, ORCIDs, title, abstract).
+A manuscript is in preparation; a journal DOI will be added on publication.
 
 ## License
 
@@ -114,4 +118,3 @@ MIT — see `LICENSE`.
   benchmark (`evaluation/costing.py`).
 - Hypothesis property tests and per-function coverage for `workflows/`/`evaluation/`
   are a target, not yet met (see CHANGELOG.md).
-- `paper/figures/make_figs.py` is manuscript tooling and was not refactored.

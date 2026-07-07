@@ -45,7 +45,7 @@ packages = ["src/grounded_matsci"]
 [tool.ruff]
 target-version = "py312"
 line-length = 100
-# paper/figures/make_figs.py is manuscript tooling, not package code (deferred; CHANGELOG)
+# local-only manuscript tooling (gitignored), not package code
 extend-exclude = ["paper"]
 
 [tool.ruff.lint]

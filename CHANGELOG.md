@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Local-only agent config and manuscript sources are no longer part of the
+  repository: gitignored, and all published docs now reference only committed paths.
+- Populated `CITATION.cff` with authors, ORCIDs, title, and abstract.
+
 ## 0.1.0 — 2026-07-07
 
 Initial migration of the paper bundle into this repository.
@@ -38,4 +44,3 @@ Known deferred items:
   `data/manifests/handoff_missing.yaml`.
 - Hypothesis property tests and per-public-function coverage for
   `workflows/` and `evaluation/` are a target, not yet met.
-- `paper/figures/make_figs.py` is manuscript tooling and was not refactored.

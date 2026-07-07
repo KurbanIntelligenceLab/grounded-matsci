@@ -6,5 +6,5 @@ There are no shell/Python wrappers here: every entry point is a CLI subcommand,
 uv run grounded-matsci <subcommand> --config configs/<name>.yaml
 ```
 
-(see `src/grounded_matsci/cli.py`). Per CODING_RULES rule A, nothing in this directory
-may contain scientific logic.
+(see `src/grounded_matsci/cli.py`). Nothing in this directory may contain scientific
+logic; all experiment entry points live in `cli.py` and `workflows/`.
