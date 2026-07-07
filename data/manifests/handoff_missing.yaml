@@ -1,7 +1,7 @@
 # Frozen experiment inputs referenced by the runners/configs but NOT in this repository.
-# They are registered ex ante (short sha256 where recorded in the archived
-# DECISIONS_LOG.md) and are released separately via a data repository on acceptance
-# (see Data & code availability in the manuscript). Do not claim they are available here.
+# They are registered ex ante (short sha256 where recorded in the project's private
+# decisions log) and will be deposited in this repository upon acceptance
+# (see Data availability in the manuscript). Do not claim they are available here.
 name: handoff_inputs
 status: not_included
 release: separate data repository on acceptance

@@ -61,8 +61,9 @@ Every run snapshots its config and writes a provenance `manifest.json` under
 ## Frozen scientific cores
 
 The claim extractor, adjudicator, tolerance policy, and verifier tiers were frozen
-before the holdout runs, with content hashes registered in the (unpublished) decisions
-log — e.g. extractor `42e03ae2`, verifier config `6e45797a`, corpus `66365980`. Those
+before the holdout runs, with content hashes registered ex ante in a decisions log kept
+in the project's private records — e.g. extractor `42e03ae2`, verifier config
+`6e45797a`, corpus `66365980`. Those
 hashes refer to the pre-refactor bundle files; this repository restructured packaging,
 imports, typing, and configuration **without changing behavior**, which is enforced by
 the migrated regression suite (`tests/`). The frozen modules are listed in
