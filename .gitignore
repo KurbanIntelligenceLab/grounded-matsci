@@ -1,3 +1,7 @@
+# local-only agent config and manuscript sources (not published)
+/.claude/
+/paper/
+
 # internal review docs (copied but not published)
 /docs/internal/
 
