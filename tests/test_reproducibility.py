@@ -6,9 +6,20 @@ import random
 from grounded_matsci.reproducibility import experiment_id, seed, write_manifest
 
 REQUIRED_MANIFEST_FIELDS = {
-    "git_sha", "git_dirty", "config_hash", "config_path", "dataset_manifest",
-    "split_manifest", "seed", "python_version", "package_version", "timestamp_utc",
-    "hostname", "gpu_model", "cuda_version", "driver_version",
+    "git_sha",
+    "git_dirty",
+    "config_hash",
+    "config_path",
+    "dataset_manifest",
+    "split_manifest",
+    "seed",
+    "python_version",
+    "package_version",
+    "timestamp_utc",
+    "hostname",
+    "gpu_model",
+    "cuda_version",
+    "driver_version",
 }
 
 
