@@ -1,0 +1,44 @@
+{
+ "molecular": {
+  "deterministic": {
+   "P": 0.51,
+   "R": 0.92
+  },
+  "llm_judge": {
+   "P": 0.86,
+   "R": 0.71
+  },
+  "sampling_consistency": {
+   "P": 0.4,
+   "R": 0.85
+  }
+ },
+ "property_ef": {
+  "deterministic": {
+   "P": 0.55,
+   "R": 0.31
+  },
+  "llm_judge": {
+   "P": 0.53,
+   "R": 0.53
+  },
+  "sampling_consistency": {
+   "P": 0.36,
+   "R": 0.67
+  }
+ },
+ "crystalline": {
+  "deterministic": {
+   "P": 0.2,
+   "R": 0.69
+  },
+  "llm_judge": {
+   "P": 0.67,
+   "R": 0.38
+  },
+  "sampling_consistency": {
+   "P": 0.17,
+   "R": 0.17
+  }
+ }
+}

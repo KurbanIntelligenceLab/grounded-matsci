@@ -1,0 +1,58 @@
+{
+  "method": "semantic_entropy_detector",
+  "reference": "Farquhar, Kossen, Kuhn, Gal (2024) Nature 630:625-630",
+  "n_units": 1062,
+  "n_samples_per_unit": 8,
+  "clustering": {
+    "molecular": "Hill-canonical formula string, exact-match clusters; no-commit=NC",
+    "crystalline": "normalized space-group token, exact-match clusters; no-commit=NC",
+    "property_ef": "order-invariant single-linkage on eV/atom at tol 0.15; no-commit=NC"
+  },
+  "entropy": "normalized Shannon entropy over clusters, H/log(n_samples) in [0,1]",
+  "threshold": {
+    "value": 0.44,
+    "frozen_on": "dev half (subject-hash split, seed 'sement')",
+    "rule": "flag if entropy >= threshold; dev-optimal pooled F1"
+  },
+  "pr_full_set": {
+    "molecular": {
+      "P": 0.31,
+      "R": 0.93,
+      "tp": 87,
+      "fp": 192,
+      "fn": 7,
+      "n": 421
+    },
+    "property_ef": {
+      "P": 0.51,
+      "R": 0.57,
+      "tp": 66,
+      "fp": 64,
+      "fn": 50,
+      "n": 371
+    },
+    "crystalline": {
+      "P": 0.27,
+      "R": 0.2,
+      "tp": 3,
+      "fp": 8,
+      "fn": 12,
+      "n": 270
+    }
+  },
+  "pr_holdout_half": {
+    "molecular": {
+      "P": 0.29,
+      "R": 0.93
+    },
+    "property_ef": {
+      "P": 0.53,
+      "R": 0.51
+    },
+    "crystalline": {
+      "P": 0.25,
+      "R": 0.11
+    }
+  },
+  "note": "Detection-only: returns no reference value to inject, so it can detect but not repair."
+}

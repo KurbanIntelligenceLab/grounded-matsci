@@ -1,0 +1,87 @@
+{
+  "experiment": "EXP4 isotope half-life \u2014 per-model lift at 5 seeds (reviewer robustness request)",
+  "method": "McNemar on correct-vs-not-correct, per (model,subject) majority-aggregated over reps; identical to the triplicate method, extended from 3 to 5 replicates (reps 4-5 newly generated via OpenRouter, same prompts/GT/system/tolerance).",
+  "n_reps": 5,
+  "reps_source": {
+    "1-3": "existing (exp4_isotopes baseline + exp4_isotopes_v2 mode_a)",
+    "4-5": "exp4_isotopes_reps45.jsonl (this run, 0 API errors)"
+  },
+  "per_model_3rep": {
+    "claude-sonnet-5": {
+      "net": 7,
+      "p": 0.0156
+    },
+    "deepseek-v4-pro": {
+      "net": 4,
+      "p": 0.2891
+    },
+    "gpt-5.5": {
+      "net": 8,
+      "p": 0.0215
+    },
+    "qwen3-235b-a22b-2507": {
+      "net": 11,
+      "p": 0.001
+    }
+  },
+  "per_model_5rep": {
+    "claude-sonnet-5": {
+      "base_itt": 0.89,
+      "modea_itt": 1.0,
+      "harm": 0,
+      "lift": 7,
+      "net": 7,
+      "p": 0.0156,
+      "n": 63
+    },
+    "deepseek-v4-pro": {
+      "base_itt": 0.84,
+      "modea_itt": 0.94,
+      "harm": 0,
+      "lift": 6,
+      "net": 6,
+      "p": 0.0312,
+      "n": 63
+    },
+    "gpt-5.5": {
+      "base_itt": 0.83,
+      "modea_itt": 0.95,
+      "harm": 0,
+      "lift": 8,
+      "net": 8,
+      "p": 0.0078,
+      "n": 63
+    },
+    "qwen3-235b-a22b-2507": {
+      "base_itt": 0.7,
+      "modea_itt": 0.87,
+      "harm": 0,
+      "lift": 11,
+      "net": 11,
+      "p": 0.001,
+      "n": 63
+    }
+  },
+  "overall_5rep": {
+    "harm": 0,
+    "lift": 32,
+    "net": 32,
+    "p": "4.657e-10",
+    "n_units": 63
+  },
+  "multiple_comparisons": {
+    "family_size": 13,
+    "bonferroni_threshold": 0.0038461538461538464,
+    "claude_5seed": {
+      "p": 0.0156,
+      "holm": "fail",
+      "bonferroni": "fail"
+    },
+    "gpt55_5seed": {
+      "p": 0.0078,
+      "holm": "pass",
+      "bonferroni": "fail"
+    },
+    "conclusion": "Five-seed re-estimate sharpens both frontier isotope p-values (Claude 0.016, GPT-5.5 0.008); GPT-5.5 now survives Holm but not Bonferroni, Claude survives neither. Consistent with presenting the frontier lift as suggestive."
+  }
+}

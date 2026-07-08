@@ -1,0 +1,40 @@
+{
+  "experiment": "CoVe (Chain-of-Verification, Dhuliawala et al. 2024) as a stronger tool-free self-correction baseline",
+  "method": "4-stage CoVe (draft -> plan verification questions -> answer them independently -> revise), NO external tools. 369 prompts x 4 models x 3 reps = 4427 cells, 0 API errors, ~$70. Same corpus, system prompt, and FROZEN grader (rule=final) as the published self-critique arm.",
+  "grader": "raw frozen grader (rule=final), identical to the published self-critique pipeline \u2014 reported as PRIMARY so the comparison is on the same footing as the paper's existing numbers.",
+  "err_commit_raw": {
+    "molecular": {
+      "baseline": 0.2173,
+      "self_critique": 0.2044,
+      "cove": 0.1883
+    },
+    "formation_energy": {
+      "baseline": 0.3369,
+      "self_critique": 0.389,
+      "cove": 0.5604
+    },
+    "crystalline": {
+      "baseline": 0.0582,
+      "self_critique": 0.0642,
+      "cove": 0.0602
+    }
+  },
+  "unicode_minus_confound": {
+    "note": "The frozen EF regex matches only an ASCII minus. Unicode-minus (U+2212) answers are misread as positive, inflating raw EF err|commit. The glyph rate differs by condition, so it confounds the raw EF comparison specifically.",
+    "glyph_rate_ef": {
+      "baseline": 0.057,
+      "self_critique": 0.206,
+      "cove": 0.246
+    },
+    "err_commit_ef_normalized": {
+      "baseline": 0.313,
+      "self_critique": 0.265,
+      "cove": 0.295
+    },
+    "interpretation": "Normalizing the glyph is NOT applied to the published numbers (it would retroactively change the paper's self-critique EF value). Reported only as a sensitivity note: even normalized, CoVe EF (29.5%) does not improve on baseline (31.3%)."
+  },
+  "finding": "CoVe closes no surface, the same as plain self-critique. On the two surfaces where answer formatting does not confound the frozen grader (molecular, crystalline, glyph rate ~0), CoVe leaves error where baseline left it: molecular 21.7->18.8%, crystalline 5.8->6.0% err|commit. On formation energy it does not improve on baseline under either the raw grader (33.7->56.0%, inflated by CoVe's higher Unicode-minus rate) or normalization (31.3->29.5%). This strengthens the negative control: a stronger structured tool-free self-verification method still does not reach the gap tool-grounded Mode A closes, because the model cannot supply the external reference value it lacks.",
+  "n_reps": 3,
+  "n_cells": 4427,
+  "api_errors": 0
+}

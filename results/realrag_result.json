@@ -1,0 +1,82 @@
+{
+  "experiment": "Realistic (non-oracle) RAG baseline vs the oracle RAG upper bound (reviewer request)",
+  "retriever": "Live entity resolution: molecular names -> PubChem (formula+SMILES); crystalline/formation-energy -> name->formula->Materials Project most-stable polymorph (space group / formation energy). No GT peeking; retrieval genuinely misses or returns the wrong polymorph. Facts prepended to the prompt, single generation, no loop (same path as oracle rag_in_prompt).",
+  "retriever_quality": {
+    "molecular": {
+      "coverage": "141/141 (100%)",
+      "accuracy_when_returned": "141/141 (100%)",
+      "note": "every compound is name-addressable in PubChem, so realistic ~= oracle"
+    },
+    "crystalline": {
+      "coverage": "27/127 (21%)",
+      "accuracy_when_returned": "20/27 (74%)",
+      "note": "composition-keyed MP misses mineral names; when it resolves it returns the MOST-STABLE polymorph, not the named phase (rutile #141 vs named #136, barium titanate #38 vs #99, pyrite #58 vs #205)"
+    },
+    "formation_energy": {
+      "coverage": "23/101 (23%)",
+      "accuracy_when_returned": "23/23 (100%)",
+      "note": "same composition-key miss; when resolved the stable-polymorph Ef matches within tol"
+    }
+  },
+  "downstream_abstain": {
+    "molecular": {
+      "baseline": 0.2004,
+      "oracle_rag": 0.4202,
+      "realistic_rag": 0.0479
+    },
+    "property_ef": {
+      "baseline": 0.0817,
+      "oracle_rag": 0.2277,
+      "realistic_rag": 0.5619
+    },
+    "crystalline": {
+      "baseline": 0.4587,
+      "oracle_rag": 0.5236,
+      "realistic_rag": 0.5945
+    }
+  },
+  "finding": "The oracle RAG is an upper bound. A realistic retriever matches it on molecular formula (err|commit 0.2% vs oracle 0.3%, baseline 21.7%) with low abstention (4.8%), because PubChem is name-addressable. On the long-tail crystalline and formation-energy surfaces it recovers almost none of the oracle gain: err|commit stays at baseline (EF 33.9% vs 31.3%; SG 5.3% vs 5.8%) while abstention rises to 56-59%, because composition-keyed MP retrieval covers only ~21-23% of entities and returns the most-stable polymorph rather than the named phase. Imperfect retrieval degrades exactly where the named entity needs phase disambiguation, the regime where Mode A's claim-specific retrieval still works.",
+  "n_reps": 3,
+  "n_cells": 4428,
+  "api_errors": 0,
+  "grader": "raw frozen grader (rule=final)",
+  "downstream_err_commit": {
+    "molecular": {
+      "err_commit": {
+        "baseline": 0.2173,
+        "oracle": 0.0031,
+        "realistic": 0.0019
+      },
+      "abstain": {
+        "baseline": 0.2004,
+        "oracle": 0.4202,
+        "realistic": 0.0479
+      }
+    },
+    "property_ef": {
+      "err_commit": {
+        "baseline": 0.3127,
+        "oracle": 0.0,
+        "realistic": 0.339
+      },
+      "abstain": {
+        "baseline": 0.0817,
+        "oracle": 0.2277,
+        "realistic": 0.5619
+      }
+    },
+    "crystalline": {
+      "err_commit": {
+        "baseline": 0.0582,
+        "oracle": 0.0124,
+        "realistic": 0.0534
+      },
+      "abstain": {
+        "baseline": 0.4587,
+        "oracle": 0.5236,
+        "realistic": 0.5945
+      }
+    }
+  },
+  "metric_note": "Reported as error-given-commitment (err|commit, abstention-invariant) with abstention alongside, using the paper-facing baseline (baseline_v3_final.json, EF 31.3%). Earlier draft labeled an abstention-excluded wrong-rate as 'ITT'; corrected. Under the paper's ITT definition (wrong+abstain) oracle molecular is ~42%, consistent with the existing 43% headline."
+}
