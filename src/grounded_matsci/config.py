@@ -77,6 +77,8 @@ class ArmsConfig:
     facts_path: Path
     named_sg_path: Path
     ef_lookup_path: Path
+    pubchem_path: Path | None = None
+    holdout_gt_path: Path | None = None
     rep: int = 0
     workers: int = 12
     log_every: int = 100

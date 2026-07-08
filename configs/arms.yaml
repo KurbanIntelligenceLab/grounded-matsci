@@ -8,6 +8,8 @@ conditions: [self_critique, rag_in_prompt, mode_a, mode_b]
 facts_path: data/frozen/rag_facts.json
 named_sg_path: data/frozen/named_sg_rule_gt.json
 ef_lookup_path: data/frozen/ef_lookup.json
+pubchem_path: data/frozen/pubchem_cache.json
+holdout_gt_path: data/frozen/holdout_ground_truth.json
 rep: 0
 workers: 12
 log_every: 100

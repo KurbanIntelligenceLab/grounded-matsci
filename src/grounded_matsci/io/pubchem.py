@@ -115,11 +115,56 @@ def make_lookup(
 
     def lookup(name: str) -> tuple[str, str] | None:
         rec = cache.get(name.strip().lower())
-        if not rec or not rec.get("smiles") or not rec.get("formula"):
+        if not rec or not rec.get("formula"):
             return None
-        smi = rec["smiles"]
-        if _canon:
+        smi = rec.get("smiles") or ""
+        if smi and _canon:
             smi = _canon(smi)
         return smi, rec["formula"]
+
+    return lookup
+
+
+def _gt_formulas(gt_path: str | Path) -> dict[str, str]:
+    """Extract {name_lower -> formula} from holdout ground-truth JSON."""
+    raw = json.loads(Path(gt_path).read_text())
+    out: dict[str, str] = {}
+
+    def ingest(block: object) -> None:
+        if not isinstance(block, dict):
+            return
+        for key, val in block.items():
+            if key.startswith("_"):
+                continue
+            if isinstance(val, dict) and val.get("formula") and "cid" in val:
+                out[key.strip().lower()] = val["formula"]
+            elif isinstance(val, dict) and not val.get("formula"):
+                ingest(val)
+
+    ingest(raw)
+    if "molecular" in raw and isinstance(raw["molecular"], dict):
+        ingest(raw["molecular"])
+    if "crystalline" in raw and isinstance(raw["crystalline"], dict):
+        ingest(raw["crystalline"])
+    return out
+
+
+def make_combined_lookup(
+    cache_path: str | Path | None = None,
+    gt_path: str | Path | None = None,
+) -> Callable[[str], tuple[str, str] | None]:
+    """PubChem cache first, then holdout GT formula fallback (formula-only OK)."""
+    pubchem = make_lookup(cache_path) if cache_path and Path(cache_path).exists() else None
+    gt = _gt_formulas(gt_path) if gt_path and Path(gt_path).exists() else {}
+
+    def lookup(name: str) -> tuple[str, str] | None:
+        if pubchem is not None:
+            hit = pubchem(name)
+            if hit is not None:
+                return hit
+        formula = gt.get(name.strip().lower())
+        if formula:
+            return ("", formula)
+        return None
 
     return lookup

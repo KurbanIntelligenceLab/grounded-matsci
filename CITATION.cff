@@ -10,7 +10,7 @@ abstract: >-
   authoritative databases and physics, and study it across four current models on
   528 condition-pinned prompts. Gated correction removes confabulated formulas
   (error-given-commitment 22% to 4%, p=7×10^-22) at 3.2× fewer retrievals than
-  blanket augmentation and beats a conversational oracle retriever end-to-end; an
+  blanket augmentation on molecular formula and beats a conversational oracle retriever end-to-end; an
   extraction-enforcing oracle variant that forces value restatement is
   complementary, solving copyable quantitative claims (formation-energy error to
   1%) where gated correction is detection-limited. Repair is easy everywhere

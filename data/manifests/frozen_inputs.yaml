@@ -46,7 +46,7 @@ files:
     sha256: 53caf5f993577edde99b1d591f5f66c30f044ee716889d4ac7b9edcf997842f7
     role: isotope prompts (exp4)
   - path: data/frozen/pubchem_cache.json
-    sha256: a784c033748a7f1597535a3ae9b9ffb1ec25c67767d18cb7fa5d6e3baae5b04c
+    sha256: 8f529ef8d809d0142d5219b5d67235a5a5624ac2c5783b06fe61e9fecc39354f
     role: frozen PubChem name-resolution cache
   - path: data/pilot/corpus_traces_pilot.jsonl
     sha256: 0e47f237848bc5b19597bb34f2e989d718108ec540c0d8f0a135c827620464a7

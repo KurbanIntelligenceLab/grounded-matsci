@@ -1,6 +1,6 @@
 # grounded-matsci
 
-Grounded verification for chemical and materials reasoning: a tiered, deterministic
+Grounded verification for chemical reasoning: a tiered, deterministic
 verifier that checks the chemical claims in LLM reasoning traces (molecular formulas,
 SMILES, space groups, formation energies, physical constants, isotope half-lives)
 against authoritative references (RDKit, PubChem, Materials Project, NIST CCCBDB,

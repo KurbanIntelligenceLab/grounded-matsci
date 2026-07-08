@@ -173,5 +173,1029 @@
     "cid": 8254,
     "inchikey": "LCGLNKUTAGEVQW-UHFFFAOYSA-N",
     "error": null
+  },
+  "10-deacetylbaccatin iii": {
+    "formula": "C29H36O10",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "acetaldehyde": {
+    "formula": "C2H4O",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "acetaminophen": {
+    "formula": "C8H9NO2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "aconitine": {
+    "formula": "C34H47NO11",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "actinomycin d": {
+    "formula": "C62H86N12O16",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "adagrasib": {
+    "formula": "C32H35ClFN7O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "ampicillin": {
+    "formula": "C16H19N3O4S",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "artemisinin": {
+    "formula": "C15H22O5",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "atorvastatin": {
+    "formula": "C33H35FN2O5",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "avapritinib": {
+    "formula": "C26H27FN10",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "azadirachtin": {
+    "formula": "C35H44O16",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "baccatin iii": {
+    "formula": "C31H38O11",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "baricitinib": {
+    "formula": "C16H17N7O2S",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "batrachotoxin": {
+    "formula": "C31H42N2O6",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "belzutifan": {
+    "formula": "C17H12F3NO4S",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "bleomycin": {
+    "formula": "C55H84N17O21S3+",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "brevetoxin b": {
+    "formula": "C50H70O14",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "bruceantin": {
+    "formula": "C28H36O11",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "brucine": {
+    "formula": "C23H26N2O4",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "bryostatin 1": {
+    "formula": "C47H68O17",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "butane": {
+    "formula": "C4H10",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "calicheamicin": {
+    "formula": "C55H74IN3O21S4",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "camptothecin": {
+    "formula": "C20H16N2O4",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "capivasertib": {
+    "formula": "C21H25ClN6O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "capmatinib": {
+    "formula": "C23H17FN6O",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "captopril": {
+    "formula": "C9H15NO3S",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "cephalomannine": {
+    "formula": "C45H53NO14",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "ciguatoxin": {
+    "formula": "C60H86O19",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "ciprofloxacin": {
+    "formula": "C17H18FN3O3",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "citric acid": {
+    "formula": "C6H8O7",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "colchicine": {
+    "formula": "C22H25NO6",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "daprodustat": {
+    "formula": "C19H27N3O6",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "daunorubicin": {
+    "formula": "C27H29NO10",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "diazepam": {
+    "formula": "C16H13ClN2O",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "diclofenac": {
+    "formula": "C14H11Cl2NO2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "digoxin": {
+    "formula": "C41H64O14",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "discodermolide": {
+    "formula": "C33H55NO8",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "docetaxel": {
+    "formula": "C43H53NO14",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "doxorubicin": {
+    "formula": "C27H29NO11",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "elacestrant": {
+    "formula": "C30H38N2O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "emetine": {
+    "formula": "C29H40N2O4",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "ensitrelvir": {
+    "formula": "C22H17ClF3N9O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "epothilone b": {
+    "formula": "C27H41NO6S",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "erdafitinib": {
+    "formula": "C25H30N6O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "ergotamine": {
+    "formula": "C33H35N5O5",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "ethylene glycol": {
+    "formula": "C2H6O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "etoposide": {
+    "formula": "C29H32O13",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "etrasimod": {
+    "formula": "C26H26F3NO3",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "fezolinetant": {
+    "formula": "C16H15FN6OS",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "fluoxetine": {
+    "formula": "C17H18F3NO",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "formaldehyde": {
+    "formula": "CH2O",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "forskolin": {
+    "formula": "C22H34O7",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "fruquintinib": {
+    "formula": "C21H19N3O5",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "furosemide": {
+    "formula": "C12H11ClN2O5S",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "futibatinib": {
+    "formula": "C22H22N6O3",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "galantamine": {
+    "formula": "C17H21NO3",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "gambierol": {
+    "formula": "C43H64O11",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "gibberellic acid": {
+    "formula": "C19H22O6",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "glycerol": {
+    "formula": "C3H8O3",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "halichondrin b": {
+    "formula": "C60H86O19",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "huperzine a": {
+    "formula": "C15H18N2O",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "infigratinib": {
+    "formula": "C26H31Cl2N7O3",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "irinotecan": {
+    "formula": "C33H38N4O6",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "lenacapavir": {
+    "formula": "C39H32ClF10N7O5S2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "lidocaine": {
+    "formula": "C14H22N2O",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "loratadine": {
+    "formula": "C22H23ClN2O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "maitotoxin": {
+    "formula": "C164H256Na2O68S2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "mavacamten": {
+    "formula": "C15H19N3O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "maytansine": {
+    "formula": "C34H46ClN3O10",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "metformin": {
+    "formula": "C4H11N5",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "mitomycin c": {
+    "formula": "C15H18N4O5",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "mobocertinib": {
+    "formula": "C32H39N7O4",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "molnupiravir": {
+    "formula": "C13H19N3O7",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "momelotinib": {
+    "formula": "C23H22N6O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "naproxen": {
+    "formula": "C14H14O3",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "nirmatrelvir": {
+    "formula": "C23H32F3N5O4",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "nirogacestat": {
+    "formula": "C27H41F2N5O",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "okadaic acid": {
+    "formula": "C44H68O13",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "omeprazole": {
+    "formula": "C17H19N3O3S",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "ouabain": {
+    "formula": "C29H44O12",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "paclitaxel": {
+    "formula": "C47H51NO14",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "palytoxin": {
+    "formula": "C129H223N3O54",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "paxlovid": {
+    "formula": "C23H32F3N5O4",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "pemigatinib": {
+    "formula": "C24H27F2N5O4",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "physostigmine": {
+    "formula": "C15H21N3O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "pirtobrutinib": {
+    "formula": "C22H21F4N5O3",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "podophyllotoxin": {
+    "formula": "C22H22O8",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "pralsetinib": {
+    "formula": "C27H32FN9O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "propanol": {
+    "formula": "C3H8O",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "propranolol": {
+    "formula": "C16H21NO2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "pyrimethamine": {
+    "formula": "C12H13ClN4",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "quinine": {
+    "formula": "C20H24N2O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "quizartinib": {
+    "formula": "C29H32N6O4S",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "ranitidine": {
+    "formula": "C13H22N4O3S",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "rapamycin": {
+    "formula": "C51H79NO13",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "remdesivir": {
+    "formula": "C27H35N6O8P",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "repotrectinib": {
+    "formula": "C18H18FN5O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "reserpine": {
+    "formula": "C33H40N2O9",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "ripretinib": {
+    "formula": "C24H21BrFN5O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "rivaroxaban": {
+    "formula": "C19H18ClN3O5S",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "salbutamol": {
+    "formula": "C13H21NO3",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "saxitoxin": {
+    "formula": "C10H17N7O4",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "selpercatinib": {
+    "formula": "C29H31N7O3",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "selumetinib": {
+    "formula": "C17H15BrClFN4O3",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "sildenafil": {
+    "formula": "C22H30N6O4S",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "sotorasib": {
+    "formula": "C30H30F2N6O3",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "strychnine": {
+    "formula": "C21H22N2O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "swainsonine": {
+    "formula": "C8H15NO3",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "tacrolimus": {
+    "formula": "C44H69NO12",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "taxol": {
+    "formula": "C47H51NO14",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "tazemetostat": {
+    "formula": "C34H44N4O4",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "teniposide": {
+    "formula": "C32H32O13S",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "tepotinib": {
+    "formula": "C29H28N6O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "tetrodotoxin": {
+    "formula": "C11H17N3O8",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "tirzepatide": {
+    "formula": "C225H348N48O68",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "topotecan": {
+    "formula": "C23H23N3O5",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "trilaciclib": {
+    "formula": "C24H30N8O",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "tubocurarine": {
+    "formula": "C37H41N2O6+",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "tucatinib": {
+    "formula": "C26H24N8O2",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "umbralisib": {
+    "formula": "C31H24F3N5O3",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "urea": {
+    "formula": "CH4N2O",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "vinblastine": {
+    "formula": "C46H58N4O9",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "vincristine": {
+    "formula": "C46H56N4O10",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "vindesine": {
+    "formula": "C43H55N5O7",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "vonoprazan": {
+    "formula": "C17H16FN3O2S",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "warfarin": {
+    "formula": "C19H16O4",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "yohimbine": {
+    "formula": "C21H26N2O3",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
+  },
+  "zavegepant": {
+    "formula": "C36H46N8O3",
+    "smiles": null,
+    "cid": null,
+    "inchikey": null,
+    "error": null,
+    "source": "holdout_gt_sync"
   }
 }

@@ -33,18 +33,25 @@ def _load_json(path: Path) -> Any:  # noqa: ANN401 - raw JSON boundary
 
 
 def _make_gt_kwargs_for(
-    named_sg_path: Path, ef_lookup_path: Path
+    named_sg_path: Path,
+    ef_lookup_path: Path,
+    pubchem_path: Path | None = None,
+    holdout_gt_path: Path | None = None,
 ) -> Callable[[dict[str, Any]], dict[str, Any]]:
     """The in-loop verify kwargs factory, per the exp3 runner's `gk_for` pattern."""
+    from grounded_matsci.io.pubchem import make_combined_lookup
+
     named_sg = _load_json(named_sg_path)
     ef_lookup = _load_json(ef_lookup_path)
     sg_lookup = named_sg.get("token_accepted_sg", named_sg)
+    external_lookup = make_combined_lookup(pubchem_path, holdout_gt_path)
 
     def gk_for(rec: dict[str, Any]) -> dict[str, Any]:
         return {
             "enable_physics": True,
             "ef_lookup": ef_lookup,
             "named_sg_lookup": sg_lookup,
+            "external_lookup": external_lookup,
             "extra_known_names": [rec["subject"].lower()],
         }
 
@@ -78,7 +85,9 @@ def _cmd_arms(args: argparse.Namespace) -> int:
     cfg = _begin(args, cfgmod.ArmsConfig)
     corpus = _load_json(cfg.corpus_path)
     fact_lookup = arms.build_fact_lookup(_load_json(cfg.facts_path))
-    gk_for = _make_gt_kwargs_for(cfg.named_sg_path, cfg.ef_lookup_path)
+    gk_for = _make_gt_kwargs_for(
+        cfg.named_sg_path, cfg.ef_lookup_path, cfg.pubchem_path, cfg.holdout_gt_path
+    )
     arms.run_arms(
         corpus,
         cfg.ckpt_path,
