@@ -1,11 +1,12 @@
-"""EXP2: gated CODATA rerun — Mode A regenerates only when the round-0 value fails the
-policy check AND the dev-frozen Platt-calibrated trust falls below the gate threshold
-(`domain/calibration.py`, §2.8).
+"""Do-no-harm gated rerun on the physical-constants domain.
 
-Migration notes: the original runner (`run_exp2.py`) loaded
-`handoff/codata_prompts_2022.json` and `handoff/codata_gt_2022.json` at module import
-time; those inputs are now parameters of `run()` supplied by `configs/exp2.yaml`. The
-output file is opened with truncation ("w")."""
+Mode A regenerates only when the round-0 value fails the policy check AND the
+Platt-calibrated trust — fit on the development half and frozen before the holdout run —
+falls below the gate threshold (`domain/calibration.py`). Gating this way is what keeps
+the rerun from degrading answers that were already right.
+
+Inputs come from `configs/gated_constants.yaml`. The output file is opened with
+truncation."""
 
 from __future__ import annotations
 

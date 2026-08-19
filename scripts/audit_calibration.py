@@ -4,11 +4,15 @@
 Expects a JSONL with one row per baseline item:
   {"trust": float, "correct": bool}
 
-Split is by sorted subject hash (dev vs holdout half), matching the paper protocol
-described in results.tex subsec:calibration.
+Split is by sorted subject hash (development versus holdout half), matching the protocol
+used for the reported calibration numbers.
+
+Requires the raw trace release: `traces/calibration_items.jsonl` is enumerated in
+`data/manifests/pending_traces.yaml` and is not yet committed, so this audit cannot be run
+from a clean clone.
 
 Usage:
-  uv run python scripts/audit_calibration.py --items handoff/calibration_items.jsonl
+  uv run python scripts/audit_calibration.py --items traces/calibration_items.jsonl
 """
 
 from __future__ import annotations

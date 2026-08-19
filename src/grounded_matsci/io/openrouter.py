@@ -1,7 +1,7 @@
 """
 OpenRouter chat-completions clients.
 
-The experiment runners in the original bundle carried two DISTINCT call families,
+The experiment runners carry two DISTINCT call families,
 duplicated across files. They are deduplicated here but deliberately NOT unified —
 they differ in retry codes, timeout, temperature handling, and return shape, and the
 paper's runs depend on those exact behaviors:
@@ -43,11 +43,11 @@ def make_generate(
     max_tokens: int = 900,
     log: list[dict[str, Any]] | None = None,
 ) -> Callable[..., str]:
-    """Driver for the closed-loop experiment (spec Section 3.1).
+    """Driver for the closed-loop experiment.
 
     Returns a `generate(messages, sample=?)` callable that loop.py consumes. Records
     the exact model string and every call's token usage for the reproducibility log
-    (spec Section 5)."""
+    """
     key = os.environ["OPENROUTER_API_KEY"]
     headers = {"Authorization": f"Bearer {key}"}
 
@@ -143,7 +143,7 @@ def generate_text(
 
 def make_text_generate(model: str, max_tokens: int = 1200) -> Callable[..., str]:
     """Closure form of `generate_text` (the `make_generate` in the original arms/end-task
-    runners); exp2/exp3 import this instead of reaching into the arms runner."""
+    runners); the standalone runners import this instead of reaching into the arms runner."""
 
     def g(messages: list[Message], sample: bool = False) -> str:
         return generate_text(model, messages, sample=sample, max_tokens=max_tokens)

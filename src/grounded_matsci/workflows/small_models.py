@@ -1,12 +1,12 @@
-"""EXP3: small-model capability probe — baseline vs Mode A on two small frontier-family
-closed models (verified live 2026-07-06) over the frozen v2 corpus.
+"""Small-model capability probe: baseline versus Mode A on two small closed models.
 
-Migration notes: the original runner (`run_exp3.py`) loaded the corpus and lookups from
-`handoff/` at module import time and imported the generate closure + system prompt from
-the arms runner; the inputs are now parameters of `run()` supplied by `configs/exp3.yaml`
-(the SMALL_MODELS list and the shared materials system prompt live there), and the
-generate closure comes from `io/openrouter.make_text_generate`. The output file is opened
-with truncation ("w")."""
+Runs the same corpus and the same grounding loop as the main arms, but on two small
+frontier-family models (verified live 2026-07-06), to test whether the repair benefit
+depends on model scale.
+
+Inputs, including the model list and the shared materials system prompt, come from
+`configs/small_models.yaml`; the generate closure comes from
+`io/openrouter.make_text_generate`. The output file is opened with truncation."""
 
 from __future__ import annotations
 

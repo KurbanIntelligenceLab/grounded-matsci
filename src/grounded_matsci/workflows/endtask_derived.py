@@ -1,8 +1,8 @@
-"""Item 3 (final round): derived-quantity verification tier. Extends grounding to the DERIVED
+"""Derived-quantity verification tier. Extends grounding to the DERIVED
 quantity the end-task answer actually depends on — molar mass computed from the verified formula
 (atomic-weight sum), stability comparison from verified MP formation energies — not just the
 object identity.
-Tests whether closing the scope gap restores the end-task lift that object-only grounding (§2.9)
+Tests whether closing the scope gap restores the end-task lift that object-only grounding
 did not deliver. Orchestration layer only; core frozen shas untouched. Registered ex ante; both
 outcomes (lift / null) reportable.
 

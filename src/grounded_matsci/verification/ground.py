@@ -31,7 +31,7 @@ except Exception:  # pymatgen optional
 SYMBOL = {"ok": "OK  ", "fail": "FAIL", "warn": "WARN", "unchecked": "?   "}
 
 
-# cost class per tier, for the cost-accounting figure (spec Section 3.3)
+# cost class per tier, for the cost-accounting figure
 TIER_COST = {"0": "free", "1": "api", "1.5": "table", "2": "cheap", "3": "dft", None: "none"}
 
 
@@ -111,7 +111,7 @@ def ground_trace(
 ):
     """Extract and verify every chemical claim in a trace.
 
-    Escalation order (spec Section 1.3): each claim stops at the first tier that
+    Escalation order: each claim stops at the first tier that
     falsifies it or confirms it against a reference. Every claim carries a
     `log` dict {tier, cost, wall_clock_s} for the cost-accounting analysis.
 

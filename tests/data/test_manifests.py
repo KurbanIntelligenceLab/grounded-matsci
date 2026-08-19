@@ -45,7 +45,27 @@ def test_frozen_dirs_fully_manifested():
     assert listed == on_disk
 
 
-def test_handoff_manifest_lists_missing_files_only():
-    manifest = yaml.safe_load((ROOT / "data" / "manifests" / "handoff_missing.yaml").read_text())
+def test_results_dir_fully_manifested():
+    manifest = yaml.safe_load((ROOT / "data" / "manifests" / "results_manifest.yaml").read_text())
+    listed = {e["path"] for e in manifest["files"]}
+    on_disk = {str(p.relative_to(ROOT)) for p in (ROOT / "results").rglob("*") if p.is_file()}
+    assert listed == on_disk
+
+
+def test_traces_manifest():
+    _check_manifest(ROOT / "data" / "manifests" / "traces.yaml")
+
+
+def test_traces_dir_fully_manifested():
+    manifest = yaml.safe_load((ROOT / "data" / "manifests" / "traces.yaml").read_text())
+    listed = {e["path"] for e in manifest["files"]}
+    on_disk = {
+        str(p.relative_to(ROOT)) for p in (ROOT / "data" / "traces").iterdir() if p.is_file()
+    }
+    assert listed == on_disk
+
+
+def test_pending_traces_manifest_lists_missing_files_only():
+    manifest = yaml.safe_load((ROOT / "data" / "manifests" / "pending_traces.yaml").read_text())
     assert manifest["status"] == "not_included"
-    assert manifest["files"], "handoff manifest must enumerate the missing files"
+    assert manifest["files"], "pending-traces manifest must enumerate the missing files"

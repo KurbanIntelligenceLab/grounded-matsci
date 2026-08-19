@@ -1,14 +1,14 @@
 """
-Evidence-grounded PRE-ANNOTATION for the labeling corpus (assists spec Section 2).
+Evidence-grounded PRE-ANNOTATION for the labeling corpus.
 
 WHAT THIS IS AND IS NOT.
-  This module does NOT produce ground-truth labels. The spec (Section 2 / Section
-  6) prohibits LLM-as-judge labeling: the authoritative label for every claim is
-  a human domain expert's. What this module does is *pre-annotation* -- it gathers
+  This module does NOT produce ground-truth labels. LLM-as-judge labeling is
+  prohibited by design: the authoritative label for every claim is a human domain
+  expert's. What this module does is *pre-annotation* -- it gathers
   external EVIDENCE for each claim and attaches a PROVISIONAL suggestion, so the
   human annotator adjudicates in seconds instead of minutes.
 
-  The distinction that keeps this within the spec:
+  The distinction that keeps this sound:
     - A database hit (PubChem formula, Materials Project space group, CCCBDB
       dipole, RDKit valence) is retrieved FACT, not an LLM judgment. These are
       marked authority='database' and are effectively ground-truth-grade.
@@ -20,14 +20,13 @@ WHAT THIS IS AND IS NOT.
   Guardrails (all reported in the paper):
     1. human_label is the only field used for detection metrics; provisional_label
        is stored separately and never overwrites it.
-    2. agent-vs-human agreement (kappa) is measured on the pilot and reported, so
-       reviewers can see the human was not rubber-stamping.
+    2. agent-vs-human agreement (kappa) is measured on the pilot and reported, which
+       is what shows the human annotator was adjudicating rather than deferring.
     3. every provisional label carries its evidence + authority + confidence.
 
-MCP calls (OpenAlex/arXiv/PubMed) run in the repl kernel; this module's
-`literature_query_plan` builds the queries and `attach_literature_evidence`
-consumes results passed back via a handoff file. The deterministic DB evidence
-needs no MCP.
+Literature retrieval (OpenAlex/arXiv/PubMed) is performed outside this module:
+`literature_query_plan` builds the queries and `attach_literature_evidence` consumes the
+results. The deterministic database evidence needs no retrieval step at all.
 """
 
 from __future__ import annotations

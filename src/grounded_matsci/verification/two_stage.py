@@ -1,15 +1,17 @@
-"""EXP1 orchestration-layer two-stage triage detector (frozen cores untouched).
+"""Two-stage triage detector, at the orchestration layer.
 
-Deterministic verifier tier fires first (ground.ground_trace, unchanged); the frozen
-sampling-consistency signal (threshold 0.25, §2.7 dev half) is invoked ONLY on units the
-deterministic tier does not flag. Compute-aware triage, not a naive OR. Frozen cores untouched.
+The deterministic verifier tier fires first (ground.ground_trace); the
+sampling-consistency signal (threshold 0.25, frozen on the development half before the
+holdout run) is invoked ONLY on units the deterministic tier does not flag. This is
+compute-aware triage, not a naive OR: the expensive signal is spent only where the cheap
+one is silent.
 
 Prior art: detector aggregation; two-stage / compute-aware triage; stepwise-consistency filtering.
 """
 
 from __future__ import annotations
 
-CONSISTENCY_THRESHOLD = 0.25  # frozen from selfcheck_results.json (§2.7 dev half)
+CONSISTENCY_THRESHOLD = 0.25  # frozen on the development half, before the holdout run
 
 
 class _SoftFail:

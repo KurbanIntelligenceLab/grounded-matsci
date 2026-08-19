@@ -1,9 +1,9 @@
-# EXP4: isotope half-life domain.
+# Isotope half-life domain, verified against IAEA reference data.
 seed: 42
 models: ["anthropic/claude-sonnet-5", "openai/gpt-5.5", "deepseek/deepseek-v4-pro", "qwen/qwen3-235b-a22b-2507"]
 system: "You are a nuclear physics assistant. State half-lives with an explicit unit and give the dominant decay mode. Provide a single numeric half-life value."
 gt_path: data/reference/isotope_gt.json
 prompts_path: data/frozen/isotope_prompts.json
-out_path: outputs/exp4_isotopes_v2.jsonl
+out_path: outputs/isotopes.jsonl
 reps: [1, 2, 3]
 workers: 12

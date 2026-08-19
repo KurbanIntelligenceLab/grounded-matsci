@@ -1,5 +1,5 @@
-"""Regression tests for the round-7 expansion grader. Assertions moved unchanged from
-the bundle's `tests/test_regression.py`."""
+"""Regression tests for the expansion grader. Assertions moved unchanged from
+the pre-refactor regression suite."""
 
 from grounded_matsci.domain import tolerances
 from grounded_matsci.evaluation import grade_expansion

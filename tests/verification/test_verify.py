@@ -1,5 +1,5 @@
 """Regression tests for the SMILES/formula verifier tiers. Assertions moved unchanged
-from the bundle's `tests/test_regression.py`."""
+from the pre-refactor regression suite."""
 
 from grounded_matsci.verification import verify
 

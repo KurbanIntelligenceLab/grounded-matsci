@@ -1,5 +1,5 @@
 """
-Central tolerance policy for quantitative verification (spec Section 1.2).
+Central tolerance policy for quantitative verification.
 
 DESIGN RULE: every threshold here is justified from *published method-vs-
 experiment error statistics*, NOT tuned on any evaluation set. A referee will

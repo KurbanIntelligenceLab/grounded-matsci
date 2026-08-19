@@ -1,5 +1,5 @@
 """
-Supplementary grader for the round-7 expansion claim types (option b).
+Supplementary grader for the expansion claim types.
 
 The frozen extractor (sha 42e03ae2, immutable for the holdout) covers formula,
 space group, band gap, and dipole. It does NOT extract (a) formation-energy

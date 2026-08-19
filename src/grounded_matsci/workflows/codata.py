@@ -1,4 +1,4 @@
-"""Cross-domain transfer (manuscript item 3): physical-constants domain, Mode-A runner half.
+"""Cross-domain transfer to the physical-constants domain: the Mode-A runner half.
 
 The grading/parsing/sig-fig policy half lives in `domain/codata.py`. Model list and system
 prompt come from `configs/codata.yaml`; the OpenRouter call lives in

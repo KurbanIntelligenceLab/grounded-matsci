@@ -1,5 +1,5 @@
 """
-Tier 1.5: experimental / tabulated reference data (spec Section 1.2).
+Tier 1.5: experimental and tabulated reference data.
 
 Escalation puts a *database lookup before DFT*: if we already know the
 experimental dipole moment or the Materials Project band gap, that is a better
@@ -16,7 +16,7 @@ Two sources:
     (io/matproj.py) at call time.
 
 This table is deliberately small and auditable. For the paper it would be
-expanded and released with per-value citations (spec Section 5).
+expanded and released with per-value citations.
 """
 
 from __future__ import annotations

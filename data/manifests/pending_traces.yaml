@@ -1,0 +1,11 @@
+# Artifacts referenced by the study that are NOT in this repository. Everything
+# else has been released: the generation traces are committed under data/traces/
+# (see traces.yaml) and the frozen inputs under data/frozen/.
+name: pending_traces
+status: not_included
+release: not yet located in the project archive
+files:
+  - path: traces/inline_conf_rep1.jsonl
+    role: raw traces for the inline verbalized-confidence detector baseline
+  - path: traces/calibration_items.jsonl
+    role: per-item trust and correctness rows, input to scripts/audit_calibration.py

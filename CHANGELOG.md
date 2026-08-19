@@ -33,7 +33,7 @@ Initial migration of the paper bundle into this repository.
 
 Post-migration: imported the frozen experiment inputs (corpus, holdout GT, CODATA and
 isotope prompt sets and ground truth, lookups, RAG facts, PubChem cache) into
-`data/frozen/` and the §2 labeling-pilot artifacts into `data/pilot/`, verified against
+`data/frozen/` and the labeling-pilot artifacts into `data/pilot/`, verified against
 the ex-ante registered hashes (corpus `66365980`, holdout GT `5e80c788`, CODATA-2022
 constants payload `95e59c7a`); configs now point at the committed inputs and write to
 `outputs/`.
@@ -41,6 +41,6 @@ constants payload `95e59c7a`); configs now point at the committed inputs and wri
 Known deferred items:
 
 - The raw model-generation trace JSONLs (~50 MB) are not in this repository; see
-  `data/manifests/handoff_missing.yaml`.
+  `data/manifests/pending_traces.yaml`.
 - Hypothesis property tests and per-public-function coverage for
   `workflows/` and `evaluation/` are a target, not yet met.

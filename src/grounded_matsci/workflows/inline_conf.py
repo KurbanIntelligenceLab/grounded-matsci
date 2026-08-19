@@ -1,4 +1,5 @@
-"""Item 4: inline verbalized-confidence arm. Re-runs condition 1 (baseline) with a confidence
+"""Inline verbalized-confidence detector baseline. Re-runs the unguarded baseline with a
+confidence
 elicitation appended to the SAME generation call, so the model commits an answer and a 0-100
 confidence together (contrast with the offline post-hoc elicitation). Separate calibration-only arm;
 graded against frozen GT. Core verifier untouched.

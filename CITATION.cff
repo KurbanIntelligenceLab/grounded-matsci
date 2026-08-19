@@ -1,40 +1,40 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
-title: "Grounded verification of materials-chemistry reasoning: detection is the bottleneck, repair is easy"
+title: "Grounded verification of chemical and materials reasoning: detection is the bottleneck"
 abstract: >-
-  Large language models confabulate chemical and materials objects (molecular
-  formulas, space groups, formation energies) inside fluent reasoning traces,
-  most often for the long-tail entities where verification matters most. We build
-  a tiered, deterministic verifier that grounds each extractable claim against
-  authoritative databases and physics, and study it across four current models on
-  528 condition-pinned prompts. Gated correction removes confabulated formulas
-  (error-given-commitment 22% to 4%, p=7×10^-22) at 3.2× fewer retrievals than
-  blanket augmentation on molecular formula and beats a conversational oracle retriever end-to-end; an
-  extraction-enforcing oracle variant that forces value restatement is
-  complementary, solving copyable quantitative claims (formation-energy error to
-  1%) where gated correction is detection-limited. Repair is easy everywhere
-  (80–97%); in-loop detection recall is the bottleneck, since a consistency stage
-  raises it from 19% to 94%, though without an injected reference no accuracy lift
-  follows. Grounding lifts downstream accuracy only when the verifier's scope
-  reaches the deliverable (83% to 90%). The lift tracks baseline error, governed
-  by detection recall not model openness, and transfers with orchestration-layer
-  changes only: absent on near-ceiling constants, large on isotope half-lives
-  (11% to 0%), where two frontier-closed models show a first significant lift.
+  Language models are moving into chemistry and materials discovery workflows,
+  where a wrong molecular formula, space group, or formation energy can silently
+  propagate into downstream decisions. These confabulations hide inside fluent
+  reasoning traces and concentrate on rare, long-tail entities, where model
+  confidence is least trustworthy. Retrieving reference data for every prompt
+  would catch them, but at a heavy coverage and abstention cost. We show that
+  deterministic, database-grounded verification catches and repairs these errors
+  selectively, and that the binding constraint is detection rather than repair.
+  Our tiered verifier extracts each checkable claim, tests it against
+  authoritative databases and physical law, and retrieves a reference value only
+  when a check fails. Across four models and over five hundred prompts with
+  pinned conditions, gated correction cuts the error rate of committed formulas
+  from 22% to 4% with 3.2 times fewer retrievals than blanket augmentation, and
+  it outperforms a conversational retrieval oracle when every answer, corrected
+  or not, is scored. When a flag fires, repair almost always succeeds; the
+  benefit reaches the final answer only where the verifier's scope covers it and
+  where long-tail error exists. Checkable claims, checked cheaply, are a
+  practical lever for trustworthy machine reasoning in chemistry.
 authors:
   - family-names: Polat
     given-names: Can
     orcid: "https://orcid.org/0000-0002-1458-302X"
     affiliation: "Department of Electrical and Computer Engineering, Texas A&M University, College Station, Texas, USA"
-  - family-names: Serpedin
-    given-names: Erchin
-    orcid: "https://orcid.org/0000-0001-9069-770X"
-    affiliation: "Department of Electrical and Computer Engineering, Texas A&M University, College Station, Texas, USA"
   - family-names: Kurban
     given-names: Mustafa
     orcid: "https://orcid.org/0000-0002-7263-0234"
     email: kurbanm@ankara.edu.tr
-    affiliation: "Department of Prosthetics and Orthotics, Ankara University, Ankara, Turkey"
+    affiliation: "Department of Electrical and Computer Engineering, Texas A&M University at Qatar, Doha, Qatar; Department of Prosthetics and Orthotics, Ankara University, Ankara, Turkey"
+  - family-names: Serpedin
+    given-names: Erchin
+    orcid: "https://orcid.org/0000-0001-9069-770X"
+    affiliation: "Department of Electrical and Computer Engineering, Texas A&M University, College Station, Texas, USA"
   - family-names: Kurban
     given-names: Hasan
     orcid: "https://orcid.org/0000-0003-3142-2866"
@@ -42,12 +42,40 @@ authors:
     affiliation: "College of Science and Engineering, Hamad Bin Khalifa University, Doha, Qatar"
 keywords:
   - large language models
-  - hallucination detection
   - grounded verification
-  - materials chemistry
-  - retrieval-augmented generation
-  - calibration
-license: MIT
+  - scientific reasoning
+  - materials science
+  - hallucination detection
+  - uncertainty calibration
+license:
+  - MIT
+  - CC-BY-4.0
 repository-code: "https://github.com/KurbanIntelligenceLab/grounded-matsci"
 version: 0.1.0
 date-released: 2026-07-07
+preferred-citation:
+  type: article
+  title: "Grounded verification of chemical and materials reasoning: detection is the bottleneck"
+  authors:
+    - family-names: Polat
+      given-names: Can
+      orcid: "https://orcid.org/0000-0002-1458-302X"
+    - family-names: Kurban
+      given-names: Mustafa
+      orcid: "https://orcid.org/0000-0002-7263-0234"
+    - family-names: Serpedin
+      given-names: Erchin
+      orcid: "https://orcid.org/0000-0001-9069-770X"
+    - family-names: Kurban
+      given-names: Hasan
+      orcid: "https://orcid.org/0000-0003-3142-2866"
+  year: 2026
+  journal: "arXiv preprint"
+  identifiers:
+    - type: other
+      value: "arXiv:2607.17417"
+      description: arXiv identifier
+    - type: doi
+      value: 10.48550/arXiv.2607.17417
+      description: arXiv DOI
+  url: "https://arxiv.org/abs/2607.17417"

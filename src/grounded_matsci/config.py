@@ -153,7 +153,7 @@ class CodataConfig:
 
 
 @dataclass(frozen=True, slots=True)
-class Exp1Config:
+class TwoStageTriageConfig:
     seed: int
     models: tuple[str, ...]
     system: str
@@ -166,7 +166,7 @@ class Exp1Config:
 
 
 @dataclass(frozen=True, slots=True)
-class Exp2Config:
+class GatedConstantsConfig:
     seed: int
     models: tuple[str, ...]
     system: str
@@ -178,7 +178,7 @@ class Exp2Config:
 
 
 @dataclass(frozen=True, slots=True)
-class Exp3Config:
+class SmallModelsConfig:
     seed: int
     models: tuple[str, ...]
     system: str
@@ -191,7 +191,7 @@ class Exp3Config:
 
 
 @dataclass(frozen=True, slots=True)
-class Exp4Config:
+class IsotopesConfig:
     seed: int
     models: tuple[str, ...]
     system: str

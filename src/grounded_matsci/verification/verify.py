@@ -111,7 +111,7 @@ def name_to_smiles(name, external_lookup=None):
 def compute_property_pyscf(smiles: str, prop: str, xc="b3lyp", basis="def2-TZVP", density_fit=True):
     """Return (value, unit, info) computed from first principles, or raise.
 
-    Default basis is def2-TZVP (spec Section 1.2 requires >= def2-TZVP; STO-3G
+    Default basis is def2-TZVP (the policy requires >= def2-TZVP; STO-3G
     is prohibited in reported results). Density fitting is on by default to keep
     the larger basis affordable. `info` carries method/basis and wall-clock.
     """
@@ -170,7 +170,7 @@ def verify_property(
 ):
     """Verify a quantitative property claim with tier escalation.
 
-    Order (spec Section 1.3): Tier 1.5 experimental/tabulated reference FIRST
+    Order: Tier 1.5 experimental/tabulated reference FIRST
     (free, and a better standard than cheap DFT); fall through to Tier 3 DFT
     only when no tabulated value exists. Tolerances come from the central
     policy (domain/tolerances.py), never tuned on eval data.

@@ -1,15 +1,15 @@
-"""Dev-frozen Platt calibration gate for the gated CODATA rerun (EXP2, §2.8).
+"""Platt calibration gate for the gated constants rerun.
 
-PLATT_A/PLATT_B and TRUST_THRESHOLD were frozen on the development half before the
-gated rerun; they are scientific constants of the registered method, not tunables.
-Extracted from the EXP2 runner (now `workflows/exp2_gated_codata.py`) unchanged."""
+PLATT_A/PLATT_B and TRUST_THRESHOLD were fit on the development half and frozen before
+the gated rerun; they are scientific constants of the registered method, not tunables.
+Used by `workflows/gated_constants.py`."""
 
 from __future__ import annotations
 
 import math
 
-PLATT_A, PLATT_B = 3.728, -0.970  # dev-frozen (§2.8)
-TRUST_THRESHOLD = 0.5  # dev-frozen Platt-prob gate
+PLATT_A, PLATT_B = 3.728, -0.970  # fit on the development half, frozen pre-holdout
+TRUST_THRESHOLD = 0.5  # Platt-probability gate, frozen pre-holdout
 
 
 def platt(t: float) -> float:

@@ -1,5 +1,5 @@
 """Regression tests for the crystalline symmetry tier. Assertions moved unchanged from
-the bundle's `tests/test_regression.py`."""
+the pre-refactor regression suite."""
 
 from grounded_matsci.verification import crystal
 

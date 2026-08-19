@@ -6,13 +6,22 @@ Numerator per tier: payload log tier field at first resolution (0, 1, 1.5, 3).
 
 Usage:
   uv run python scripts/audit_tier_shares.py \\
-    --traces handoff/holdout_arms_rep0.jsonl \\
+    --traces data/traces/holdout_arms_rep0.jsonl \\
     --named-sg data/frozen/named_sg_rule_gt.json \\
     --ef-lookup data/frozen/ef_lookup.json \\
     --pubchem data/frozen/pubchem_cache.json \\
     --holdout-gt data/frozen/holdout_ground_truth.json
 
-Each trace JSONL row must include a ``text`` field (final or round-0 answer).
+Every input is committed, so this audit runs from a clean clone. Each trace JSONL row
+must carry the model's answer text; the runners write it as ``final_text``.
+
+KNOWN GAP: this re-grounding does not reproduce the tier shares reported for the method
+figure (it currently yields roughly 84/11/6/0 percent for tiers 0/1/1.5/3 against the
+reported 40.9/48.7/10.4/0). It re-verifies the *final* answer text of every arm, whereas
+the reported shares describe the tiers the verifier actually exercised during the run.
+Post-repair answers are cleaner, so proportionally more claims settle at the syntactic
+tier and fewer escalate to identity. Treat the output as a re-grounding of the released
+traces, not as a reproduction of the figure, until the in-loop tier events are released.
 """
 
 from __future__ import annotations
@@ -21,12 +30,13 @@ import argparse
 import json
 from collections import Counter
 from pathlib import Path
+from typing import Any
 
 from grounded_matsci.io.pubchem import make_combined_lookup
 from grounded_matsci.verification import ground
 
 
-def _load_json(path: Path):
+def _load_json(path: Path) -> Any:  # noqa: ANN401 - raw JSON boundary
     return json.loads(path.read_text())
 
 
@@ -36,7 +46,14 @@ def tier_shares(traces: list[dict], gt_kwargs: dict) -> dict[str, float]:
         text = row.get("text") or row.get("final_text") or ""
         if not text.strip():
             continue
-        claims = ground.ground_trace(text, **gt_kwargs)
+        # Bind the row's subject, exactly as the in-loop verifier is wired (see the
+        # gt-kwargs factory in cli.py). Without it a claim cannot be tied to its
+        # subject, so identity checks never fire and every claim stops at tier 0.
+        row_kwargs = dict(gt_kwargs)
+        subject = row.get("subject")
+        if subject:
+            row_kwargs["extra_known_names"] = [str(subject).lower()]
+        claims = ground.ground_trace(text, **row_kwargs)
         for c in claims:
             if c.status not in ("ok", "fail"):
                 continue

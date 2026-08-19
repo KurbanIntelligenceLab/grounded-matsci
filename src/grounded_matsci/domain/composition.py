@@ -1,4 +1,4 @@
-"""Molar mass from a verified molecular formula (derived-quantity tier, manuscript item 3).
+"""Molar mass from a verified molecular formula (the derived-quantity tier).
 
 Molar mass is computed from the verified molecular formula by summing standard IUPAC
 atomic weights (the _ATOMIC table below); no SMILES parsing is needed since the verified

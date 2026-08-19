@@ -1,18 +1,16 @@
-"""EXP1: two-stage triage detector over the formation-energy prompts (frozen cores untouched).
+"""Compute-aware two-stage triage detector over the formation-energy prompts.
 
-The deterministic verifier tier fires first; the frozen sampling-consistency signal
-(threshold 0.25, §2.7 dev half) is invoked ONLY on units the deterministic tier does not
-flag (`verification/two_stage.py`).
+The deterministic verifier tier fires first; the sampling-consistency signal (threshold
+0.25, frozen on the development half before the holdout run) is invoked ONLY on units the
+deterministic tier does not flag, so the expensive signal is spent where the cheap one is
+silent (`verification/two_stage.py`).
 
-`two_stage_patch` monkey-patches `loop._verify` for the duration of a cell. This survives
-the migration as-is: giving frozen `loop.py` a verify_fn parameter would change a frozen
-core, so the patch is the least-invasive composition point.
+`two_stage_patch` monkey-patches `loop._verify` for the duration of a cell. Giving
+`loop.py` a `verify_fn` parameter would change a frozen scientific core, so the patch is
+the least-invasive composition point.
 
-Migration notes: the original runner (`run_exp1.py`) loaded `handoff/ef_lookup.json`,
-`handoff/selfcheck_detection.json`, and the corpus at module import time and took the
-corpus path from argv; those inputs are now parameters of `run()` supplied by
-`configs/exp1.yaml`. The output file is opened with truncation ("w"), unlike the
-resumable append-mode runners — rerunning overwrites it.
+Inputs come from `configs/two_stage_triage.yaml`. The output file is opened with
+truncation, unlike the resumable append-mode runners — rerunning overwrites it.
 """
 
 from __future__ import annotations

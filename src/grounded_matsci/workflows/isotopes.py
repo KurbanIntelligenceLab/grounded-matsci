@@ -1,12 +1,12 @@
-"""EXP4: isotope half-life domain — Mode A with the orchestration-layer isotope tier
-(`domain/isotope.py`), graded against frozen IAEA ground truth.
+"""Isotope half-life domain: Mode A with the isotope verifier tier.
 
-Migration notes: the original runner (`run_exp4.py`) loaded `handoff/isotope_gt.json` and
-`handoff/isotope_prompts.json` at module import time; those inputs are now parameters of
-`run()` supplied by `configs/exp4.yaml` (the frozen isotope GT is committed at
-`data/reference/isotope_gt.json`). The system prompt moved to the same config. The
-generate callable is `io/openrouter.make_generate` (the usage-logging driver family, as
-in the original). The output file is opened with truncation ("w")."""
+Exercises the orchestration-layer isotope tier (`domain/isotope.py`) and grades against
+the frozen IAEA ground truth committed at `data/reference/isotope_gt.json`. This is the
+second transfer domain: neither the extractor nor the verifier was tuned on it.
+
+Inputs and the system prompt come from `configs/isotopes.yaml`; the generate callable is
+`io/openrouter.make_generate`, the usage-logging driver family. The output file is opened
+with truncation."""
 
 from __future__ import annotations
 

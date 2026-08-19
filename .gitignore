@@ -1,21 +1,14 @@
-# local-only agent config and manuscript sources (not published)
-/.claude/
-/paper/
+# Local-only: agent configuration, manuscript sources, scratch work.
+/.claude
+/development/
+/docs/
 
-# internal review docs (copied but not published)
-/docs/internal/
-
-# future scratch
-/brainstorming/
-
-# runtime outputs and caches
+# Runtime outputs and secrets.
 /outputs/*
 !/outputs/.gitkeep
-/data/cache/
-/handoff/
 .env
 
-# python
+# Python
 __pycache__/
 *.py[cod]
 .venv/
@@ -26,17 +19,6 @@ __pycache__/
 htmlcov/
 dist/
 *.egg-info/
-
-# LaTeX build artifacts
-*.aux
-*.bbl
-*.blg
-*.fdb_latexmk
-*.fls
-*.out
-*.synctex.gz
-*.toc
-missfont.log
 
 # macOS
 .DS_Store

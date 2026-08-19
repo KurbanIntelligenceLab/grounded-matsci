@@ -1,23 +1,23 @@
 """
 PubChem-backed Tier-1 identity provider.
 
-The chemistry MCP resolves a compound name to its authoritative CID, molecular
-formula, and canonical SMILES. MCP calls can only be issued from the `repl`
-tool, whereas the verifiers run in the analysis kernel. We bridge the two with a
-small on-disk cache:
+Resolving a compound name to its authoritative CID, molecular formula, and canonical
+SMILES requires a network call, but verification must be offline and deterministic. The
+two are bridged by a small on-disk cache:
 
-    1. `resolve_names(names)` runs in a `repl` cell, hits PubChem via the MCP,
-       and writes {name -> {formula, smiles, cid, inchikey}} to a JSON cache.
-    2. `make_lookup(cache_path)` builds an `external_lookup(name)` callable that
-       the verifiers consume -- returning (canonical_smiles, hill_formula) or
-       None, exactly the contract `verify.verify_formula` expects.
+    1. `resolve_names(names)` queries PubChem through an external resolver and writes
+       {name -> {formula, smiles, cid, inchikey}} to a JSON cache. This is the only
+       step that touches the network.
+    2. `make_lookup(cache_path)` builds an `external_lookup(name)` callable that the
+       verifiers consume -- returning (canonical_smiles, hill_formula) or None, exactly
+       the contract `verify.verify_formula` expects.
 
-This keeps the physics/identity kernel offline-deterministic while letting the
-reference facts come from a live authoritative database instead of a hand-built
-table.
-
-The cache path is an explicit parameter (configured in `configs/pubchem.yaml`);
-the original bundle hardcoded `handoff/pubchem_cache.json`.
+Reference facts therefore come from a live authoritative database rather than a
+hand-built table, while verification itself stays reproducible from the committed cache.
+The paper runs used `data/frozen/pubchem_cache.json`, which is committed; the cache path
+is a parameter, configured in `configs/pubchem.yaml`. Populating a cache from the
+committed ground truth, without any network access, is what
+`scripts/sync_pubchem_cache_from_gt.py` does.
 """
 
 from __future__ import annotations
@@ -28,9 +28,9 @@ from pathlib import Path
 from typing import Any
 
 
-# ---- runs in the repl tool (has host.mcp) --------------------------------
+# ---- online: populates the cache -----------------------------------------
 def resolve_names(
-    host: Any,  # noqa: ANN401 - MCP host object, no stable type
+    host: Any,  # noqa: ANN401 - resolver client, no stable type
     names: Iterable[str],
     cache_path: str | Path,
 ) -> dict[str, dict[str, Any]]:
@@ -85,7 +85,7 @@ def resolve_names(
     return cache
 
 
-# ---- runs in the analysis kernel (no MCP needed) -------------------------
+# ---- offline: reads the cache --------------------------------------------
 def make_lookup(
     cache_path: str | Path, canonicalize: bool = True
 ) -> Callable[[str], tuple[str, str] | None]:

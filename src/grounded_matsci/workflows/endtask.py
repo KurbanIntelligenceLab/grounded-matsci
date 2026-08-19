@@ -1,4 +1,4 @@
-"""End-task propagation runner (manuscript item 1). Each task's final answer depends on a
+"""End-task propagation runner. Each task's final answer depends on a
 checkable object (formula -> molar mass; formula/EF -> comparative selection). Runs baseline +
 gated Mode A + Mode B over 4 models, triplicate; stores final_text for answer-grading and the
 in-loop flag for propagation analysis. Reuses loop.run_mode_a / run_mode_b and the OpenRouter

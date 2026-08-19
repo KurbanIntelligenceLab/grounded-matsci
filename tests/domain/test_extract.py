@@ -1,6 +1,6 @@
-"""Regression tests for the frozen extractor (planted-error suite, spec Section 3).
+"""Regression tests for the frozen extractor (planted-error suite).
 
-Assertions are moved unchanged from the bundle's `tests/test_regression.py`, including
+Assertions are moved unchanged from the pre-refactor regression suite, including
 the historical benzene/nitrobenzene name-binding bug (Section 4)."""
 
 from grounded_matsci.domain import extract
