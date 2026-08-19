@@ -1,5 +1,5 @@
 """
-Frozen adjudication procedure (round-7, post-audit). ONE canonical grader for the
+Frozen adjudication procedure, post-audit. ONE canonical grader for the
 holdout. Freeze this file's sha before grading any intervention trace.
 
 Two grading rules are supported and BOTH reported (sensitivity analysis):

@@ -1,68 +1,52 @@
 #!/usr/bin/env python3
-"""Compute the semantic-entropy detector (Table S6, 4th detector) from frozen inputs.
+"""Regenerate the semantic-entropy detector results from the committed frozen inputs.
 
-Reanalysis only, no generation. Reads data/frozen/{selfcheck_detection.json, selfcheck_samples.jsonl}
-and writes results/semantic_entropy_detection.json (+ per-cell detail). Run from the repo root:
+Reanalysis only, no generation. Reads
+``data/frozen/{selfcheck_samples.jsonl, selfcheck_detection.json}`` and writes
+``results/semantic_entropy_detection.json`` plus the per-cell detail. All scoring lives
+in ``grounded_matsci.verification.semantic_entropy``; this file only selects paths and
+serializes. Run from the repository root:
 
-    python scripts/run_semantic_entropy.py
+    uv run python scripts/run_semantic_entropy.py
+
+The reported summary reproduces the committed
+``results/semantic_entropy_detection.json`` exactly. The per-cell entropies can differ
+from the committed file in the last floating-point digit on some platforms, because
+``math.log`` is supplied by the host C library; the threshold, the cluster counts, and
+every reported precision/recall figure are unaffected.
 """
+
 from __future__ import annotations
 
 import json
 from pathlib import Path
+from typing import Any
 
-from grounded_matsci.verification.semantic_entropy import (
-    load_units,
-    semantic_entropy,
-    _in_dev,
-    _pr,
-)
+from grounded_matsci.verification import semantic_entropy as se
 
 REPO = Path(__file__).resolve().parent.parent
 FROZEN = REPO / "data" / "frozen"
 RESULTS = REPO / "results"
-FE_ABS_TOL = 0.15
 SURFACES = ("molecular", "property_ef", "crystalline")
+PERCELL_FIELDS = (
+    "subject",
+    "claim_type",
+    "model",
+    "is_wrong",
+    "consistency",
+    "sem_entropy",
+    "n_clusters",
+    "split",
+)
 
 
-def main():
-    # load_units expects selfcheck_rep1.jsonl; the repo stores it as selfcheck_samples.jsonl,
-    # so join here directly using the shared naming.
-    samples = [json.loads(l) for l in open(FROZEN / "selfcheck_samples.jsonl") if l.strip()]
-    det = json.load(open(FROZEN / "selfcheck_detection.json"))
-    smap = {(r["subject"], r["claim_type"], r["model"].split("/")[-1]): r["sample_objects"]
-            for r in samples}
-    joined = []
-    for d in det:
-        so = smap.get((d["subject"], d["claim_type"], d["model"].split("/")[-1]))
-        if so is not None:
-            joined.append({**d, "sample_objects": so})
+def _round(value: float) -> float | None:
+    """Round for reporting; NaN (an empty precision/recall cell) serializes as null."""
+    return round(value, 2) if value == value else None
 
-    for x in joined:
-        se, k = semantic_entropy(x["claim_type"], x["sample_objects"])
-        x["sem_entropy"], x["n_clusters"] = se, k
-        x["split"] = "dev" if _in_dev(x["subject"]) else "holdout"
 
-    dev = [x for x in joined if x["split"] == "dev"]
-    grid = [round(0.05 + 0.01 * i, 2) for i in range(91)]
-
-    def f1(thr):
-        P, R, _ = _pr(dev, thr)
-        P = 0.0 if P != P else P
-        R = 0.0 if R != R else R
-        return 2 * P * R / (P + R) if (P + R) else 0.0
-
-    thr = max(grid, key=f1)
-    full = {ct: _pr([x for x in joined if x["claim_type"] == ct], thr) for ct in SURFACES}
-    hold = {ct: _pr([x for x in joined if x["claim_type"] == ct and x["split"] == "holdout"], thr)
-            for ct in SURFACES}
-
-    three = json.load(open(RESULTS / "detection_table_3way.json")) if (RESULTS / "detection_table_3way.json").exists() else {}
-
-    def rnd(v):
-        return round(v, 2) if v == v else None
-
-    out = {
+def summary(thr: float, joined: list[dict[str, Any]], full: dict, hold: dict) -> dict[str, Any]:
+    return {
         "method": "semantic_entropy_detector",
         "reference": "Farquhar, Kossen, Kuhn, Gal (2024) Nature 630:625-630",
         "n_units": len(joined),
@@ -70,21 +54,41 @@ def main():
         "clustering": {
             "molecular": "Hill-canonical formula string, exact-match clusters; no-commit=NC",
             "crystalline": "normalized space-group token, exact-match clusters; no-commit=NC",
-            "property_ef": f"order-invariant single-linkage on eV/atom at tol {FE_ABS_TOL}; no-commit=NC",
+            "property_ef": (
+                f"order-invariant single-linkage on eV/atom at tol {se.FE_ABS_TOL}; no-commit=NC"
+            ),
         },
         "entropy": "normalized Shannon entropy over clusters, H/log(n_samples) in [0,1]",
-        "threshold": {"value": thr, "frozen_on": "dev half (subject-hash split, seed 'sement')",
-                      "rule": "flag if entropy >= threshold; dev-optimal pooled F1"},
-        "pr_full_set": {ct: {"P": rnd(full[ct][0]), "R": rnd(full[ct][1]), **full[ct][2]}
-                        for ct in SURFACES},
-        "pr_holdout_half": {ct: {"P": rnd(hold[ct][0]), "R": rnd(hold[ct][1])} for ct in SURFACES},
-        "note": "Detection-only: returns no reference value to inject, so it can detect but not repair.",
+        "threshold": {
+            "value": thr,
+            "frozen_on": (f"dev half (subject-hash split, seed '{se.SPLIT_SEED}')"),
+            "rule": "flag if entropy >= threshold; dev-optimal pooled F1",
+        },
+        "pr_full_set": {
+            ct: {"P": _round(full[ct][0]), "R": _round(full[ct][1]), **full[ct][2]}
+            for ct in SURFACES
+        },
+        "pr_holdout_half": {
+            ct: {"P": _round(hold[ct][0]), "R": _round(hold[ct][1])} for ct in SURFACES
+        },
+        "note": (
+            "Detection-only: returns no reference value to inject, so it can detect but not repair."
+        ),
     }
-    (RESULTS / "semantic_entropy_detection.json").write_text(json.dumps(out, indent=2))
+
+
+def main() -> None:
+    joined, thr, full, hold = se.run(FROZEN)
+    (RESULTS / "semantic_entropy_detection.json").write_text(
+        json.dumps(summary(thr, joined, full, hold), indent=2)
+    )
+    (RESULTS / "semantic_entropy_percell.json").write_text(
+        json.dumps([{k: x[k] for k in PERCELL_FIELDS} for x in joined])
+    )
     print(f"frozen threshold {thr}")
     for ct in SURFACES:
-        P, R, c = full[ct]
-        print(f"{ct:14s} P={P:.2f} R={R:.2f}  {c}")
+        precision, recall, counts = full[ct]
+        print(f"{ct:14s} P={precision:.2f} R={recall:.2f}  {counts}")
 
 
 if __name__ == "__main__":

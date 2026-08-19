@@ -1,0 +1,48 @@
+# Raw model-generation traces backing the reported results. Each row is one
+# (prompt, model, condition, replicate) cell with the model's final text and the
+# in-loop verifier verdicts, as written by the generation runners.
+#
+# The sampling-consistency traces are not duplicated here: they are the committed
+# data/frozen/selfcheck_samples.jsonl, listed in frozen_inputs.yaml.
+name: generation_traces
+source: produced by the experiment runners (see configs/ and EXPERIMENTS.md)
+files:
+  - path: data/traces/holdout_arms_rep0.jsonl
+    sha256: 9fdef97b898468f317d1df47e3dfa1a8165edfbcc6638d652917f4d23cf81181
+    role: holdout generation traces, baseline and intervention arms, replicate 0
+  - path: data/traces/holdout_arms_rep1.jsonl
+    sha256: 9e5bd1d0126db3ea4d89a8434c079a6a027995599aeff7d528e98b09c8766580
+    role: holdout generation traces, replicate 1
+  - path: data/traces/holdout_arms_rep2.jsonl
+    sha256: c840815fc43fe9c91dc17beb2d40b9d1f9220bb8b4f5cce54854ac7e94f3dd6d
+    role: holdout generation traces, replicate 2 (retrieval arm; carries retrieved fact per cell)
+  - path: data/traces/holdout_arms_rep3.jsonl
+    sha256: 9b5a3f08e6f7a80e9dec062626f0fd1798aa40c77a044ee29d19aff86e9330cf
+    role: holdout generation traces, replicate 3
+  - path: data/traces/endtask_arms_rep1.jsonl
+    sha256: 4f092e82be028222a6fbf43baa283e8da73a49d1aa4626819ef22910099c02b5
+    role: end-task propagation traces, replicate 1
+  - path: data/traces/endtask_arms_rep2.jsonl
+    sha256: 80faf05a232014dc8ee2d87d96007a0c5e97e89390e474243930a0f4afef4202
+    role: end-task propagation traces, replicate 2
+  - path: data/traces/endtask_arms_rep3.jsonl
+    sha256: 7647e84f6beb3a7f7e9f81b4eb8d6fdf3702573dd455dd27264f5655f0e289d9
+    role: end-task propagation traces, replicate 3
+  - path: data/traces/endtask_derived_rep1.jsonl
+    sha256: ba0e263f097171c31f05fcf62a2517112c6dd61a1d8b4137cab586d8e49bb518
+    role: derived-quantity tier traces, replicate 1
+  - path: data/traces/endtask_derived_rep2.jsonl
+    sha256: 990f1e75d477f6e59f5517f508e116bd7b981982bd3d254283ea51bb41bdb019
+    role: derived-quantity tier traces, replicate 2
+  - path: data/traces/endtask_derived_rep3.jsonl
+    sha256: 13c8586f1b141cee6b4fd53becbe1eb696b34ce3826e8fd655bfc1eecc2e23c7
+    role: derived-quantity tier traces, replicate 3
+  - path: data/traces/codata_arms_rep1.jsonl
+    sha256: 2b961d7d1bbabfbf86d4a520dc98fa1504f123e31fe515856140b069f849ed62
+    role: physical-constants domain traces, replicate 1
+  - path: data/traces/codata_arms_rep2.jsonl
+    sha256: bcefcd04213304434ab243c28605c2e28b3b3009590816ea68e83d7df2314ffc
+    role: physical-constants domain traces, replicate 2
+  - path: data/traces/codata_arms_rep3.jsonl
+    sha256: e4af3958c56424532b9b0f142285dfa39f44be997a0741975baf37e53d8d3821
+    role: physical-constants domain traces, replicate 3

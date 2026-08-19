@@ -1,4 +1,4 @@
-# Intervention arms (conditions 2-5) over the frozen v2 corpus.
+# Intervention arms over the frozen v2 corpus: self-critique, RAG-in-prompt, Mode A, Mode B.
 seed: 42
 models: ["anthropic/claude-sonnet-5", "openai/gpt-5.5", "deepseek/deepseek-v4-pro", "qwen/qwen3-235b-a22b-2507"]
 system: "You are a materials-chemistry assistant. When you mention a molecule, give its SMILES and molecular formula; when you mention a crystal, give its space group symbol and number. Answer the question directly and concisely."

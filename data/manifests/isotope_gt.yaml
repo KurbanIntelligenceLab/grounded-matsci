@@ -1,8 +1,8 @@
-# Frozen isotope half-life ground truth for EXP4.
+# Frozen isotope half-life ground truth for the isotope transfer domain.
 name: isotope_gt
 source: IAEA Nuclear Data Section (Live Chart of Nuclides), curated half-life values
 license: IAEA data are publicly available; see source terms of use
-version: frozen for the EXP4 registration (project's private decisions log)
+version: frozen for the isotope-domain registration (project's private decisions log)
 schema: >
   JSON object with key "isotopes": nucid -> {name, nucid, half_life_sec, unit,
   decay_mode, stratum}. half_life_sec is seconds. The grading tolerance policy

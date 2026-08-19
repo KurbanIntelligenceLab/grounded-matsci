@@ -1,4 +1,4 @@
-"""EXP4 isotope-half-life domain: orchestration-layer verifier tier + grader.
+"""Isotope half-life domain: orchestration-layer verifier tier and grader.
 Frozen cores untouched. Value parser hardened for units + scientific notation + unicode powers
 (constants lesson applied pre-emptively). Grades against IAEA half_life_sec with relative tolerance.
 """

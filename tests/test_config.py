@@ -17,10 +17,10 @@ PAIRS = [
     ("endtask.yaml", C.EndtaskConfig),
     ("endtask_derived.yaml", C.EndtaskDerivedConfig),
     ("codata.yaml", C.CodataConfig),
-    ("exp1.yaml", C.Exp1Config),
-    ("exp2.yaml", C.Exp2Config),
-    ("exp3.yaml", C.Exp3Config),
-    ("exp4.yaml", C.Exp4Config),
+    ("two_stage_triage.yaml", C.TwoStageTriageConfig),
+    ("gated_constants.yaml", C.GatedConstantsConfig),
+    ("small_models.yaml", C.SmallModelsConfig),
+    ("isotopes.yaml", C.IsotopesConfig),
     ("pubchem.yaml", C.PubchemConfig),
 ]
 
@@ -43,7 +43,7 @@ def test_unknown_keys_rejected(tmp_path):
 
 
 def test_paths_and_tuples_coerced():
-    cfg = load_config(CONFIG_DIR / "exp4.yaml", C.Exp4Config)
+    cfg = load_config(CONFIG_DIR / "isotopes.yaml", C.IsotopesConfig)
     assert isinstance(cfg.gt_path, Path)
     assert isinstance(cfg.models, tuple)
     assert isinstance(cfg.reps, tuple)

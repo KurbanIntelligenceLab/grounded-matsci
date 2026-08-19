@@ -1,0 +1,26 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Kurban Intelligence Lab
+
+The data artifacts released with this repository -- the condition-pinned prompt
+corpus, the frozen ground truth for all domains, the lookup tables and prompt
+sets under `data/`, and the frozen experimental results under `results/` -- are
+licensed under the Creative Commons Attribution 4.0 International License.
+
+You are free to share and adapt this material for any purpose, including
+commercially, provided you give appropriate credit, provide a link to the
+license, and indicate if changes were made.
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+Summary:           https://creativecommons.org/licenses/by/4.0/
+
+Attribution: please cite the accompanying publication; see CITATION.cff.
+
+Third-party reference data redistributed here remain subject to their own source
+terms, which are recorded per artifact in `data/manifests/`. In particular the
+isotope half-life ground truth is derived from the IAEA Nuclear Data Section
+(see `data/manifests/isotope_gt.yaml`), and PubChem, Materials Project and NIST
+CCCBDB values are reproduced from those public databases.
+
+The source code in this repository is licensed separately under the MIT License;
+see LICENSE.

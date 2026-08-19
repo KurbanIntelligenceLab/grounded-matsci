@@ -1,5 +1,6 @@
 """
-Intervention-arms runner (conditions 2-5) over the frozen v2 corpus. Checkpointed to JSONL,
+Intervention-arms runner over the frozen v2 corpus: self-critique, RAG-in-prompt,
+Mode A, and Mode B (conditions 2 through 5 of the study). Checkpointed to JSONL,
 resumable, concurrent. Each cell = (prompt, model, condition, rep). Stores the final text +
 in-loop metadata (rounds, in-loop fails, retrieved facts) for grading + detection/flag-rate.
 

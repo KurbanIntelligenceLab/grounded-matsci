@@ -5,13 +5,10 @@ the RNGs, snapshots the config + provenance manifest into `outputs/<experiment_i
 calls the corresponding workflow function. This module is plumbing only — the scientific
 orchestration lives in `workflows/`.
 
-The original bundle shipped `main()` entrypoints only for exp1..exp4; the remaining
-runners were driven from an interactive kernel not included in the bundle. For those, the
-ground-truth-kwargs wiring below reconstructs the in-bundle pattern (exp3's `gk_for`).
-
-Most subcommands read frozen input files (corpus, ground truth, prompts) that are NOT in
-this repository — see `data/manifests/handoff_missing.yaml`. Running them without that
-data release fails with a FileNotFoundError.
+Every subcommand reads its frozen inputs (corpus, ground truth, prompts, lookups) from
+`data/frozen/`, which is committed. Generation subcommands additionally need
+`OPENROUTER_API_KEY`. See `EXPERIMENTS.md` for what each subcommand measures, which
+config drives it, and which committed result it reproduces.
 """
 
 from __future__ import annotations
@@ -38,7 +35,7 @@ def _make_gt_kwargs_for(
     pubchem_path: Path | None = None,
     holdout_gt_path: Path | None = None,
 ) -> Callable[[dict[str, Any]], dict[str, Any]]:
-    """The in-loop verify kwargs factory, per the exp3 runner's `gk_for` pattern."""
+    """Build the per-record ground-truth kwargs the in-loop verifier expects."""
     from grounded_matsci.io.pubchem import make_combined_lookup
 
     named_sg = _load_json(named_sg_path)
@@ -197,11 +194,11 @@ def _cmd_codata(args: argparse.Namespace) -> int:
     return 0
 
 
-def _cmd_exp1(args: argparse.Namespace) -> int:
-    from grounded_matsci.workflows import exp1_two_stage
+def _cmd_two_stage_triage(args: argparse.Namespace) -> int:
+    from grounded_matsci.workflows import two_stage_triage
 
-    cfg = _begin(args, cfgmod.Exp1Config)
-    exp1_two_stage.run(
+    cfg = _begin(args, cfgmod.TwoStageTriageConfig)
+    two_stage_triage.run(
         cfg.corpus_path,
         cfg.ef_lookup_path,
         cfg.selfcheck_detection_path,
@@ -214,11 +211,11 @@ def _cmd_exp1(args: argparse.Namespace) -> int:
     return 0
 
 
-def _cmd_exp2(args: argparse.Namespace) -> int:
-    from grounded_matsci.workflows import exp2_gated_codata
+def _cmd_gated_constants(args: argparse.Namespace) -> int:
+    from grounded_matsci.workflows import gated_constants
 
-    cfg = _begin(args, cfgmod.Exp2Config)
-    exp2_gated_codata.run(
+    cfg = _begin(args, cfgmod.GatedConstantsConfig)
+    gated_constants.run(
         cfg.prompts_path,
         cfg.gt_path,
         cfg.out_path,
@@ -230,11 +227,11 @@ def _cmd_exp2(args: argparse.Namespace) -> int:
     return 0
 
 
-def _cmd_exp3(args: argparse.Namespace) -> int:
-    from grounded_matsci.workflows import exp3_small_models
+def _cmd_small_models(args: argparse.Namespace) -> int:
+    from grounded_matsci.workflows import small_models
 
-    cfg = _begin(args, cfgmod.Exp3Config)
-    exp3_small_models.run(
+    cfg = _begin(args, cfgmod.SmallModelsConfig)
+    small_models.run(
         cfg.corpus_path,
         cfg.named_sg_path,
         cfg.ef_lookup_path,
@@ -247,11 +244,11 @@ def _cmd_exp3(args: argparse.Namespace) -> int:
     return 0
 
 
-def _cmd_exp4(args: argparse.Namespace) -> int:
-    from grounded_matsci.workflows import exp4_isotopes
+def _cmd_isotopes(args: argparse.Namespace) -> int:
+    from grounded_matsci.workflows import isotopes
 
-    cfg = _begin(args, cfgmod.Exp4Config)
-    exp4_isotopes.run(
+    cfg = _begin(args, cfgmod.IsotopesConfig)
+    isotopes.run(
         cfg.gt_path,
         cfg.prompts_path,
         cfg.out_path,
@@ -264,17 +261,35 @@ def _cmd_exp4(args: argparse.Namespace) -> int:
 
 
 _COMMANDS: dict[str, tuple[Callable[[argparse.Namespace], int], str]] = {
-    "harness": (_cmd_harness, "baseline (condition 1) holdout generation pass"),
-    "arms": (_cmd_arms, "intervention arms (conditions 2-5) over the frozen corpus"),
-    "selfcheck": (_cmd_selfcheck, "sampling-consistency detection (SelfCheckGPT-style)"),
-    "inline-conf": (_cmd_inline_conf, "inline verbalized-confidence arm"),
-    "endtask": (_cmd_endtask, "end-task propagation runner (item 1)"),
-    "endtask-derived": (_cmd_endtask_derived, "derived-quantity end-task tier (item 3)"),
-    "codata": (_cmd_codata, "physical-constants transfer domain (item 3)"),
-    "exp1": (_cmd_exp1, "EXP1 two-stage triage detector"),
-    "exp2": (_cmd_exp2, "EXP2 gated CODATA rerun"),
-    "exp3": (_cmd_exp3, "EXP3 small-model capability probe"),
-    "exp4": (_cmd_exp4, "EXP4 isotope half-life domain"),
+    "harness": (_cmd_harness, "unguarded baseline generation pass over the frozen corpus"),
+    "arms": (
+        _cmd_arms,
+        "intervention arms: self-critique, RAG-in-prompt, Mode A, Mode B",
+    ),
+    "selfcheck": (
+        _cmd_selfcheck,
+        "sampling-consistency detector baseline (SelfCheckGPT-style)",
+    ),
+    "inline-conf": (_cmd_inline_conf, "inline verbalized-confidence detector baseline"),
+    "endtask": (
+        _cmd_endtask,
+        "end-task propagation: whether a verified intermediate survives into the answer",
+    ),
+    "endtask-derived": (
+        _cmd_endtask_derived,
+        "derived-quantity tier: molar mass computed from a verified formula",
+    ),
+    "codata": (_cmd_codata, "cross-domain transfer: physical constants"),
+    "two-stage-triage": (
+        _cmd_two_stage_triage,
+        "compute-aware triage detector: deterministic tier, then consistency on the rest",
+    ),
+    "gated-constants": (
+        _cmd_gated_constants,
+        "do-no-harm gated rerun on the physical-constants domain",
+    ),
+    "small-models": (_cmd_small_models, "capability probe on two small closed models"),
+    "isotopes": (_cmd_isotopes, "isotope half-life domain, verified against IAEA data"),
 }
 
 

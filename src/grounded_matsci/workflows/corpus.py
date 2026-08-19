@@ -1,24 +1,24 @@
 """
-Labeled-trace corpus harness (spec Section 2).
+Labeled-trace corpus harness.
 
 This is the infrastructure for the dataset that is the paper's centerpiece. It
 does NOT label anything with an LLM — labeling is done by human domain experts
-(spec Section 6 prohibits LLM-as-judge ground truth). What this module does:
+(LLM-as-judge ground truth is prohibited by design). What this module does:
 
   1. `generate_traces`  -- elicit CoT traces from the model set on a prompt list,
-     recording exact model string, sampling params, and timestamp (spec Section 5).
+     recording exact model string, sampling params, and timestamp.
   2. `build_claim_records` -- run the extractor over each trace and emit
      structured claim objects {trace_id, span, type, referent, value, unit,
-     source_sentence_id} (spec Section 1.1 format), each with the verifier's
+     source_sentence_id}, each with the verifier's
      automatic verdict attached as a *suggestion* (never a label).
   3. `write_labeling_sheet` -- emit a JSONL + CSV labeling sheet where each row
      is one claim for a human to mark correct / incorrect / unverifiable.
   4. `cohens_kappa` and `agreement_report` -- inter-annotator agreement on the
-     double-labeled subset (spec Section 2: >=20% double-labeled, kappa reported).
+     double-labeled subset (>=20% double-labeled, with kappa reported).
 
 The verifier's own verdict is stored in a separate column so that, once experts
 label, we can compute detection precision/recall/F1 of the verifier against the
-human ground truth (spec Section 3.3) -- but the human label is authoritative.
+human ground truth -- but the human label is authoritative.
 """
 
 from __future__ import annotations
@@ -79,7 +79,7 @@ def generate_traces(
 
 
 # ---------------------------------------------------------------------------
-# 2. structured claim records (spec Section 1.1 schema)
+# 2. structured claim records
 # ---------------------------------------------------------------------------
 def _sentence_index(text, span_start):
     """0-based index of the sentence containing character offset span_start."""
@@ -98,7 +98,7 @@ def build_claim_records(
     traces, external_lookup=None, extra_known_names=None, enable_physics=False, mp_lookup=None
 ):
     """Extract + auto-verify every claim in every trace. Emits records in the
-    spec Section 1.1 schema plus the verifier's suggested verdict."""
+    The claim schema plus the verifier's suggested verdict."""
     records = []
     for tr in traces:
         claims = ground.ground_trace(
@@ -181,7 +181,7 @@ def write_labeling_sheet(records, csv_path, jsonl_path=None):
 
 
 # ---------------------------------------------------------------------------
-# 4. inter-annotator agreement (spec Section 2)
+# 4. inter-annotator agreement
 # ---------------------------------------------------------------------------
 def cohens_kappa(labels_a, labels_b):
     """Cohen's kappa for two annotators over aligned categorical labels."""
@@ -220,7 +220,7 @@ def agreement_report(records_a, records_b):
 def detection_metrics(labeled_records, positive="incorrect"):
     """Once humans have labeled, compare verifier verdict to ground truth.
     Verifier 'fail' == predicted-incorrect; human 'incorrect' == actually-incorrect.
-    Returns per-type and overall precision/recall/F1 (spec Section 3.3)."""
+    Returns per-type and overall precision/recall/F1."""
     from collections import defaultdict
 
     buckets = defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0, "tn": 0})

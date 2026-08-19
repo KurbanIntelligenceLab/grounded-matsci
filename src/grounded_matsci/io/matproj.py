@@ -11,7 +11,7 @@ MP_API_KEY; it is never printed or written to any artifact. Without a key this
 module degrades gracefully: `make_mp_lookup` returns None and the pipeline falls
 back to the symmetry-only crystal tier.
 
-Usage (analysis kernel):
+Usage:
     from grounded_matsci.io import matproj
     mp = matproj.make_mp_lookup()          # None if no key / mp-api missing
     ref = mp("TiO2")                       # -> {'spacegroup_number':136, ...}

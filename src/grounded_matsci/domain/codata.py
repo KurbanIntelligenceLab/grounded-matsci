@@ -1,4 +1,4 @@
-"""Cross-domain transfer (manuscript item 3): physical-constants domain, grading half.
+"""Cross-domain transfer to the physical-constants domain: the grading half.
 
 Demonstrates the method template — extract checkable object -> tiered grounding -> gated
 repair — on a second domain with CODATA as the Tier-1 identity reference. Lives entirely

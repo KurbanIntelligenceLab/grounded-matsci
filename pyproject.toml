@@ -58,7 +58,7 @@ allowed-confusables = ["×", "−", "–"]
 "src/grounded_matsci/verification/*" = ["ANN"]
 "src/grounded_matsci/workflows/*" = ["ANN"]
 "src/grounded_matsci/evaluation/*" = ["ANN"]
-# tests keep the bundle regression suite's verbatim names (G/EF/D) and shorthand imports
+# tests keep the pre-refactor regression suite's verbatim names (G/EF/D) and shorthand imports
 "tests/*" = ["ANN", "N806", "N812", "F841"]
 # stubs mirror rdkit's own (upper-case) API and are Any by design
 "stubs/*" = ["ANN", "N802"]

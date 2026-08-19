@@ -1,8 +1,8 @@
 """
 Holdout run harness — checkpointed, resumable, per-(prompt,model,condition,replicate).
 
-Frozen config (round-7): corpus_expanded_prompts.json sha b61516df,
-holdout_ground_truth.json sha 9171f2e4, extractor sha 42e03ae2.
+Registered configuration: prompt corpus sha b61516df, holdout ground truth sha 9171f2e4,
+extractor sha 42e03ae2 -- all frozen before this pass was run.
 Generations are checkpointed to a JSONL so the run resumes after any interruption.
 
 Model list and system prompt come from `configs/harness.yaml`; the OpenRouter call

@@ -1,5 +1,5 @@
 """Regression tests for the grounding orchestrator's reference-identity tiers.
-Assertions moved unchanged from the bundle's `tests/test_regression.py`."""
+Assertions moved unchanged from the pre-refactor regression suite."""
 
 from grounded_matsci.domain import tolerances
 from grounded_matsci.verification import ground

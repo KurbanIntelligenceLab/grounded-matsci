@@ -1,5 +1,5 @@
 """Regression tests for the frozen adjudicator (frame policy). Assertions moved unchanged
-from the bundle's `tests/test_regression.py`."""
+from the pre-refactor regression suite."""
 
 from grounded_matsci.domain import adjudicate, tolerances
 

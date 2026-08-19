@@ -1,5 +1,5 @@
 """
-Token / API-cost accounting for the closed loop (spec Section 3.3 Cost).
+Token and API-cost accounting for the closed loop.
 
 The scientific question this answers, and the one to settle BEFORE scaling:
 the closed loop spends *extra* tokens -- Mode A adds correction rounds, Mode B
@@ -72,7 +72,7 @@ def tier_cost_breakdown(claim_logs):
 
 
 def counterfactual_costs(claim_logs):
-    """Compare the ACTUAL tiered cost to the two flat baselines (spec §3.3).
+    """Compare the ACTUAL tiered cost to the two flat baselines.
 
     Returns dict with dollar estimates for: our tiered physics cost, flat-DFT
     (all quantitative claims to Tier 3), and flat-retrieval (a DB/API call for

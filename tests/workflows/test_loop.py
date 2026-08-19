@@ -1,5 +1,5 @@
 """Regression tests for the closed-loop conditions. Assertions moved unchanged from the
-bundle's `tests/test_regression.py`; the fake generators keep the suite offline."""
+pre-refactor regression suite; the fake generators keep the suite offline."""
 
 from grounded_matsci.workflows import loop
 
@@ -29,7 +29,7 @@ def test_mode_b_returns_matched_temperature_baseline():
 
 
 def test_rag_and_self_critique_conditions_exist():
-    """Spec 3.2 conditions 2 (self-critique) and 3 (RAG-in-prompt) are implemented."""
+    """Conditions 2 (self-critique) and 3 (RAG-in-prompt) are implemented."""
     assert hasattr(loop, "run_self_critique"), "condition 2 missing"
     assert hasattr(loop, "run_rag_in_prompt"), "condition 3 missing"
     # RAG prepends facts and does not loop

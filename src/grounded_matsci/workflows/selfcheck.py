@@ -1,7 +1,7 @@
-"""Item 2: sampling-consistency detection (SelfCheckGPT-style, Manakul et al. 2023). Runs Mode B
+"""Sampling-consistency detection (SelfCheckGPT-style, Manakul et al. 2023). Runs Mode B
 (8 samples) and stores the extracted checkable object from EACH sample so cross-sample agreement can
 be computed as a detection signal. Low agreement = flag. The frozen extractor produces each sample's
-object; no core changes. Compared against the deterministic verifier and the LLM judge in the §2.7
+object; no core changes. Compared against the deterministic verifier and the LLM judge in the
 detection table.
 
 Model list and system prompt come from `configs/selfcheck.yaml`; the OpenRouter call lives in

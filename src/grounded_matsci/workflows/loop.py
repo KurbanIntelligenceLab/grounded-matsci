@@ -1,5 +1,5 @@
 """
-Closed-loop grounding (spec Section 1.4).
+Closed-loop grounding.
 
 Mode A - tool-interleaved: the model generates a reasoning step; we verify every
     chemical claim in it; any FAIL is injected back as a tool/correction message

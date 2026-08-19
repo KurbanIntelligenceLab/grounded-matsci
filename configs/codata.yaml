@@ -1,4 +1,4 @@
-# Physical-constants transfer domain (item 3): baseline + gated Mode A.
+# Cross-domain transfer to physical constants: baseline plus gated Mode A.
 seed: 42
 models: ["anthropic/claude-sonnet-5", "openai/gpt-5.5", "deepseek/deepseek-v4-pro", "qwen/qwen3-235b-a22b-2507"]
 system: "You are a physics assistant. Answer the question directly and give the numerical value of the requested physical constant in the stated SI units."

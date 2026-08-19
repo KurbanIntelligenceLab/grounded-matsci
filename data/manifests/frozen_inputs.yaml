@@ -17,7 +17,7 @@ files:
     role: MP/experimental formation-energy lookup (in-loop verify)
   - path: data/frozen/selfcheck_detection.json
     sha256: 01e7d2f64d5c8256c47caf79e7b23b4320a3863ae2e9f7b80871daddddb020ad
-    role: frozen sampling-consistency signal (exp1 two-stage gate)
+    role: frozen sampling-consistency signal (input to the two-stage triage gate)
   - path: data/frozen/rag_facts.json
     sha256: 8decf2d6cbd6c9f5db77e051cb49b977bc347ffd62c0124ad2b3134ec7e582e0
     role: retrieved-facts block per prompt (RAG-in-prompt arm)
@@ -35,7 +35,7 @@ files:
     role: constants prompts (codata runner)
   - path: data/frozen/codata_prompts_2022.json
     sha256: 81a248539c5f581c48cde226626885ffbd337d85071204bb9d8bbfa23b5c7c42
-    role: constants prompts (exp2)
+    role: physical-constants prompts
   - path: data/frozen/codata_gt_2022.json
     sha256: 88cc162970ed6cf5e65630f2f14a77f7dbb3669ab168c3ec15792d3f53947e7d
     role: CODATA 2022 / NIST SP 961 constants GT; the registered sha 95e59c7a is over the sorted constants payload and is embedded in the file
@@ -44,13 +44,28 @@ files:
     role: superseded CODATA 2018 GT (kept for the audit trail)
   - path: data/frozen/isotope_prompts.json
     sha256: 53caf5f993577edde99b1d591f5f66c30f044ee716889d4ac7b9edcf997842f7
-    role: isotope prompts (exp4)
+    role: isotope prompts
   - path: data/frozen/pubchem_cache.json
     sha256: 8f529ef8d809d0142d5219b5d67235a5a5624ac2c5783b06fe61e9fecc39354f
     role: frozen PubChem name-resolution cache
+  - path: data/frozen/selfcheck_samples.jsonl
+    sha256: d391b1989e4451340efaf0cbffeda6b3ad6ff4c19eed78b7dcda95879f77c03f
+    role: eight sampled object sets per cell, input to the sampling-consistency detector
+  - path: data/frozen/cove_arms.jsonl
+    sha256: 70acb0ef51f7465381e30f7545a7f095fd474803bccd6b39d68632ee067dc818
+    role: chain-of-verification arm outputs (draft + revised text per cell)
+  - path: data/frozen/realrag_arms.jsonl
+    sha256: 00b33dcffc5c2fd2d2a351cfa31bfda153779bd1e2fec15f34d7ad6703f0b4d5
+    role: retrieval-augmented arm outputs, with the retrieved fact and a hit flag per cell
+  - path: data/frozen/realrag_facts.json
+    sha256: 7b54ab503b331206802007f6eef4d1ee24b377be405f460cb63ad716e853d5f0
+    role: retrieval corpus for the retrieval-augmented arm, keyed by prompt
+  - path: data/frozen/exp4_isotopes_reps45.jsonl
+    sha256: 202c95a8054c13a6798e2f324d664fe85fe8b3d14bccfdc18ebba2c274a64e0b
+    role: isotope-domain outputs for replicates 4 and 5, extending the run to five seeds
   - path: data/pilot/corpus_traces_pilot.jsonl
     sha256: 0e47f237848bc5b19597bb34f2e989d718108ec540c0d8f0a135c827620464a7
-    role: labeling-pilot CoT traces (spec Section 2)
+    role: labeling-pilot chain-of-thought traces
   - path: data/pilot/corpus_labeling_sheet_pilot.jsonl
     sha256: af1ac1a7138d020a19ddb45cc37cfeabb3a48c6ad59fcb1fe6cb8e96d464a9e6
     role: labeling-pilot sheet (JSONL)
